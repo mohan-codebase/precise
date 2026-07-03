@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /anita/
+Disallow: /email_temps/
+Disallow: /files/
+Disallow: /images/
+Disallow: /includes/
+Disallow: /PHPMailer/
+Disallow: /printer/
+Disallow: /uploads/
+
+Sitemap: https://www.precise3dm.com/sitemap.xml

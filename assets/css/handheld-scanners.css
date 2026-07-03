@@ -1,0 +1,1284 @@
+h1,h2,h3,h4,h5,h6,p,span,b,strong,small,a,td,th{
+    font-family: 'Inter',sans-serif !important;
+}
+
+.hero-section {
+    background-image: linear-gradient(to right, #000000 0%, #000000 35%, transparent 100%), url('../images/3d-handheld-scanner/Banner.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 700px;
+    color: #fff;
+    padding-top: 100px; /* Accounts for header */
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-left-content {
+    padding: 80px 40px 80px 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.badge-outline {
+    border: 2px solid #ff931e;
+    color: #ff931e;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero-title .text-orange {
+    color: #ff931e;
+}
+
+.hero-subheading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    max-width: 95%;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #dcdcdc;
+    margin-bottom: 40px;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+.hero-buttons .btn-orange {
+    background: linear-gradient(90deg, #ffa846, #ff8c16);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.3);
+}
+
+.hero-buttons .btn-orange:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c16, #ffa846);
+    box-shadow: 0 6px 20px rgba(255, 147, 30, 0.5);
+}
+
+.contact-widget {
+    display: flex;
+    align-items: center;
+}
+
+.email-widget-container {
+    margin-top: 50px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffa846, #ff8c16);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    box-shadow: 0 4px 10px rgba(255, 147, 30, 0.4);
+}
+
+.icon-circle i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-info p.title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-info p.details {
+    color: #dcdcdc;
+}
+
+/* Bottom white thick fade */
+.white-fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(200, 200, 200, 0.3) 50%, #ffffff 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.call-us-widget {
+    position: absolute;
+    top: 150px;
+    right: 60px;
+    z-index: 10;
+}
+
+.call-us-widget .contact-info p.details {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.call-us-widget .contact-info p.title {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Responsive adjustments for single background */
+@media (max-width: 991px) {
+    .hero-section {
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #000000 0%, #000000 40%, transparent 100%), url('../images/3d-handheld-scanner/Banner.png');
+        background-position: center;
+    }
+    .hero-left-content {
+        padding: 40px 20px;
+        width: 100%;
+    }
+    .hero-title {
+        font-size: 38px;
+    }
+    .call-us-widget {
+        top: 20px;
+        right: 20px;
+    }
+    .white-fade-bottom {
+        display: none;
+    }
+}
+
+/* Why Handheld 3D Scanners Section */
+.why-handheld-section {
+    background-color: #f8f9fc;
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.why-left-content {
+    padding-right: 40px;
+}
+
+.badge-outline-orange {
+    border: 1px solid #ff931e;
+    color: #ff931e;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.why-heading {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.why-subheading {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+    width: 40px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.why-right-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .why-heading {
+        font-size: 32px;
+    }
+    .why-left-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 575px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Choose the Right Handheld Scanner Section */
+.choose-scanner-section {
+    background-color: #f6f8fb;
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.choose-heading {
+    font-size: 42px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.choose-heading .text-orange {
+    color: #ff931e;
+}
+
+.scanner-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 15px; 
+}
+
+.scanner-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e1e3ec;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scanner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.scanner-img-box {
+    background-color: #fdf3e6;
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid #f2e1ce;
+    height: 280px; /* Force uniform height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scanner-img-box img {
+    max-height: 240px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.scanner-card-body {
+    padding: 20px 15px 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.scanner-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.badge-outline-pill {
+    border: 1px solid #ff931e;
+    color: #ff931e;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.scanner-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.scanner-features li {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 15px;
+}
+
+.scanner-features li::before {
+    content: "•";
+    color: #777;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.scanner-card-footer {
+    padding: 0 15px 20px;
+}
+
+.btn-know-more {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #ffa846, #ff8c16);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-know-more:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c16, #ffa846);
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+    .scanner-cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .scanner-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .choose-heading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .scanner-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Industrial Grade Application Section */
+.industrial-grade-section {
+    background-color: #f6f8fb;
+    padding: 80px 0;
+}
+
+.iga-heading {
+    font-size: 42px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.iga-heading .text-orange {
+    color: #ff931e;
+}
+
+.iga-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.iga-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iga-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.iga-img-box {
+    position: relative;
+    background-color: #e8e8e8;
+    height: 140px;
+    overflow: hidden;
+}
+
+.iga-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iga-card-body {
+    padding: 30px 15px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.iga-icon-circle {
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -23px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.iga-icon-circle img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.iga-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ff931e;
+    margin-bottom: 10px;
+}
+
+.iga-desc {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffa846, #ff8c16);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.btn-learn-more:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c16, #ffa846);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .iga-cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .iga-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .iga-heading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .iga-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Complete 3D Scanning Software Ecosystem Section */
+.software-ecosystem-section {
+    background: #030a16 url('../images/3d-handheld-scanner/c3sse_background_img.png') center/cover no-repeat;
+    padding: 80px 0;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.c3sse-heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ff931e;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.c3sse-subheading {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.c3sse-desc {
+    font-size: 16px;
+    color: #dcdcdc;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+/* Workflow Layout */
+.workflow-scanner-img {
+    height: 250px;
+    object-fit: contain;
+}
+
+.workflow-arrow {
+    color: #ff931e;
+    font-size: 24px;
+}
+
+.scan-data-box {
+    border: 2px solid #ff931e;
+    border-radius: 12px;
+    background: #061124;
+    padding: 30px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.scan-data-box img {
+    height: 40px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.scan-data-box p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+/* Software Card */
+.software-card {
+    background: rgba(6, 17, 36, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.software-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 147, 30, 0.5);
+}
+
+.sw-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sw-card-icon {
+    height: 35px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.sw-card-title p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sw-card-title .primary {
+    color: #fff;
+}
+
+.sw-card-title .secondary {
+    color: #ff931e;
+}
+
+.sw-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.sw-features li {
+    font-size: 13px;
+    color: #c0c0c0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sw-features li i {
+    color: #ff931e;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+.sw-footer {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sw-footer .highlight {
+    color: #ff931e;
+}
+
+/* Call to Action Banner */
+.c3sse-cta-banner {
+    background: rgba(6, 17, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cta-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.cta-icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cta-icon-circle i {
+    color: #ff931e;
+    font-size: 24px;
+}
+
+.cta-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.cta-text p {
+    font-size: 13px;
+    color: #b0b0b0;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.cta-middle {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-solid-orange {
+    background: linear-gradient(90deg, #ffa846, #ff8c16);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-solid-orange:hover {
+    background: linear-gradient(90deg, #ff8c16, #ffa846);
+    color: #fff;
+}
+
+.btn-outline-dark {
+    background: #030a16;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    border-color: #ff931e;
+    color: #ff931e;
+}
+
+.btn-icon {
+    height: 18px;
+}
+
+.cta-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge-img {
+    height: 40px;
+}
+
+.cta-right p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .software-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .c3sse-cta-banner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .cta-left {
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+    .cta-middle {
+        flex-direction: column;
+    }
+    .c3sse-heading {
+        font-size: 28px;
+    }
+    .c3sse-subheading {
+        font-size: 20px;
+    }
+}
+
+
+/* 3D Scanner Comparison Section */
+.scanner-comparison-section {
+    background-color: #f6f8fb;
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.comparison-heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comparison-table-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    overflow-x: auto;
+    margin: 0 15px;
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 13px;
+    color: #444;
+}
+
+.comparison-table th {
+    padding: 20px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.comparison-table .th-feature {
+    background: #000;
+    color: #fff;
+    width: 15%;
+}
+
+.comparison-table .th-scanner {
+    background: #ff931e;
+    color: #fff;
+    width: 17%;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.comparison-table td {
+    padding: 22px 15px;
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.comparison-table .td-feature {
+    font-weight: 600;
+    color: #333;
+}
+
+.icon-check {
+    color: #28a745;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.icon-cross {
+    color: #dc3545;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* Custom Scrollbar for the table wrapper */
+.comparison-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.comparison-table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 0 0 12px 12px;
+}
+.comparison-table-wrapper::-webkit-scrollbar-thumb {
+    background: #cccccc; 
+    border-radius: 4px;
+}
+.comparison-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #ff931e; 
+}
+
+/* Industry Use Case Section */
+.industry-use-case-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.use-case-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #1a1e2f;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3;
+}
+
+.use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.use-case-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 260px;
+}
+
+.use-case-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.use-case-card:hover img {
+    transform: scale(1.08);
+}
+
+.use-case-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 20px 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .use-case-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 991px) {
+    .use-case-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .use-case-grid {
+        grid-template-columns: 1fr;
+    }
+    .use-case-heading {
+        font-size: 26px;
+    }
+}
+/* Why Precises3DM Section */
+.why-precise-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wp3dm-heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.wp3dm-heading .text-orange {
+    color: #ff931e;
+}
+
+.wp3dm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wp3dm-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.wp3dm-list li img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.wp3dm-map-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.wp3dm-locations-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ff931e;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+.wp3dm-locations-title:first-child {
+    margin-top: 0;
+}
+
+.wp3dm-locations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wp3dm-locations-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #222;
+}
+
+.wp3dm-locations-list li img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .wp3dm-center-col {
+        margin: 50px 0;
+    }
+}
+
+/* Related Blogs Section */
+.related-blogs-section {
+    /* background-color: #f8f9fa; */
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Blog Section Styles */
+.blog {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin: 15px;
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+
+.blog img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.blog p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.blog a.btn {
+    border-radius: 5px;
+    border: 1px solid #ff931e;
+    background: rgba(255, 147, 30, 0.1);
+    color: #ff931e;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.blog a.btn:hover {
+    background: #ff931e;
+    color: #fff;
+}
+
+.blogs-heading{
+    font-size: 38px;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Slick slider arrows styling for blogs */
+.slick-prev:before, .slick-next:before {
+    color: #ff931e;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.faq-heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #111;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.custom-faq-accordion .accordion-item {
+    background-color: #fff;
+    border: none;
+    border-left: 4px solid transparent; 
+    border-radius: 30px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.custom-faq-accordion .accordion-item.active-faq {
+    border-radius: 12px;
+    border-left: 4px solid #ff931e;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.custom-faq-accordion .accordion-header {
+    margin: 0;
+}
+
+.custom-faq-accordion .accordion-button {
+    background: transparent;
+    border: none;
+    padding: 18px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    box-shadow: none !important;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.custom-faq-accordion .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed) {
+    color: #333;
+    background-color: transparent;
+}
+
+/* Hide default bootstrap accordion arrow */
+.custom-faq-accordion .accordion-button::after {
+    display: none;
+}
+
+.custom-faq-accordion .accordion-button .faq-icon {
+    color: #ff931e;
+    font-size: 18px;
+    margin-right: 15px;
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    width: 20px;
+    text-align: center;
+}
+
+.custom-faq-accordion .accordion-button.collapsed .faq-icon::before {
+    content: "\f067"; /* fa-plus */
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed) .faq-icon::before {
+    content: "\f068"; /* fa-minus */
+}
+
+.custom-faq-accordion .accordion-body {
+    padding: 0 25px 25px 60px;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6;
+}
+
+

@@ -1,0 +1,1002 @@
+/* =========================================================
+   3D Scanners on Rental and Subscription in India – Page Styles
+   ========================================================= */
+
+/* ---------- Design Tokens ---------- */
+:root {
+    --orange: #f78c1e;
+    --orange-dark: #e07c0e;
+    --navy: #1a2b3c;
+    --white: #ffffff;
+    --font-main: "Inter", "firasan-normal", sans-serif;
+}
+body{
+    background-color: var(--white);
+}
+.text-orange { color: var(--orange) !important; }
+.text-black { color: #1a1a1a !important; }
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.rental-hero {
+    position: relative;
+    width: 100vw;
+    background-image: url("../images/3d-scanners-on-rental-and-subscription-in-india/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Account for fixed header (topbar ~42px + navbar ~58px) + breathing room */
+    padding-top: 50px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    margin-top:80px;
+}
+
+.rental-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Contact Info Bar (top-right) ---------- */
+.rental-hero-topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 3;
+}
+
+.rental-contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rental-contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rental-contact-item .icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(247, 140, 30, 0.45);
+}
+
+.rental-contact-item .icon-circle img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.rental-contact-text h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.rental-contact-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.rental-contact-text a {
+    color: #1a1a1a;
+    transition: color 0.2s;
+}
+
+.rental-contact-text a:hover {
+    color: var(--orange);
+}
+
+/* ---------- Hero Content Row ---------- */
+.rental-hero-content-row {
+    align-items: flex-start;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* Left column */
+.rental-hero-left {
+    padding-right: 0px;
+}
+
+.rental-hero-title {
+    font-size: clamp(32px, 3.8vw, 55px);
+    font-weight: 900;
+    line-height: 1.15;
+    margin: 0 0 15px;
+    font-family: var(--font-main);
+    letter-spacing: -0.5px;
+}
+
+.rental-hero-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+    font-family: var(--font-main);
+}
+
+.rental-hero-desc {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 28px;
+    font-family: var(--font-main);
+    max-width: 450px;
+    font-weight: 500;
+}
+
+/* Icons strip */
+.rental-icons-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.rental-feature-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+}
+
+.rental-feature-icon .icon-ring {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.rental-feature-icon .icon-ring img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.rental-feature-icon span {
+    font-size: 13px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    line-height: 1.25;
+    color: #1a1a1a;
+}
+
+/* ---------- CTA Buttons ---------- */
+.rental-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.rental-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    letter-spacing: 0.4px;
+    text-decoration: none !important;
+    transition:
+        background 0.22s ease,
+        transform 0.18s ease,
+        box-shadow 0.22s ease,
+        color 0.2s ease;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    white-space: nowrap;
+}
+
+.rental-btn-primary {
+    background: var(--orange);
+    color: #ffffff !important;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+}
+
+.rental-btn-primary:hover {
+    background: var(--orange-dark);
+    border-color: var(--orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.5);
+    color: #fff !important;
+}
+
+.rental-btn-outline {
+    background: transparent;
+    color: var(--orange) !important;
+}
+
+.rental-btn-outline:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+}
+
+/* Blur Box */
+.rental-blur-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 260px;
+    z-index: 5;
+    text-align: center;
+}
+
+.rental-blur-box h4 {
+    font-family: var(--font-main);
+    font-weight: 800;
+    font-size: 22px;
+    margin: 0 0 8px;
+    line-height: 1.2;
+}
+
+.rental-blur-box p {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+/* =========================================================
+   RESPONSIVE OVERRIDES
+   ========================================================= */
+@media (max-width: 991px) {
+    .rental-hero {
+        /* On mobile the header collapses to a single row ~60px */
+        padding-top: 80px;
+        background-position: center left 30%;
+    }
+
+    .rental-blur-box {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 40px;
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .rental-hero-topbar {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .rental-hero-title {
+        font-size: 28px;
+    }
+
+    .rental-hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .rental-hero-desc {
+        font-size: 14px;
+    }
+
+    .rental-icons-strip {
+        gap: 15px;
+    }
+
+    .rental-feature-icon {
+        width: 75px;
+    }
+}
+
+/* =========================================================
+   ABOUT SECTION
+   ========================================================= */
+.rental-about {
+    background-color: #f7efe8;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    padding: 60px 0;
+}
+
+.rental-about-item {
+    padding: 0 10px;
+}
+
+.rental-about-item img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.rental-about-item h5 {
+    color: #1a1a1a;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    font-family: var(--font-main);
+}
+
+.rental-about-item p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .rental-about-item {
+        padding: 0;
+    }
+    .rental-about-item p {
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================================
+   TOP SCANNERS SECTION
+   ========================================================= */
+.rental-top-scanners {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.rental-top-scanners h2 {
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    font-size: 2.2rem;
+}
+
+.rental-scanner-card {
+    border: 1px solid var(--orange);
+    border-radius: 14px;
+    background-color: transparent;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scanner-img-wrapper {
+    border-bottom: 1px solid var(--orange);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+}
+
+.scanner-img-wrapper img {
+    object-fit: contain;
+}
+
+.scanner-card-body {
+    padding: 0 20px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.scanner-card-body h4 {
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.scanner-card-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.scanner-card-body ul li {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.btn-scanner-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    padding: 12px 0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.btn-scanner-outline:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* =========================================================
+   SUBSCRIPTION VS BUYING SECTION
+   ========================================================= */
+.rental-compare {
+    background-color: #f6f6fa;
+    padding: 80px 0;
+}
+
+.rental-compare h2 {
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    font-size: 2.2rem;
+}
+
+/* Left Table */
+.rental-compare-table {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid var(--orange);
+    border-radius: 14px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.rental-compare-table th,
+.rental-compare-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--orange);
+    border-right: 1px solid var(--orange);
+    font-family: var(--font-main);
+}
+
+.rental-compare-table th:last-child,
+.rental-compare-table td:last-child {
+    border-right: none;
+}
+
+.rental-compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.rental-compare-table th {
+    font-weight: 700;
+    font-size: 1.05rem;
+    background-color: #fff;
+}
+
+.rental-compare-table td {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.tick-green {
+    color: #28a745;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cross-red {
+    color: #dc3545;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Right Box */
+.rental-right-box {
+    background-color: #fff;
+    border: 1px solid var(--orange);
+    border-radius: 14px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.rental-sub-card {
+    background-color: #fff5e9;
+    border: 1px solid var(--orange);
+    border-radius: 14px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rental-sub-card h4 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+/* List with orange circle tick */
+.rental-list-tick {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.rental-list-tick li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.rental-list-tick li::before {
+    content: '\2713'; /* Unicode checkmark */
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--orange);
+    border-radius: 50%;
+    color: var(--orange);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Solid Button */
+.btn-scanner-solid {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    padding: 12px 0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.btn-scanner-solid:hover {
+    background-color: var(--orange-dark);
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* =========================================================
+   HOW IT WORKS SECTION
+   ========================================================= */
+.rental-how {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.rental-how h2 {
+    color: #1a1a1a;
+    font-size: 2.2rem;
+    font-family: var(--font-main);
+}
+
+.rental-how h3 {
+    color: #444 !important;
+    font-size: 1.6rem;
+    font-family: var(--font-main);
+}
+
+.rental-how-row {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.how-connecting-line {
+    position: absolute;
+    top: 40px; /* Aligns with the vertical center of the 80x80 images */
+    left: 12.5%; /* Start from center of first column */
+    right: 12.5%; /* End at center of last column */
+    height: 2px;
+    background-color: var(--orange);
+    z-index: -1; /* Place line behind the icons */
+}
+
+.how-icon-wrapper {
+    display: inline-block;
+    position: relative;
+    background: #fff; /* Ensure it covers the line if images are transparent */
+    border-radius: 50%;
+    z-index: 2;
+    padding: 5px; /* optional padding */
+}
+
+.how-icon-wrapper img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.how-step h4 {
+    color: #1a1a1a;
+    font-size: 1.3rem;
+    font-family: var(--font-main);
+}
+
+.how-step p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+    .how-step {
+        margin-bottom: 40px;
+    }
+    .how-connecting-line {
+        display: none; /* Hide horizontal line on mobile when stacking vertically */
+    }
+}
+
+/* =========================================================
+   WHY PRECISE3DM SECTION
+   ========================================================= */
+.rental-why {
+    background-color: #f6f6fa;
+    padding: 80px 0;
+}
+
+.rental-why h2 {
+    color: #1a1a1a;
+    font-size: 2.2rem;
+    font-family: var(--font-main);
+}
+
+.rental-title-underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--orange);
+    border-radius: 2px;
+}
+
+.rental-why-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.why-card-text h4 {
+    color: #1a1a1a;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: var(--font-main);
+}
+
+.why-card-img img {
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .rental-why-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+    .why-card-text {
+        margin-bottom: 20px;
+    }
+    .why-card-img.ms-3 {
+        margin-left: 0 !important;
+    }
+}
+
+/* =========================================================
+   TESTIMONIAL & FAQ SECTION
+   ========================================================= */
+.rental-testimonial-faq {
+    background-color: #f6f6fa;
+    padding: 80px 0;
+}
+
+.rental-testimonial-faq h2 {
+    font-family: var(--font-main);
+}
+
+/* Testimonial Card */
+.rental-testimonial-card {
+    background-color: #fff;
+    border: 1px solid var(--orange);
+    border-radius: 12px;
+    padding: 35px 30px;
+}
+
+.rental-testimonial-card .quote-icon {
+    font-size: 100px;
+    color: var(--orange);
+    opacity: 0.2;
+    line-height: 0;
+    top: 50px;
+    right: 20px;
+    font-family: Georgia, serif;
+    user-select: none;
+}
+
+/* =========================================================
+   FAQ ACCORDION (AFAQ)
+   ========================================================= */
+
+/* ── Accordion Container: reset default borders ── */
+.afaq-accordion {
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-bg: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ── Each Accordion Item = independent pill card ── */
+.afaq-item {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 32px !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    /* Orange left accent – only visible when open */
+    border-left: 4px solid transparent !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Active/open item: orange left border + slightly deeper shadow */
+.afaq-item:has(.accordion-collapse.show) {
+    border-left-color: var(--orange) !important;
+    box-shadow: 0 4px 22px rgba(247, 140, 30, 0.12);
+}
+
+/* Fallback for browsers without :has() – JS adds .afaq-open via custom script if needed.
+   The data-bs-toggle handles collapse natively via Bootstrap. */
+.afaq-item.afaq-open {
+    border-left-color: var(--orange) !important;
+    box-shadow: 0 4px 22px rgba(247, 140, 30, 0.12);
+}
+
+/* ── Accordion Button ── */
+.afaq-btn {
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: none !important;
+    border-radius: 32px !important;
+    box-shadow: none !important;
+    text-align: left;
+}
+
+/* Remove Bootstrap's built-in right-side arrow entirely */
+.afaq-btn::after {
+    display: none !important;
+}
+
+/* No blue tint when open (Bootstrap default override) */
+.afaq-btn:not(.collapsed) {
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    box-shadow: none !important;
+}
+
+/* FIX 1: Kill the ugly Bootstrap focus outline completely */
+.afaq-btn:focus,
+.afaq-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    background: #ffffff !important;
+}
+
+/* ── Icon Wrap (left-side ± toggle) ── */
+.afaq-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    color: var(--orange);
+    font-size: 15px;
+    position: relative;
+}
+
+/* FIX 2: Force FontAwesome to respect the toggle using !important */
+/* Show + when collapsed, hide – */
+.afaq-icon-plus  { display: inline-block !important; }
+.afaq-icon-minus { display: none !important; }
+
+/* Show – when open, hide + */
+.afaq-btn:not(.collapsed) .afaq-icon-plus  { display: none !important; }
+.afaq-btn:not(.collapsed) .afaq-icon-minus { display: inline-block !important; }
+
+/* ── Accordion Body (answer) ── */
+.afaq-body {
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.7;
+    padding: 4px 22px 22px calc(22px + 14px + 22px);
+    /* indent to align under the question text, past icon + gap */
+    background: #ffffff;
+}
+
+/* =========================================================
+   RESPONSIVE – AFAQ SECTION
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .afaq-item {
+        border-radius: 20px !important;
+    }
+
+    .afaq-btn {
+        border-radius: 20px !important;
+        font-size: 14.5px;
+    }
+
+    .afaq-btn:not(.collapsed) {
+        border-radius: 20px 20px 0 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .afaq-item {
+        border-radius: 16px !important;
+    }
+
+    .afaq-btn {
+        border-radius: 16px !important;
+        font-size: 14px;
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .afaq-btn:not(.collapsed) {
+        border-radius: 16px 16px 0 0 !important;
+    }
+
+    .afaq-body {
+        padding: 4px 18px 18px calc(18px + 12px + 22px);
+        font-size: 13.5px;
+    }
+
+    .afaq-accordion {
+        gap: 10px;
+    }
+}
+
+/* =========================================================
+   CTA SECTION
+   ========================================================= */
+.rental-cta {
+    background-color: #f7ede4;
+    padding: 80px 0;
+}
+
+.rental-cta-title {
+    font-family: var(--font-main);
+    font-weight: 800;
+    font-size: 2.8rem;
+    color: #000;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.rental-cta-subtitle {
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.cta-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.cta-contact-title {
+    font-family: var(--font-main);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.cta-contact-info {
+    font-family: var(--font-main);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.cta-separator {
+    color: var(--orange);
+    margin: 0 6px;
+    font-weight: 800;
+}
+
+.rental-cta-contact {
+    gap: 10px;
+}
+
+.rental-cta-btn {
+    background: linear-gradient(180deg, #ffaf5c 0%, #f78c1e 100%);
+    color: #fff !important;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.35rem;
+    padding: 16px 32px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 360px;
+    max-width: 100%;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(247, 140, 30, 0.35);
+    text-decoration: none;
+}
+
+.rental-cta-btn:hover {
+    background: linear-gradient(180deg, #f78c1e 0%, #e07a16 100%);
+    box-shadow: 0 10px 25px rgba(247, 140, 30, 0.45);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    .rental-cta {
+        padding: 60px 0;
+    }
+    .rental-cta-title {
+        font-size: 2.2rem;
+    }
+    .rental-cta-btn {
+        width: 100%;
+    }
+}

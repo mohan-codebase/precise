@@ -1,0 +1,1100 @@
+h1,h2,h3,h4,h5,h6,p,span,b,strong,small,td,th,a{
+    font-family: 'Inter',sans-serif !important;
+}
+
+/* 3D Inspection Service Hero Section CSS */
+.inspection-hero-section {
+    background-image: url('../images/3d-inspection-service-in-india/3D-Inspection-Service-in-India-hero.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 700px;
+    color: #fff;
+    padding-top: 100px; /* Accounts for header */
+    overflow: hidden;
+}
+
+.hero-left-content {
+    padding: 80px 40px 80px 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero-title .text-orange {
+    color: #ff931e;
+}
+
+.hero-subheading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    max-width: 95%;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #dcdcdc;
+    margin-bottom: 40px;
+    max-width: 90%;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.hero-buttons .btn-orange {
+    background: linear-gradient(90deg, #ffa846, #ff8c16);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.3);
+}
+
+.hero-buttons .btn-orange:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c16, #ffa846);
+    box-shadow: 0 6px 20px rgba(255, 147, 30, 0.5);
+}
+
+.contact-widget {
+    display: flex;
+    align-items: center;
+}
+
+.email-widget-container {
+    margin-top: 50px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffa846, #ff8c16);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    box-shadow: 0 4px 10px rgba(255, 147, 30, 0.4);
+}
+
+.icon-circle i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-info p.title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-info p.details a {
+    color: #dcdcdc;
+}
+
+.contact-info p.m-details a {
+    color: #000;
+}
+
+@media screen and (max-width:700px){
+    .contact-info p.m-details a{
+        color: #fff;
+    }
+}
+/* Bottom white thick fade */
+.white-fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(200, 200, 200, 0.3) 50%, #ffffff 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.call-us-widget {
+    position: absolute;
+    top: 150px;
+    right: 60px;
+    z-index: 10;
+}
+
+.call-us-widget .contact-info p.details {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.call-us-widget .contact-info p.title {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Force email widget text to black on desktop for visibility on the bright area */
+.email-widget-container .contact-info p.title {
+    color: #000000;
+    font-weight: bold;
+}
+
+.email-widget-container .contact-info p.details {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Responsive adjustments for single background */
+@media (max-width: 991px) {
+    .inspection-hero-section {
+        flex-direction: column;
+        background-image: url('../images/3d-inspection-service-in-india/3D-Inspection-Service-in-India-hero.png');
+        background-position: center;
+        padding-top: 20px; /* Overrides the aggressive 100px desktop header space */
+        min-height: auto;
+    }
+    .hero-left-content {
+        padding: 25px 15px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4); /* soft backdrop for readability on smaller screens */
+    }
+    .hero-title {
+        font-size: 38px;
+    }
+    .call-us-widget {
+        top: 20px;
+        right: 20px;
+    }
+    
+    /* Revert email text to white because of the dark backdrop on mobile */
+    .email-widget-container .contact-info p.title,
+    .email-widget-container .contact-info p.details {
+        color: #fff;
+        font-weight: 600; /* Revert to normal thickness on mobile if desired, or leave bold. Let's leave bold since they might want it bolder everywhere, but I'll set to 600 stringently as defaults else */
+    }
+    
+    /* Adjust spacing */
+    .email-widget-container {
+        margin-top: 25px;
+    }
+
+    .white-fade-bottom {
+        display: none;
+    }
+    /* Let's unbold hero-description on mobile since they said "in destop view" */
+    .hero-description {
+        font-weight: normal;
+    }
+}
+
+/* Comprehensive 3D Inspection Services Section */
+.comprehensive-services-section {
+    background-color: #f8f9fa; /* Light grey background from reference image */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 60px 0;
+}
+
+/* Map Left Pane */
+.india-map {
+    width: 65%; 
+    max-width: 480px;
+    height: auto;
+    object-fit: contain;
+    flex: 1 1 auto;
+}
+
+.office-locations-wrapper {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:700px){
+    .office-locations-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.office-title {
+    color: #ff931e;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.office-list {
+    margin: 0;
+    padding: 0;
+}
+
+.office-list li {
+    font-size: 15px;
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.office-list li img {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+/* Services Array Right Pane */
+.c3dis-heading {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a2e; /* Dark navy black */
+}
+
+.c3dis-heading .text-orange {
+    color: #ff931e;
+}
+
+.c3dis-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px; /* The explicit column gap they wanted */
+    row-gap: 15px;
+    width: 100%;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 10px;
+
+    text-align: center;
+    height: 100%;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.service-card .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.service-card .card-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Pushes image to center/bottom */
+    min-height: 90px;
+}
+
+.service-card .card-img-box img {
+    max-width: 90%;
+    max-height: 95px;
+    object-fit: contain;
+}
+
+.service-card .two-images-wrapper {
+    justify-content: space-evenly;
+}
+
+.service-card .two-images-wrapper img {
+    width: 40%; 
+    max-width: 60px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 1199px) {
+    .c3dis-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 991px) {
+    .india-map {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 40px;
+        margin-right: 0 !important;
+    }
+    .c3dis-heading {
+        font-size: 26px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .office-locations-wrapper {
+        margin-left: 0;
+    }
+    .c3dis-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .c3dis-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Metrology Grade Equipment Section */
+.metrology-equipment-section {
+    background-color: #f7f8fa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.main-heading {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.main-heading .text-orange {
+    color: #ff931e;
+}
+
+.metrology-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 15px; 
+    row-gap: 15px;
+    width: 100%;
+}
+
+.metro-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.metro-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.metro-title {
+    color: #ff931e;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    white-space: nowrap; /* Prevents wrapping if it squeezes, or just let it naturally flow */
+}
+
+.metro-img {
+    width: 100%;
+    aspect-ratio: 5 / 4; /* Force an identical uniform rectangle block for every image */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.metro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops the raw images perfectly to fill the aspect box */
+    display: block;
+}
+
+.metro-desc {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0;
+    padding-top: auto;
+}
+
+/* Responsive constraints for 6-column grid */
+@media (max-width: 1399px) {
+    .metrology-grid {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .metrology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .metrology-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Advanced Inspection Software & Reporting Platforms */
+.adv-software-section {
+    background-color: #f7f8fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.adv-heading {
+    color: #1a1b24;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.software-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* very subtle smooth boundary */
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.software-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    transform: translateY(-3px);
+}
+
+.sw-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0; /* visual separation line exactly from mockup */
+}
+
+.sw-icon-box {
+    width: 50px;
+    height: 50px;
+}
+
+.sw-icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sw-icon-box-wide {
+    width: 140px; 
+    height: 45px;
+}
+
+.sw-icon-box-wide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sw-title {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.text-black {
+    color: #1a1a2e;
+}
+
+.text-blue {
+    color: #007bff; /* Shining 3D branding blue */
+}
+
+.sw-subtitle {
+    font-size: 14px;
+    color: #555;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.sw-feature-list {
+    margin-bottom: 25px;
+}
+
+.sw-feature-list li {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sw-feature-list li i {
+    color: #28a745; /* Success checkmark green strictly mapping to design */
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.btn-orange-gradient {
+    /* Identical soft gradient seen in reference image bottom buttons */
+    background: linear-gradient(180deg, #ffae45 0%, #ff8c00 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(255,140,0,0.3);
+    transition: filter 0.3s ease;
+}
+
+.btn-orange-gradient:hover {
+    color: #ffffff;
+    filter: brightness(1.1);
+}
+
+@media (max-width: 991px) {
+    .adv-heading {
+        font-size: 26px;
+    }
+}
+
+/* Execution Timeline Section */
+.how-we-execute-section {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.custom-lh {
+    line-height: 1.4 !important;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.tracking-wide {
+    letter-spacing: 0.5px;
+}
+
+.execution-steps-wrapper {
+    margin-top: 50px;
+}
+
+.execution-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.exec-card {
+    background: #fff6ee;
+    border: 1px solid #ffdec2;
+    border-radius: 12px;
+    padding: 30px 15px 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.03);
+}
+
+.exec-num {
+    background: #ffa135;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 22px;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.exec-title {
+    font-weight: 800;
+    font-size: 13px;
+    margin-bottom: 15px;
+    min-height: 32px;
+    color: #1a1b24;
+}
+
+.exec-img-box {
+    margin-bottom: 25px; /* Added extra margin to accommodate bleeding badge */
+    border-radius: 6px;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    /* Removed overflow: hidden so bottom badge can successfully bleed out of the box */
+}
+
+.exec-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px; /* Moved rounding directly to the asset */
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.exec-img-box img.badge-icon {
+    position: absolute;
+    bottom: 8px; /* Bleeds exactly halfway off the image */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    z-index: 5;
+    /* Removed custom CSS circles/backgrounds to let the native jagged image file shape shine */
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.exec-desc {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.45;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.arrow-divider {
+    position: absolute;
+    right: -37px; /* Mathematically center exactly halfway across the 20px gap */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: #ffaa42;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 10;
+    /* Removed white background border to map directly to flat vector UI reference */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.features-bottom-banner {
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 30px 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.feature-icon {
+    width: 120px;
+    /* Letting max-height govern the heavily tall scanner asset while bounding width */
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.feature-title {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.feature-desc {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+/* Beautiful fading orange vertical dividers separating columns across widescreen */
+@media (min-width: 992px) {
+    .feature-col:not(:last-child) {
+        position: relative;
+    }
+    .feature-col:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: 0; /* Centers math perfectly inside the Bootstrap logical gutter */
+        top: 15%;
+        height: 70%;
+        width: 2px;
+        background: linear-gradient(to bottom, rgba(255,170,66,0), rgba(255,170,66,0.5), rgba(255,170,66,0));
+    }
+}
+
+/* Highly controlled responsive scale logic across 6 columns */
+@media (max-width: 1399px) {
+    .execution-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 50px; /* Leave space for top-protruding number badges on wrapped rows */
+        padding-top: 20px;
+    }
+    
+    .exec-card {
+        min-width: 0;
+        margin-right: 0 !important;
+    }
+    
+    /* Hide the horizontal arrows when grid starts wrapping because sequence goes downwards */
+    .arrow-divider {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .execution-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .execution-grid {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    
+    /* Optimize sizing tightly for very small phones */
+    .exec-card {
+        padding: 25px 15px 15px;
+    }
+}
+
+/* 3D Inspection Project Workflow Section */
+.project-workflow-section {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.text-orange {
+    color: #ffaa42 !important;
+}
+
+.workflow-card {
+    border: 1px solid #ffdec2;
+    border-radius: 12px;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+.text-muted1{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.center-card {
+    border: 1px solid #ffaa42; /* Highlighted orange border */
+    /* Remove padding override if any to respect bootstrap classes */
+}
+
+.workflow-header .fa-arrow-down {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.workflow-feature-text {
+    font-size: 14.5px;
+    font-weight: 400; /* Matched the thin readable font styling from the screenshot */
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.workflow-bottom-text {
+    font-weight: 600; /* Applied bold structuring specifically to the bottom paragraph */
+    color: #1a1b24;
+}
+
+/* Big connecting arrows between columns */
+.workflow-arrow-right {
+    position: absolute;
+    right: -10px; /* Adjusted to cleanly center exact unicode arrow dimension */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: #ffaa42;
+    font-weight: 300; /* Keeping unicode arrows thin like screenshot */
+    z-index: 10;
+}
+
+.workflow-arrow-down {
+    font-size: 32px;
+    color: #ffaa42;
+    font-weight: 300;
+}
+
+.btn-download-sample {
+    border: none;
+    background: #ff9800; /* Solid orange button as requested in second reference */
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+}
+
+.btn-download-sample:hover {
+    background: #e68a00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.3);
+}
+
+.workflow-success-banner {
+    border: 1px solid #ffdec2;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 15px 25px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+.success-icon-wrapper i {
+    background: radial-gradient(circle, #fff 50%, transparent 50%); /* Cleans up any transparency bleed inside the checkmark icon */
+}
+
+@media (max-width: 991px) {
+    /* Stack inner flex items on smaller tabs */
+    .center-card .d-flex {
+        flex-direction: column;
+        gap: 20px !important;
+    }
+    .inner-arrow {
+        transform: rotate(90deg); /* Re-orient internal unicode flow arrows downwards when stacked */
+        display: inline-block;
+    }
+    .badge{
+        font-size: 16px !important;
+    }
+}
+
+/* Industries We Serve Section */
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px; /* Massive consistent gap requested */
+}
+
+@media (max-width: 1199px) {
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .industries-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+.industry-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #f0f2f5;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    border-color: #ffdec2;
+}
+
+.industry-img-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 155px; /* Tightly optimized anchor height to compress white space while preserving alignment */
+}
+
+.industry-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.industry-title {
+    text-align:center;
+    margin-top: 10px;
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #111424;
+    margin-bottom: 0px;
+    line-height: 1.3;
+}
+
+/* IAAS Section */
+.iaas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding-top: 15px;
+}
+
+@media (max-width: 1199px) {
+    .iaas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .iaas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.iaas-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #f0f0f0;
+}
+
+.iaas-card.dark-card {
+    background-color: #0b1120;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.iaas-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 13.5px;
+    color: #333;
+    font-weight: 500;
+}
+
+.iaas-card.dark-card .iaas-list li {
+    color: #e2e8f0;
+}
+
+.iaas-list li.no-icon {
+    padding-left: 22px;
+}
+
+.iaas-list i {
+    color: #28a745;
+    font-size: 14.5px;
+    margin-top: 3px;
+}
+
+.btn-iaas {
+    background: linear-gradient(to right, #ff9b26, #ff8c00);
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-iaas:hover {
+    background: linear-gradient(to right, #ff8c00, #e67e00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
+}
+
+/* Detailed Inspection Reports Section */
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1400px) {
+    .reports-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .reports-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reports-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+.report-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.report-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* slight lift */
+    transform: translateY(-3px);
+    border-color: #ffdec2;
+}
+
+.report-img-wrapper {
+    width: 100%;
+}
+
+.report-img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Specifically rounds internal image corners to mirror the mockup */
+}

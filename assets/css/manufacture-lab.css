@@ -1,0 +1,260 @@
+section#manufacturing-lab-banner {
+    background-image: url(../images/Labsetup.jpeg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    margin-top:140px;
+}
+@media screen and (max-width:720px){
+    section#manufacturing-lab-banner{
+        margin-top:30px;
+    }
+}
+
+section#manufacturing-lab-banner .heading {
+    padding: 31px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top:100px;
+}
+
+.header-arrows {
+    position: relative;
+    top: 2px;
+}
+
+.lab-title {
+    font-size: 17px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.lab-btn {
+    width: 165px;
+    background-color: #ff8d1e;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 16px;
+    font-family: 'firasan-normal';
+}
+
+.lab-cont {
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.h-194 {
+    height: 194px;
+}
+
+.lab-cont-img {
+    height: 250px;
+}
+
+.benifit-card-hd {
+    position: relative;
+    border-bottom: 5px solid #ff931e;
+    display: inline-block;
+}
+
+.benifit-ul {
+    margin-top: 20px;
+    height: 260px;
+}
+
+.benifit-ul li {
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-family: 'firasan-bold';
+    background-color: #eff4ff;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.mfc-lab-ul li img {
+    width: 17px;
+    margin-right: 10px;
+}
+.statistic-counter {
+    color: #ff931e;
+}
+/* .benifit-card-hd::befor {
+content: "";
+width: 35%;
+height: 5px;
+background-color: #ff931e;
+color: black;
+position: absolute;
+top: 94%;
+border-radius: 20px;
+} */
+/* slider css */
+
+.mycarosel-col {
+    overflow: hidden;
+}
+
+.owl-car-edit .item img {
+    filter: none;
+}
+
+.about-car-img img {
+    width: 100px;
+}
+
+.about-car-img {
+    border: 1px solid #e2e2e2;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.about-car-item {
+    padding: 5px;
+}
+
+.mycarosel-col .owl-prev,
+.mycarosel-col .owl-next {
+    top: 45px !important;
+}
+
+.mycarosel-col .owl-prev,
+.mycarosel-col .owl-next:hover {
+    color: #000 !important;
+}
+
+.mycarosel-col .owl-dot {
+    display: none !important;
+}
+/* testimonial css */
+
+.testimonial_chennai {
+    width: 100%;
+    background-color: #ff8d1e;
+    padding: 30px 0;
+}
+
+.chennai-testimonial-head {
+    font-family: 'firasan-normal';
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+}
+
+.chennai-car-item {
+    position: relative;
+    padding: 25px;
+    left: 22px;
+}
+
+.chennai-car-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chennai-car-content p {
+    color: #aeaeae;
+    font-size: 13px;
+    height: 130px;
+    font-style: italic;
+    margin-top: 43px;
+}
+
+.chennai-car-content h6 {
+    color: #353333;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/*.chennai-car-item::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 35%;*/
+/*    left: 5%;*/
+/*    border-right: 60px solid white;*/
+/*    border-top: 0px solid transparent;*/
+/*    border-bottom: 40px solid transparent*/
+/*}*/
+
+.chennai-car-item img {
+    position: absolute;
+    width: 70px !important;
+    left: -2%;
+    filter: grayscale(0) !important;
+    top: 12%;
+}
+
+.chennai-car-content i {
+    color: #6bc1ff;
+}
+
+.chennai-carosel-col {
+    overflow: hidden;
+}
+
+.manufacuring-lab-collapse .card {
+    height: auto !important;
+    margin-bottom: 0 !important;
+    border: 0px;
+    background: transparent;
+}
+
+.manufacuring-lab-collapse .card .card-header {
+    background: transparent;
+    padding-left: 0 !important;
+}
+.manufacuring-lab-collapse .btn-link i {
+    margin-right:10px;
+}
+.chennai-carousel-box .item img {
+   position: absolute;
+    left: 57px;
+    top: 1px;
+}
+.lab-bg-blue {
+    background-color: #c9dddf;
+}
+.owl-under-video .owl-prev,
+.owl-under-video .owl-next{
+    top: 50px;
+}
+.owl-under-video .owl-dot,
+.chennai-carousel-box .owl-dot {
+    display: none !important;
+}
+.chennai-carousel-box {
+    margin-left: -24px;
+}
+.chennai-carousel-box .owl-prev,
+.chennai-carousel-box .owl-next{
+    display: none !important;
+}
+.mfc-lab-ul li {
+    color: #fff !important;
+    padding-left:15px !important;
+        line-height: 26px;
+}
+

@@ -1,0 +1,204 @@
+/*veera css*/
+
+section#about {
+    background-color: #212121;
+    padding-bottom: 40px;
+}
+
+section#about p.about {
+    font-size: 17px;
+}
+
+section#about ul {
+    font-size: 13px;
+}
+
+section#about .number {
+    text-align: center;
+}
+
+section#about .number h1 {
+    font-size: 42px;
+    color: #FF931E;
+    font-weight: 400;
+}
+
+section#products {
+    background-image: url(../images/home-scanner-bg-3.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-color: #1A1A1A;
+}
+
+.product {
+    border: 8px solid #828282;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.pre-btn {
+    background-color: #ff931e;
+    color: #fff;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 50px;
+    font-size: 20px;
+}
+
+section#blog {
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    padding: 50px 0px;
+}
+
+.heading {
+    margin-left: 20px;
+}
+
+.service_1 {
+    border: 2px solid white;
+    padding: 5px 11px;
+    border-radius: 50%;
+    color: white;
+}
+
+.service_2 {
+    border: 2px solid white;
+    padding: 1px 6px 1px 6px;
+    border-radius: 50%;
+    color: white;
+}
+
+.ser_2 {
+    font-size: 15px;
+}
+
+section#support {
+    background-image: url(../images/scanner-bg-5.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section#industry {
+    background-image: url(../images/scanner-bg-6.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header_2 {
+    background-color: #000000bf;
+}
+
+.product_1 {
+    background-color: #000000b0;
+}
+
+.product_1 h4 {
+    background-color: #000000a8;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+
+.product_1 p {
+    background-color: #000000a8;
+    font-size: 21px;
+    height: 115px;
+}
+
+.product-hover:hover>.product {
+    border: 8px solid #ff931e;
+    transition: 0.5s;
+}
+
+.product-hover:hover>img,
+.ind-icon:hover {
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+
+.ind-icon img {
+    transition: 0.5s;
+}
+
+.number h1::after {
+    content: "+";
+}
+
+@media(max-width:768px) {
+    section#about .number {
+        top: 0px;
+        text-align: center;
+    }
+    section#about .number p {
+        text-align: center;
+    }
+    img.product {
+        width: 100%;
+    }
+    .heading {
+        margin-left: 0px;
+    }
+    p.count-title {
+        font-size: 12px;
+    }
+}
+
+
+/*slider-media-query*/
+
+@media(min-width:769px) {
+    .carousel-item::after {
+        content: "";
+        top: 60%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+}
+
+@media(max-width:1200px) and (min-width:500px) {
+    .carousel-caption {
+        padding-bottom: 0 !important;
+        bottom: 5px !important;
+    }
+}
+
+@media(max-width:499px) {
+    .carousel-caption h2 {
+        font-size: 20px;
+    }
+    .carousel-caption .pre-btn {
+        padding: 5px !important;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .carousel-item {
+        height: 350px;
+    }
+    .carousel-item img {
+        height: 350px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+}

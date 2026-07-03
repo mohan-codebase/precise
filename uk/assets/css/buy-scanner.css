@@ -1,0 +1,235 @@
+.main-banner-content span {
+  color: #5b5b5b;
+}
+.banner {
+  background-image: url(/assets/images/buy-scanner/banner.png);
+}
+.main-banner-content h3 {
+  color: #5b5b5b !important;
+  margin-bottom: 20px;
+}
+.counter-container {
+  text-align: center;
+  border: 2px solid #0000001a;
+  padding: 20px 10px;
+  border-radius: 20px !important;
+  background: linear-gradient(
+    180deg,
+    rgba(193, 193, 193, 0.2) 0%,
+    rgba(239, 239, 239, 0.2) 100%
+  ) !important;
+  backdrop-filter: blur(10px);
+  margin-top: -60px !important;
+}
+.counter-container p {
+  margin-bottom: 0px !important;
+  color: #000;
+}
+.counter-container span {
+  color: var(--maincolor);
+}
+.application {
+  background-color: #fff6eb;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+.application h2 {
+  color: #ff931e;
+  font-weight: 700;
+}
+.application p {
+  color: #5b5b5b;
+}
+.lol {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.application-div img {
+  animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+.application-div {
+  text-align: center;
+  border: 1px solid #ff931e40;
+  border-radius: 6px;
+  padding: 20px 15px;
+  box-shadow: rgba(236, 138, 46, 0.2) 0px 2px 8px 0px;
+}
+.application-div p {
+  color: #ff931e;
+  font-size: 13px !important;
+  background-color: #fff6eb;
+  padding: 5px;
+  display: inline-block;
+  text-align: justify;
+  border-radius: 3px;
+}
+.application-con span {
+  color: #5b5b5b;
+}
+.application-main {
+  padding: 75px 0px 0px 90px !important;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.application-main1 {
+  padding: 75px 90px 0px 0px !important;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.application-con h2 {
+  color: #ff931e;
+  font-weight: 700;
+  padding-left: 55px;
+}
+.application-con p {
+  background-color: #fff6eb;
+  color: #5b5b5b;
+  margin-left: -22px;
+  padding: 30px 80px;
+}
+.move-left {
+  margin-left: -22px;
+}
+
+.accordion-item {
+  background-color: #fff !important;
+}
+.accordion-button {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.accordion-body {
+  color: #000 !important;
+}
+.faq-head span {
+  color: #3c3c3c !important;
+}
+.address-con {
+  justify-content: space-between !important;
+}
+.contact {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.fa-phone {
+  color: #fff;
+  background-color: #ff931e;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 10px;
+}
+.fa-envelope {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--maincolor);
+  font-size: 22px;
+  color: var(--whitecolor);
+}
+.g-mail,
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.col-lg-9 {
+  place-content: center !important;
+}
+
+.contact h3 {
+  color: #ff931e;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px !important;
+}
+.mob-head{
+  color: #ff931e;
+  display: none;
+}
+.mob-head span{
+  color: #000;
+}
+
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 732px) {
+  .fa-phone {
+    padding: 10px !important;
+    font-size: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .a,
+  .a1 {
+    text-align: center !important;
+    margin: 0px !important;
+  }
+  .lol {
+    margin-top: 40px !important;
+  }
+
+  .counter-container {
+    margin-top: -105px !important;
+}
+
+  .g-mail,
+  .phone {
+    gap: 3px !important;
+  }
+  .contact h3 {
+    font-size: 15px !important;
+  }
+
+  .application-main {
+    padding: 15px !important;
+    background-position: top !important;
+  }
+  .main-banner-content {
+    padding-top: 70px !important;
+  }
+  .application-div{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(50px);
+    background: #fff;
+  }
+
+  .application-main1 {
+    padding: 15px !important;
+    background-position: bottom !important;
+  }
+  .application-con {
+    margin-top: 30px !important;
+    text-align: center !important;
+  }
+  .application-con h2 {
+    padding-left: 0px !important;
+  }
+  .application-con p {
+    margin-left: 0px !important;
+    padding: 35px 15px !important;
+  }
+  .desk-head{
+    display: none;
+  }
+  .mob-head{
+    display: block;
+  }
+}

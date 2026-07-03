@@ -1,0 +1,1022 @@
+/* Custom Stylesheet for Wireless Optical Dynamic Tracking Systems Hero Section */
+
+.hero-tracker {
+    background: url('../images/wireless-optical/hero-bg.png') no-repeat center right;
+    background-size: cover;
+    min-height: 600px;
+    padding: 100px 0 80px 0;
+    margin-top: 120px; /* Clears fixed header bar */
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-tracker .container {
+    position: relative;
+    z-index: 5;
+}
+
+/* Hero Typography */
+.tracker-hero-left {
+    max-width: 680px;
+}
+
+.tracker-hero-title {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.tracker-hero-subtitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.tracker-hero-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+/* Interactive Orange Gradient Buttons */
+.tracker-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tracker-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #FF9B26 0%, #FF850A 100%);
+    box-shadow: 0 4px 15px rgba(255, 133, 10, 0.35);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tracker-btn:hover {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #ffa83d 0%, #ff9524 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 133, 10, 0.5);
+}
+
+.tracker-btn:active {
+    transform: translateY(0);
+}
+
+/* Horizontal Features Checklist with Circular Outline */
+.tracker-features-grid {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    max-width: 680px;
+}
+
+.tracker-feature-item {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tracker-feature-icon-wrapper {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.tracker-feature-icon-wrapper img {
+    object-fit: contain;
+}
+
+.tracker-feature-item:hover .tracker-feature-icon-wrapper {
+    transform: translateY(-3px);
+    border-color: #FF850A;
+    background-color: rgba(255, 133, 10, 0.1);
+    box-shadow: 0 0 10px rgba(255, 133, 10, 0.3);
+}
+
+.tracker-feature-text {
+    font-size: 12px !important;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+/* Floating Top-Right Call Widget */
+.tracker-call-widget {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 18px 8px 12px;
+    z-index: 10;
+}
+
+/* Floating Email Widget (Aligned bottom right of container context) */
+.tracker-email-widget {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 18px 8px 12px;
+    z-index: 10;
+}
+
+.tracker-widget-icon {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(255, 133, 10, 0.35);
+    flex-shrink: 0;
+}
+
+.tracker-widget-icon img {
+    object-fit: contain;
+}
+
+.tracker-widget-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tracker-widget-title {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.tracker-email-widget .tracker-widget-title {
+    color: #FF850A;
+}
+
+.tracker-widget-text {
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tracker-widget-text a {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tracker-widget-text a:hover {
+    color: #FF850A;
+}
+
+/* Responsive Styling */
+@media (max-width: 1199px) {
+    .hero-tracker {
+        background-position: 70% center;
+    }
+    .tracker-call-widget {
+        top: 20px;
+    }
+    .tracker-email-widget {
+        bottom: -10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-tracker {
+        background: #0d0e12 url('../images/wireless-optical/hero-bg.png') no-repeat center center;
+        background-size: cover;
+        margin-top: 0px;
+        padding: 50px 0 100px 0;
+        min-height: auto;
+    }
+    
+    .tracker-hero-title {
+        font-size: 38px;
+    }
+    
+    .tracker-call-widget {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 25px;
+        display: inline-flex;
+    }
+    
+    .tracker-email-widget {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 25px;
+        display: inline-flex;
+    }
+    
+    .tracker-features-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .tracker-feature-item {
+        flex: 0 0 calc(33.333% - 15px);
+        min-width: 90px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tracker-hero-title {
+        font-size: 28px;
+    }
+    
+    .tracker-hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tracker-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .tracker-feature-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+/* Solutions Section Styling */
+.solutions-section {
+    background-color: #f7f9fc;
+    padding: 80px 0;
+}
+
+.solutions-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+
+.solution-card {
+    border-radius: 20px;
+    min-height: 420px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.solution-card-nova {
+    background-image: linear-gradient(to right, #020612 0%, #020612 35%, rgba(2, 6, 18, 0.8) 50%, rgba(2, 6, 18, 0) 80%), url('../images/wireless-optical/img1.png');
+}
+
+.solution-card-prow {
+    background-image: linear-gradient(to right, #020612 0%, #020612 35%, rgba(2, 6, 18, 0.8) 50%, rgba(2, 6, 18, 0) 80%), url('../images/wireless-optical/img2.png');
+}
+
+.solution-card-content {
+    position: relative;
+    z-index: 5;
+    padding: 50px 60px;
+    max-width: 580px;
+}
+
+.solution-card-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.solution-card-subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.solution-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.solution-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.feature-check-icon {
+    color: #FF850A;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.solution-btn {
+    padding: 12px 32px;
+    font-size: 15px;
+}
+
+/* Solutions Section Responsive Styling */
+@media (max-width: 991px) {
+    .solution-card {
+        min-height: auto;
+        background-position: center center;
+    }
+    
+    .solution-card-nova {
+        background-image: linear-gradient(to bottom, rgba(2, 6, 18, 0.95) 0%, rgba(2, 6, 18, 0.9) 60%, rgba(2, 6, 18, 0.75) 100%), url('../images/wireless-optical/img1.png');
+    }
+    
+    .solution-card-prow {
+        background-image: linear-gradient(to bottom, rgba(2, 6, 18, 0.95) 0%, rgba(2, 6, 18, 0.9) 60%, rgba(2, 6, 18, 0.75) 100%), url('../images/wireless-optical/img2.png');
+    }
+    
+    .solution-card-content {
+        padding: 40px 30px;
+        max-width: 100%;
+    }
+    
+    .solution-card-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .solutions-heading {
+        font-size: 26px;
+    }
+    
+    .solution-card-title {
+        font-size: 26px;
+    }
+    
+    .solution-card-subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .solution-features li {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+    
+    .feature-check-icon {
+        margin-top: 3px;
+    }
+}
+
+/* How It Works Section Styling */
+.how-works-section {
+    background-color: #0b0c10;
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.how-works-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.how-works-subheading {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.how-works-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.how-works-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.how-works-item:hover {
+    transform: translateX(5px);
+}
+
+.how-works-icon-wrapper {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 133, 10, 0.4);
+    background-color: rgba(18, 18, 18, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.how-works-icon-wrapper img {
+    object-fit: contain;
+}
+
+.how-works-item:hover .how-works-icon-wrapper {
+    border-color: #FF850A;
+    background-color: rgba(255, 133, 10, 0.1);
+    box-shadow: 0 0 12px rgba(255, 133, 10, 0.4);
+}
+
+.how-works-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-works-item-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.how-works-item-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.how-works-image-container {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    background-color: #1a1c23;
+}
+
+.how-works-img {
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.how-works-image-container:hover .how-works-img {
+    transform: scale(1.02);
+}
+
+/* How It Works Responsive Styling */
+@media (max-width: 991px) {
+    .how-works-section {
+        padding: 60px 0;
+    }
+    
+    .how-works-subheading {
+        margin-bottom: 35px;
+    }
+    
+    .how-works-left {
+        gap: 20px;
+    }
+    
+    .how-works-icon-wrapper {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .how-works-icon-wrapper img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .how-works-item-title {
+        font-size: 16px;
+    }
+    
+    .how-works-image-container {
+        margin-top: 40px;
+    }
+}
+
+/* Why Future Section Styling */
+.why-future-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.why-future-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.why-future-card {
+    border-radius: 8px;
+    border: 1px solid #ffcd99;
+    background-color: #ffffff;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.why-future-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 133, 10, 0.12);
+    border-color: #FF850A;
+}
+
+.why-future-icon-wrapper {
+    border-radius: 50%;
+    background-color: #FFF2E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.why-future-icon-wrapper img {
+    object-fit: contain;
+}
+
+
+.why-future-card-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.why-future-card-desc {
+    font-size: 13px !important;
+    line-height: 1.5;
+    color: #4A4A4A;
+    margin: 0;
+}
+
+/* Why Future Responsive Styling */
+@media (max-width: 991px) {
+    .why-future-section {
+        padding: 60px 0;
+    }
+    
+    .why-future-heading {
+        font-size: 26px;
+    }
+}
+
+/* Industries We Serve Section Styling */
+.industries-serve-section {
+    background-color: #f7f9fc;
+    padding: 80px 0;
+}
+
+.industries-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+
+.industry-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 220px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.industry-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.industry-card:hover .industry-card-img {
+    transform: scale(1.08);
+}
+
+.industry-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.45) 60%, rgba(0, 0, 0, 0.8) 100%);
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover .industry-card-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.88) 100%);
+}
+
+.industry-card-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 5;
+}
+
+/* Industries We Serve Responsive Styling */
+@media (max-width: 991px) {
+    .industries-serve-section {
+        padding: 60px 0;
+    }
+    
+    .industries-heading {
+        font-size: 26px;
+    }
+    
+    .industry-card {
+        height: 180px;
+    }
+    
+    .industry-card-title {
+        font-size: 14px;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+/* Performance Section Styling */
+.performance-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.performance-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+
+.performance-card {
+    border-radius: 12px;
+    border: 1px solid #ffcd99;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.performance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 133, 10, 0.12);
+    border-color: #FF850A;
+}
+
+.performance-card-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.performance-prefix {
+    font-size: 14px;
+    color: #555555;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
+}
+
+.performance-prefix-empty {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+    line-height: 1.2;
+    visibility: hidden;
+}
+
+.performance-metric {
+    font-size: 22px;
+    font-weight: 800;
+    color: #FF850A;
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.performance-label {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 1.3;
+    text-align: left;
+}
+
+/* Performance Responsive Styling */
+@media (max-width: 991px) {
+    .performance-section {
+        padding: 60px 0;
+    }
+    
+    .performance-heading {
+        font-size: 26px;
+    }
+    
+    .performance-card {
+        min-height: 160px;
+        padding: 24px 16px;
+    }
+    
+    .performance-metric {
+        font-size: 20px;
+    }
+}
+
+/* Workflow Section Styling */
+.workflow-steps-section {
+    background-color: #f7f9fc;
+    padding: 80px 0;
+}
+
+.workflow-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.workflow-subheading {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 45px;
+    font-weight: 500;
+}
+
+.workflow-step-card {
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 12px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.workflow-step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border-color: #ffcd99;
+}
+
+.workflow-step-header {
+    display: flex;
+    align-items: center;
+}
+
+.workflow-step-badge {
+    background-color: #FF850A;
+    color: #ffffff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.workflow-step-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #111111;
+    margin: 0 0 0 12px;
+    line-height: 1.3;
+}
+
+.workflow-step-img-wrapper {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+
+.workflow-step-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.workflow-step-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #4A4A4A;
+    margin: 0;
+}
+
+/* Workflow Responsive Styling */
+@media (max-width: 991px) {
+    .workflow-steps-section {
+        padding: 60px 0;
+    }
+    
+    .workflow-heading {
+        font-size: 26px;
+    }
+    
+    .workflow-subheading {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .workflow-step-card {
+        padding: 24px 18px;
+    }
+    
+    .workflow-step-img-wrapper {
+        height: 150px;
+    }
+}
+
+/* Why Buy Section Styling */
+.why-buy-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.why-buy-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.why-buy-badge-pill {
+    background-color: #FF850A;
+    color: #ffffff;
+    padding: 6px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.why-buy-card {
+    background-color: #ffffff;
+    border: 1px solid #ffcd99;
+    border-radius: 12px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.why-buy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 133, 10, 0.12);
+    border-color: #FF850A;
+}
+
+.why-buy-img-wrapper {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.why-buy-img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.why-buy-card-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FF850A;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: center;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-buy-card-desc {
+    font-size: 13px !important;
+    line-height: 1.5;
+    color: #4A4A4A;
+    margin: 0;
+    text-align: center;
+}
+
+/* Why Buy Responsive Styling */
+@media (max-width: 991px) {
+    .why-buy-section {
+        padding: 60px 0;
+    }
+    
+    .why-buy-heading {
+        font-size: 26px;
+    }
+    
+    .why-buy-card {
+        padding: 24px 16px;
+    }
+    
+    .why-buy-card-title {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .why-buy-img-wrapper {
+        height: 120px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+

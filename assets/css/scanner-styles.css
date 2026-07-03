@@ -1,0 +1,1547 @@
+    .card-text {
+        font-size: 14px;
+        display: block;
+        padding: 5px 0px;
+    }
+    
+    .card {
+        height: 32rem;
+        margin-bottom: 3rem;
+        border: 0px;
+        background: transparent;
+    }
+    
+    .card-body {
+        /* background-color: rgba(0, 0, 0, 0.7); */
+        background-color: #000;
+        background: #000;
+        opacity: 0.7;
+        color: #fff;
+    }
+    
+    .software3d-card-body,
+    .new-kf-imgstyle .card-img-top {
+        transition: 0.5s;
+    }
+    
+    .zoom-out:hover>.card>.new-kf-imgstyle img {
+        transform: scaleX(1.1);
+        transition: 0.5s;
+        border: 0 !important;
+    }
+    
+    .zoom-out:hover>.card img {
+        transform: scaleX(1.1);
+        transition: 0.5s;
+        border: none !important;
+    }
+    
+    .section-padding-edit .card {
+        height: 30rem !important;
+    }
+    
+    .para {
+        color: white
+    }
+    /* .card:hover {
+        transform: scale(1.05); 
+         border: 1px solid #dbdddf;
+    } */
+    
+    .heading {
+        margin-left: 0px;
+    }
+    
+    section#arm-based-intro {
+        background-image: url(../images/einscan-pro-2x/CVR.png);
+    }
+    /* .card img.card-img-top {
+    height: 250px !important;
+} */
+    
+    .sample-data-flex {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .sample-data-flex h4 {
+        font-size: 42px;
+        font-weight: 100 !important;
+    }
+    
+    #online-demo-btn {
+        margin-top: 20px;
+    }
+    
+    section.sample-data {
+        padding: 30px 0;
+        background-color: #000000;
+    }
+    
+    section#overview-section {
+        background: #212121 !important;
+        color: #fff;
+        padding: 75px 0px 25px 0px !important;
+    }
+    
+    section p.overview {
+        font-size: 20px;
+        font-family: "firasan-extrathin", "sans-serif";
+        padding: 25px 30px;
+        background: black;
+    }
+    
+    #overview-heading-text {
+        background: black;
+        border: none;
+        height: 90px;
+    }
+    
+    #overview-heading-text .pre-btn {
+        background: black;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    
+    .kf {
+        padding-top: 40px;
+    }
+    
+    .pre-btn {
+        background-color: #ff931e;
+        color: #fff;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 12px 50px;
+        font-size: 20px;
+    }
+    
+    section#specifications {
+        background-color: #000000;
+    }
+    
+    .demoVid {
+        background-color: #242424;
+        padding-bottom: 50px;
+    }
+    
+    .overview-container {
+        position: relative;
+    }
+    
+    .faq.section-padding {
+        background-color: #003037;
+    }
+    
+    .sample-data-flex {
+        background-color: white;
+        height: 20rem;
+    }
+    
+    .mobile-features {
+        text-align: right
+    }
+    
+    .main-demo-video {
+        padding-right: 0;
+    }
+    
+    #brochure-content {
+        background-color: #242424;
+        padding: 75px 0px;
+    }
+    
+    .demV {
+        margin-bottom: 30px;
+    }
+    
+    .media-body .media-heading,
+    .media-body p {
+        color: #fff;
+        font-size: 13px;
+        padding-left: 13px;
+    }
+    
+    .media {
+        height: 75px;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+    
+    .white-separator {
+        color: 1px solid #fff;
+        margin: 0;
+    }
+    
+    #overview-btns {
+        position: absolute;
+        top: 0;
+        left: 600px;
+    }
+    
+    section#arm-based-intro .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#einscan-sp-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#einscan-sp-banner {
+        background-image: url(../images/einscan-sp/CVR.PNG);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#einscan-se-banner {
+        background-image: url(../images/einscan-se/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#einscan-se-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#einscan-h-banner {
+        background-image: url(../images/einscan-H/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#einscan-h-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#einscan-hx-banner {
+        background-image: url(../images/einscan-hx/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#einscan-hx-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Freescan-x5-banner {
+        background-image: url(../images/Freescan-x5/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Freescan-x5-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Freescan-x5plus-banner {
+        background-image: url(../images/Freescan-x5-plus/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Freescan-x5plus-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Freescan-x7-banner {
+        background-image: url(../images/Freescan-x7/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    section#Freescan-U7-banner {
+        background-image: url(../images/Freescan-x7/frreescan.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    section#Freescan-pro-banner {
+        background-image: url(../images/Freescan-x7/Group30.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    section#d500-banner{
+        background-image: url(../images/Freescan-x7/d500banner.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    section#solutionx-banner {
+        background-image: url(../images/Freescan-x7/solutionix.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    @media only screen and (min-width: 712px) {
+        section#solutionx-banner {
+            height: 600px;
+
+
+    }}
+    section#figurematerialban-banner {
+        background-image: url(../images/Freescan-x7/bg.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+
+
+    
+    section#Freescan-x7-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Freescan-x7-plus-banner {
+        background-image: url(../images/Freescan-x7plus/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Freescan-x7-plus-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Einscan-prohd-banner {
+        background-image: url(../images/einscan-pro-hd/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Einscan-prohd-banner .heading, section#application-landing-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    section#certificatebanner{
+        background-image: url(../images/Freescan-x7/certificatebg.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-position-y:-72px;
+        height: 620px;
+
+    }
+    @media only screen and (max-width: 450px) {
+        section#certificatebanner {
+            height: 400px;
+            background-position-x:-1275px;
+            margin-bottom: -111px;
+
+
+    }}
+
+
+    
+    section#Farofocus-s150-banner {
+        background-image: url(../images/farofocus\ -s150/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Farofocus-s150-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Farofocus-s350plus-banner {
+        background-image: url(../images/farofocus\ -s350-plus/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Farofocus-s350plus-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Farofocus-m70-banner {
+        background-image: url(../images/Farofocus-m70/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Farofocus-m70-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#farofocus-s70-banner {
+        background-image: url(../images/farofocus\ -\ s70/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#farofocus-s70-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    @media only screen and (min-width:200px) and (max-width:1100px) {
+        #overview-btns {
+            position: relative;
+            left: 0px;
+        }
+        .mobile-features,
+        .mobile-specs {
+            width: 50% !important;
+        }
+        #overview-heading-text {
+            height: 60px;
+        }
+        #overview-heading-text .pre-btn {
+            font-size: 30px !important;
+            padding-left: 17px;
+        }
+        /* .card {
+            height: 50rem !important;
+        } */
+        .pre-btn {
+            padding: 12px 23px !important;
+        }
+        section#overview-section {
+            padding-top: 0px !important;
+        }
+        .media {
+            height: 75px;
+            margin-bottom: 15px;
+            line-height: 20px;
+        }
+    }
+    /* Softwares styles*/
+    /* cvr */
+    
+    section#Geomagic-design-x-banner {
+        background-image: url(../images/geomagic-x/CVR.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Geomagic-design-x-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Geomagic-control-x-banner {
+        background-image: url(../images/Geomagic-control-x/CVR.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Geomagic-control-x-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Geomagic-solidworks-banner {
+        background-image: url(../images/Geomagic-solidworks/CVR.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#Geomagic-solidworks-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Geomagic-freeform-banner {
+        background-image: url(../images/Geomagic-freeform/CVR.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#application-landing-banner {
+        background-image: url(../images/app-landing-banner.png);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .application-landing-buttons .pre-btn{
+        padding: 13px 70px !important;
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+
+    section#Geomagic-freeform-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#Geomagic-wrap-banner {
+        background-image: url(../images/Geomagic-wrap/cvr.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    section#precise-aqua {
+        background-image: url(../images/Geomagic-wrap/hero.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        height: 572px;
+    }
+    .aquaoffice{
+        background-image: url(../images/Geomagic-wrap/Group171.png);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 40px;
+
+
+    }
+    .aquaofficenew{
+        background-image: url(../images/Geomagic-wrap/Group172.png);
+        border-radius: 40px;
+
+
+    }
+    @media only screen and (min-width: 712px) {
+        .aquaofficenew{
+            margin-left:20px;
+            height: 350px;
+
+        }
+
+    }
+    
+    section#Geomagic-wrap-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* cvr */
+    
+    .text-white-next {
+        font-size: 18px;
+        color: white;
+        padding-top: 0px !important;
+    }
+    
+    ul.app-list {
+        color: #fff;
+        margin-bottom: 0%!important;
+        padding-bottom: 60px;
+        font-size: xx-large;
+    }
+    
+    .applications ul {
+        padding-left: 20px;
+    }
+    
+    .applications ul li {
+        font-size: 20px;
+        padding-top: 7px;
+    }
+    
+    .software-icons {
+        height: 85px;
+        width: 85px;
+        position: absolute;
+        top: -93px;
+    }
+    
+    section#workflow {
+        background-color: #003037 !important;
+        padding-bottom: 20px;
+    }
+    
+    .workflow-background {
+        background-color: rgb(0, 0, 0, 0.55);
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .workflow-background img {
+        width: 100%;
+        padding: 5px 110px;
+    }
+    
+    #workflow h2 {
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+    
+    .software-header-list li {
+        color: #fff !important;
+        font-family: "firasan-extrathin", "sans-serif";
+        text-transform: uppercase;
+    }
+    
+    .software-header-list {
+        list-style-type: none;
+    }
+    
+    .applications {
+        padding-bottom: 30px;
+        background-color: #242424;
+    }
+    
+    .applications .app-list {
+        color: #fff;
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+    
+    .faq-list-content li {
+        color: #fff !important;
+        font-family: "firasan-extrathin", "sans-serif";
+        font-size: 17px;
+    }
+    
+    .overview-top-design {
+        width: 100%;
+        height: 35px;
+        background-color: #1A1A1A;
+    }
+    
+    .download-icon-designx {
+        width: 51px;
+        height: 40px;
+    }
+    
+    .software-header-list li embed {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 7px;
+    }
+    
+    .no-margin-bottom {
+        margin-bottom: 8px;
+    }
+    
+    .header-pointer {
+        color: #fff;
+        font-family: 'firasan-extrathin';
+        vertical-align: -webkit-baseline-middle;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .header-arrows {
+        float: left;
+        height: 38px;
+    }
+    
+    .download-icon-png-cdx {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .download-icon-png-cdx:hover {
+        color: #000;
+    }
+    
+    .geomagic-design-top-button {
+        padding: 10px 30px !important;
+    }
+    
+    .geomagic-kf-hd h5 {
+        text-transform: capitalize !important;
+    }
+    
+    .ff-kf-h {
+        text-transform: capitalize !important;
+    }
+    
+    .ff-kf-p {
+        padding-top: 25px;
+    }
+    
+    .ff-kf-p-li {
+        padding-top: 12px;
+    }
+    
+    .geomagic-kf-hd p {
+        padding-top: 25px;
+    }
+    
+    .geomagic-kf-ppadd {
+        padding-top: 0 !important;
+    }
+    
+    .geomagic-media-body p {
+        font-size: 13px;
+    }
+    
+    .gs-card-body h5 {
+        text-transform: capitalize;
+    }
+    
+    .gs-kf-p {
+        padding-top: 25px;
+    }
+    
+    .gw-card-body h5 {
+        text-transform: capitalize;
+    }
+    
+    .gw-kf-p {
+        padding-top: 25px;
+    }
+    
+    .einscan-kf-prohd-height .card {
+        height: 36rem;
+    }
+    
+    @media only screen and (min-width:200px) and (max-width:1100px) {
+        .software-icons {
+            height: 65px;
+            width: 63px;
+            position: absolute;
+            top: -66px;
+            left: 125px;
+            margin-top: 25px;
+        }
+        .software-mobile {
+            padding-top: 52px;
+            margin-bottom: 25px;
+        }
+        #workflow h2 {
+            padding-left: 30px;
+        }
+        .workflow-background img {
+            padding: 15px !important;
+        }
+        .geomagic-design-top-button {
+            padding: 6px 8px !important
+        }
+        .no-margin-bottom {
+            text-align: left;
+        }
+        .no-margin-bottom {
+            text-align: left;
+        }
+        /* .ff-card {
+            height: 85rem !important;
+        } */
+        .gw-card {
+            height: 37rem !important;
+        }
+    }
+    section#software1-landing-3D-banner {
+        background-image: url(../images/3D-software-landing/Frame5.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#software1-landing-3D-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    section#software2-landing-3D-banner {
+        background-image: url(../images/3D-software-landing/Frame3.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#software2-landing-3D-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* 3D software landing page */
+    
+    section#software-landing-3D-banner {
+        background-image: url(../images/3D-software-landing/CVR.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    section#software-landing-3D-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .software-headtop-containers {
+        padding: 12px!important;
+    }
+    
+    .software-3d-head-padd {
+        width: 100%;
+        height: 14.5rem;
+        background-color: rgb(0, 0, 0, 0.55);
+    }
+    
+    .software-landing-topitems {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .software-headtop-containers img {
+        width: 100%;
+        height: 130px;
+    }
+    
+    .software-headtop-button {
+        background-color: #ff931e;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 5px 19px;
+        font-size: 12px;
+    }
+    
+    .software-headtop-button:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ff931e;
+    }
+    
+    .software-landing-topitems {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    
+    .software-headtop-containers p {
+        font-family: "firasan-extrathin", "sans-serif";
+        color: #fff;
+        font-size: 12px;
+        margin: 0px !important;
+        padding: 2px 0px 8px 0px;
+    }
+    
+    .software-headtop-containers h6 {
+        font-family: "firasan-bold", "sans-serif";
+        color: #fff;
+        font-size: 14px;
+        padding-top: 12px;
+        margin: 0px;
+        padding-top: 4px;
+        font-weight: bold;
+    }
+    
+    .software-3d-headcont h1 {
+        font-size: 45px;
+    }
+    
+    .software-landing-para2 {
+        font-size: 17px;
+        font-family: "firasan-extrathin", "sans-serif";
+        color: white;
+    }
+    
+    .software-3d-headcont h2 {
+        font-size: 22px;
+        color: white;
+        margin-top: 0px;
+    }
+    
+    .software-landing-btn {
+        background-color: #ff931e;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 12px 50px;
+        font-size: 20px;
+    }
+    
+    .software-landing-btn:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ff931e;
+    }
+    
+    .software-btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .software-landing-modal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-contain {
+        background-image: url(../images/software-landing\ -3d.svg);
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .modal-close {
+        color: white;
+    }
+    
+    .modal-close:hover {
+        color: white;
+    }
+    
+    .modal-img-background {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .modal-foot-button {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px 0px
+    }
+    
+    .modal-card-body {
+        padding-bottom: 40px;
+    }
+    
+    .modal-card-bgcolor {
+        margin-top: 20px;
+    }
+    
+    .modal-card-body p {
+        padding-top: 20px;
+        font-size: 17px;
+        font-family: "firasan-extrathin", "sans-serif";
+    }
+    
+    .modal-card-1 {
+        height: 0%;
+        min-height: fit-content;
+        margin: 0px !important;
+    }
+    
+    .modal-card-img {
+        width: 100%;
+        padding: 22px
+    }
+    
+    .modal-card-body {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        padding-bottom: 10px;
+    }
+    
+    .modal-foot-button a {
+        background-color: #ff931e;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+    
+    .modal-foot-button a:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ff931e;
+    }
+    
+    .software-bottom-black {
+        width: 100%;
+        height: 8px;
+        background-color: #000;
+    }
+    
+    section#digi-reverse-contain {
+        background-color: #ff931e;
+    }
+    
+    .digi-reve-cont h3 {
+        color: white;
+        font-size: 25px!important;
+        font-family: "firasan-bold", "sans-serif";
+        font-weight: 700px;
+    }
+    
+    .digi-reve-cont p {
+        color: white;
+        font-size: 17px;
+        font-family: "firasan-extrathin", "sans-serif";
+        margin-bottom: 0;
+    }
+    
+    .card-body img {
+        width: 16%;
+        position: relative;
+        top: -43px;
+    }
+    
+    .card-foot-button {
+        background-color: #000A0C;
+        padding: 15px;
+    }
+    
+    .card-foot-button a {
+        background-color: #ff931e;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 12px 86px;
+        font-size: 20px;
+    }
+    
+    .card-foot-button a:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ff931e;
+    }
+    
+    .software3d-card-body h6 {
+        font-family: "firasan-extrathin", "sans-serif";
+        font-weight: bold;
+        margin-top: 0px;
+        font-size: 19px;
+    }
+    
+    .software-card-parapad {
+        padding-top: 35px;
+    }
+    
+    .software3d-card-body h4 {
+        margin-bottom: 0px;
+    }
+    
+    .software-content-yellowbg {
+        background-color: #ff931e;
+    }
+    
+    .software3d-card-body {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        opacity: 1;
+    }
+    
+    .software-land-section-padd {
+        padding-bottom: 0px;
+    }
+    
+    section#software-landing-bg-3d {
+        background-image: url(../images/software-landing\ -3d.svg);
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .card-img-opacity {
+        opacity: 0.7;
+    }
+    
+    .sofware-yellow-sector {
+        padding: 28px 0px;
+    }
+    
+    .section-padding-edit {
+        padding-bottom: 0px !important;
+    }
+    
+    .software-3d-head-padd {
+        /* width: 193px; */
+        height: 14.5rem;
+        margin: 10px;
+    }
+    
+    @media only screen and (min-width:200px) and (max-width:1100px) {
+        .software-headtop-containers {
+            padding: 2px !important;
+        }
+        .card-body img {
+            width: 16%;
+            position: relative;
+            top: -33px;
+        }
+        .card-foot-button a {
+            padding: 12px 22px;
+            font-size: 8px;
+        }
+    }
+    
+    @media only screen and (max-width:576px) {
+        .software-3d-head-padd {
+            width: auto !important;
+            height: 14.5rem;
+        }
+    }
+    
+    @media only screen and (min-width: 576px) {
+        .modal-dialog-edit {
+            max-width: none;
+            margin: 1.75rem auto;
+        }
+    }
+    
+    @media only screen and (min-width: 576px) and (max-width:992px) {
+        .software-3d-head-padd {
+            width: 180px;
+            height: 14.5rem;
+        }
+    }
+    /* 3d-product-landing CSS */
+    
+    section#product-landing-3D-banner {
+        background-image: url(../images/3d-products-landing/cvr2.jpg);
+        background-position: top center;
+        /*background-size: cover;*/
+        /*-o-background-size: cover;*/
+        /*-moz-background-size: cover;*/
+        /*-webkit-background-size: cover;*/
+    }
+    
+    section#product-landing-3D-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    section#affordable-3D-banner {
+        background-image: url(../images/3d-products-landing/3DPRoductCoverImage2.jpg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        /*-o-background-size: cover;*/
+        /*-moz-background-size: cover;*/
+        /*-webkit-background-size: cover;*/
+    }
+    
+    section#affordable-3D-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .product-3d-head-padd img {
+        padding: 15px;
+    }
+    
+    .product-head-cont {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    
+    .product-head-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .product-3d-head-padd {
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+    
+    .head-cont-bottompadd {
+        background-color: rgba(0, 0, 0, 0.55);
+        padding: 15px;
+        height: 9rem;
+    }
+    
+    .product-headtop-button {
+        background-color: #ff931e;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 10px 22px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .product-headtop-button:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ff931e;
+    }
+    
+    .software-landing-topitems {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    
+    .product-3d-head-padd p {
+        font-family: "firasan-extrathin", "sans-serif";
+        color: #fff;
+        font-size: 12px;
+        margin: 0px !important;
+        padding: 2px 0px 8px 0px;
+    }
+    
+    .product-3d-head-cont h1 {
+        font-size: 50px;
+    }
+    
+    .product-3d-head-cont h2 {
+        font-size: 31px;
+    }
+    
+    .product-3d-head-cont p {
+        color: #fff;
+    }
+    
+    .product-head-section3 {
+        padding: 5px;
+    }
+    
+    section#product-first-cont {
+        background-image: url(../images/3d-products-landing/products-landing-img-1.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        height: auto;
+    }
+    
+    #product-first-cont .heading {
+        padding-top: 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#product-second-cont {
+        background-image: url(../images/3d-products-landing/products-landing-img-2.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        height: auto;
+    }
+    
+    #product-second-cont .heading {
+        padding-top: 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    section#product-third-cont {
+        background-image: url(../images/3d-products-landing/products-landing-img-3.jpg);
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        height: auto;
+    }
+    .software-kf-height .card {
+            height: 36rem !important;
+        }
+    
+    #product-third-cont .heading {
+        padding-top: 50px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .product-3d-img-height {
+        min-height: 500px;
+    }
+    
+    .product-cont1-bottom h1 {
+        color: #fff;
+    }
+    
+    .product1-para {
+        font-size: 17px;
+    }
+    
+    .product-content-heading {
+        font-size: 29px !important;
+        font-family: "firasan-extrathin", "sans-serif";
+        font-weight: 900;
+    }
+    
+    #product-cont1-btns a {
+        background-color: #ff931e;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 20px 0px;
+        font-size: 20px;
+        margin: 10px;
+        width: 35%;
+    }
+    
+    #product-cont1-btns a:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #ff931e;
+    }
+    
+    .product-third-contpadd {
+        padding-bottom: 150px;
+    }
+    
+    .coming-soon-div img {
+        opacity: 0.2;
+    }
+    
+    .coming-soon-div .head-cont-bottompadd {
+        opacity: 0.2;
+    }
+    
+    .coming-soon-main {
+        position: relative;
+    }
+    
+    .coming-soon-main span {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: "firasan-extrathin", "sans-serif";
+        color: white;
+        position: absolute;
+        top: 107px;
+        left: 40px;
+        z-index: 1;
+        font-weight: 900;
+    }
+    
+    .software-top-sec-para1 {
+        padding-bottom: 26px !important;
+    }
+    /* .first-butto-padding {
+        margin-bottom: 40px;
+    } */
+    
+    .software-headhide-modal1 {
+    display: none;
+}
+    
+    
+    @media only screen and (min-width:200px) and (max-width:1100px) {
+        #product-cont1-btns a {
+            background-color: #ff931e;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 20px 0px;
+            font-size: 12px;
+            margin: 10px;
+            width:35%;
+        }
+        .coming-soon-main span {
+            top: 107px;
+            left: 125px;
+        }
+    }
+    
+    .software3d-headhide1 {
+        display: none;
+    }
+    
+    @media only screen and (min-width :768px) and (max-width: 991px) {
+        .coming-soon-main span {
+            top: 104px;
+            left: 60px;
+        }
+        .product-headtop-button {
+            font-size: 10px;
+        }
+        .software-top-sec-para2 {
+            padding-bottom: 26px !important;
+        }
+    }
+    
+    @media only screen and (min-width :992px) and (max-width: 1204px) {
+        .coming-soon-main span {
+            top: 104px;
+            left: 24px;
+        }
+        .product-headtop-button {
+            font-size: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 576px) {
+        .product-head-cont {
+            max-width: 339px !important;
+        }
+        .software3d-headhide1 {
+            display: block;
+        }
+        .software3d-headhide2 {
+            display: none;
+        }
+        .product-headhide {
+            font-size: 40px;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+         .software-headhide-modal1 {
+        display: block !important;
+    }
+    
+    .software-3d-headcont .text-white.text-uppercase {
+  
+    margin: 35px 0 !important;
+}
+    .software-landing-topitems{
+        padding-top: 40px !important;
+    }
+    .software-headhide-modal1 h2{
+        margin:32px 0px !important; 
+    }
+    .software-headhide-modal2 {
+        display: none;
+    }
+    .modal-para-smallscreen {
+        padding: 20px 20px 0px 20px !important;
+    }
+    .modal-foot-button a {
+        padding: 9px 4px;
+        font-size: 10px;
+    }
+    }
+    
+    .card-textt li {
+        font-family: "firasan-extrathin", "sans-serif";
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    
+    @media only screen and (min-width :768px) and (max-width: 992px) {
+        .einscan-hx-padding .card {
+            height: 38rem !important;
+        }
+        .einscan-pro-2x-secpadd .card {
+            height: 39rem !important;
+        }
+        .einscan-kf-prohd-height .card {
+            height: 45rem;
+        }
+        .farofocusm70-secpadd-edit .card {
+            height: 35rem !important;
+        }
+        .farofocuss70-secpadd-edit .card {
+            height: 35rem !important;
+        }
+        .far0focus-s150-secpadd .card {
+            height: 35rem !important;
+        }
+        .farofocuss350-plus-secpadd .card {
+            height: 35rem !important;
+        }
+        .freescan-x7-secpadd-edit .card {
+            height: 35rem !important;
+        }
+        .control-x-card {
+            height: 39rem;
+        }
+        .software-kf-height .card {
+            height: 45rem !important;
+        }
+        .gs-kf-card {
+            height: 39rem !important;
+        }
+    }
+    
+    @media only screen and (min-width :568px) and (max-width: 768px) {
+        .einscan-kf-prohd-height .card {
+            height: 42rem;
+        }
+        .control-x-card {
+            height: 35rem;
+        }
+        .software-kf-height .card {
+            height: 45rem !important;
+        }
+        .gs-kf-card {
+            height: 37rem !important;
+        }
+    }
+    
+    @media only screen and (min-width :1100px) and (max-width:1200px) {
+        .pre-btn {
+            background-color: #ff931e;
+            color: #fff;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            border-radius: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 12px 13px;
+            font-size: 20px;
+        }
+    }

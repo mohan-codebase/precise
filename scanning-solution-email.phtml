@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f3f4f6; padding: 20px; color: #333; margin: 0; }
+        .email-container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb; }
+        .email-header { background-color: #f97316; padding: 25px 20px; text-align: center; color: #ffffff; }
+        .email-header h1 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: 0.5px; }
+        .email-body { padding: 30px; }
+        .section { margin-bottom: 30px; border-bottom: 1px solid #e5e7eb; padding-bottom: 25px; }
+        .section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .section-title { font-size: 16px; font-weight: 700; color: #ea580c; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px; border-left: 3px solid #ea580c; padding-left: 10px; }
+        .data-row { margin-bottom: 12px; font-size: 14px; line-height: 1.5; }
+        .data-label { font-weight: 600; color: #4b5563; display: inline-block; width: 160px; vertical-align: top; }
+        .data-value { color: #111827; display: inline-block; width: calc(100% - 170px); vertical-align: top; }
+        .notes-box { background: #fffaf5; padding: 15px; border-radius: 6px; border: 1px solid #fdba74; margin-top: 10px; color: #374151; font-size: 14px; white-space: pre-wrap; }
+        .file-link { color: #ea580c; text-decoration: none; word-break: break-all; font-weight: 500; }
+        .file-link:hover { text-decoration: underline; }
+        .footer { text-align: center; padding: 20px; font-size: 12px; color: #9ca3af; background-color: #f9fafb; border-top: 1px solid #e5e7eb; }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>New 3D Scanning Solution Request</h1>
+        </div>
+        <div class="email-body">
+            
+            <div class="section">
+                <div class="section-title">Contact Information</div>
+                <div class="data-row"><span class="data-label">Full Name:</span><span class="data-value"><?php echo htmlspecialchars($data['full_name']); ?></span></div>
+                <div class="data-row"><span class="data-label">Company:</span><span class="data-value"><?php echo htmlspecialchars($data['company_name']); ?></span></div>
+                <div class="data-row"><span class="data-label">Designation:</span><span class="data-value"><?php echo htmlspecialchars($data['designation']); ?></span></div>
+                <div class="data-row"><span class="data-label">Email:</span><span class="data-value"><?php echo htmlspecialchars($data['business_email']); ?></span></div>
+                <div class="data-row"><span class="data-label">Mobile Number:</span><span class="data-value"><?php echo htmlspecialchars($data['phone_code'] . ' ' . $data['mobile_number']); ?></span></div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Application Details</div>
+                <div class="data-row"><span class="data-label">Usage:</span><span class="data-value"><?php echo htmlspecialchars($data['usage']); ?></span></div>
+                <div class="data-row"><span class="data-label">Part Size:</span><span class="data-value"><?php echo htmlspecialchars($data['part_size']); ?></span></div>
+                <div class="data-row"><span class="data-label">Required Accuracy:</span><span class="data-value"><?php echo htmlspecialchars($data['accuracy']); ?></span></div>
+                <div class="data-row"><span class="data-label">Current Process:</span><span class="data-value"><?php echo htmlspecialchars($data['process']); ?></span></div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Products of Interest</div>
+                <div class="data-row"><span class="data-label">Hardware:</span><span class="data-value"><?php echo htmlspecialchars($data['products']); ?></span></div>
+                <div class="data-row"><span class="data-label">Software:</span><span class="data-value"><?php echo htmlspecialchars($data['software']); ?></span></div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Commercial Details</div>
+                <div class="data-row"><span class="data-label">Budget Range:</span><span class="data-value"><?php echo htmlspecialchars($data['budget']); ?></span></div>
+                <div class="data-row"><span class="data-label">Purchase Timeline:</span><span class="data-value"><?php echo htmlspecialchars($data['timeline']); ?></span></div>
+                <div class="data-row"><span class="data-label">Decision Stage:</span><span class="data-value"><?php echo htmlspecialchars($data['stage']); ?></span></div>
+                
+                <?php if (!empty($data['additional_notes']) && $data['additional_notes'] !== 'None') { ?>
+                <div style="margin-top: 15px;">
+                    <span class="data-label" style="display: block; width: 100%; margin-bottom: 5px;">Additional Notes:</span>
+                    <div class="notes-box"><?php echo htmlspecialchars($data['additional_notes']); ?></div>
+                </div>
+                <?php } ?>
+            </div>
+
+            <?php if (!empty($data['upload_links'])) { ?>
+            <div class="section">
+                <div class="section-title">Uploaded Files (<?php echo count($data['upload_links']); ?>)</div>
+                <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <?php foreach ($data['upload_links'] as $link) { ?>
+                        <li><a href="<?php echo $link; ?>" class="file-link" target="_blank"><?php echo htmlspecialchars(basename($link)); ?></a></li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <?php } ?>
+
+        </div>
+        <div class="footer">
+            This email was generated automatically from the precise3dm.com 3D Scanning Solution form.
+        </div>
+    </div>
+</body>
+</html>

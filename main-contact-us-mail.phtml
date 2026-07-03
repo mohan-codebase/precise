@@ -1,0 +1,527 @@
+
+<!DOCTYPE >
+<html>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><h3>Personal Details</h3></td>
+		</tr>
+		<?php if (!empty($data['name'])) : ?>
+		<tr>
+			<td>Name:</td>
+			<td><?= $data['name'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['email'])) : ?>
+		<tr>
+			<td>Email:</td>
+			<td><?= $data['email'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['phone'])) : ?>
+		<tr>
+			<td>Phone Number:</td>
+			<td><?= $data['phone'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['company'])) : ?>
+		<tr>
+			<td>Company Name:</td>
+			<td><?= $data['company'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['address'])) : ?>
+		<tr>
+			<td>Address:</td>
+			<td><?= $data['address'];?></td>
+		</tr>
+		<?php endif; ?>
+			<?php if (!empty($data['country1'])) : ?>
+		<tr>
+			<td>City:</td>
+			<td><?= $data['country1'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['state1'])) : ?>
+		<tr>
+			<td>State:</td>
+			<td><?= $data['state1'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['city1'])) : ?>
+		<tr>
+			<td>City:</td>
+			<td><?= $data['city1'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['gst'])) : ?>
+			
+		<tr>
+			<td>GST Number: </td>
+			<td><?= $data['gst'];?></td>
+		</tr>
+		<?php endif; ?>
+
+		<!-- second form -->
+		<tr>
+			<td colspan="2"><h3>Component Details &
+Accuracy Requirement</h3></td>
+
+		</tr>
+		<tr>
+		<td colspan="2"><h4>Accuracy Requirements: </h4></td>
+		</tr>
+		<?php if ($data['10to50Micron'] === 'yes') : ?>
+    	<tr>
+			<td>
+10 to 50 Micron (.01 mm to .05 mm):</td>
+			<td><?= $data['10to50Micron'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['50to100Micron'] === 'yes') : ?>
+		<tr>
+			<td>50 to 100 Micron (.01 mm to .05 mm):</td>
+			<td><?=$data['50to100Micron'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['100-micron'] === 'yes') : ?>
+		<tr>
+			<td>Above 100-micron (.1 mm):</td>
+			<td><?=$data['100-micron'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['Myaccuracy'] === 'yes') : ?>
+		<tr>
+			<td>
+My accuracy is more than 1mm:</td>
+			<td><?=$data['Myaccuracy'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['Imnot'] === 'yes') : ?>
+		<tr>
+			<td>I’m not sure:</td>
+			<td><?=$data['Imnot'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['SpecificAccuracy'])) : ?>
+        <tr>
+			<td>Specific Accuracy Requirement :</td>
+			<td><?=$data['SpecificAccuracy']?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['ComponentName'])) : ?>
+		<tr>
+			<td>Component Name/Description:</td>
+			<td><?=$data['ComponentName']?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['ComponentSize'])) : ?>
+		<tr>
+			<td>Component Size:</td>
+			<td><?=$data['ComponentSize']?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if (!empty($data['upload_link'])) : ?>
+		<tr>
+			<td>Download File link</td>
+			<td><?= $data['upload_link'];?></td>
+		</tr>
+		<?php endif;?>
+
+		<!-- thrid form -->
+		
+		<tr>
+		<td colspan="2"><h4>Select the type of 3D scanning technology you prefer : </h4></td>
+		</tr>
+		<?php if ($data['Structuredlight'] === 'yes') : ?>
+        <tr>
+			<td>Optical 3D Scanning (Structured light) :</td>
+			<td><?=$data['Structuredlight'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['Handheld3D'] === 'yes') : ?>
+		<tr>
+			<td>
+        Handheld 3D Scanning:</td>
+			<td><?=$data['Handheld3D'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Smallobject'] === 'yes') : ?>
+		<tr>
+			<td>
+Small object closed-frame 3D Scanning:</td>
+			<td><?=$data['Smallobject'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['aserArm-Based'] === 'yes') : ?>
+		<tr>
+			<td>
+Laser Arm-Based 3D Scanning</td>
+			<td><?= $data['LaserArm-Based'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['needConsultation'] === 'yes') : ?>
+		<tr>
+			<td>Not Sure, Need Consultation:</td>
+			<td><?= $data['needConsultation'];?></td>
+		</tr>
+		<?php endif; ?>
+
+		<!-- fourth form -->
+		<tr>
+			<td colspan="2"><h3>Service Availability</h3></td>
+			
+		</tr>
+		<?php if ($data['OnsiteLocation'] === 'yes') : ?>
+        <tr>
+			<td><h3>Onsite at My Location 3D Scanning:</h3></td>
+			<td><?= $data['OnsiteLocation'];?></td>
+			
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['click1'] === 'yes') : ?>
+		<tr>
+				<td>Factory address to bring your 3D Scanners:</td>
+				<td><?= $data['click1'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if ($data['check-box0'] === 'yes') : ?>
+			<tr>
+				<td>Site location of the 3D scanning Job to be executed:</td>
+				<td><?= $data['check-box0'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['Address-4'])) : ?>
+			<tr>
+				<td>Address:</td>
+				<td><?= $data['Address-4'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['country2'])) : ?>
+			<tr>
+				<td>Country:</td>
+				<td><?= $data['country2'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['state2'])) : ?>
+			<tr>
+				<td>State:</td>
+				<td><?= $data['state2'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['city2'])) : ?>
+			<tr>
+				<td>City:</td>
+				<td><?= $data['city2'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if ($data['Walkinat'] === 'yes') : ?>
+        <tr>
+			<td><h3>Walk-in at Precise3DM Office 3D Scanning:</h3></td>
+			<td><?= $data['Walkinat'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['box1'] === 'yes') : ?>
+		<tr>
+				<td>Factory address to bring your 3D Scanners:</td>
+				<td><?= $data['box1'];?></td>
+			</tr>
+			<?php endif;?>
+			<?php if ($data['ComponentPickup'] === 'yes') : ?>
+        <tr>
+			<td><h3>Component Pickup Service 3D Scanning </h3></td>
+			<td><?= $data['ComponentPickup'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['box3'] === 'yes') : ?>
+		<tr>
+				<td>The location to pick up the parts/components:</td>
+				<td><?= $data['box3'];?></td>
+			</tr>
+			<?php endif;?>
+			<?php if ($data['check-box01'] === 'yes') : ?>
+			<tr>
+				<td>Address if it differs from your company address to pick up the components:</td>
+				<td><?= $data['check-box01'];?></td>
+			</tr>
+			<?php endif;?>
+			<?php if (!empty($data['Address-5'])) : ?>
+			<tr>
+				<td>Address:</td>
+				<td><?= $data['Address-5'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['country3'])) : ?>
+			<tr>
+				<td>Country:</td>
+				<td><?= $data['country3'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['state3'])) : ?>
+			<tr>
+				<td>State:</td>
+				<td><?= $data['state3'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if (!empty($data['city3'])) : ?>
+			<tr>
+				<td>City:</td>
+				<td><?= $data['city3'];?></td>
+			</tr>
+			<?php endif; ?>
+			<?php if ($data['ComponentPickup1'] === 'yes') : ?>
+        <tr>
+			<td><h3>Ship it to Precise3DM:</h3></td>
+			<td><?= $data['ComponentPickup1'];?></td>
+		</tr>
+		<?php endif; ?>
+		<?php if ($data['box7'] === 'yes') : ?>
+        <tr>
+			<td>Suggest to me your nearest 3D scanning location</td>
+			<td><?= $data['box7'];?></td>
+		</tr>
+		<?php endif; ?>
+
+		<!-- fivth form -->
+
+		<tr>
+			<td colspan="2"><h3>Post 3D scan
+Applications</h3></td>
+		</tr>
+		
+			<?php if ($data['Engineering'] === 'yes') : ?>
+        <tr>
+			<td>3D Reverse Engineering:</td>
+			<td><?= $data['Engineering'];?></td>
+		</tr>
+		<?php endif;?>
+			<?php if ($data['Inspection'] === 'yes') : ?>
+        <tr>
+			<td>3D Inspection:</td>
+			<td><?= $data['Inspection'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Scanning'] === 'yes') : ?>
+		<tr>
+			<td>3D Scanning:</td>
+			<td><?= $data['Scanning'];?></td>
+		</tr>
+		<?php endif;?>
+
+<!-- sixth form -->
+
+		<tr>
+			<td colspan="2"><h3>3D Reverse Engineering * Design Approach</h3></td>
+		</tr>
+		<?php if ($data['DesignIntent'] === 'yes') : ?>
+		 <tr>
+			<td>Design Intent:</td>
+			<td><?= $data['DesignIntent'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['As-built'] === 'yes') : ?>
+		<tr>
+			<td>As-built:</td>
+			<td><?= $data['As-built'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Notsure'] === 'yes') : ?>
+		<tr>
+			<td>
+Not sure</td>
+			<td><?= $data['Notsure'];?></td>
+		</tr>
+		<?php endif;?>
+		<tr>
+			<td colspan="2"><h3>Output Format</h3></td>
+		</tr>
+		<?php if ($data['IGESSTEP'] === 'yes') : ?>
+		<tr>
+			<td>IGES STEP SAT PS:</td>
+			<td><?= $data['IGESSTEP'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['softwareOutput'] === 'yes') : ?>
+		<tr>
+			<td>CAD software Output:</td>
+			<td><?= $data['softwareOutput'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['CATIA'] === 'yes') : ?>
+		<tr>
+			<td>CATIA:</td>
+			<td><?= $data['CATIA'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['UG'] === 'yes') : ?>
+		<tr>
+			<td>UG:</td>
+			<td><?= $data['UG'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Creo'] === 'yes') : ?>
+		<tr>
+			<td>Creo:</td>
+			<td><?= $data['Creo'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Autodesk'] === 'yes') : ?>
+		<tr>
+			<td>Autodesk Inventor:</td>
+			<td><?= $data['Autodesk'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Solidworks'] === 'yes') : ?>
+		<tr>
+			<td>Solidworks:</td>
+			<td><?= $data['Solidworks'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Others'] === 'yes') : ?>
+		<tr>
+			<td>
+Others:</td>
+			<td><?= $data['Others'];?></td>
+		</tr>
+		<?php endif;?>
+
+		<!-- seventh form -->
+		<tr>
+			<td colspan="2"><h3>3D Reverse Engineering</h3></td>
+		</tr>
+        <tr>
+			<td>Do you have a 3D CAD Model?:</td>
+			<td><?= $data['Yes'];?><?= $data['No'];?></td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><h3>Alignment:</h3></td>
+		</tr>
+		<?php if ($data['BestFit'] === 'yes') : ?>
+        <tr>
+			<td>
+Best Fit:</td>
+			<td><?= $data['BestFit'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Feature-based'] === 'yes') : ?>
+		 <tr>
+			<td>Feature-based:</td>
+			<td><?= $data['Feature-based'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['RPS'] === 'yes') : ?>
+		 <tr>
+			<td>
+RPS (Rotational, Positional, Scale):</td>
+			<td><?= $data['RPS'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['NotSure'] === 'yes') : ?>
+		 <tr>
+			<td>Not Sure</td>
+			<td><?= $data['NotSure'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if (!empty($data['Specificalignment'])) : ?>
+		<tr>
+			<td>Specific alignment:</td>
+			<td><?= $data['Specificalignment'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if (!empty($data['InspectionCriteria'])) : ?>
+		<tr>
+			<td>Specific Inspection Criteria or Tolerances:</td>
+			<td><?= $data['InspectionCriteria'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if (!empty($data['provideadditional'])) : ?>
+		<tr>
+			<td>Please provide any additional details or special instructions for the inspection process:</td>
+			<td><?= $data['provideadditional'];?></td>
+		</tr>
+		<?php endif;?>
+		<tr>
+			<td colspan="2"><h3>3D Inspection Type:</h3></td>
+		</tr>
+		<?php if ($data['2DCompare'] === 'yes') : ?>
+		<tr>
+			<td>2D Compare:</td>
+			<td><?= $data['2DCompare'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['3DCompare'] === 'yes') : ?>
+		<tr>
+			<td>3D Compare:</td>
+			<td><?= $data['3DCompare'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['2DDimension'] === 'yes') : ?>
+		<tr>
+			<td>2D Dimension Extraction & GD&T :</td>
+			<td><?= $data['2DDimension'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['3DDimension'] === 'yes') : ?>
+		<tr>
+			<td>3D Dimension Extraction & GD&T:</td>
+			<td><?= $data['3DDimension'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['WallThickness'] === 'yes') : ?>
+		<tr>
+			<td>Wall Thickness Analysis:</td>
+			<td><?= $data['WallThickness'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['Boundary'] === 'yes') : ?>
+		<tr>
+			<td>Boundary Deviation:</td>
+			<td><?= $data['Boundary'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if (!empty($data['Others1'])) : ?>
+		<tr>
+			<td>Others (Please specify):</td>
+			<td><?= $data['Others1'];?></td>
+		</tr>
+		<?php endif;?>
+		<tr>
+			<td colspan="2"><h3>Output Format Output Format:</h3></td>
+		</tr>
+		<?php if ($data['PPT'] === 'yes') : ?>
+		<tr>
+			<td>
+PPT (PowerPoint):</td>
+			<td><?= $data['PPT'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['PDF'] === 'yes') : ?>
+		<tr>
+			<td>PDF:</td>
+			<td><?= $data['PDF'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['3DPDF'] === 'yes') : ?>
+		<tr>
+			<td>3D PDF:</td>
+			<td><?= $data['3DPDF'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if ($data['XLSX'] === 'yes') : ?>
+		<tr>
+			<td>XLSX (Excel):</td>
+			<td><?= $data['XLSX'];?></td>
+		</tr>
+		<?php endif;?>
+		<?php if (!empty($data['Others2'])) : ?>
+		<tr>
+			<td>Others (Please specify)::</td>
+			<td><?= $data['Others2'];?></td>
+		</tr>
+		<?php endif;?>
+		
+	</table>
+
+</body>
+</html>

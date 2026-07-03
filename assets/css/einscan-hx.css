@@ -1,0 +1,28 @@
+.h2 {
+  background: linear-gradient(
+    90deg,
+    #7dc5e7 0%,
+    #7dc5e7 0.01%,
+    #7dc5e7 51.79%,
+    #7dc5e7 93.78%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 800;
+  color: #7dc5e7 !important;
+}
+
+.einscan{
+    background: linear-gradient(90deg, #000000 0%, #888888 0.01%, #B0B0B0 51.79%, #878787 93.78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+h2{
+    color:#fff;
+}

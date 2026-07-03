@@ -1,0 +1,1641 @@
+/* =========================================================
+   FDM 3D Printing Service in India – Page Styles
+   Prefix: fps-
+   ========================================================= */
+
+/* ---------- Design Tokens (mirrors industrial-fdm-3d-printers.css) ---------- */
+:root {
+    --orange:       #f78c1e;
+    --orange-dark:  #e07c0e;
+    --navy:         #1a2b3c;
+    --white:        #ffffff;
+    --font-main:    "Inter", "firasan-normal", sans-serif;
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.fps-hero {
+    position: relative;
+    background-image: url("../images/fdm-3d-printing-service-in-india/hero-bg.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* Account for fixed topbar (~42px) + navbar (~58px) + breathing room */
+    padding-top: 130px;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+/* Soft white gradient fade at the bottom (matches sibling page) */
+.fps-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.18) 0%,
+        transparent 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.fps-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ── Top Right: Phone Contact Info ── */
+.fps-hero-topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.fps-contact-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Shared orange icon circle used for both phone (topbar) and email (bottom) */
+.fps-icon-circle {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fps-icon-circle img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Phone contact text (white, in topbar) */
+.fps-contact-text h6 {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: var(--font-main);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.fps-contact-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: var(--font-main);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.fps-contact-text a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.fps-contact-text a:hover {
+    color: var(--orange);
+}
+
+/* Separator pipe */
+.fps-sep {
+    color: var(--orange);
+    margin: 0 5px;
+}
+
+/* ── Hero Content Row ── */
+.fps-hero-content-row {
+    align-items: flex-start;
+    padding-bottom: 48px;
+}
+
+/* Left column */
+.fps-hero-left {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+/* ── Badge ── */
+.fps-badge {
+    display: inline-block;
+    padding: 4px 16px;
+    border: 1.5px solid var(--orange);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--orange);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* ── Main Title (H1) ── */
+.fps-hero-title {
+    font-family: var(--font-main);
+    font-size: clamp(32px, 4.5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 18px;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;   /* "Service in India" is dark */
+}
+
+/* "FDM 3D Printing" — orange */
+.fps-title-orange {
+    color: var(--orange);
+    display: block;
+}
+
+/* ── Description ── */
+.fps-hero-desc {
+    font-family: var(--font-main);
+    font-size: 15px;
+    color: rgba(15, 15, 15, 0.82);
+    line-height: 1.7;
+    margin: 0 0 28px;
+    max-width: 500px;
+}
+
+/* ── CTA Buttons ── */
+.fps-btn-group {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.fps-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    letter-spacing: 0.4px;
+    text-decoration: none !important;
+    transition:
+        background 0.22s ease,
+        transform 0.18s ease,
+        box-shadow 0.22s ease;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    white-space: nowrap;
+}
+
+.fps-btn-primary {
+    background: var(--orange);
+    color: #ffffff !important;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+}
+
+.fps-btn-primary:hover {
+    background: var(--orange-dark);
+    border-color: var(--orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.5);
+    color: #fff !important;
+}
+
+/* ── Email Block (below buttons) ── */
+.fps-email-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+/* Slightly larger circle for email icon to match reference */
+.fps-icon-circle--email {
+    width: 48px;
+    height: 48px;
+}
+
+/* Email text */
+.fps-email-text h6 {
+    margin: 0;
+    font-size: 13px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+}
+
+.fps-email-text p {
+    margin: 0;
+    font-size: 13px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.fps-email-text a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.fps-email-text a:hover {
+    color: var(--orange);
+}
+
+/* =========================================================
+   RESPONSIVE OVERRIDES
+   ========================================================= */
+
+/* ── Tablet (≤ 991px) ── */
+@media (max-width: 991px) {
+    .fps-hero {
+        padding-top: 80px;
+    }
+
+    .fps-hero-title {
+        font-size: 32px;
+    }
+
+    .fps-hero-left {
+        padding-right: 0;
+    }
+
+    .fps-hero-content-row {
+        padding-bottom: 36px;
+    }
+}
+
+/* ── Mobile (≤ 767px) ── */
+@media (max-width: 767px) {
+    .fps-hero {
+        padding-top: 70px;
+    }
+
+    .fps-hero-topbar {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .fps-hero-title {
+        font-size: 28px;
+    }
+
+    .fps-hero-desc {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .fps-btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fps-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fps-hero-content-row {
+        padding-bottom: 28px;
+    }
+}
+
+/* ── Small Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    .fps-hero-title {
+        font-size: 26px;
+    }
+
+    .fps-hero-desc {
+        font-size: 13.5px;
+    }
+
+    .fps-icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fps-icon-circle img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* =========================================================
+   WHY CHOOSE FDM 3D PRINTING SECTION
+   ========================================================= */
+
+/* ── Shared orange text utility ── */
+.fps-orange {
+    color: var(--orange);
+}
+
+/* ── Section Wrapper ── */
+.fps-why-section {
+    background-color: #f4f5f8;
+    padding: 64px 0 60px;
+}
+
+/* ── Section Header ── */
+.fps-why-header {
+    margin-bottom: 44px;
+}
+
+.fps-why-title {
+    font-family: var(--font-main);
+    font-size: clamp(22px, 3vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0 0 14px;
+    line-height: 1.15;
+}
+
+.fps-why-subtitle {
+    font-family: var(--font-main);
+    font-size: 15.5px;
+    color: #555555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ── 8-Column Bootstrap override ── */
+/* Bootstrap doesn't ship row-cols-lg-8 natively, so we define it */
+@media (min-width: 992px) {
+    .row-cols-lg-8 > * {
+        flex: 0 0 auto;
+        width: 12.5%; /* 100% / 8 */
+    }
+}
+
+/* ── Grid row ── */
+.fps-why-grid {
+    align-items: stretch;
+}
+
+/* ── Individual Card ── */
+.fps-why-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: none !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 12px 18px;
+    height: 100%;
+    text-align: center;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.fps-why-card:hover {
+    box-shadow: 0 6px 24px rgba(247, 140, 30, 0.18);
+    transform: translateY(-3px);
+}
+
+/* ── Icon wrapper (no background, just centers the image) ── */
+.fps-why-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    flex-shrink: 0;
+}
+
+.fps-why-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── Card label ── */
+.fps-why-card-body {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+}
+
+.fps-why-card-body p {
+    font-family: var(--font-main);
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.45;
+    margin: 0;
+    text-align: center;
+}
+
+/* ── Why Choose Responsive ── */
+
+/* Tablet: 4 per row (handled by row-cols-sm-4) */
+@media (max-width: 767px) {
+    .fps-why-section {
+        padding: 44px 0 40px;
+    }
+
+    .fps-why-title {
+        font-size: 22px;
+    }
+
+    .fps-why-subtitle {
+        font-size: 14px;
+    }
+
+    .fps-why-header {
+        margin-bottom: 28px;
+    }
+
+    .fps-why-img-wrap {
+        width: 52px;
+        height: 52px;
+    }
+
+    .fps-why-card {
+        padding: 16px 8px 14px;
+    }
+
+    .fps-why-card-body p {
+        font-size: 11.5px;
+    }
+}
+
+/* Mobile: 2 per row already handled by row-cols-2 Bootstrap class */
+@media (max-width: 480px) {
+    .fps-why-section {
+        padding: 36px 0 32px;
+    }
+
+    .fps-why-img-wrap {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* =========================================================
+   SMALL TO LARGE SCALE FDM PRINTING CAPACITY SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fps-scale-section {
+    background-color: #f4f5f8;
+    padding: 64px 0 72px;
+}
+
+/* ── Section Header ── */
+.fps-scale-header {
+    margin-bottom: 44px;
+}
+
+.fps-scale-title {
+    font-family: var(--font-main);
+    font-size: clamp(20px, 2.8vw, 32px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.fps-scale-subtitle {
+    font-family: var(--font-main);
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ── Card Grid ── */
+.fps-scale-grid {
+    align-items: stretch;
+}
+
+/* Second row: cap each card to match the 3-col width above */
+.fps-scale-row2 .col-md-4 {
+    flex: 0 0 auto;
+}
+
+/* ── Individual Card ── */
+.fps-scale-card {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 24px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.fps-scale-card:hover {
+    box-shadow: 0 8px 28px rgba(247, 140, 30, 0.14);
+    transform: translateY(-3px);
+}
+
+/* ── Card Title (top) ── */
+.fps-scale-card-title {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 6px;
+    line-height: 1.25;
+}
+
+/* ── Card Subtitle (dimension line) ── */
+.fps-scale-card-sub {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #666666;
+    margin: 0 0 18px;
+    line-height: 1.4;
+}
+
+/* ── Card Image ── */
+.fps-scale-img-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+}
+
+.fps-scale-img-wrap img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── Card Description (bottom) ── */
+.fps-scale-card-desc {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    color: #444444;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* ── Scale Section Responsive ── */
+
+@media (max-width: 991px) {
+    .fps-scale-section {
+        padding: 48px 0 56px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fps-scale-section {
+        padding: 40px 0 44px;
+    }
+
+    .fps-scale-title {
+        font-size: 20px;
+    }
+
+    .fps-scale-subtitle {
+        font-size: 14px;
+    }
+
+    .fps-scale-header {
+        margin-bottom: 28px;
+    }
+
+    /* On mobile single-column, row2 cols take full width */
+    .fps-scale-row2 .col-md-4 {
+        width: 100%;
+    }
+
+    .fps-scale-card {
+        padding: 20px 16px 18px;
+    }
+
+    .fps-scale-img-wrap img {
+        max-width: 220px;
+    }
+
+    .fps-scale-card-desc {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fps-scale-section {
+        padding: 32px 0 36px;
+    }
+
+    .fps-scale-card-title {
+        font-size: 15px;
+    }
+
+    .fps-scale-img-wrap img {
+        max-width: 180px;
+    }
+}
+
+/* =========================================================
+   MATERIALS WE OFFER SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fps-mat-section {
+    background-color: #ffffff;
+    padding: 64px 0 72px;
+}
+
+/* ── Section Header ── */
+.fps-mat-header {
+    margin-bottom: 36px;
+}
+
+.fps-mat-title {
+    font-family: var(--font-main);
+    font-size: clamp(22px, 2.8vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.fps-mat-subtitle {
+    font-family: var(--font-main);
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ── 2-Column Material List ── */
+.fps-mat-list-row {
+    margin-bottom: 40px;
+}
+
+.fps-mat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fps-mat-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    font-family: var(--font-main);
+    font-size: 14.5px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.fps-mat-list li img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 1px; /* subtle vertical alignment with text */
+}
+
+.fps-mat-list li span {
+    flex: 1;
+}
+
+/* ── 10-Card Material Grid ── */
+.fps-mat-grid {
+    align-items: stretch;
+}
+
+/* ── Individual Material Card ── */
+.fps-mat-card {
+    border: none !important;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 12px 16px;
+    height: 100%;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.fps-mat-card:hover {
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.16);
+    transform: translateY(-3px);
+}
+
+/* ── Card Image Wrapper ── */
+.fps-mat-img-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+}
+
+.fps-mat-img-wrap img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── Card Label ── */
+.fps-mat-card-body {
+    padding: 0;
+    width: 100%;
+}
+
+.fps-mat-card-body p {
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* ── Materials Section Responsive ── */
+
+@media (max-width: 991px) {
+    .fps-mat-section {
+        padding: 48px 0 56px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fps-mat-section {
+        padding: 40px 0 44px;
+    }
+
+    .fps-mat-title {
+        font-size: 22px;
+    }
+
+    .fps-mat-header {
+        margin-bottom: 24px;
+    }
+
+    /* Stack list to single column on mobile */
+    .fps-mat-list-row .col-12 + .col-12 {
+        margin-top: 0;
+    }
+
+    .fps-mat-list li {
+        font-size: 13.5px;
+    }
+
+    .fps-mat-list-row {
+        margin-bottom: 28px;
+    }
+
+    .fps-mat-img-wrap img {
+        max-width: 110px;
+    }
+
+    .fps-mat-card {
+        padding: 16px 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fps-mat-section {
+        padding: 32px 0 36px;
+    }
+
+    .fps-mat-img-wrap img {
+        max-width: 90px;
+    }
+
+    .fps-mat-card-body p {
+        font-size: 11px;
+    }
+}
+
+/* =========================================================
+   CASE STUDIES SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fps-cases-section {
+    background-color: #f4f5f8;
+    padding: 64px 0 56px;
+}
+
+/* ── Section Header ── */
+.fps-cases-header {
+    margin-bottom: 40px;
+}
+
+.fps-cases-title {
+    font-family: var(--font-main);
+    font-size: clamp(22px, 2.8vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* ── Card Grid ── */
+/* Bootstrap g-4 handles all gutters — no additional overrides needed */
+.fps-cases-grid {
+    align-items: stretch;
+}
+
+/* ── Individual Case Card ── */
+.fps-case-card {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.fps-case-card:hover {
+    box-shadow: 0 8px 28px rgba(247, 140, 30, 0.18);
+    transform: translateY(-4px);
+}
+
+/* ── Card Image Wrapper ── */
+.fps-case-img-wrap {
+    width: 100%;          /* fixed image height for uniform grid */
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.fps-case-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.fps-case-card:hover .fps-case-img-wrap img {
+    transform: scale(1.04);
+}
+
+/* ── Card Body (Label) ── */
+.fps-case-card-body {
+    padding: 14px 14px 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fps-case-card-body p {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* ── View More Button ── */
+.fps-cases-btn-wrap {
+    margin-top: 40px;
+}
+
+.fps-cases-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 60px;
+    background: var(--orange);
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+    transition:
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.18s ease;
+}
+
+.fps-cases-btn:hover {
+    background: var(--orange-dark);
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.52);
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+.fps-cases-btn svg {
+    flex-shrink: 0;
+}
+
+/* ── Case Studies Responsive ── */
+
+@media (max-width: 991px) {
+    .fps-cases-section {
+        padding: 48px 0 44px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .fps-cases-section {
+        padding: 40px 0 36px;
+    }
+
+    .fps-cases-title {
+        font-size: 22px;
+    }
+
+    .fps-cases-header {
+        margin-bottom: 28px;
+    }
+
+    /* 2 columns on mobile (row-cols-sm-2 handles this via Bootstrap) */
+   
+
+    .fps-cases-btn-wrap {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fps-cases-section {
+        padding: 32px 0 28px;
+    }
+
+    /* Single column on very small screens */
+  
+
+    .fps-cases-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+}
+
+/* =========================================================
+   INDUSTRIES WE SERVE SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fps-serve-section {
+    background-color: #f4f5f8;
+    padding: 64px 0 72px;
+}
+
+/* ── Section Header ── */
+.fps-serve-header {
+    margin-bottom: 44px;
+}
+
+.fps-serve-title {
+    font-family: var(--font-main);
+    font-size: clamp(22px, 2.8vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* ── 6-Column Bootstrap override ── */
+/* Bootstrap ships row-cols-lg-6 natively in v5,
+   but we guard it here for safety */
+@media (min-width: 992px) {
+    .fps-serve-grid > * {
+        flex: 0 0 auto;
+        width: 16.6667%; /* 100% / 6 */
+    }
+}
+
+/* ── Grid ── */
+.fps-serve-grid {
+    align-items: stretch;
+    flex-wrap: wrap;          /* allow natural wrap on smaller screens */
+}
+
+/* ── Individual Card ── */
+.fps-serve-card {
+    background: transparent !important;
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 8px 14px;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+.fps-serve-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ── Icon / Image Wrapper ── */
+.fps-serve-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 110px;
+    margin: 0 auto 14px;
+    flex-shrink: 0;
+}
+
+.fps-serve-img-wrap img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── Card Label ── */
+.fps-serve-card-body {
+    padding: 0;
+    width: 100%;
+}
+
+.fps-serve-card-body p {
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+
+/* ── Industries We Serve – Responsive ── */
+
+@media (max-width: 991px) {
+    .fps-serve-section {
+        padding: 48px 0 56px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fps-serve-section {
+        padding: 40px 0 44px;
+    }
+
+    .fps-serve-title {
+        font-size: 22px;
+    }
+
+    .fps-serve-header {
+        margin-bottom: 28px;
+    }
+
+    /* 3 per row (handled by row-cols-sm-3) */
+    .fps-serve-img-wrap {
+        max-width: 88px;
+    }
+
+    .fps-serve-card-body p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fps-serve-section {
+        padding: 32px 0 36px;
+    }
+
+    /* 2 per row (handled by row-cols-2) */
+    .fps-serve-img-wrap {
+        max-width: 72px;
+    }
+
+    .fps-serve-card-body p {
+        font-size: 11.5px;
+    }
+}
+
+/* =========================================================
+   CASE STUDIES SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fps-cases-section {
+    background-color: #f4f5f8;
+    padding: 64px 0 56px;
+}
+
+/* ── Section Header ── */
+.fps-cases-header {
+    margin-bottom: 40px;
+}
+
+.fps-cases-title {
+    font-family: var(--font-main);
+    font-size: clamp(22px, 2.8vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* ── Card Grid ── */
+/* g-4 on the .row handles all gutters (horizontal + vertical).
+   align-items: stretch makes all cards in a row equal height. */
+.fps-cases-grid {
+    align-items: stretch;
+}
+
+/* ── Individual Case Card ── */
+.fps-case-card {
+    background: #ffffff;
+    border: none !important;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.fps-case-card:hover {
+    box-shadow: 0 8px 28px rgba(247, 140, 30, 0.18);
+    transform: translateY(-4px);
+}
+
+/* ── Card Image Wrapper ── */
+.fps-case-img-wrap {
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f0f0f0;
+}
+
+.fps-case-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.fps-case-card:hover .fps-case-img-wrap img {
+    transform: scale(1.04);
+}
+
+/* ── Card Body (Label) ── */
+.fps-case-card-body {
+    padding: 14px 14px 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f8;
+}
+
+.fps-case-card-body p {
+    font-family: var(--font-main);
+    font-size: 13.5px !important;
+    font-weight: 600;
+    color: #222222;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* ── View More Button ── */
+.fps-cases-btn-wrap {
+    margin-top: 40px;
+}
+
+.fps-cases-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 36px;
+    background: var(--orange);
+    color: #ffffff !important;
+    border-radius: 50px;              /* pill shape */
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+    transition:
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.18s ease;
+}
+
+.fps-cases-btn:hover {
+    background: #d9730a;             /* slightly darker orange */
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.52);
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+.fps-cases-btn svg {
+    flex-shrink: 0;
+}
+
+/* ── Case Studies Responsive ── */
+
+@media (max-width: 991px) {
+    .fps-cases-section {
+        padding: 48px 0 44px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .fps-cases-section {
+        padding: 40px 0 36px;
+    }
+
+    .fps-cases-title {
+        font-size: 22px;
+    }
+
+    .fps-cases-header {
+        margin-bottom: 28px;
+    }
+
+
+    .fps-cases-btn-wrap {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fps-cases-section {
+        padding: 32px 0 28px;
+    }
+
+    .fps-cases-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+}
+
+/* =========================================================
+   APPLICATIONS SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fdm-app-section {
+    background-color: #fff;
+    padding: 72px 0 80px;
+}
+
+/* ── Row alignment ── */
+.fdm-app-row {
+    align-items: center;
+}
+
+/* ── Left column: Title ── */
+.fdm-app-title {
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin: 0 0 16px;
+}
+
+/* ── Left column: Description ── */
+.fdm-app-desc {
+    font-size: 14.5px;
+    color: #444;
+    font-family: var(--font-main);
+    line-height: 1.65;
+    margin: 0 0 20px;
+}
+
+/* ── Left column: Bullet List ── */
+.fdm-app-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fdm-app-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    font-size: 13.5px;
+    color: #333;
+    font-family: var(--font-main);
+    line-height: 1.45;
+}
+
+.fdm-app-list li img {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* ── Right column grid ── */
+.fdm-app-grid {
+    align-items: stretch;
+}
+
+/* ── Application Card ── */
+.fdm-app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* ── Image Box ── */
+.fdm-app-img-box {
+    background-color: #f0f1f6;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    min-height: 278px;
+    transition: background 0.22s ease, box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.fdm-app-img-box:hover {
+    background-color: #e8e9f2;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.fdm-app-img-box img {
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* ── Card Label ── */
+.fdm-app-card-label {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+    .fdm-app-section {
+        padding: 52px 0 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fdm-app-section {
+        padding: 40px 0 48px;
+    }
+
+    .fdm-app-title {
+        font-size: 26px;
+    }
+
+    .fdm-app-img-box {
+        min-height: 100px;
+    }
+
+    .fdm-app-img-box img {
+        max-height: 80px;
+    }
+}
+
+/* =========================================================
+   HOW IT WORKS – SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fdm-how-section {
+    background-color: #f8f9fa;
+    padding: 40px 0 90px;
+}
+
+/* ── Section Header ── */
+.fdm-how-head-wrap {
+    margin-bottom: 56px;
+}
+
+.fdm-how-title {
+    font-size: clamp(24px, 3.2vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.fdm-how-subtitle {
+    font-size: 16px;
+    color: #444;
+    font-family: var(--font-main);
+    margin: 0;
+    font-weight: 400;
+}
+
+/* ── Flow Wrapper (horizontal flex on xl, wrapping grid below) ── */
+.fdm-how-flow {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+/* ── Individual Step Card ── */
+.fdm-how-card {
+    flex: 1 1 110px;
+    max-width: 152px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 44px 12px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.24s ease, transform 0.2s ease;
+}
+
+.fdm-how-card:hover {
+    box-shadow: 0 8px 28px rgba(247, 140, 30, 0.18);
+    transform: translateY(-3px);
+}
+
+/* ── Overlapping Number Badge ── */
+.fdm-how-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+/* ── Step Icon ── */
+.fdm-how-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* ── Card Title ── */
+.fdm-how-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: var(--font-main);
+    line-height: 1.4;
+    margin: 0 0 6px;
+}
+
+/* ── Card Description ── */
+.fdm-how-card-desc {
+    font-size: 11.5px !important;
+    color: #6c757d;
+    font-family: var(--font-main) !important;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── Arrow Connector ── */
+.fdm-how-arrow {
+    width: 32px;
+    height: 32px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: 22px; /* align visually with mid-card */
+    box-shadow: 0 2px 8px rgba(247, 140, 30, 0.35);
+}
+
+.fdm-how-arrow i {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1399px) {
+    .fdm-how-card {
+        flex: 1 1 110px;
+        max-width: 140px;
+        padding: 44px 10px 18px;
+    }
+
+    .fdm-how-img {
+        width: 54px;
+        height: 54px;
+    }
+}
+
+@media (max-width: 991px) {
+    .fdm-how-section {
+        padding: 52px 0 60px;
+    }
+
+    .fdm-how-head-wrap {
+        margin-bottom: 40px;
+    }
+
+    .fdm-how-flow {
+        gap: 20px;
+    }
+
+    .fdm-how-card {
+        flex: 1 1 140px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 575px) {
+    .fdm-how-section {
+        padding: 40px 0 48px;
+    }
+
+    .fdm-how-flow {
+        gap: 16px;
+    }
+
+    .fdm-how-card {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+
+    .fdm-how-title {
+        font-size: 24px;
+    }
+}

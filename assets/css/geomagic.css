@@ -1,0 +1,669 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  color: #234057;
+  font-weight: 700;
+}
+
+.geomagic-banner {
+  text-align: center;
+}
+
+.geomagic-bannerp {
+  border: 1px solid #ff8d1e;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.geomagic-banner img {
+  width: 70%;
+}
+
+.geomagic-banner h5 {
+  padding: 20px 0px;
+}
+
+.social p {
+  text-align: left;
+}
+
+.geomagic-banner-img img {
+  width: 50%;
+}
+
+.what-can {
+  padding: 60px 0px;
+}
+
+.why1 {
+  width: 20%;
+}
+
+.why2 {
+  width: 70%;
+}
+@media screen and (max-width:600px){
+    .why2{
+        width:100%;
+    }
+}
+.why-choose {
+  padding: 60px 0px;
+}
+
+.what-can h2 img {
+  width: 25%;
+}
+
+.what-can-div ul img {
+  margin-right: 6px;
+}
+
+.what-can-div h3 {
+  color: #ff8d1e;
+  font-size: 24px;
+}
+
+.what-can-div ul {
+  padding-top: 20px;
+}
+
+.what-can-div li {
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  line-height: 30px;
+  margin-top:10px;
+}
+/* .what-can-div li img{
+  margin-top:10px;
+} */
+.what-can-row {
+  margin-top: 50px;
+  border: 1px solid #ff931e40;
+  border-radius: 35px;
+  padding: 30px 30px 0px 30px;
+  box-shadow: 0px 14px 40px 20px #ff932a30;
+}
+
+.why-choose h2 img {
+  width: 25%;
+}
+
+.why-choose-div h3 {
+  color: #ff8d1e;
+  font-size: 24px;
+}
+
+.why-choose-div ul {
+  padding-top: 20px;
+}
+
+.why-choose-div li {
+  line-height: 50px;
+}
+
+.why-choose p {
+  border: 1px solid #ff8d1e;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.why-choose-row {
+  margin-top: 50px;
+  border: 1px solid #ff931e40;
+  border-radius: 35px;
+  padding: 60px 30px 60px 30px;
+  box-shadow: 0px 14px 40px 20px #ff932a30;
+  text-align: center;
+}
+
+.what-can-row h1 {
+  color: #ff8d1e;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.designx1 {
+  padding-top: 50px;
+}
+
+.what-can-row1 {
+  padding-top: 30px;
+}
+
+.what-can-row0 {
+  padding: 60px 30px 60px 60px;
+  height: 630px;
+}
+
+.geo {
+  width: 17%;
+}
+
+.card-footer {
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+
+.card-footer .btn {
+  margin-top: 10px !important;
+  background-color: #fff !important;
+  color: #ff8d1e !important;
+  border: 1.5px solid #ff8d1e !important;
+}
+
+.card-footer .btn:hover {
+  margin-top: 10px !important;
+  background-color: #ff8d1e !important;
+  color: #fff !important;
+  border: 1.5px solid #ff8d1e !important;
+}
+
+.card-img-top {
+  width: 30%;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.card {
+  border: 1px solid #ff931e40;
+  border-radius: 15px;
+  box-shadow: 2px 17px 20px 0px #ff932a30;
+}
+
+.card li {
+  line-height: 36px;
+  list-style: disc;
+}
+
+.card ul {
+  padding-top: 20px;
+}
+
+.card-img-top1 {
+  width: 35%;
+  position: absolute;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  right: 0;
+}
+
+.card-footer:last-child {
+  background: none !important;
+  border: none;
+}
+
+.pricing {
+  padding: 60px 0px;
+}
+
+.pricing-div h2 {
+  padding-bottom: 40px;
+}
+
+.brochures-div {
+  text-align: center;
+}
+
+.brochures-div img {
+  width: 20%;
+}
+
+.brochures .col-lg-6 .btn {
+  margin-top: 0px !important;
+  background-color: #fff !important;
+  color: #ff8d1e !important;
+  width: 300px;
+  border: 1.5px solid #ff8d1e !important;
+  margin-bottom: 15px;
+}
+
+.brochures .col-lg-6 .btn:hover {
+  margin-top: 0px !important;
+  background-color: #ff8d1e !important;
+  color: #fff !important;
+  border: 1.5px solid #ff8d1e !important;
+}
+
+.brochures-row {
+  padding: 60px 40px 0px 40px;
+  background-color: #fff5eb;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+.brochures .col-lg-6 img {
+  margin-bottom: -80px;
+}
+
+.demo-box p {
+  border: 1px solid #ff8d1e;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.mg5 {
+  width: 85%;
+}
+
+.demo-box-div {
+  background-color: #fff5eb;
+  border: 1px solid #ff931e40;
+  border-radius: 25px;
+  padding: 60px 60px 60px 70px;
+  margin: 60px 0;
+}
+
+.checkbox-div {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox-div input {
+  height: 25px;
+  width: 30px;
+}
+
+.checkbox-div input[type="checkbox"]:checked+p {
+  color: green;
+  /* Checked text color */
+}
+
+input[type="checkbox"] {
+  accent-color: rgba(255, 138, 0, 1);
+}
+
+td,
+th {
+  font-family: "Poppins", sans-serif;
+}
+
+th img {
+  width: 260px;
+}
+
+.check-box {
+  padding: 60px 0px;
+}
+
+thead {
+  border: none !important;
+}
+
+.hide-tr {
+  display: none;
+}
+
+
+.geomagic-demo {
+  padding: 60px 0;
+}
+
+.geomagic-demo h1 {
+  padding-bottom: 50px;
+}
+
+.geomagic-demo p {
+  padding-top: 12px;
+}
+
+.check-box {
+  background-color: #fff5eb;
+  padding: 40px;
+}
+
+.brochures {
+  padding: 60px 0px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff8d1e !important;
+  border-radius: 50%;
+  background-size: 100% 75%;
+  padding: 20px;
+}
+
+.Feature{
+  border: 1px solid #ff8d1e;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.carousel-control-next-icon {
+  transform: rotate(0deg) !important;
+}
+
+@media (max-width: 600px) {
+  /* .check-box {
+    display: none;
+  } */
+   .check-box{
+    overflow-x:scroll;
+    width: 100vw;
+   }
+
+   .check-box-div{
+    width:900px;
+  }
+  .theme-section {
+    display: none;
+  }
+
+  .what-can-row0 {
+    /*height: auto !important;*/
+  }
+  
+
+  .geomagic-demo-img {
+    width: 45%;
+  }
+
+  .what-can-img {
+    width: 95%;
+  }
+
+  .what-can h2 img {
+    width: 60% !important;
+  }
+
+  .why-choose h2 img {
+    width: 45% !important;
+  }
+  .why-choose h2{
+    text-align:center;
+  }
+  .what-can-row1 img {
+    width: 95%;
+  }
+
+  .geo {
+    width: 48%;
+  }
+
+  .brochures .col-lg-6 img {
+    margin-bottom: 30px !important;
+  }
+
+  .brochures-row {
+    padding: 40px 20px 40px 20px !important;
+  }
+
+  .brochures .col-lg-6 img {
+    width: 95%;
+  }
+
+  .test-section {
+    padding-top: 10px !important;
+  }
+
+  .geo1 {
+    width: 70%;
+  }
+
+  .brochures-div img {
+    width: 100%;
+  }
+
+  .brochures {
+    padding: 10px 0px !important;
+  }
+
+  .btn {
+    margin-bottom: 10px !important;
+  }
+
+  .mg5 {
+    width: 95% !important;
+  }
+
+  .what-can-row h1 {
+    font-size: 32px;
+  }
+
+  .geomagic-banner img {
+    width: 95% !important;
+  }
+
+  .compare-main {
+    margin-top: 40px !important;
+    position: relative;
+  }
+
+  .compare-sec img {
+    width: 95%;
+  }
+
+  .geomagic-form-sec {
+    margin-top: 0px !important;
+    position: relative;
+  }
+
+  .geomagic-form-con {
+    padding: 30px !important;
+  }
+
+  .gif-video img {
+    width: 100% !important;
+  }
+
+  .address-con .fa-envelope {
+    color: #fff;
+    background-color: var(--maincolor);
+    padding: 14px !important;
+    font-size: 12px !important;
+  }
+
+  .form-2-box {
+    margin-top: 30px !important;
+  }
+
+  .geomagic-workflow {
+    width: 50% !important;
+  }
+
+  .address-con {
+    justify-content: start !important;
+  }
+
+  h1,
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .geomagic-demo {
+    padding: 40px 0 !important;
+  }
+
+  .what-can-div ul {
+    padding-left: 0px !important;
+  }
+
+  .why-choose {
+    padding: 40px 0px !important;
+  }
+
+  .designx1 {
+    padding-top: 50px;
+    width: 100% !important;
+  }
+  .checkbox-div input{
+      width:auto;
+  }
+}
+
+/* compare */
+
+.geomagic-compare {
+  text-align: center;
+}
+
+.geomagic-compare h1 {
+  color: #234057;
+  text-align: center;
+  font-weight: 700;
+}
+
+.geomagic-compare img {
+  width: 80%;
+}
+
+.compare-sec {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.compare-sec img {
+  width: 70%;
+}
+
+.compare-main {
+  margin-top: -200px;
+  position: relative;
+}
+
+.address-con .fa-envelope {
+  color: #fff;
+  background-color: var(--maincolor);
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 10px;
+}
+
+.gif-video {
+  padding-top: 20px;
+}
+
+.geomagic-form-sec {
+  margin-top: -70px;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.geomagic-form-sec .input_wrap .input {
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 10px;
+  display: block;
+  width: 88%;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+
+.geomagic-form-sec .input_wrap textarea {
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 10px;
+  display: block;
+  width: 88%;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+
+.geomagic-form-sec .input_wrap select {
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 10px;
+  display: block;
+  width: 88%;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+
+.geomagic-form-sec .input_wrap label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 141.523%;
+  letter-spacing: 0.8px;
+  font-family: "Inter", sans-serif !important;
+}
+
+.geomagic-form-sec .input_wrap label>span {
+  color: #f00;
+}
+
+.geomagic-form-sec .input_wrap {
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+.geomagic-form-sec .input_wrap option {
+  font-family: "Inter", sans-serif !important;
+}
+
+.geomagic-form-sec .btnns {
+  margin-top: 10px !important;
+  background-color: #fff !important;
+  color: #ff8d1e !important;
+  border: 1.5px solid #ff8d1e !important;
+  width: 45%;
+}
+
+.geomagic-form-sec .btnns:hover {
+  margin-top: 10px !important;
+  background-color: #ff8d1e !important;
+  color: #fff !important;
+  border: 1.5px solid #ff8d1e !important;
+}
+
+.geomagic-form-con {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0px 14px 40px 20px #ff932a30;
+}
+
+.form-2-box {
+  background-color: #fff5eb;
+  padding: 30px 20px 5px 35px;
+  border-radius: 20px;
+}
+
+.checkbox {
+  width: 30px;
+}
+
+.geomagic-form-sec .btn {
+  width: 45%;
+}
+
+/* worlflow */
+
+.geomagic-workflow {
+  width: 30% !important;
+}
+
+.workflow-sec {
+  padding-top: 60px;
+}
+
+.workflow-sec h2 {
+  color: #234057;
+  text-align: center;
+  font-weight: 700;
+}
+@media screen and (max-width:600px) {
+  .accordion-body{
+    color:#000 !important;
+  }
+}

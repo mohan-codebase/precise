@@ -1,0 +1,273 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-padding-top: 300px;
+}
+body{
+  background-color: #fff;
+  
+}
+p{
+  color: #000000;
+  font-weight: normal;
+}
+b,tr,td,th{
+  font-family: 'Inter';
+}
+tr,td,th{
+  font-size: 20px !important;
+}
+td,th{
+  padding: 30px 40px !important;
+}
+tr{
+  border: none !important;
+}
+.table th, .table td{
+  border: none !important;
+}
+.table{
+  border-radius: 26px !important;
+  margin-top: 40px;
+  box-shadow: -9px 26px 27px 0px #23405717;
+}
+.big-p{
+    font-size: 20px !important;
+    font-weight: 600;
+}
+.btn{
+  border-radius: 1rem !important;
+}
+.sec-head{
+    font-size: 50px !important;
+    font-weight: bold;
+    color:#234057;
+}
+.sec-head span{
+    color: #FF8D1E;
+}
+
+.hero{
+  background: url(../images/infrared-3d-scanner/bg-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: 120px;
+}
+.hero .container{
+    position: relative;
+    padding: 20px 0;
+    padding-bottom: 180px;
+}
+.hero-head h1{
+  font-size: 4rem !important;
+  color: #fff;
+  font-weight: bold;
+}
+.call{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.call .btn{
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+}
+.call-text h5{
+  color: #ffffff !important;
+  font-weight: 600;
+}
+.call-text p{
+  color: #ffffff;
+}
+.call-text p span{
+  color: #FF8D1E;
+}
+.hero-head{
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #FF8D1E;
+  font-weight: bold;
+}
+.hero h4{
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 20px !important;
+}
+.hero-left ul{
+  margin: 30px 0;
+  margin-left: 40px;
+}
+.hero-left ul li{
+  position: relative;
+}
+.hero-left ul li p{
+  color: #fff;
+}
+.hero-left ul li::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #FF931E;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+.hero-left p{
+  font-size: 16px !important;
+  margin-bottom:10px !important;
+}
+
+.hero .mail{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin: 80px 0;
+}
+.mail .btn{
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+}
+.mail-text h5{
+  color: #FF8D1E !important;
+  font-weight: 600;
+}
+.mail-text p{
+  color: #ffffff;
+}
+.mail-text p span{
+  color: #FF8D1E;
+}
+.overview-div{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    box-shadow: 0px 12px 27px 0px #0000001A,
+                0px 49px 49px 0px #00000017,
+                0px 111px 67px 0px #0000000D,
+                0px 197px 79px 0px #00000003,
+                0px 308px 86px 0px #00000000;
+
+}
+.overview-div h2{
+    border-bottom: 1px solid #FF8D1E;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.overflow .text{
+    font-size: 24px !important;
+    font-weight: 600;
+    padding: 0 9rem;
+}
+.card-box{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #00000040;
+    box-shadow: 0px 13px 29px 0px #0000000D,
+                0px 52px 52px 0px #0000000A,
+                0px 118px 71px 0px #00000008,
+                0px 210px 84px 0px #00000003,
+                0px 328px 92px 0px #00000000;
+
+}
+.card-box h4{
+    font-size: 24px !important;
+    font-family: 600;
+    color: #234057;
+    margin-bottom: 0 !important;
+}
+.card-box p{
+    font-size: 14px !important;
+    color: #234057;
+    padding:0 2rem;
+}
+.bg-div{
+    margin-top: 30px;
+    position: relative;
+}
+.bg-div .bg-text{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.bg-text h3{
+    color: #fff;
+    font-weight: 600;
+}
+.bg-text p{
+    color: #fff;
+}
+.blog p{
+    margin-top: 15px;
+}
+
+@media screen and (max-width:700px) {
+    .hero{
+        padding: 35px 0;
+        margin-top: 0;
+        background-position: center;
+    }
+    .hero .container{
+        padding:0 10px !important ;
+    }
+    .hero-head{
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    .call{
+        justify-content: start;
+    }
+    .overflow .text{
+        padding: 0;
+    }
+    .brand-img img{
+        width: 100%;
+    }
+    .bg-div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .bg-div .bg-text{
+        bottom: 0px;
+        left: 0px;
+        padding: 20px;
+    }
+    .bg-text h3{
+        font-size: 20px !important;
+    }
+    .overview-div{
+        position: relative;
+    }
+    .sec-head{
+        font-size: 24px !important;
+    }
+    .overflow{
+        margin-top: 60px !important;
+    }
+}

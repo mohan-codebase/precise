@@ -1,0 +1,132 @@
+/*section-bg*/
+/*section-bg*/
+section#optical-3d-intro{
+	background-image: url(../images/optical-3d-intro.jpg);
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#long-range-intro{
+	background-image: url(../images/long-range-intro.jpg);
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#multifunctional-intro{
+	background-image: url(../images/multifunctional-intro.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#handheld-Industrial-intro{
+    background-image: url(../images/handheld-Industrial.jpg);
+    background-position:top left ;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#arm-based-intro{
+    background-image: url(../images/arm-based-intro.jpg);
+    background-position:top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#machine-spec{
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#key-features{
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#whats-next{
+    background-image: url(../images/whats-next.jpg);
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#machine-spec .table-responsive {
+    background: rgba(0,0,0,0.4);
+    padding: 15px 25px;
+}
+section#machine-spec .bg-lite-black{
+    background: rgba(0,0,0,0.4);
+    padding: 15px 25px 1px;
+}
+#key-feature ul {
+    margin-left: 23px;
+}
+#key-feature ::marker {
+    font-size: 25px;
+}
+span.text {
+    border: 1px solid #fff;
+    padding: 3px 9px;
+    border-radius: 50%;
+}
+.pan-india-1 .content{
+    padding:10px 20px;
+    height:140px;
+}
+ .pan-india-1,.pan-india-2 {
+     background-color:rgba(0,0,0,0.4);
+ }
+ .pan-india-1:hover > .content,.pan-india-2:hover > .content{
+   background-color: #ff931e;
+   transition:0.5s;
+}
+.pan-india-1:hover > .img,.pan-india-2:hover > .img{
+   transform: scale(0.9);
+   transition:0.5s;
+}
+.pan-india-1 .img,.pan-india-2 .img{
+    transition:0.5s;
+}
+/*pan-india*/
+.scanning3d-figcapnew figcaption{
+    color:#fff;
+    padding-top:20px;
+    font-family: 'firasan-extrathin';
+}
+.scanning3d_medias h4{
+    color:#fff;
+    font-size:12px;
+}
+.scanning3d_medias p{
+    color:#fff;
+    font-size:10px;
+}
+.scanning3d_medias{
+    padding-top:18px;
+}
+.geomagic_yvdo_scroll{
+    height:345px;
+    overflow-y: scroll;
+    
+}
+/*media-query*/
+@media(min-width:768px){
+    .h-300{
+ height:300px;   
+}
+}
+

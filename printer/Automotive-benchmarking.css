@@ -1,0 +1,284 @@
+/* head section */
+
+.automotive-landing-btn {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.automotive-landing-btn:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.automotive-head h6 {
+    font-size: 13px;
+    padding-top: 6px;
+}
+
+.automotive-head a {
+    margin-top: 30px;
+}
+
+.automotive-dropdown-head button {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+}
+
+.automotive-dropdown-head button:active {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+    background-color: #ff931e !important;
+    box-shadow: none !important;
+}
+
+.automotive-dropdown-head button:focus {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+    background-color: #ff931e !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.automotive-dropdown-menu a {
+    color: #ff931e;
+}
+
+.automotive-dropdown-menu a:hover {
+    color: #fff;
+    background-color: #ff931e;
+}
+
+.automotive-ov-butto {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 235px;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.automotive-ov-cont p {
+    font-size: 17px;
+}
+
+.automotive-ov-cont h3 {
+    font-size: 22px;
+}
+
+
+/* head section ends */
+
+div.automotive-yellow-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.automotive-card h4 {
+    font-size: 20px;
+}
+
+.automotive-card p {
+    color: white;
+}
+
+.automotive-card-main .card {
+    height: auto !important;
+}
+
+.automotive-card-main .card-footer {
+    height: 10rem;
+}
+
+.automotive-faq {
+    background-color: #242424 !important;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.automotive-faq h4 {
+    padding-bottom: 30px;
+}
+
+.why-choose h4 {
+    margin-bottom: 40px;
+}
+
+.automotive-demo-video h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+
+/* service page css starts */
+
+.benchmarkservice-top-design {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+.overv-padding .btn a {
+    color: #fff;
+}
+
+.overv-padding .btn:hover a {
+    color: #FFA73B;
+}
+
+section#teardown-bench-banner {
+    background-image: url(../images/automotive-BMM/teadown-header.png);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section#teardown-bench-banner .heading {
+    padding: 30px 30px 0px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.teardown-overview-container h4 {
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    bottom: -1px;
+}
+
+.teardown-overview-container p {
+    font-size: 17px;
+}
+
+.teardown-overview-container button {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.teardown-overview-container button:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+section#overview-section {
+    background-color: #001619 !important;
+    padding-top: 0px !important;
+    padding-top: 15px !important;
+}
+
+.tear-button-one {
+    display: inline-block;
+}
+
+.overview-cont-tear p {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.ov-top-line {
+    color: black;
+    border-bottom: 1px solid;
+    display: none;
+}
+
+.overv-padding {
+    padding-top: 30px;
+}
+
+.teardown-kf {
+    background-color: #003037;
+    padding: 30px 0px;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.tear-kf-list li {
+    color: white;
+    font-family: 'firasan-extrathin';
+}
+
+.tear-kf-list {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.tear-kf-img img {
+    height: 180px;
+}
+
+#whyChoose {
+    color: #fff !important;
+}
+
+.tear-kf-img {}
+
+.no-left-padding {
+    padding-left: 0px;
+}
+
+.tear-features {
+    padding: 38px 0px;
+    padding-top: 0px;
+}
+
+.tear-features h1 {
+    font-size: 25px;
+    padding-bottom: 16px;
+}
+
+section#deliver-content {
+    background-color: #1a1a1a;
+    padding: 50px 0px;
+}
+
+#deliver-content p {
+    font-size: 18px;
+}
+
+.deliver-buttons button {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.deliver-buttons button:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.deliver-buttons h2 {
+    padding: 25px 0px;
+}
+
+.electrical-bench-h {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.electrical-lists li {
+    color: white;
+    font-family: 'firasan-extrathin';
+}

@@ -1,0 +1,411 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.cover-container {
+    /*height: 80vh;*/
+    width: 100vw;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(printimages/CoverPhoto.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.topone {
+    /*height: 80vh;*/
+    width: 100vw;
+    background-image: url(DigitalInspectionServices/CoverPhoto.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cover-title {
+    text-shadow: 0px 3px 6px #000000a8;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.button-primary {
+    width: max-content;
+    color: black;
+    padding: 0.5rem 4rem;
+    background: #f69322 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-shadow: 3px 3px 6px #000000a8;
+    display: flex;
+    align-items: center;
+    -ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    position: relative;
+    border: 4px solid #f69322;
+}
+.button-slope-2 {
+    width: max-content;
+    color: black;
+    padding: 0.5rem 4rem;
+    background: #f69322 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-shadow: 3px 3px 6px #000000a8;
+    display: flex;
+    align-items: center;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+.p-absolute {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.button-slope-2-content {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+.button-secondary {
+    width: max-content;
+    color: black;
+    padding: 0.5rem 4rem;
+    display: flex;
+    align-items: center;
+    border: 4px solid #f69322;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: #ffffff00 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #000000a8;
+    -ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    position: relative;
+}
+
+.button-content {
+    -ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+.cover-dash-para {
+    font-weight: bold;
+}
+.cover-departments {
+    background-image: url(printimages/BgImageServicePortfolio.jpg);
+    /*height: 50vh;*/
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 1rem 1rem 1rem;
+}
+.cover-feature {
+    background: #212020 0% 0% no-repeat padding-box;
+    /*padding: 3rem 3rem 1rem 1rem;*/
+    width: 102%;
+}
+.vertical-navigator {
+    background-color: #010101;
+    border-radius: 46px;
+    padding: 30px 0 15px 30px;
+}
+.sticky {
+    position: sticky;
+    top: 2rem;
+    width: 21.5vw;
+    left: 2rem;
+    top:96px;
+}
+.pt-100px {
+    padding-top:100px;
+}
+.pt-135px {
+    padding-top:134px;
+}
+.justify-para {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.n-items {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-left: 1px solid #f69322;
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+.n-items:active,
+.n-items:focus {
+    border-left: 4px solid #f69322;
+}
+.n-items > a {
+    text-decoration: none;
+    color: inherit;
+}
+.n-items > a :visited,
+.n-items > a:focus,
+.n-items > a:active {
+    color: inherit;
+}
+.n-items > a > span {
+    border-bottom: 1px solid #f69322;
+    padding-bottom: 0.55rem;
+}
+.content-heading {
+    color: #fe8700;
+    font-weight: bold;
+}
+.keyfeature-img {
+    height: 100%;
+    width: 100%;
+}
+.mg-KeyFeature-gallery {
+    border-radius: 12px;
+    height: 30vh;
+    width: 30vh;
+}
+.service-gallery {
+    position: relative;
+    height: 30vh;
+    width: 35vh;
+    border-radius: 36px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and  (min-width:912px) {
+    .service-galleryone {
+        position: relative;right: 144px;}
+        .service-gallerytwo {
+            position: relative;right: 66px;}
+            .service-gallerythree {
+                position: relative;right: -20px;}
+                .service-galleryfour {
+                    position: relative;right: -105px;}
+}
+
+.service-galleryone {
+    position: relative;
+    height: 30vh;
+    width: 35vh;
+    border-radius: 36px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-gallerytwo {
+    position: relative;
+    height: 30vh;
+    width: 35vh;
+    border-radius: 36px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-gallerythree {
+    position: relative;
+    height: 30vh;
+    width: 35vh;
+    border-radius: 36px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-galleryfour {
+    position: relative;
+    height: 30vh;
+    width: 35vh;
+    border-radius: 36px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.d-scanning-img {
+    background-image: url(printimages/serviceportfolioimages/3Dscanning.jpg);
+}
+.d-reverse-eng-img {
+    background-image: url(printimages/serviceportfolioimages/DigitalReverseEngineering.jpeg);
+}
+.d-inspection-img {
+    background-image: url(printimages/serviceportfolioimages/3DInspectionMain.png);
+}
+.low-volume-prod-img {
+    background-image: url(printimages/serviceportfolioimages/LowVolumeProduction.png);
+}
+.uv-stand-img {
+    background-image: url(printimages/materialkeyfeature/UVSTAND.jpg);
+}
+.high-temp-c {
+    background-image: url(printimages/materialkeyfeature/2hightemp150c.png);
+}
+.biocom-img {
+    background-image: url(printimages/materialkeyfeature/BiocompatibilityMEDAMB10.jpg);
+}
+.eight-yearrs-img {
+    background-image: url(printimages/materialkeyfeature/Eightyearsindoorone-.jpg);
+}
+.excellent-flame-img {
+    background-image: url(printimages/materialkeyfeature/Excellentflammability.webp);
+}
+.excellent-print-img {
+    background-image: url(printimages/materialkeyfeature/Excellentprintquality.png);
+}
+.long-term-img {
+    background-image: url(printimages/materialkeyfeature/longtermlongtermTOUGH-BLK20.jpg);
+}
+
+.rigidstrength {
+    background-image: url(printimages/materialkeyfeature/Rigidhighstrength.png);
+}
+.thermoplastic-img {
+    background-image: url(printimages/materialkeyfeature/Thermoplastic.jpg);
+}
+
+.rounded-button {
+    width: 12vw;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.5rem 0;
+    background: #ff8800 0% 0% no-repeat padding-box;
+    box-shadow: 4px 3px 6px #000000a8;
+    border-radius: 34px;
+    position: absolute;
+    font-weight: bold;
+    font-size: small;
+    color: #010101;
+    text-align: center;
+    cursor:pointer;
+}
+.round-btn-grad {
+    background: transparent linear-gradient(73deg, #fe8700 0%, #fc582e 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #000000a8;
+    border-radius: 45px;
+    color: white;
+}
+.b-right {
+    border-right: 3px solid #212020;
+}
+.b-left {
+    border-left: 3px solid #212020;
+}
+.p-7 {
+    padding: 7rem !important;
+}
+.pt-7 {
+    padding-top: 7rem;
+}
+.mr-7 {
+    margin-right: 7rem;
+}
+.mt-5 {
+    margin-top: 7rem;
+}
+.ml-7 {
+    margin-left: 7rem;
+}
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+
+.faq-link a {
+    color: #ff931e;
+}
+.faq-link a:hover {
+    color: #ff931e;
+}
+.left-border {
+    padding-left: 30px;
+    border-left: 2px solid #fff;
+    margin-left: 5px;
+}
+.pre-color {
+    color: #ff931e;
+}
+
+.pre-bg-grey {
+    background-color: #1a1a1a;
+}
+.faq h5.pre-color::before {
+    content: "-";
+    margin-right: 20px;
+    font-size: 28px;
+}
+
+.faq h5.pre-color.collapsed::before {
+    content: "+";
+    margin-right: 20px;
+    font-size: 28px;
+}
+.printing-service-car img{
+    width:100%;
+    height:175px;
+}
+.printing-service-car {
+    background-color:black;
+    padding-bottom: 4px;
+}
+@media only screen and (max-width:1200px) and (min-width:992px) {
+    .cover-container {
+    height: 100vh;
+    }
+}
+@media only screen and (max-width:992px) {
+    .cover-container {
+        /*height: 96vh;*/
+    }
+}
+@media only screen and (max-width:768px) {
+    .cover-container {
+        /*height: 102vh;*/
+    }
+    .cover-departments .rounded-button {
+        width:auto;
+        padding:10px 15px;
+    }
+    #materials .rounded-button {
+        width:auto;
+        padding:10px 15px;
+    }
+    .service-gallery,.service-galleryone,.service-gallerytwo,.service-gallerythree,.service-galleryfour {
+        width:auto;
+        margin-bottom: 50px;
+        white-space: nowrap;
+        margin-top: 33px;
+    }
+    .button-slope-2-content {
+        font-size:15px;
+        
+    }
+    .sticky {
+        width:auto;
+    }
+}
+@media only screen and (max-width:576px) {
+    .button-slope-2-content {
+        font-size:10px;
+    }
+    .p-absolute {
+        left:54%;
+    }
+    .button-slope-2 {
+        padding:10px 15px;
+    }
+    .button-secondary {
+        font-size:15px;
+        margin-top:15px;
+    }
+
+}

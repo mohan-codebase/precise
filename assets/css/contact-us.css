@@ -1,0 +1,97 @@
+/* about us hero section css */
+
+p {
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+}
+
+
+/* common css{} */
+
+section#aboutus-banner {
+    background-image: url(../images/about-us/About-us-banner.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section#aboutus-banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#aboutus-bg {
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.aboutus-sec2 {
+    background-color: #001116;
+    padding: 6px 0px;
+}
+
+.contact-cont1 input::placeholder {
+    font-size: 14px;
+}
+
+.contact-ul li {
+    line-height: 32px;
+    font-size: 15px;
+}
+
+.contact-one h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.contact-two h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.contactus-sec {
+    /* background-color: #ff8d1e; */
+    /* background-color: rgb(0, 0, 0, 0.6); */
+}
+
+.contactus-link a img {
+    width: 25px;
+    height: 25px;
+}
+
+.contactus-link {
+    display: inline-block;
+    border: 1px solid #ff8d1e;
+    padding: 10px;
+}
+
+.bg-black {
+    background-color: black;
+    border: 2px solid #ff8d1e;
+}
+
+.contact-cont1 {
+    padding: 50px;
+    border-radius: 100px 0px 100px 0px;
+}
+
+@media screen and (min-width:1200px) {
+    .md-detail {
+        padding-left: 100px;
+    }
+}

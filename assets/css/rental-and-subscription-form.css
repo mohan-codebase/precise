@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+}
+label,b{
+  font-family: "Inter", sans-serif !important;
+}
+p{
+  color: #000;
+}
+p .span{
+  color: red;
+}
+.banner-sec{
+  position: relative;
+}
+.banner-bg{
+  margin-top: 120px;
+  padding: 130px 0;
+  background: url(../images/rental-and-subscription/form-banner.png);
+  background-size: cover;
+}
+.banner-bg h1{
+  font-size: 4rem !important;
+  color: #fff;
+  font-weight: bold;
+}
+.banner-bg h2{
+  font-size: 3rem !important;
+  color: #fff;
+  font-weight: normal;
+}
+.banner-head{
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 2rem;
+  border: 1px solid #ffe9d3;
+  -webkit-box-shadow: 0px 20px 69px -3px rgba(255,226,196,1);
+  -moz-box-shadow: 0px 20px 69px -3px rgba(255,226,196,1);
+  box-shadow: 0px 20px 69px -3px rgba(255,226,196,1);
+}
+.banner-head h1{
+  font-size: 2rem !important;
+  font-weight: 800;
+  color: #234057 !important;
+}
+.form1{
+  padding: 30px;
+}
+.form-container{
+  margin-top: 100px;
+  border: 1px solid #ffe9d3;
+  padding: 20px;
+  border-radius: 20px;
+}
+.p-head{
+  font-size: 20px !important;
+}
+.scanner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #a3a3a3;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+.scanner-box input{
+  margin-right: 10px;
+}
+.select-box{
+  padding: 10px 20px;
+  border: 1px solid #000;
+  outline: none !important;
+  border-radius: 6px;
+  width: 100% !important;
+}
+option{
+  font-family: 'Inter';
+}
+.sub-head{
+  font-size: 14px !important ;
+}
+.form-button{
+  text-align:end;
+}
+  .rent-box, .subs-box {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .show {
+    display: block;
+    opacity: 1;
+  }
+
+  .form2{
+    padding: 30px;
+  }
+  .form2 .input-field input{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #a3a3a3;
+    outline: none;
+  }
+  textarea{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    height: 200px;
+    resize: none;
+    margin-top:20px;
+    font-size:18px;
+  }
+  .btnn{
+    border:2px solid #ff8d1e !important;
+    background: #fff !important;
+    color: #ff8d1e !important;
+  }
+
+  .form-right{
+    background-color: #FFF5EB !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form-right-img img{
+    width: 70%;
+  }
+  .cont-box{
+    display: flex;
+    gap: 20px;
+  }
+  .cont-icon .btn{
+    height: 60px;
+    width: 60px;
+    padding: 0 !important;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+  }
+  .cont-text span{
+    color: #ff8d1e;
+  }
+  .fa-envelope{
+    background-color: transparent !important;
+  }
+  
+
+  @media screen and (max-width:750px){
+    .banner-bg{
+      margin-top: 0 !important;
+      padding: 60px 0;
+    }
+    .banner-head{
+      width: 90%;
+      bottom: -55px;
+    }
+    .banner-head h3{
+      font-size: 20px !important;
+    }
+    .form1,.form2{
+      padding: 6px;
+    }
+    .form-right{
+      margin-top: 40px;
+    }
+    .form-right-img{
+      width: 100%;
+    }
+  }

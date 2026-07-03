@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+}
+label,b{
+  font-family: "Inter", sans-serif !important;
+}
+p{
+  color: #000;
+}
+
+.banner-sec{
+  position: relative;
+}
+.banner-bg{
+  margin-top: 120px;
+  padding: 130px 0;
+  background: url(../images/rental-and-subscription/form-banner.png);
+  background-size: cover;
+}
+.banner-bg h1{
+  font-size: 4rem !important;
+  color: #fff;
+  font-weight: bold;
+}
+.banner-bg h2{
+  font-size: 3rem !important;
+  color: #fff;
+  font-weight: normal;
+}
+.banner-head{
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 2rem;
+  border: 1px solid #ffe9d3;
+  -webkit-box-shadow: 0px 20px 69px -3px rgba(255,226,196,1);
+  -moz-box-shadow: 0px 20px 69px -3px rgba(255,226,196,1);
+  box-shadow: 0px 20px 69px -3px rgba(255,226,196,1);
+}
+.banner-head h1{
+  font-size: 2rem !important;
+  font-weight: 800;
+  color: #234057 !important;
+}
+.thankyou-container{
+  background-color: #ffe9d3;
+  margin: 30px;
+  margin-top:100px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.thank-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.thank-head h1{
+  font-weight: bold;
+  margin-bottom: 0 !important;
+}
+.thank-head h1 span{
+  color: #ff8d1e;
+}
+.para{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cont-box{
+  display: flex;
+  gap: 20px;
+}
+.cont-icon .btn{
+  height: 60px;
+  width: 60px;
+  padding: 0 !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+.cont-text span{
+  color: #ff8d1e;
+}
+.fa-envelope{
+  background-color: transparent !important;
+}
+.contact-div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.thank-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thank-bottom h2{
+  color: #ff8d1e;
+}
+.btnn{
+  border:2px solid #ff8d1e !important;
+  background: #fff !important;
+  color: #ff8d1e !important;
+}
+
+
+@media screen and (max-width:750px){
+  .banner-head{
+    width: 90%;
+    bottom: -55px;
+  }
+  .thank-logo img{
+    width: 100%;
+  }
+  .thankyou-container{
+    margin: 0 ;
+    margin-top: 50px;
+  }
+}

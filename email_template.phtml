@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><h3>Contact Information</h3></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><?= $data['name'];?></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><?= $data['email'];?></td>
+		</tr>
+		<tr>
+			<td>Company Name:</td>
+			<td><?= $data['companyname'];?></td>
+		</tr>
+		<tr>
+			<td>Contact Number:</td>
+			<td><?= $data['contactnumber'];?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Technical Information</h3></td>
+		</tr>
+		<tr>
+			<td>Download File link</td>
+			<td><?= $data['upload_link'];?></td>
+		</tr>
+		<tr>
+			<td>DESIGN INTENT MODELING:</td>
+			<td><?=$data['design-int'];?></td>
+		</tr>
+		<tr>
+			<td>HYBRID MODELING:</td>
+			<td><?=$data['hybrid-mod'];?></td>
+		</tr>
+		<tr>
+			<td>AS-BUILT MODELING:</td>
+			<td><?=$data['as-built'];?></td>
+		</tr>
+		<tr>
+			<td>SCAN TO NURBS MODELING:</td>
+			<td><?=$data['scan-nurbs'];?></td>
+		</tr>
+		<tr>
+			<td>Technical Description:</td>
+			<td><?= $data['technicaldescription'];?></td>
+		</tr>
+		<tr>
+			<td>Accuracy Required</td>
+			<td><?=$data['accuracyrequired']?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Deliverable Information</h3></td>
+		</tr>
+		<tr>
+			<td>CAD neutral files:</td>
+			<td><?=$data['cad-neutral'];?></td>
+		</tr>
+		<tr>
+			<td>LIVE TRANSFER FORMAT:</td>
+			<td><?=$data['live-transfer'];?></td>
+		</tr>
+		<tr>
+			<td>OTHER(please mention):</td>
+			<td><?=$data['other'];?></td>
+		</tr>
+		<tr>
+			<td>Deliverable Description:</td>
+			<td><?= $data['deliverabledescription'];?></td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>

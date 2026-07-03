@@ -1,0 +1,160 @@
+.scanning-software h1 {
+  color: #ff931e;
+  font-size: 60px;
+  text-align: center;
+}
+
+.scanning-softwarep {
+  color: rgba(65, 65, 65, 1);
+  text-align: center;
+  position: relative;
+}
+
+.scanning-softwarep::after {
+  content: "";
+  background-color: rgba(127, 125, 125, 1);
+  height: 2px;
+  width: 10%;
+  left: 25%;
+  top: 50%;
+  position: absolute;
+}
+
+.scanning-softwarep::before {
+  content: "";
+  background-color: rgba(127, 125, 125, 1);
+  height: 2px;
+  width: 10%;
+  right: 25%;
+  top: 50%;
+  position: absolute;
+}
+
+.scanning-software {
+  padding: 200px 0;
+}
+
+.mail-btn-div {
+    display: flex !important;
+    gap: 10px;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 15px;
+  }
+
+.email {
+  justify-content: center;
+  padding-top: 13px;
+  align-items: baseline;
+}
+
+.email p {
+  color: rgba(65, 65, 65, 1);
+}
+
+.reverse-sec {
+  padding: 60px 0;
+}
+
+.reverse-sec h2 {
+  font-size: 35px;
+  color: #ff931e;
+}
+
+.reverse-sec span {
+  font-size: 35px;
+  color: rgba(65, 65, 65, 1);
+}
+
+.reverse-sec p {
+  font-size: 30px;
+  color: rgba(65, 65, 65, 1);
+}
+
+.col-lg-6 {
+  place-content: center !important;
+}
+
+.reverse-sec img {
+  width: 100%;
+}
+
+.processing {
+  background: rgba(255, 147, 30, 0.05);
+  padding: 40px;
+  border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  .scanning-software {
+    padding: 100px 0;
+  }
+
+  .scanning-software h1 {
+    font-size: 35px !important;
+  }
+
+  .email {
+    display: block !important;
+  }
+
+  .mail-btn-div {
+    display: flex !important;
+    gap: 10px;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 15px;
+  }
+
+  .email p {
+    margin-bottom: 0px !important;
+  }
+
+  .redirect-btn {
+    text-align: center !important;
+  }
+
+  .scanning-softwarep::after {
+    content: "";
+    background-color: rgba(127, 125, 125, 1);
+    height: 2px;
+    width: 6%;
+    left: 7%;
+    top: 50%;
+    position: absolute;
+  }
+
+  .scanning-softwarep::before {
+    content: "";
+    background-color: rgba(127, 125, 125, 1);
+    height: 2px;
+    width: 6%;
+    right: 7%;
+    top: 50%;
+    position: absolute;
+  }
+
+  .reverse-sec h2 {
+    font-size: 30px !important;
+  }
+
+  .reverse-sec {
+    padding: 30px 0 !important;
+  }
+
+  .processing {
+    padding: 40px 20px !important;
+  }
+
+  .col-lg-6 {
+    padding-bottom: 15px !important;
+  }
+
+  .reverse-sec{
+    text-align: center;
+  }
+
+  .reverse-sec br{
+    display: none !important;
+  }
+}

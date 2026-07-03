@@ -1,0 +1,85 @@
+RewriteEngine On
+RewriteBase /uk/
+
+# -------------------------------------------------
+# REDIRECT ALL UK URLs TO MAIN SITE
+# -------------------------------------------------
+
+RewriteRule ^contact-us\.php$ https://precise3dm.com/contact-us.php [R=301,L]
+RewriteRule ^3d-services-in-india\.php$ https://precise3dm.com/3d-services-in-india.php [R=301,L]
+RewriteRule ^3d-usa-onsite-scan-upload\.php$ https://precise3dm.com/3d-scanning-service-in-the-USA.php [R=301,L]
+RewriteRule ^3D-Reverse-Engineering-Services-in-the-USA\.php$ https://precise3dm.com/3d-Reverse-Engineering-Services-in-india.php [R=301,L]
+
+RewriteRule ^refund-policy\.php$ https://precise3dm.com/refund-policy.php [R=301,L]
+RewriteRule ^Disclaimer\.php$ https://precise3dm.com/Disclaimer.php [R=301,L]
+RewriteRule ^Privacy_policy\.php$ https://precise3dm.com/Privacy_policy.php [R=301,L]
+RewriteRule ^Terms_conditions\.php$ https://precise3dm.com/Terms_conditions.php [R=301,L]
+
+RewriteRule ^Business_partner_final\.php$ https://precise3dm.com/business-opportunity-in-india.php [R=301,L]
+RewriteRule ^Digital-manufacturing-lab-for-education\.php$ https://precise3dm.com/Digital-manufacturing-lab-for-education.php [R=301,L]
+
+RewriteRule ^3d-scanners-in-india\.php$ https://precise3dm.com/buy-and-sell-used-3D-scanners-in-india.php [R=301,L]
+RewriteRule ^einscan-pro-hd-3d-scanner-in-india\.php$ https://precise3dm.com/einscan-pro-2x-2020-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^einscan-hx-3d-scanner-in-india\.php$ https://precise3dm.com/einscan-h-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^einscan-se\.php$ https://precise3dm.com/einscan-se.php [R=301,L]
+RewriteRule ^einscan-sp\.php$ https://precise3dm.com/einscan-sp.php [R=301,L]
+RewriteRule ^Einscanh2\.php$ https://www.precise3dm.com/einscan-se.php [R=301,L]
+
+RewriteRule ^freescan-ue-series-3d-scanner-in-india\.php$ https://precise3dm.com/freescan-ue-series-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^freescan-ue-pro-3d-scanner-in-india\.php$ https://precise3dm.com/freescan-ue-pro2.php [R=301,L]
+RewriteRule ^FreeScan-Combo\.php$ https://precise3dm.com/FreeScan-Combo.php [R=301,L]
+RewriteRule ^handheld-3d-scanner-in-india\.php$ https://www.precise3dm.com/laser-handheld-3d-scanner-india-freescan-x7.php [R=301,L]
+
+RewriteRule ^long-range-3d-scanner-in-india\.php$ https://precise3dm.com/3d-services-in-india.php [R=301,L]
+RewriteRule ^faro-focus-s350-long-range-3d-scanner-in-india\.php$ https://precise3dm.com/faro-focus-s350-long-range-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^faro-focus-s150-mid-range-3d-scanner-in-india\.php$ https://precise3dm.com/faro-focus-s150-mid-range-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^faro-focus-s70-short-range-3d-scanner-in-india\.php$ https://precise3dm.com/faro-focus-s70-short-range-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^faro-focus-m-70\.php$ https://precise3dm.com/faro-focus-m-70.php [R=301,L]
+RewriteRule ^multifunctional-white-light-3d-scanner-in-india\.php$ https://www.precise3dm.com/multifunctional-3d-scanning-service-india.php [R=301,L]
+
+RewriteRule ^affordable-3d-scanners-in-the-market\.php$ https://www.precise3dm.com/affordable-3d-scanners-in-the-market.php [R=301,L]
+RewriteRule ^Jewellery-3D-Scanner-IN500\.php$ https://www.precise3dm.com/Jewellery-3D-Scanner-IN500.php [R=301,L]
+RewriteRule ^laser-handheld-3d-scanner-india-freescan-x7\.php$ https://precise3dm.com/freescan-ue-pro-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^reverse-engineering-software-in-india\.php$ https://www.precise3dm.com/3d-Reverse-Engineering-Services-in-india.php [R=301,L]
+RewriteRule ^geomagic-designx\.php$ https://www.precise3dm.com/geomagic-wrap-3d-scanning-software.php [R=301,L]
+RewriteRule ^geomagic-for-solidworks-reverse-engineering-software\.php$ https://www.precise3dm.com/geomagic-for-solidworks-reverse-engineering-software.php [R=301,L]
+RewriteRule ^3d-inspection-software-in-india\.php$ https://www.precise3dm.com/3d-inspection-software-in-india.php [R=301,L]
+RewriteRule ^geomagic-control-x-3d-inspection-software\.php$ https://www.precise3dm.com/geomagic-control-x-3d-inspection-software.php [R=301,L]
+RewriteRule ^geomagic-freeform-3d-modelling-design-software\.php$ https://www.precise3dm.com/geomagic-freeform-3d-modelling-design-software.php [R=301,L]
+
+RewriteRule ^figure-4-standalone-3d-printer\.php$ https://www.precise3dm.com/figure-4-standalone-3d-printer-material.php [R=301,L]
+RewriteRule ^3d-metrology-applications\.php$ https://www.precise3dm.com/3d-metrology-applications.php [R=301,L]
+RewriteRule ^vehicle-teardown-analysis-service-in-india\.php$ https://www.precise3dm.com/vehicle-digital-inspection-service-in-india.php [R=301,L]
+RewriteRule ^vehicle-digital-benchmarking-service-in-india\.php$ https://www.precise3dm.com/vehicle-digital-benchmarking-service-in-india.php [R=301,L]
+RewriteRule ^vehicle-occupant-architecture-analysis-service\.php$ https://www.precise3dm.com/vehicle-occupant-architecture-analysis-service.php [R=301,L]
+RewriteRule ^vehicle-cad-reverse\.php$ https://www.precise3dm.com/vehicle-cad-reverse.php [R=301,L]
+RewriteRule ^geomagic-wrap-3d-scanning-software\.php$ https://precise3dm.com/geomagic-wrap-3d-scanning-software.php [R=301,L]
+
+
+RewriteRule ^electrical-electronics-benchmarking-service-in-india\.php$ https://www.precise3dm.com/electrical-electronics-benchmarking-service-in-india.php [R=301,L]
+RewriteRule ^vehicle-digital-inspection-service-in-india\.php$ https://www.precise3dm.com/vehicle-digital-inspection-service-in-india.php [R=301,L]
+RewriteRule ^material-testing\.php$ https://www.precise3dm.com/material-testing.php [R=301,L]
+RewriteRule ^3d-scanning-services-in-india\.php$ https://www.precise3dm.com/3d-scanning-services-in-india.php [R=301,L]
+RewriteRule ^3d-inspection-service\.php$ https://www.precise3dm.com/3d-inspection-service.php [R=301,L]
+RewriteRule ^3d-printing-service-in-india\.php$ https://www.precise3dm.com/3d-printing-service-in-india.php [R=301,L]
+RewriteRule ^Globalvision\.php$ https://www.precise3dm.com/Globalvision.php [R=301,L]
+RewriteRule ^3d-scanning-service-in-the-USA\.php$ https://www.precise3dm.com/3d-scanning-service-in-the-USA.php [R=301,L]
+RewriteRule ^structured-light-3d-scanner-in-india\.php$ https://www.precise3dm.com/structured-light-3d-scanner-in-india.php [R=301,L]
+RewriteRule ^business-opportunity-in-india\.php$ https://www.precise3dm.com/business-opportunity-in-india.php [R=301,L]
+RewriteRule ^technology-partner\.php$ https://www.precise3dm.com/technology-partner.php [R=301,L]
+RewriteRule ^3D_scanning_and_Printing_events_in_india_2021\.php$ https://www.precise3dm.com/3D_scanning_and_Printing_events_in_india_2021.php [R=301,L]
+# -------------------------------------------------
+# UK ASSETS (SOCIAL ICONS) → MAIN LOGO
+# -------------------------------------------------
+
+RewriteRule ^assets/images/images/facebook\.png$ https://precise3dm.com/assets/images/Precise%20Logos-08.png [R=301,L]
+RewriteRule ^assets/images/images/youtube\.png$ https://precise3dm.com/assets/images/Precise%20Logos-08.png [R=301,L]
+RewriteRule ^assets/images/images/whatsapp\.png$ https://precise3dm.com/assets/images/Precise%20Logos-08.png [R=301,L]
+RewriteRule ^assets/images/images/linkedin\.png$ https://precise3dm.com/assets/images/Precise%20Logos-08.png [R=301,L]
+RewriteRule ^assets/images/images/Twitter\.png$ https://precise3dm.com/assets/images/Precise%20Logos-08.png [R=301,L]
+# -------------------------------------------------
+# PHP HANDLER (KEEP LAST)
+# -------------------------------------------------
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>

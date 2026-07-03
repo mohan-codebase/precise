@@ -1,0 +1,79 @@
+/*product css*/
+.products h5{
+    height: 45px;
+    padding: 0px 8px;
+}
+
+section#scanner-3d-intro{
+	background-image: url(../images/3d-scanner-bg.jpg);
+    background-position:top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#right-3d-scanner{
+	background-image: url(../images/3d-scanner-bg-2.jpg);
+    background-position:top;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#scanner-products{
+	background-image: url(../images/3d-scanner-bg-3.svg);
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+.product {
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 0;
+}
+/*quote*/
+.quote h6{
+	font-size: 11px;
+}
+.quote small{
+	line-height: 5px;
+}
+.quote .content{
+	background-color: #000;
+    padding: 25px ;
+}
+.quote.my-2 {
+    background-color: rgba(0,0,0,0.4);
+}
+.quote p {
+    font-size: 12px;
+    height: 56px;
+    margin-bottom: 0;
+}
+
+/*products*/
+img.zoom{
+    transition:0.5s;
+}
+
+.quote:hover {
+    background-color: rgba(0,0,0,0.4);
+    transition:0.5s;
+}
+.quote:hover > .content{
+   background-color: #ff931e;
+   transition:0.5s;
+}
+
+.bg-dark{
+    background-color:black !important;
+}
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,328 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background:#fff !important;
+}
+
+/* ========Hero Section Style========== */
+
+.hero{
+  background-image: url('../images/palm-size-and-compact/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  margin: 30px;
+  margin-top: 150px;
+  border-radius: 30px;
+  padding: 70px 20px;
+}
+.call{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.call-icon{
+  background-color: #FF8D1E;
+  height: 60px;
+  padding: 0 !important;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+  color: #fff;
+}
+.call-text h5{
+  color: #fff !important;
+  font-weight: 800;
+}
+.call-text p{
+  color: #fff;
+}
+.call-text p span{
+  color: #FF8D1E;
+}
+.hero h1{
+  color: #fff;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 30px;
+  padding:0 200px;
+}
+.hero .head-text{
+  color:#fff;
+  font-size: 26px !important;
+  font-weight: 500;
+}
+.hero .text{
+  margin-top: -16px !important;
+  font-size: 18px !important;
+  color: #fff;
+  padding: 0 13rem;
+}
+@media screen and (max-width:900px){
+  .hero .text{
+    padding: 0 0px;
+  }
+}
+.card-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 300px;
+  min-width: 280px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-img{
+  text-align: center;
+  background: #fdf6f6;
+  padding: 10px;
+  border-radius: 10px;
+}
+.mail{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+}
+.mail-icon{
+  background-color: #FF8D1E;
+  height: 60px;
+  padding: 0 !important;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+  color: #fff;
+}
+.mail-text h5{
+  color: #fff !important;
+  font-weight: 800;
+}
+.mail-text p{
+  color: #fff;
+}
+.mail-text p span{
+  color: #FF8D1E;
+}
+
+/* ======Overview Section Style======== */
+
+.overview h2{
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+}
+.overview p{
+  font-size: 20px !important;
+  color: #000;
+  margin-bottom:0 !important;
+}
+
+/* ============Why section Style========== */
+
+.why-head{
+  background-color: #FF8D1E;
+  padding: 30px;
+  border-radius: 30px;
+}
+.why-head h2{
+  color: #fff;
+  font-weight: 700;
+}
+.why-text{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.why-text.right{
+  margin-left: 40px;
+}
+.why-text.left{
+  margin-right: 40px;
+}
+.why-text h3{
+  color: #000;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.why-text p{
+  color: #000;
+  margin-bottom: 0;
+}
+
+/* ------Advance Section Style--------- */
+
+.advance{
+  padding: 50px 0;
+  background-color: #FFFAFA;
+}
+.advance h2{
+  font-size:2.3rem;
+  font-weight: 600;
+}
+.advance h2 span{
+  color: #FF8D1E;
+}
+.advance p{
+  color: #000;
+  padding: 0 120px;
+  margin-top: 20px;
+}
+
+.card-boxx{
+  border: 1px solid #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transform: translateY(-50px);
+  background-color: #fff;
+}
+.card-boxx img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.card-boxx p{
+  color: #000;
+}
+
+.ad-box{
+  background: #666666;
+  background: linear-gradient(62deg, rgba(102, 102, 102, 1) 0%, rgba(0, 0, 0, 1) 67%);
+  padding: 30px;
+  border-radius: 20px;
+}
+.ad-img{
+  background-color: #E3EEF3;
+  border-radius: 20px;
+}
+.ad-text{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+.ad-text h2{
+  color: #fff;
+  font-size: 4rem;
+}
+.ad-text p{
+  color: #fff;
+
+}
+
+.banner2{
+  background: url(../images/palm-size-and-compact/banner2.png);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.banner2 h2{
+  font-size: 2.5rem;
+  padding: 0 10rem;
+  color: #fff;
+  font-weight: 700;
+}
+.banner2-btns{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.blog-section h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.blog p{
+  color: #000;
+  margin-top: 10px;
+}
+/* =================== Mobile View Style ================= */
+
+@media screen and (max-width:732px){
+  .hero{
+    margin: 10px;
+    margin-top:20px;
+    min-height: 100%;
+    padding: 30px 20px;
+  }
+  .hero h1{
+    padding: 0;
+    font-size: 30px;
+  }
+  .call{
+    justify-content: start;
+  }
+  .hero .head-text{
+    font-size:18px !important;
+  }
+  .mail{
+    margin-top:40px;
+  }
+  .mail-text p{
+    margin-bottom: 0 !important;
+  }
+
+  .why-img img{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .why-text{
+    margin: 20px 0;
+  }
+  .why-text h3{
+    font-size: 24px;
+  }
+  .why-text p{
+    font-size: 18px !important;
+  }
+  .why-text.right{
+    margin-left: 0;
+  }
+  .why-text.left{
+    margin-right: 0;
+  }
+
+  .advance h2{
+    font-size: 24px;
+  }
+  .advance p{
+    padding: 0;
+  }
+  .ad-text h2{
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .banner2 h2{
+    font-size: 1.6rem;
+    padding: 0;
+  }
+  .banner2-btns .btn{
+    padding: 10px !important;
+    width: 150px;
+  }
+}

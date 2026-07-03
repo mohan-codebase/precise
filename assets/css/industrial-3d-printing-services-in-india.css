@@ -1,0 +1,1315 @@
+/* =========================================================
+   Industrial 3D Printing Services in India – Page Styles
+   ========================================================= */
+
+/* ---------- Design Tokens ---------- */
+:root {
+    --orange:       #FE8D1D;
+    --orange-dark:  #e67d14;
+    --navy:         #1a2b3c;
+    --white:        #ffffff;
+    --font-main:    "Inter", "firasan-normal", sans-serif;
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.industrial-hero-section {
+    position: relative;
+    background-image: url('../images/industrial-3d-printing-services-in-india/hero-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /* Account for fixed topbar (~42px) + navbar (~58px) + breathing room */
+    padding-top: 130px;
+    padding-bottom: 0;
+}
+
+/* Soft white gradient fade at the bottom */
+.industrial-hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.18) 0%,
+        transparent 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.industrial-hero-section .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+/* ── Top Right & Bottom Email: Contact Info ── */
+.hero-contact-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.hero-contact-text span:first-child {
+    font-size: 12px;
+    color: #000 !important;
+    font-family: var(--font-main);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.hero-contact-text .phone-numbers,
+.hero-contact-text .email-text {
+    font-size: 14px;
+    color: #000;
+    font-family: var(--font-main);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.hero-contact-text .phone-numbers a,
+.hero-contact-text .email-text a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.hero-contact-text .phone-numbers a:hover,
+.hero-contact-text .email-text a:hover {
+    color: var(--orange);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+/* ── Hero Content Row ── */
+.hero-main-content {
+    align-items: flex-start;
+    padding-bottom: 48px;
+}
+
+/* ── Badge ── */
+.hero-badge {
+    display: inline-block;
+    padding: 4px 16px;
+    border: 1.5px solid var(--orange);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--orange);
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* ── Main Title (H1) ── */
+.hero-title {
+    font-family: var(--font-main);
+    font-size: clamp(32px, 4.5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 18px;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+}
+
+/* ── Description ── */
+.hero-description {
+    font-family: var(--font-main);
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 0 28px;
+    max-width: 500px;
+}
+
+/* ── CTA Buttons ── */
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.btn-hero-orange {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    letter-spacing: 0.4px;
+    text-decoration: none !important;
+    transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    white-space: nowrap;
+    background: var(--orange);
+    color: var(--white) !important;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+}
+
+.btn-hero-orange:hover {
+    background: var(--orange-dark);
+    border-color: var(--orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.5);
+    color: var(--white) !important;
+}
+
+/* ── Hero Cards ── */
+.hero-cards-row {
+    position: relative;
+    z-index: 10;
+    margin-bottom: -70px;
+}
+
+.hero-stat-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #FE8D1D !important;
+    box-shadow: -2px 5px 15px #FE8D1D;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    min-height: 120px;
+    overflow: hidden;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.hero-stat-card:hover {
+    box-shadow: -2px 8px 20px #FE8D1D;
+    transform: translateY(-3px);
+}
+
+.stat-card-img-wrapper {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f8;
+    padding: 10px;
+}
+
+.stat-card-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.stat-card-body {
+    width: 55%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stat-card-title {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.stat-card-arrow {
+    width: 28px;
+    height: 28px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    margin-top: auto;
+}
+
+.stat-card-arrow .arrow-icon {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   RESPONSIVE OVERRIDES
+   ========================================================= */
+
+/* ── Tablet (≤ 991px) ── */
+@media (max-width: 991px) {
+    .industrial-hero-section {
+        padding-top: 30px;
+    }
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+/* ── Mobile (≤ 767px) ── */
+@media (max-width: 767px) {
+    .industrial-hero-section {
+        padding-top: 20px;
+    }
+    .hero-title {
+        font-size: 28px;
+    }
+    .hero-description {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-hero-orange {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+/* ── Small Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 26px;
+    }
+    .hero-description {
+        font-size: 13.5px;
+    }
+    .hero-contact-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* =========================================================
+   SERVICES SECTION
+   ========================================================= */
+.ips-services-section {
+    background-color: #f6f6fa;
+    padding: 120px 0 80px; /* Top padding extra to account for floating cards from hero */
+}
+
+.ips-section-title {
+    font-family: var(--font-main);
+    font-size: clamp(28px, 3.5vw, 42px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin-bottom: 50px;
+}
+
+.ips-services-grid {
+    align-items: stretch;
+}
+
+.ips-service-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    padding-bottom: 30px; /* Space for the floating button */
+}
+
+.ips-service-card-content {
+    padding: 35px 35px 20px;
+    flex: 1;
+}
+
+.ips-service-title {
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.ips-service-desc {
+    font-family: var(--font-main);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.ips-service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ips-service-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.ips-service-list li img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ips-service-img-wrapper {
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ips-service-img-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.ips-service-btn-wrapper {
+    position: absolute;
+    bottom: -22px; /* Pull it down outside the card */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ips-btn-service {
+    background: var(--orange);
+    color: var(--white) !important;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    box-shadow: 0 6px 15px rgba(247, 140, 30, 0.4);
+    transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
+    white-space: nowrap;
+}
+
+.ips-btn-service:hover {
+    background: var(--orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(247, 140, 30, 0.5);
+}
+
+/* ── Services Section Responsive ── */
+@media (max-width: 991px) {
+    .ips-services-section {
+        padding: 90px 0 60px;
+    }
+}
+@media (max-width: 767px) {
+    .ips-services-section {
+        padding: 80px 0 50px;
+    }
+    .ips-service-card-content {
+        padding: 25px 25px 15px;
+    }
+    .ips-service-title {
+        font-size: 18px;
+    }
+    .ips-service-desc {
+        font-size: 14px;
+    }
+    .ips-service-list li {
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   TECHNOLOGY COMPARISON SECTION
+   ========================================================= */
+.ips-comparison-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.ips-comparison-desc {
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.ips-table-wrapper {
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    overflow: hidden; /* To ensure the border radius applies to the table corners */
+    min-width: 600px; /* Ensures the table doesn't get too squished on mobile and triggers horizontal scroll */
+}
+
+.ips-comparison-table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.ips-comparison-table th,
+.ips-comparison-table td {
+    padding: 20px 25px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    font-family: var(--font-main);
+}
+
+.ips-comparison-table th:last-child,
+.ips-comparison-table td:last-child {
+    border-right: none;
+}
+
+.ips-comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.ips-comparison-table th {
+    font-weight: 700;
+    font-size: 19px;
+    color: #1a1a1a;
+    background-color: transparent;
+}
+
+.ips-comparison-table td {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.ips-tick-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.ips-dash {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+/* ── Comparison Section Responsive ── */
+@media (max-width: 767px) {
+    .ips-comparison-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .ips-comparison-table th,
+    .ips-comparison-table td {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .ips-comparison-desc {
+        font-size: 14px;
+    }
+}
+
+/* =========================================================
+   CASE STUDIES SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.fps-cases-section {
+    background-color: #f6f6fa;
+    padding: 64px 0 56px;
+}
+
+/* ── Section Header ── */
+.fps-cases-header {
+    margin-bottom: 40px;
+}
+
+.fps-cases-title {
+    font-family: var(--font-main);
+    font-size: clamp(22px, 2.8vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* ── Card Grid ── */
+/* Bootstrap g-4 handles all gutters — no additional overrides needed */
+.fps-cases-grid {
+    align-items: stretch;
+}
+
+/* ── Individual Case Card ── */
+.fps-case-card {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow 0.22s ease, transform 0.2s ease;
+}
+
+.fps-case-card:hover {
+    box-shadow: 0 8px 28px rgba(247, 140, 30, 0.18);
+    transform: translateY(-4px);
+}
+
+/* ── Card Image Wrapper ── */
+.fps-case-img-wrap {
+    width: 100%;           /* fixed image height for uniform grid */
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.fps-case-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.fps-case-card:hover .fps-case-img-wrap img {
+    transform: scale(1.04);
+}
+
+/* ── Card Body (Label) ── */
+.fps-case-card-body {
+    padding: 14px 14px 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fps-case-card-body p {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* ── View More Button ── */
+.fps-cases-btn-wrap {
+    margin-top: 40px;
+}
+
+.fps-cases-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 60px;
+    background: var(--orange);
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.38);
+    transition:
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.18s ease;
+}
+
+.fps-cases-btn:hover {
+    background: var(--orange-dark);
+    box-shadow: 0 6px 22px rgba(247, 140, 30, 0.52);
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+.fps-cases-btn svg {
+    flex-shrink: 0;
+}
+
+/* ── Case Studies Responsive ── */
+
+@media (max-width: 991px) {
+    .fps-cases-section {
+        padding: 48px 0 44px;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .fps-cases-section {
+        padding: 40px 0 36px;
+    }
+
+    .fps-cases-title {
+        font-size: 22px;
+    }
+
+    .fps-cases-header {
+        margin-bottom: 28px;
+    }
+
+    /* 2 columns on mobile (row-cols-sm-2 handles this via Bootstrap) */
+    
+
+    .fps-cases-btn-wrap {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fps-cases-section {
+        padding: 32px 0 28px;
+    }
+
+    /* Single column on very small screens */
+    
+
+    .fps-cases-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+}
+
+/* =========================================================
+   WORKFLOW SECTION
+   ========================================================= */
+.ips-workflow-section {
+    background-color: #f6f6fa;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ips-workflow-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px; /* Spacing between steps */
+    width: 100%;
+}
+
+.ips-workflow-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.ips-workflow-img-wrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.ips-workflow-img-wrap img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.ips-workflow-arrow {
+    position: absolute;
+    right: -18px; /* Push outside the image half-way */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    box-shadow: 0 2px 6px rgba(247, 140, 30, 0.4);
+    z-index: 2;
+}
+
+.ips-workflow-text {
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+}
+
+/* ── Workflow Responsive ── */
+@media (max-width: 1200px) {
+    .ips-workflow-text {
+        font-size: 13px;
+    }
+    .ips-workflow-container {
+        gap: 10px;
+    }
+    .ips-workflow-arrow {
+        right: -13px;
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ips-workflow-container {
+        overflow-x: auto;
+        padding-bottom: 20px;
+        padding-right: 20px; /* Space at end of scroll */
+        justify-content: flex-start;
+        /* Custom scrollbar styling optional, but let's keep it simple */
+        -webkit-overflow-scrolling: touch;
+        gap: 20px;
+    }
+    
+    .ips-workflow-step {
+        flex: 0 0 160px; /* Fixed width on mobile for scrolling */
+    }
+    
+    .ips-workflow-arrow {
+        right: -22px;
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ips-workflow-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .ips-workflow-step {
+        flex: 0 0 140px;
+    }
+}
+
+/* =========================================================
+   WHY PRECISE3DM SECTION
+   ========================================================= */
+.ips-why-section {
+    background-color: #f6f6fa;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ips-why-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+}
+
+.ips-why-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ips-why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(247, 140, 30, 0.12);
+}
+
+.ips-why-icon {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.ips-why-text {
+    font-family: var(--font-main);
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive Grid */
+@media (max-width: 1400px) {
+    .ips-why-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ips-why-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .ips-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .ips-why-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .ips-why-card {
+        padding: 24px 12px;
+    }
+    .ips-why-icon {
+        height: 50px;
+        margin-bottom: 16px;
+    }
+    .ips-why-text {
+        font-size: 13.5px;
+    }
+}
+
+/* =========================================================
+   TRUST SECTION
+   ========================================================= */
+.ips-trust-section {
+    background-color: #f6f6fa;
+    padding-bottom: 80px;
+}
+
+.ips-trust-container {
+    background: linear-gradient(90deg, #000000 34.24%, #474747 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    padding: 60px 50px;
+}
+
+.ips-trust-title {
+    font-family: var(--font-main);
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.ips-trust-desc {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    color: #dcdcdc;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.ips-trust-btn {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #ffffff !important;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 28px;
+    border-radius: 13px;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ips-trust-btn:hover {
+    background-color: var(--orange-dark);
+    transform: translateY(-2px);
+}
+
+.ips-trust-stat-val {
+    font-family: var(--font-main);
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.ips-trust-stat-label {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9c9c9;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ips-trust-container {
+        padding: 40px 30px;
+    }
+    .ips-trust-title {
+        font-size: 28px;
+    }
+    .ips-trust-stat-val {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ips-trust-container {
+        padding: 30px 20px;
+    }
+    .ips-trust-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .ips-trust-desc {
+        text-align: center;
+    }
+    .ips-trust-btn {
+        display: block;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .ips-trust-stat-val {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .ips-trust-stat-label {
+        margin-bottom: 20px;
+    }
+}
+
+/* =========================================================
+   FREQUENTLY ASKED QUESTIONS – SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.ips-faq-section {
+    background-color: #f6f6fa;
+    padding: 60px 0;
+}
+
+/* ── Section Title ── */
+.ips-faq-section-title {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: clamp(22px, 3.5vw, 34px);
+    font-weight: 900;
+    color: #1a1a2e;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 44px;
+}
+
+/* ── Accordion Container ── */
+.ips-faq-accordion {
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-bg: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ── Each Accordion Item ── */
+.ips-faq-item {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 32px !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    /* Orange left accent – only visible when open */
+    border-left: 4px solid transparent !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Active/open item: orange left border + slightly deeper shadow */
+.ips-faq-item:has(.accordion-collapse.show) {
+    border-left-color: var(--orange) !important;
+    box-shadow: 0 4px 22px rgba(247, 140, 30, 0.12);
+}
+
+.ips-faq-item.ips-faq-open {
+    border-left-color: var(--orange) !important;
+    box-shadow: 0 4px 22px rgba(247, 140, 30, 0.12);
+}
+
+/* ── Accordion Button ── */
+.ips-faq-btn {
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: none !important;
+    border-radius: 32px !important;
+    box-shadow: none !important;
+    text-align: left;
+}
+
+/* Remove Bootstrap's built-in right-side arrow entirely */
+.ips-faq-btn::after {
+    display: none !important;
+}
+
+/* No blue tint when open */
+.ips-faq-btn:not(.collapsed) {
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    box-shadow: none !important;
+}
+
+/* ── Icon Wrap ── */
+.ips-faq-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    color: var(--orange);
+    font-size: 15px;
+    position: relative;
+}
+
+/* Show + when collapsed, hide – */
+.ips-faq-icon-plus  { display: inline-block !important; }
+.ips-faq-icon-minus { display: none !important; }
+
+/* Show – when open, hide + */
+.ips-faq-btn:not(.collapsed) .ips-faq-icon-plus  { display: none !important; }
+.ips-faq-btn:not(.collapsed) .ips-faq-icon-minus { display: inline-block !important; }
+
+/* ── Accordion Body ── */
+.ips-faq-body {
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.7;
+    padding: 4px 22px 22px calc(22px + 14px + 22px);
+    background: #ffffff;
+}
+
+.ips-faq-btn:focus,
+.ips-faq-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    background: #ffffff !important;
+}
+
+/* =========================================================
+   RESPONSIVE – FAQ SECTION
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .ips-faq-section {
+        padding: 52px 0 60px;
+    }
+
+    .ips-faq-section-title {
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+    .ips-faq-item {
+        border-radius: 20px !important;
+    }
+
+    .ips-faq-btn {
+        border-radius: 20px !important;
+        font-size: 14.5px;
+    }
+
+    .ips-faq-btn:not(.collapsed) {
+        border-radius: 20px 20px 0 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .ips-faq-section {
+        padding: 44px 0 52px;
+    }
+
+    .ips-faq-section-title {
+        font-size: 22px;
+        letter-spacing: 0.8px;
+        margin-bottom: 28px;
+    }
+
+    .ips-faq-item {
+        border-radius: 16px !important;
+    }
+
+    .ips-faq-btn {
+        border-radius: 16px !important;
+        font-size: 14px;
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .ips-faq-btn:not(.collapsed) {
+        border-radius: 16px 16px 0 0 !important;
+    }
+
+    .ips-faq-body {
+        padding: 4px 18px 18px calc(18px + 12px + 22px);
+        font-size: 13.5px;
+    }
+
+    .ips-faq-accordion {
+        gap: 10px;
+    }
+}
+
+/* =========================================================
+   READY TO START SECTION
+   ========================================================= */
+.ips-ready-section {
+    background-color: #f6f6fa;
+    padding: 0 0 80px; /* padding top is 0 because FAQ has padding bottom 60px */
+}
+
+.ips-ready-container {
+    background: linear-gradient(90deg, #000000 34.24%, #474747 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    padding: 60px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ips-ready-title {
+    font-family: var(--font-main);
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.ips-ready-desc {
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 0;
+    max-width: 90%;
+}
+
+.ips-ready-img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.15); /* make image slightly pop out */
+}
+
+.ips-ready-btn-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ips-ready-btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 260px;
+    background: linear-gradient(180deg, #ffa84c 0%, #fe8d1d 100%);
+    color: #ffffff;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 10px rgba(254, 141, 29, 0.3);
+}
+
+.ips-ready-btn:hover {
+    background: linear-gradient(180deg, #fe8d1d 0%, #ffa84c 100%);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(254, 141, 29, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ips-ready-container {
+        padding: 40px 30px;
+    }
+    .ips-ready-btn-col {
+        align-items: center;
+        margin-top: 30px;
+    }
+    .ips-ready-img {
+        transform: scale(1);
+        max-width: 80%;
+        margin-top: 20px;
+    }
+    .ips-ready-desc {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .ips-ready-container {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .ips-ready-title {
+        font-size: 26px;
+    }
+    .ips-ready-desc {
+        font-size: 15px;
+    }
+    .ips-ready-img {
+        max-width: 100%;
+    }
+}

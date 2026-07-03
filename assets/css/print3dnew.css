@@ -1,0 +1,196 @@
+.cover-container {
+    /*height: 80vh;*/
+    /*width: 100vw;*/
+    background-image:  url("../images/3DprintingServicesNewpage/3DprintingServices/CoverPic1.png");
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size:cover;
+    
+
+}
+@media screen and (max-width:750px){
+    .cover-container{
+        margin-top:-50px !important;
+    }
+}
+.topsec{
+    border: 2px solid;
+    color:#f69322 ;
+    
+     
+}
+.materialfont{
+    font: normal normal normal 20px/30px Poppins;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+opacity: 1;
+}
+.headfont{
+    font: normal normal normal 18px/27px Poppins;
+letter-spacing: 0.18px;
+color: #FFFFFF;
+opacity: 1;
+}
+.heikey{
+
+    padding: 15px;
+}
+.overcolor{
+    background-image:  url("../images/3DprintingServicesNewpage/3DprintingServices/Intersection\ 1.jpg");}
+    .overimg{
+        background-image:  url("../images/3DprintingServicesNewpage/3DprintingServices/Intersection\ 2.jpg");
+        background-size: cover;
+        margin: -15px;
+
+
+    }
+.topsecsticky{
+    border-bottom: 2px solid;color: #fe8700;
+    border-top: 2px solid;color: #fe8700;background-color: #212020;
+
+}
+.content-heading {
+    color: #fe8700;
+    font-weight: bold;
+}
+.justify-para{
+    font-size: 1rem;
+    text-align: justify;
+    color: white;
+    font-size: 19px;
+
+}
+.printinc{
+    text-align: center;
+font: normal normal normal 16px/25px Poppins;
+letter-spacing: 0.16px;
+color: #FFFFFF;
+opacity: 1;
+margin-top: 5px;
+}
+.materialfeatur{
+    background-color:#D9D9D9 ;
+    text-align: center;
+font: normal normal medium 16px/19px Poppins;
+letter-spacing: 0.08px;
+color: #010101;
+opacity: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 50px;
+
+    
+    
+}
+.materialfeature{
+    background-color:#f69322 ;
+    text-align: center;
+
+}
+.backfs h5.pre-colorfs::before {
+    content: "-";
+    margin-right: 20px;
+    font-size: 28px;
+}
+.left-border {
+    padding-left: 30px;
+    border-left: 2px solid #fff;
+    margin-left: 5px;
+    
+}
+
+.pre-colorfs {
+    color: #ff931e;
+}
+.printing img{
+    width: 100%;
+    height: 250px;
+}
+.printing-service-car {
+    background-color:black;
+    padding-bottom: 4px;
+}
+body{
+    list-style-type:none
+}
+
+
+@media only screen and (min-width:712px) {
+    .topsec{
+
+        margin-left:20px;
+        
+    }
+    .stickytik{
+        margin-left: 5px;
+    }
+    .stickposition{
+        position: relative;left: 114px;
+    }
+    .stickposition1{
+        position: relative;left: 109px;
+    }
+    .stickposition2{
+        position: relative;left: 101px;
+    }
+    .stickposition3{
+        position: relative;left: 93px;
+    }
+    .stickposition4{
+        position: relative;left: -5px;
+    }
+    .stickposition5{
+        position: relative;left: -105px;
+    }
+    .stickposition6{
+        position: relative;left: -195px;
+    }
+    .stickposition7{
+        position: relative;left: -191px;
+    }
+    .heikey{
+        height: 240px;
+        padding: 15px;
+    }
+    .explobut{
+        position: relative;left: -59px;
+        
+    }
+    .topsecsticky{
+        border-bottom: 2px solid;color: #fe8700; position: sticky !important;position: -webkit-sticky;top:103px;z-index:999;
+
+
+               border-top: 2px solid;color: #fe8700;    background-color: #212020;
+               margin-top: -13px;
+    }
+    .materialfeatur{
+    font-size: 17px;
+
+    }
+    .materialfeature{
+        position: relative;left: 44px;
+    position: relative;bottom: 37px;
+    height: 76px;
+    font-size: 17px;
+
+    }
+    .materialfeatur{
+        height: 50px;
+    }
+    .materialcont{
+        margin: 10px;
+    }
+    .materialconte{
+        margin: 2px;
+    }
+    .cover-container 
+{
+position: relative;bottom: 13px;
+}
+    
+    
+
+
+}
+

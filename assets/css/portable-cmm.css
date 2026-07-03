@@ -1,0 +1,83 @@
+section#portable_cmm_banner {
+    background-image: url(../images/portable-cmm/cover-pic.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section#portable_cmm_banner .heading {
+    padding: 31px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cmm-btn {
+    background-color: #ff931e;
+    color: #fff;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 12px 28px; 
+    font-size: 20px;
+}
+.cmm-callnow {
+    position: absolute;
+    top: -95px;
+}
+#cmm-overview {
+    background-color: rgb(26, 26, 26);
+}
+#cmm_keyfeauture {
+    background-color: #000000;
+}
+.overview-cmm {
+    color: #fff;
+    font-size: 24px;
+    background-color: transparent;
+}
+.overview-cmmpara{
+    font-size: 20px;
+    font-family: "firasan-extrathin", "sans-serif";
+    color: #fff;
+}
+.cmm-kful li {
+    color: #fff;
+    line-height: 28px;
+    list-style-type: revert;
+    padding-left: 10px;
+    font-family: 'firasan-normal';
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.cmm-spectable thead th {
+    background-color:rgb(193, 221, 223) ;
+    border: 1px solid;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    padding: 20px 10px;
+}
+.cmm-spectable tbody td {
+    background-color:rgb(196, 196, 196);
+    border: 1px solid;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    padding: 20px 10px;
+}
+.grey-bg {
+    background-color: rgb(64, 64, 64);;
+}
+.cmm-inspara {
+    font-size: 16px;
+}
+.cmm-hdd {
+    font-size: 20px;
+}
+.faq-link a {
+    color:#ff931e;
+}
+.faq-link a:hover {
+    color:#ff931e;
+}

@@ -1,0 +1,41 @@
+ section#Freescan-ue7-banner{
+        background-image: url(../images/freescan-ue7/CVR.png);
+        background-position: center center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+
+    section#Freescan-ue7-banner .heading {
+        padding: 31px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+.media.ue7_video{
+    height: auto;
+}
+.media.ue7_video:last-of-type{
+    margin-bottom: 0;
+}
+.card-body{
+    opacity: 1;
+}
+.card-title{
+    color: #fff;
+    opacity: 1;
+}
+.card{
+    height: 420px;
+}
+
+
+
+@media(max-width:576px){
+    .card{
+        height: auto;
+    }
+}
+
+
+
+

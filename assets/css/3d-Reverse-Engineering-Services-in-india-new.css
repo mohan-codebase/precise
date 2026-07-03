@@ -1,0 +1,1618 @@
+h1,h2,h3,h4,h5,h6,p,span,a,button,b,strong,small,td,th{
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* 3D Reverse Engineering Services Hero Section CSS */
+.re-hero-section {
+    background-image: url('../images/3d-reverse-engineering-services-in-india-new/3dresi-bg-img.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 700px;
+    color: #fff;
+    padding-top: 100px; /* Accounts for header */
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-left-content {
+    padding: 80px 40px 80px 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero-title .text-orange {
+    color: #ff931e;
+}
+
+.hero-subheading {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 30px;
+    max-width: 90%;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Icons Row */
+.features-icons-row {
+    margin-bottom: 30px;
+}
+
+.feature-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px !important; 
+}
+
+.icon-img-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(35, 35, 35, 0.85); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin-bottom: 15px !important;
+}
+
+.icon-img-box img {
+    max-width: 55%;
+    max-height: 55%;
+    object-fit: contain;
+}
+
+.feature-icon-text {
+    font-size: 14.5px;
+    color: #fff;
+    font-weight: 700; /* Increased per request */
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+/* Buttons */
+.hero-buttons .btn-orange {
+    background: linear-gradient(90deg, #ffa846, #ff8c16);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.3);
+}
+
+.hero-buttons .btn-orange:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c16, #ffa846);
+    box-shadow: 0 6px 20px rgba(255, 147, 30, 0.5);
+}
+
+/* Contact Widgets */
+.contact-widget {
+    display: flex;
+    align-items: center;
+}
+
+.email-widget-container {
+    margin-top: 30px;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #ffa846, #ff8c16);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    box-shadow: 0 4px 10px rgba(255, 147, 30, 0.4);
+}
+
+.icon-circle i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700; 
+}
+
+.contact-info p.title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.contact-info p.details {
+    color: #ffffff;
+    font-weight: 700; 
+}
+
+.call-us-widget {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 10;
+}
+
+/* Target Email Widget text on Desktop specifically */
+@media (min-width: 992px) {
+    .email-widget-container .contact-info p.details,
+    .email-widget-container .contact-info p.title {
+        color: #000000 !important; /* Specific blue-gray shade from reference */
+    }
+}
+
+/* Right Content */
+.hero-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes timeline up, car down */
+    height: 100%;
+    padding-top: 150px !important; 
+    position: relative;
+}
+
+.process-timeline-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.timeline-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    z-index: 10;
+    position: relative;
+    padding-bottom: 0px; 
+    min-height: 200px;
+}
+
+.timeline-connector-line {
+    position: absolute;
+    bottom: 13px;
+    left: 10%;
+    right: 10%;
+    height: 1.5px;
+    background-color: #ffaa42;
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 5;
+    flex: 1;
+}
+
+.timeline-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: auto; 
+    padding-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.process-img {
+    height: 70px;
+    max-width: 95%;
+    object-fit: contain;
+    border-radius: 6px;
+    z-index: 5;
+    margin-bottom: 0px; 
+}
+
+.vertical-connector {
+    width: 2px;
+    height: 35px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-node {
+    width: 26px;
+    height: 26px;
+    background: #ff931e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    z-index: 10;
+    position: relative;
+    border: none;
+}
+
+.right-bottom-car {
+    position: relative;
+    margin-top: auto; /* Pushes the car perfectly to the bottom of the column */
+    align-self: flex-end; /* Align to the right edge */
+    width: 85%; /* Slight bleed */
+    right: 10%; /* Counter pull to right */
+    z-index: 2;
+}
+
+.car-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.white-fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.4) 50%, #ffffff 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .timeline-title {
+        font-size: 11px;
+    }
+    .process-img {
+        height: 45px;
+    }
+    .timeline-wrapper {
+        gap: 10px;
+    }
+    .hero-right-content {
+        padding-top: 150px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .re-hero-section {
+        flex-direction: column;
+        padding-top: 20px;
+        min-height: auto;
+    }
+    
+    .hero-right-content {
+        padding-top: 50px !important;
+        position: relative;
+    }
+
+    .hero-left-content {
+        padding: 25px 15px;
+        /* background: rgba(0, 0, 0, 0.6); */
+        /* border-radius: 12px; */
+        margin: 15px;
+    }
+    
+    .hero-title {
+        font-size: 38px;
+    }
+    
+    .hero-subheading {
+        font-size: 20px;
+    }
+
+    .call-us-widget {
+        top: 20px;
+        right: 20px;
+    }
+
+    .white-fade-bottom {
+        display: none;
+    }
+    
+    .right-bottom-car {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        right: auto; /* Reset desktop offset */
+        left: auto;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .email-widget-container {
+        margin-top: 25px;
+    }
+    
+    .timeline-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        min-height: auto;
+    }
+    
+    .timeline-connector-line {
+        display: none;
+    }
+    
+    .vertical-connector {
+        display: none;
+    }
+    
+    .timeline-item {
+        flex: 0 0 30%; /* Limits to 3 items per row on tablet */
+        max-width: 30%;
+        min-height: auto;
+    }
+    
+    .timeline-node {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline-item {
+        flex: 0 0 45%; /* Limits to 2 items per row on phones */
+        max-width: 45%;
+    }
+    .timeline-wrapper {
+        gap: 20px 10px; /* Space them out effectively */
+    }
+}
+
+@media (max-width: 575px) {
+    .features-icons-row {
+        justify-content: space-between;
+    }
+    .feature-icon-item {
+        margin-right: 0 !important;
+        width: 48%;
+    }
+    .hero-buttons .btn-orange {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/* Case Study Section */
+.case-study-section {
+    background-color: #f4f6f8;
+    padding: 70px 0;
+    position: relative;
+}
+
+.case-study-title-block h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.case-study-title-block h3 span {
+    color: #ff931e;
+}
+
+.case-study-title-block p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.arrow-circle-icon {
+    width: 60px;
+    height: 60px;
+    background: #ff931e;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(255,147,30,0.3);
+}
+
+/* Case Study Slider System */
+.case-study-slider-track {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+.case-study-slider-track::-webkit-scrollbar {
+    display: none;
+}
+.cs-slide-item {
+    scroll-snap-align: start;
+    flex: 0 0 calc(100% / 3);
+}
+
+@media (max-width: 1199px) { /* tablets */
+    .cs-slide-item {
+        flex: 0 0 50%;
+    }
+}
+@media (max-width: 767px) { /* mobile */
+    .cs-slide-item {
+        flex: 0 0 100%;
+    }
+}
+
+.case-study-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+    height: 100%;
+}
+
+.case-study-card h4 {
+    color: #ff931e;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.case-study-card p.description {
+    font-size: 13.5px;
+    color: #444;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.case-study-card img.cs-img {
+    width: 100%;
+    height: 160px; /* Force uniform height for top challenge images */
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.what-we-did-box {
+    background-color: #fff6e8;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 18px 0;
+}
+
+.what-we-did-box p.description {
+    margin-bottom: 12px;
+}
+
+.what-we-did-box img.cs-img {
+    height: 140px; /* Force uniform height for bottom solution images */
+    width: 100%;
+    object-fit: contain; /* Prevents CAD models from being awkwardly cropped */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.slider-nav-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ff931e;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 10px rgba(255,147,30,0.4);
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+.slider-nav-btn:hover {
+    background: #e57c0e;
+}
+
+.slider-nav-btn:focus,
+.slider-nav-btn:active,
+.slider-nav-btn:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+.slider-nav-prev {
+    left: -20px;
+}
+
+.slider-nav-next {
+    right: -20px;
+}
+
+@media (max-width: 1200px) {
+    .slider-nav-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .slider-nav-prev {
+        left: -10px;
+    }
+    .slider-nav-next {
+        right: -10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-nav-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    /* Move slightly inward to hover over the card neatly on small screens */
+    .slider-nav-prev {
+        left: 5px;
+    }
+    .slider-nav-next {
+        right: 5px;
+    }
+}
+
+/* Before and After Section */
+.before-after-section {
+    background-color: #f4f6f8;
+    padding-bottom: 70px;
+    font-family: inherit;
+}
+
+.ba-card {
+    background: #f7f7f7;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    height: 100%;
+}
+
+.ba-badge {
+    display: inline-block;
+    padding: 6px 35px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.ba-badge-before {
+    background-color: #333333;
+}
+
+.ba-badge-after {
+    background-color: #ff931e;
+}
+
+.ba-list li {
+    font-size: 14.5px;
+    color: #444;
+    margin-bottom: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+}
+
+.ba-list li i {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-right: 12px;
+}
+
+.ba-list li i.fa-circle-xmark {
+    color: #df2a2a; /* Custom red */
+}
+
+.ba-list li i.fa-circle-check {
+    color: #1a9c36; /* Custom green */
+}
+
+.ba-img {
+    max-height: 220px;
+    object-fit: contain;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .ba-card {
+        padding: 20px;
+    }
+    .ba-img {
+        margin-top: 20px;
+    }
+    .ba-list {
+        margin-bottom: 0px; 
+    }
+    .before-after-section-bg{
+        padding:40px 20px !important;
+    }
+}
+
+/* Why Precise3DM Section */
+.why-precise-section {
+    background-color: #f4f6f8;
+    padding-bottom: 70px;
+    font-family: inherit;
+}
+
+.why-precise-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.why-precise-section h2 span {
+    color: #ff931e;
+}
+
+.comparison-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    border: 1px solid #eaeaea;
+    overflow: hidden; 
+    height: 100%;
+}
+
+.comparison-header-dark {
+    background: #333333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.comparison-header-orange {
+    background: #ff931e;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-list li {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.comparison-list li:last-child {
+    border-bottom: none;
+}
+
+.comparison-list li i {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.comparison-list li i.fa-circle-xmark {
+    color: #df2a2a; 
+}
+
+.comparison-list li i.fa-circle-check {
+    color: #1a9c36; 
+}
+
+.vs-badge-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffaa42, #ff8c16);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 5px 20px rgba(255,147,30,0.3);
+    z-index: 10;
+    border: 3px solid #f4f6f8;
+}
+
+@media (max-width: 991px) {
+    .vs-badge-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto !important;
+        border: 3px solid #fff;
+    }
+}
+
+/* Pan-India Section */
+.pan-india-section {
+    background-image: url('../images/3d-reverse-engineering-services-in-india-new/pan-india-bg-img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #050a1f; /* Fallback */
+    padding: 80px 0;
+    font-family: inherit;
+    color: #fff;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.pan-india-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.pan-india-title span {
+    color: #ff931e;
+}
+
+.pan-india-desc {
+    font-size: 17px;
+    color: #e0e0e0;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.pi-locations-block h4 {
+    color: #ff931e;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pi-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pi-list li {
+    font-size: 15.5px;
+    color: #fff;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.pi-list-icon {
+    width: 14px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.pi-map-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .pan-india-section {
+        padding: 50px 0;
+    }
+    .pan-india-title {
+        font-size: 28px;
+    }
+    .pi-map-img {
+        margin-top: 40px;
+        max-width: 80%;
+    }
+}
+
+/* Industrial Grade Equipment Section */
+.industrial-equipment-section {
+    background-color: #f4f6f8;
+    padding: 70px 0;
+    font-family: inherit;
+}
+
+.industrial-equipment-section .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.industrial-equipment-section .section-title span {
+    color: #ff931e;
+}
+
+.equipment-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    height: 100%;
+}
+
+.equipment-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.equipment-card-body {
+    padding: 18px;
+}
+
+.equipment-card-body h4 {
+    color: #ff931e;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    min-height: 42px; /* Force uniform header height if it wraps */
+}
+
+.equipment-card-body p {
+    font-size: 13.5px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.equipment-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none !important;
+}
+
+.equipment-list li {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 6px;
+    line-height: 1.3;
+    position: relative;
+    padding-left: 14px;
+}
+
+.equipment-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+/* What Can We Reverse Engineer Section */
+.wcwre-section {
+    background-color: #f4f6f8;
+    padding-bottom: 70px;
+    font-family: inherit;
+}
+
+.wcwre-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.wcwre-title span {
+    color: #ff931e;
+}
+
+.wcwre-subtitle {
+    font-size: 16px;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.wcwre-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wcwre-card-img-wrapper {
+    background-color: #fbf7f1; /* Subtly warm cream matching the screenshot */
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.wcwre-card-img-wrapper img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.wcwre-card-body {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+    min-height: 105px; /* Ensures all cards match heights */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wcwre-card-body p {
+    color: #ff931e;
+    font-size: 16.5px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Custom Gutter for reverse engineered cards */
+.wcwre-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.wcwre-row > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 992px) {
+    .wcwre-row {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+    .wcwre-row > [class*="col-"] {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 45px;
+    }
+}
+
+/* Reverse Engineering Workflow Section */
+.resw-section {
+    background-color: #f4f6f8;
+    padding-bottom: 70px;
+    font-family: inherit;
+}
+
+.resw-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 50px 25px 0 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.resw-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resw-header p {
+    font-size: 19px;
+    color: #666;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resw-col-wrapper {
+    position: relative;
+    padding: 0px 1.5px !important;
+}
+
+.resw-col-head {
+    display: flex;
+    align-items: stretch;
+    background: #fbfbfb;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    height: 65px;
+}
+
+.resw-head-num {
+    background: #ff931e;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.resw-head-text {
+    font-size: 11px;
+    font-weight: 800;
+    color: #222;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.resw-col-body {
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    background: #fff;
+    height: 310px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.resw-col-foot {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    background: #fff;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
+.resw-foot-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.resw-foot-text {
+    font-size: 14px;
+    font-weight: 800;
+    color: #222;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.resw-tag {
+    background-color: #333;
+    color: #fff !important;
+    font-size: 8px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.resw-arrow {
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background: #ff931e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.resw-stats-bar {
+    border-top: 1px solid #eaeaea;
+    margin-top: 30px;
+    padding: 30px 20px;
+}
+
+.resw-stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.resw-stat-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.resw-stat-content h4 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #222;
+    margin: 0 0 2px 0;
+    text-transform: uppercase;
+}
+
+.resw-stat-content p {
+    font-size: 12px;
+    font-weight: 800;
+    color: #777;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.resw-bottom-ribbon {
+    background: #050a1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 0 -25px; /* Break container padding */
+}
+
+.resw-bottom-ribbon span {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.resw-bottom-ribbon i {
+    color: #ff931e;
+    margin: 0 25px;
+    font-size: 16px;
+}
+    .resw-bottom-ribbon{
+        border-radius: 8px;
+    }
+
+.list-unstyled li {
+    gap: 10px;
+}
+@media (max-width: 991.98px) {
+    .resw-col-wrapper {
+        padding: 10px 0px !important;
+    }
+
+    .resw-stat-item {
+        justify-content: flex-start !important;
+    }
+
+    .resw-bottom-ribbon {
+        padding: 15px 10px;
+    }
+
+    .resw-bottom-ribbon span {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .resw-bottom-ribbon i {
+        margin: 0 12px;
+        font-size: 12px;
+    }
+    
+    .edrfm-card {
+        padding: 30px 25px !important;
+    }
+    
+    .edrfm-text-content {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .edrfm-text-content h2 {
+        font-size: 32px !important;
+    }
+    
+    .edrfm-logo-sw, .edrfm-logo-catia {
+        height: 50px !important;
+    }
+    
+    .edrfm-logo-creo {
+        height: 38px !important;
+    }
+    
+    .edrfm-logo-siemens {
+        height: 25px !important;
+    }
+
+    .edrfm-text-content p br {
+        display: none;
+    }
+
+    .edrfm-cad-logos .d-flex {
+        justify-content: center !important;
+    }
+}
+
+/* =========================================================
+   Engineering Data Ready For Manufacturing Section
+   ========================================================= */
+.edrfm-section {
+    background-color: #f7f9fc;
+}
+
+.edrfm-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 60px 70px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.03);
+}
+
+.edrfm-text-content h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.edrfm-text-content h2 span {
+    color: #ff931e;
+    display: block;
+}
+
+.edrfm-text-content p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.edrfm-cad-logos {
+    text-align: center;
+}
+
+.cad-logos-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.edrfm-logo-sw {
+    height: 75px;
+    object-fit: contain;
+}
+
+.edrfm-logo-creo {
+    height: 55px;
+    object-fit: contain;
+}
+
+.edrfm-logo-catia {
+    height: 75px;
+    object-fit: contain;
+}
+
+.edrfm-logo-siemens {
+    height: 35px;
+    object-fit: contain;
+}
+
+/* =========================================================
+   File Format Delivered Section
+   ========================================================= */
+.ffd-section {
+    background-color: #f7f9fc;
+}
+
+.ffd-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #333;
+}
+
+.ffd-title span {
+    color: #ff931e;
+}
+
+.ffd-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.ffd-card {
+    background: #fff;
+    border-radius: 12px;
+    width: 160px;
+    min-height: 160px; /* Allows for 2 lines of text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.ffd-icon-wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.ffd-icon-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.ffd-text {
+    font-size: 13px;
+    font-weight: 800;
+    color: #111;
+    margin: 0;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .ffd-card {
+        width: calc(50% - 10px); 
+    }
+}
+
+/* =========================================================
+   Scan To Manufacturing Section
+   ========================================================= */
+.stm-section {
+    background-color: #f7f9fc;
+}
+
+.stm-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 60px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.03);
+}
+
+.stm-header h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #333;
+    line-height: 1.3;
+}
+
+.stm-header h2 span {
+    color: #ff931e;
+}
+
+.stm-img-box {
+    background-color: #f4f5f8;
+    border-radius: 12px;
+    padding: 0px;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stm-img-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.stm-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.stm-item p {
+    font-size: 14px;
+    color: #444;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .stm-card {
+        padding: 40px 20px;
+    }
+    .stm-header h2 {
+        font-size: 22px;
+    }
+}
+.blog-item {
+    padding: 0 15px;
+}
+.blog img{
+    width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+   }
+
+/* =========================================================
+   FAQ Section
+   ========================================================= */
+.faq-section {
+    background-color: #f7f9fc;
+}
+
+.faq-main-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+}
+
+.faq-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff;
+    border: none;
+    border-radius: 12px !important;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    border-left: 4px solid transparent;
+    transition: border 0.3s ease;
+    overflow: hidden;
+}
+
+.faq-item.active-faq {
+    border-left: 4px solid #ff931e;
+}
+
+.faq-btn {
+    background: #fff !important;
+    color: #333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 20px 25px 20px 50px;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 12px !important;
+    position: relative;
+    outline: none !important;
+}
+
+.faq-btn:focus, .faq-btn:active, .faq-item:focus, .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.faq-btn::after {
+    display: none !important;
+}
+
+.faq-btn::before {
+    content: '+';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff931e;
+    line-height: 1;
+}
+
+.faq-btn:not(.collapsed)::before {
+    content: '-';
+    font-size: 30px;
+    top: 25px; /* Stay aligned near top since description opens beneath */
+}
+
+.faq-body {
+    padding: 0px 25px 25px 50px;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   Universal Card Hover Effects
+   ========================================================= */
+.case-study-card,
+.ba-card,
+.equipment-card,
+.wcwre-card,
+.workflow-step,
+.ffd-card,
+.stm-item,
+.related-blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.case-study-card:hover,
+.ba-card:hover,
+.equipment-card:hover,
+.wcwre-card:hover,
+.workflow-step:hover,
+.ffd-card:hover,
+.related-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* For STM items, lift the image box instead if hovering the item */
+.stm-item:hover .stm-img-box {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.stm-img-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

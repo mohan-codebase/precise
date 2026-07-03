@@ -1,0 +1,579 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-padding-top: 240px;
+}
+body {
+  background-color: #fff;
+}
+p {
+  color: #000000;
+}
+b,
+tr,
+td,
+th {
+  font-family: "Inter";
+  background-color: transparent !important;
+}
+tr,
+td,
+th {
+  font-size: 20px !important;
+}
+td,
+th {
+  padding: 30px 40px !important;
+}
+tr {
+ border-bottom: 1px solid #a0727265;
+}
+.table th,
+.table td {
+  border: none !important;
+}
+.table {
+  margin-top: 40px;
+  border: none !important;
+}
+.btn {
+  border-radius: 1rem !important;
+}
+.hero {
+  background: url(../images/einstar-vega-product/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right;
+  margin-top: 90px;
+  padding: 60px 0;
+  min-height: 90vh;
+}
+.hero-head{
+    margin-top: 100px;
+}
+.hero-head h1 {
+  font-size: 3rem !important;
+  color: #fff;
+  font-weight: bold;
+}
+.call{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.call .btn{
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+}
+.call-text h5{
+  color: #ffffff !important;
+  font-weight: 600;
+}
+.call-text p{
+  color: #ffffff;
+}
+.call-text p span{
+  color: #FF8D1E;
+}
+.hero-head h1{
+  font-size: 70px !important;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.hero h4{
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 20px !important;
+}
+.hero h4 span{
+    color: #ff8d1e;
+}
+.hero-left ul{
+  margin: 30px 0;
+  margin-left: 40px;
+}
+.hero-left ul li{
+  position: relative;
+}
+.hero-left ul li p{
+  color: #fff;
+}
+.hero-left ul li::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #FF931E;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+.hero-left p{
+  font-size: 16px !important;
+  margin-bottom:10px !important;
+}
+
+.hero .mail{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 150px;
+}
+.mail .btn{
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+}
+.mail-text h5{
+  color: #FF8D1E !important;
+  font-weight: 600;
+}
+.mail-text p{
+  color: #ffffff;
+}
+.mail-text p span{
+  color: #FF8D1E;
+}
+.stick-cont {
+  position: sticky;
+  top: 120px;
+  z-index: 900;
+  background: #fff;
+}
+.nav-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-two-div {
+  padding: 30px 15px;
+  position: sticky;
+  top: 120px;
+  z-index: 1000;
+  display: flex;
+  overflow-x:auto ;
+}
+.nav-two a {
+  color: #000000 !important;
+  padding: 15px 40px !important;
+  border-radius: 3rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.nav-two a.active {
+  background-color: #ff8d1e;
+  color: #ffffff !important;
+  box-shadow: 0px 3px 6px 0px #00000026, 0px 11px 11px 0px #00000021,
+    0px 26px 15px 0px #00000014, 0px 46px 18px 0px #00000005,
+    0px 72px 20px 0px #00000000;
+}
+
+
+.sub-imgs img{
+    width: 80%;
+    margin-bottom: 5px;
+}
+.main-img img{
+    width: 100%;
+}
+
+
+.price-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.product-details h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.price-div h3{
+    color: #F23C24;
+    font-size: 30px;
+    font-weight: 500;
+}
+.price-div h3 .span{
+    color: #8E8E8E;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: line-through 2px;
+}
+.save-div{
+    background: #34A853;
+    border-radius: 2rem;
+    padding: 5px 10px;
+}
+.save-div p{
+    font-size: 14px !important;
+}
+.product-details .desc{
+    margin-left: 20px;
+}
+.product-details .desc li{
+    list-style-type:disc !important;
+    margin-bottom: 10px;
+}
+.add-to-card-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.quantity-box{
+    display: flex;
+    gap: 0;
+    background-color: #F8F9FA;
+    border-radius: 2rem;
+}
+.quantity-btn {
+    width: 60px;
+    height: 50px;
+    outline: none !important;
+    border: none !important;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+    background-color: transparent !important;
+}
+
+.quantity-input {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border: none !important;
+    background: transparent !important;
+}
+.buy-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.cart-add-div{
+  display: flex;
+  flex-direction: column;
+}
+.add-btn{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    color: #000;
+}
+.buy-now-btn{
+    width: 100%;
+    background-color: #0073FF;
+    border-radius: 2rem;
+    border: none !important;
+    outline: none !important;
+    font-family: 'Inter',sans-serif;
+}
+.coupon-input{
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #D7D7D7;
+    background-color: #FFF8F8;
+    border-radius: 8px;
+}
+.coupon-input input{
+    flex: 3;
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    padding: 0 10px;
+}
+.coupon-input button{
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+    color: #0073FF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px auto;
+}
+.cards-details{
+    background: #F5F5F5;
+    padding: 0px 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.cards-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.cards-row p{
+    margin-bottom: 0 !important;
+}
+
+.sec-head{
+  font-size: 40px;
+  font-weight: bold;
+}
+.slick-slide img{
+  width: 240px;
+}
+.slick-initialized .slick-slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slick-list{
+  height: fit-content;
+}
+
+.banner-bg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 100px;
+  margin-top: 40px;
+  background-size: cover !important;
+  border-radius: 16px;
+}
+.banner-bg h2{
+  color: #fff;
+  font-size: 40px;
+  text-decoration: underline 1px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+.banner-bg p{
+  color: #fff;
+  text-align: center;
+}
+.banner-bg1{
+  background: url(../images/einstar-product-img/banner1.png);
+}
+
+.banner-bg2{
+  background: url(../images/einstar-product-img/banner2.png);
+}
+
+.banner-bg3{
+  background: url(../images/einstar-product-img/banner3.png);
+}
+
+.table-div{
+  background-color: #FFF9F6;
+  border: 1px solid #FFC9A9;
+  border-radius: 16px;
+  padding:0 30px;
+}
+
+/* -----FAQ Section Style----- */
+
+.faq{
+  margin-top:100px;
+}
+.faq h3{
+  color: #234057;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.accordion {
+  width: 100%;
+}
+.accordion-button {
+  position: relative;
+  border-radius: 20px !important;
+  background: #fff !important;
+  color: #000 !important;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 22px !important;
+}
+.accordion-button:focus{
+  border: none;
+  outline: none;
+}
+.accordion-button span{
+  margin-left: 25px;
+}
+.accordion-item{
+  width: 100% !important;
+}
+.accordion-button::after {
+  content: "+";
+  background-image: none !important;
+  position: absolute;
+  left: 0;
+  font-size: 32px;
+  margin-left: 5px;
+  margin-top: -10px;
+  color: #ff931e;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  background-image: none !important;
+  position: absolute;
+  left: 0;
+  top: 68%;
+  font-size: 32px;
+  margin-left: 10px;
+  margin-top:-8px;
+  color: #ff931e;
+}
+.accordion-item:first-of-type{
+  border-top-left-radius:20px !important;
+  border-top-right-radius:20px !important;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+.accordion-item:first-of-type .accordion-button{
+  border-top-left-radius:20px !important;
+  border-top-right-radius:20px !important;
+}
+.accordion-item {
+  margin-top: 20px;
+  border:none;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  transition: border-left 0.3s ease;
+}
+.accordion-item:has(.accordion-collapse.show) {
+  border-left: 10px solid #ff931e;
+  border-radius:8px !important;
+}
+.accordion-body{
+  padding: 20px 25px;
+}
+.accordion-body p{
+  color: #000;
+}
+.accordion-body ul{
+  margin-left: 40px;
+}
+.accordion-body ul li {
+  list-style: disc;
+}
+.accordion-body a{
+  color: #FF931E;
+  font-weight: 600;
+}
+
+.bg-banner{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.banner-inner {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding: 40px;
+}
+.banner-inner h4{
+  font-size: 40px !important;
+  color: #fff;
+}
+.banner-inner p{
+  color: #fff;
+  font-size: 22px !important;
+}
+.banner-2{
+  background-image: url(../images/einstar-vega/banner2.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  border-radius: 16px;
+}
+.banner-3{
+  background-image: url(../images/einstar-vega/banner3.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  border-radius: 16px;
+}
+.banner-4{
+  background-image: url(../images/einstar-vega/banner4.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  border-radius: 16px;
+}
+
+
+@media screen and (max-width:700px){
+  body{
+    overflow-x: hidden;
+  }
+  .hero-head h1{
+    font-size: 2rem !important;
+  }
+  .hero{
+    background-size: cover;
+    background-position: center;
+    margin-top: 0 !important;
+    min-height:auto;
+  }
+  .stick-cont{
+    top: 50px;
+  }
+  .product-details h2{
+    font-size: 25px;
+  }
+  .faq h3{
+    font-size: 2rem !important;
+  }
+  .accordion-button{
+    font-size: 16px !important;
+  }
+  td, th{
+    padding: 10px !important;
+  }
+  .table-div{
+    padding: 0 10px ;
+  }
+  .price-div{
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .banner-bg{
+    padding: 30px;
+  }
+  .slick-slide{
+    margin:0 10px;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+  .banner-inner {
+        padding: 20px;
+    }
+    
+    .banner-2{
+      min-height: 50vh;
+    }
+    .banner-3{
+       min-height: 50vh;
+    }
+    .banner-4{
+      min-height: 50vh;
+    }
+
+}

@@ -1,0 +1,169 @@
+.opex-banner {
+    background-position: center;
+    background-size: cover;
+
+}
+
+.opex-banner h2 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.opex-banner p {
+    color: #fff;
+}
+
+.email1 {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 60px 0px;
+    margin-top:90px;
+}
+@media screen and (max-width:750px){
+    .email1{
+        margin-top:0px;
+    }
+}
+
+.rental {
+    padding: 80px 0;
+}
+
+.rental span {
+    color: #ff931e;
+}
+
+.rental h2 {
+    color: #fff;
+    background-color: #234057;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px 20px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rental p {
+    color: #323232;
+}
+
+.rental-div {
+    background-color: #FDF8F3;
+    border: 1px solid #FF931E80;
+    padding: 30px 40px;
+    border-radius: 25px;
+    margin-top: -30px;
+}
+
+.check-box {
+    background-color: #fff;
+}
+
+thead {
+    background-color: rgba(35, 64, 87, 1);
+}
+
+th {
+    padding: 30px;
+    font-size: 20px;
+    border: none !important;
+}
+
+.hidden-td p {
+    color: rgba(30, 30, 30, 1);
+}
+
+.main p {
+    color: rgba(35, 64, 87, 1);
+    font-weight: 600;
+}
+
+td,
+th {
+    padding: 30px !important;
+    border: 1px solid rgba(35, 64, 87, 0.15) !important;
+}
+
+.hidden-td {
+    display: none;
+}
+
+.check-box h4 {
+    color: rgba(35, 64, 87, 1);
+    border: 1px solid rgba(255, 147, 30, 1);
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 10px
+}
+
+[data-index="1"] {
+    display: table-cell;
+}
+
+tr {
+    border: 1px solid rgba(35, 64, 87, 0.15) !important;
+}
+
+.why-wait {
+    padding: 60px 0;
+}
+
+.why-wait-con {
+    border: 1px solid rgba(255, 141, 30, 0.5);
+    background-color: rgba(255, 250, 245, 1);
+    padding: 40px 60px;
+    border-radius: 20px;
+}
+
+.why-wait-con h2 {
+    font-size: 36px;
+    color: rgba(35, 64, 87, 1);
+    font-weight: 700;
+}
+
+.why-wait-con h4 {
+    font-size: 18px;
+    color: rgba(35, 64, 87, 1);
+    font-weight: 600;
+    padding-bottom: 7px;
+    padding-top: 20px;
+}
+
+.why-wait-con p {
+    color: rgba(47, 47, 47, 1);
+}
+
+@media(max-width:600px) {
+    .check-box {
+        display: block !important;
+        overflow: scroll;
+    }
+
+    td,
+    th {
+        padding: 10px 25px !important;
+    }
+
+    .rental {
+        padding: 40px 0 !important;
+    }
+
+    .why-wait {
+        padding: 40px 0 !important;
+    }
+
+    .btn {
+        padding: 10px 20px !important;
+        margin-left: 0px !important;
+    }
+
+    .email {
+        display: flex;
+        justify-content: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+    }
+}

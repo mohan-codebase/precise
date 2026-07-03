@@ -1,0 +1,589 @@
+/* common css{} */
+
+.btn:focus {
+    box-shadow: none;
+}
+
+
+/* header banner sec css{} */
+
+section#Geomagic-final-banner {
+    background-image: url(../images/Geomagic_final/Banner.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section#Geomagic-final-banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.geomagic-finalhead-cont1 h3 {
+    color: #fff;
+    font-weight: 100;
+    font-family: 'firasan-normal';
+}
+
+.geomagic-finalhead-cont1 h5 {
+    color: white;
+    font-size: 17px;
+    padding-top: 26px;
+    font-family: 'firasan-normal';
+}
+
+.geomagic-finalhead-cont1 p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.gmagic-headlink a {
+    background-color: #ff931e;
+    color: #fff;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 0;
+    letter-spacing: 1px;
+    padding: 6px 20px;
+    font-size: 18px;
+}
+
+.gmagic-headlink a:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+
+/* section2 css{} */
+
+section#gmagic-productsec-bg {
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    padding-bottom: 50px;
+}
+
+.gmagic-product-buttons a {
+    width: 100%;
+    background-color: #ff931e;
+    color: #fff;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 0;
+    letter-spacing: 1px;
+    padding: 6px 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.gmagic-product-buttons a:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.gmagic-prod-img h5 {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.gmagic-prod-head h4 {
+    color: #fff;
+    font-size: 28px;
+    padding: 36px 0;
+}
+
+.gmagic-prod-img {
+    padding-right: 4px;
+}
+
+.gmagic-prod-img {
+    text-align: center;
+}
+
+
+/* business workflow{} */
+
+#business-workflow {
+    background-color: #ff931e;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.wf-num span {
+    color: #fff;
+    padding: 3px 9px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.wf-num {
+    margin-top: 20px;
+}
+
+.gmagic-wf-head h4 {
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.gmagic-wf-cont img {
+    width: 100px;
+    height: 105px;
+}
+
+.gmagic-wf-cont p {
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+
+/* key features css{} */
+
+.gmagic-kf-bg {
+    background-color: #fff;
+    padding: 0px 30px 30px 30px;
+}
+
+.gmagic-kf-head h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff931e;
+    position: relative;
+}
+
+.gmagic-kf-head h4::before {
+    content: "";
+    width: 75px;
+    height: 6px;
+    background-color: #ff931e;
+    color: black;
+    position: absolute;
+    top: 92%;
+    left: -1px;
+    border-radius: 20px;
+}
+
+.gmagic-descriptionlist dl {
+    background-color: #eff4ff;
+    padding: 10px 0px 10px 20px;
+}
+
+.gmagic-descriptionlist dl dt {
+    padding: 10px 0px;
+}
+
+.gmagic-descriptionlist dl dd {
+    padding-left: 40px;
+}
+
+
+/* part-program css{} */
+
+#part-program-bg {
+    background-color: #003851;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.part-program-content h4 {
+    padding-bottom: 15px;
+}
+
+.part-program-content ul {
+    padding-left: 40px;
+}
+
+.part-program-content ul li {
+    line-height: 30px;
+}
+
+
+/* media queries for geomagic final{} */
+
+@media screen and (max-width:767px) {
+    .geomagic-finalhead-cont1 {
+        padding-left: 15px !important;
+    }
+    .gmagic-prod-img h5 {
+        padding-bottom: 30px;
+    }
+    .gmagic-kf-bg {
+        padding: 0;
+    }
+    .gmagic-descriptionlist dl {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .gmagic-prod-img {
+        padding-right: 15px;
+    }
+    .gmagic-descriptionlist dl dd {
+        font-size: 14px;
+        padding-left: 24px;
+    }
+}
+
+
+/*{*******************************
+ Business partner css 
+**********************************} */
+
+section#business-partner-final-banner {
+    background-image: url(../images/Business_partner_program_final/Banner.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#reverse-coimbatore {
+    background-image: url(../images/Business_partner_program_final/Frame4.png);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+@media only screen and (max-width:512px) {
+    section#reverse-coimbatore {
+        background: linear-gradient(272.5deg, rgba(255, 138, 0, 0.06) 2.1%, rgba(255, 255, 255, 0.17) 46.53%, #FFEDD8 74.79%, #FEBB6D 99.38%);
+        
+    }
+    
+}
+
+
+section#business-partner-final-banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.businesspart-finalhead-cont1 h3 {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'firasan-normal';
+}
+
+.businesspart-finalhead-cont1 p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 10px 0px;
+}
+
+.businesspart-finalhead-cont2 h5 {
+    color: #fff;
+    font-family: 'firasan-normal';
+    font-size: 20px;
+}
+
+
+/* second section{} */
+
+.business-partfinal-sec2 {
+    background-color: #00232e;
+    padding: 30px 0px;
+}
+
+.productbusi-final-buttons a {
+    width: 100%;
+    background-color: #ff931e;
+    color: #fff;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.productbusi-final-buttons a:hover {
+    color: #ff931e;
+    background-color: #fff;
+}
+
+.busi-final-ov {
+    background-color: rgb(0, 51, 73, 0.8);
+}
+
+.busi-final-ovcont1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.busi-final-ovcont1 h4 {
+    padding: 25px 0;
+    margin-bottom: 0;
+}
+
+.busi-final-ovcont1 ul li {
+    list-style-type: none;
+    line-height: 35px;
+    font-family: 'firasan-extrathin';
+    font-size: 16px;
+}
+
+.busi-final-ov2 {
+    background-color: rgb(0, 51, 73);
+    margin-top: 20px;
+}
+
+.busi-final-ov2-content {
+    color: #fff;
+}
+
+.busi-final-ov2-content h5 {
+    font-size: 20px;
+    font-family: 'firasan-normal';
+    padding: 20px 0;
+}
+
+.busi-final-ov2-content ul {
+    padding-left: 45px;
+}
+
+.busi-final-ov2-content ul li {
+    line-height: 35px;
+    font-size: 14px;
+    font-family: 'firasan-extrathin';
+}
+
+
+/* key feature business partner{} */
+
+.busipartner-kf-head h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff931e;
+    position: relative;
+}
+
+.busipartner-kf-head h4::before {
+    content: "";
+    width: 350px;
+    height: 5px;
+    background-color: #ff931e;
+    color: black;
+    position: absolute;
+    top: 94%;
+    left: -1px;
+    border-radius: 20px;
+}
+
+.busiservice-wfcont p {
+    font-size: 16px;
+}
+
+.busiservice-wfcont h5 {
+    font-size: 20px;
+    padding-top: 7px;
+}
+
+.service_1 {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 4px 10px;
+    color: #fff;
+}
+
+.service_2 {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+
+/* become business partner css{} */
+
+.become-business-bg {
+    background-color: #fff;
+    padding: 30px 30px;
+}
+
+.become-business-cont1 h1 {
+    font-size: 22px;
+    padding-bottom: 15px;
+    color: #00232e;
+    border-bottom: 1px solid #ff931e;
+    margin-bottom: 30px;
+}
+
+.become-business-cont2 img {
+    width: 180px;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.become-business-cont2 p {
+    color: #00232e;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.become-business-button button {
+    color: #fff;
+    background-color: #ff931e;
+    border: 0;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/* modal css{/} */
+
+.modal-scann-cont1 {
+    height: 24rem;
+}
+
+.modal-scann-cont2 {
+    height: 24rem;
+    display: flex;
+    align-items: center;
+}
+
+.mod-cont-btn a {
+    color: #fff;
+    background-color: #ff931e;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mod-cont-btn a:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.right-modbtn {
+    color: #fff;
+    background-color: #ff931e;
+    border: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 28px;
+    position: relative;
+    top: 39px;
+}
+
+.right-modbtn:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.scan-modal-row h3 {
+    font-size: 15px;
+    font-family: 'firasan-normal';
+    padding: 28px 0;
+    color: #fff
+}
+
+.scan-main-model {
+    background-color: #0e3f50;
+}
+
+.scan-modal-head {
+    border: 0;
+}
+
+.scan-modal-head button {
+    font-size: 52px;
+    color: #fff;
+    padding-right: 30px !important;
+    opacity: 0.9;
+    font-weight: 0;
+}
+
+.scan-modal-head button:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.scan-modal-head button:focus {
+    border: 0;
+    outline: 0;
+}
+
+.printer-mod-conth {
+    height: 35rem;
+}
+
+.print-modhead {
+    font-size: 21px !important;
+}
+
+@media screen and (max-width:576px) {
+    .modal-scann-cont2 {
+        margin-top: 140px;
+    }
+    .right-modbtn {
+        top: 0;
+    }
+    .cx-img-sm {
+        width: 67%;
+    }
+    .mod-cont-btn a {
+        width: 67%;
+    }
+    .mod-cont-btn {
+        text-align: left !important;
+    }
+}
+
+@media screen and (max-width:494px) {
+    .modal-scann-cont2 {
+        margin-top: 140px;
+    }
+    .right-modbtn {
+        top: 0;
+    }
+    .mod-cont-img img {
+        width: 100%;
+    }
+    .cx-img-sm {
+        width: 100%;
+    }
+    .mod-cont-btn a {
+        width: 100%;
+    }
+    .mod-cont-btn {
+        text-align: left !important;
+    }
+}
+
+
+/* modal css{end} */
+
+@media screen and (max-width:576px) {
+    .businesspart-finalhead-cont1 h3 {
+        padding-left: 15px;
+    }
+    .businesspart-finalhead-cont1 p {
+        padding-left: 15px;
+    }
+    .businesspart-finalhead-cont2 h5 {
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+    .productbusi-final-buttons a {
+        margin-bottom: 15px;
+    }
+}

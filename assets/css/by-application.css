@@ -1,0 +1,280 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+}
+p{
+  color: #000000;
+}
+p.big-p{
+  color: #234057;
+  font-size: 28px !important;
+}
+b{
+  font-family: 'Inter';
+}
+.btn{
+  border-radius: 1rem !important;
+}
+.sec-head{
+  font-size: 1.7rem !important;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #234057;
+}
+.sec-head span{
+  font-weight: normal;
+}
+.sec-head2{
+  font-size: 3rem !important;
+  font-weight: bold;
+}
+.main-head{
+  font-size: 3rem !important;
+  font-weight: bold;
+  color: #234057;
+}
+.head-div{
+  padding: 20px;
+  background-color: #F3F3F3;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.head-div h2{
+  color:#234057;
+  font-size: 30px !important;
+}
+.main-div{
+  padding: 30px 20px;
+  background-color: #FFFAF5;
+  border: 1px solid #FF931E80;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.main-img img{
+  width: 100%;
+}
+.main-div2{
+  padding: 60px 50px;
+  background-color: #F3F3F3;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.main-div2 p{
+  color: #234057;
+}
+.main-div2 img{
+  width: 100%;
+}
+/* .main-div::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 20px;
+  width: 40%;
+  border-radius: 0 0 2rem 2rem;
+  background-color: #FF8D1E;
+} */
+.main-div2-img{
+  position: relative;
+}
+/* ====Hero Section Start==== */
+
+.hero{
+  /* background-color: #fff2e1; */
+  background-image: url(../images/3d-scanner-component/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 120px;
+  padding-top: 60px;
+  position: relative;
+}
+.call{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.call .btn{
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+}
+.call-text h5{
+  color: #000000 !important;
+  font-weight: 600;
+}
+.call-text p{
+  color: #000000;
+}
+.call-text p span{
+  color: #FF8D1E;
+}
+.hero-row{
+  padding-bottom: 20px;
+}
+.hero-head{
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #FF8D1E;
+  font-weight: bold;
+}
+.hero-head span{
+  font-size: 2.6rem;
+}
+.hero-left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.mail{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+}
+.mail .btn{
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-content: center;
+  border-radius: 50% !important;
+}
+.mail-text h5{
+  color: #000000 !important;
+  font-weight: 600;
+}
+.mail-text p{
+  color: #000000;
+}
+.mail-text p span{
+  color: #FF8D1E;
+}
+.tab-content {
+      position: sticky;
+      top: 160px;
+      z-index: 1;
+    }
+.nav-pills{
+  background-color: #F3F3F3;
+  padding: 20px;
+  border-radius: 16px ;
+  width: 100%;
+}
+.nav-pills .nav-link{
+  outline: none !important;
+  border: none;
+  background-color: transparent !important;
+  color: #000 !important;
+  padding: 20px 0;
+  border-radius: 16px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #FF8D1E;
+  box-shadow:
+  0px 2px 5px 0px #FC911E26,
+  0px 9px 9px 0px #FC911E21,
+  0px 19px 12px 0px #FC911E14,
+  0px 34px 14px 0px #FC911E05,
+  0px 53px 15px 0px #FC911E00;
+}
+
+
+
+
+
+
+
+
+.con-div{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top:30px
+}
+.cont-btns{
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:750px){
+  .hero{
+    margin-top: 0;
+  }
+  .hero-head{
+    font-size: 2rem !important;
+  }
+  .call{
+    justify-content: left;
+  }
+  .hero-right-img img{
+    width: 100%;
+  }
+  .head-div{
+    padding: 10px;
+  }
+  .head-div h3{
+    font-size: 14px !important;
+  }
+  .main-div h2{
+    font-size: 1.2rem !important;
+  }
+  .main-div2 h2{
+    font-size: 1rem !important;
+  }
+  .main-div{
+    padding: 30px 10px;
+  }
+  .main-div2{
+    padding: 15px !important;
+  }
+  .main-btns div{
+    gap: 10px;
+  }
+  p.big-p{
+    font-size: 16px !important;
+  }
+  .nav-pills{
+    padding: 5px;
+  }
+  .nav-link{
+    font-size: 14px !important;
+  }
+  .text-card h4{
+    font-size: 14px !important;
+  }
+  .main-div2-img .btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px !important;
+    font-size: 8px !important;
+  }
+  .info-div{
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .tab-content {
+      position: sticky;
+      top: 80px;
+      z-index: 1;
+    }
+}

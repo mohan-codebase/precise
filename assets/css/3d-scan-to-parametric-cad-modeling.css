@@ -1,0 +1,948 @@
+/* =========================================================
+   GLOBAL RESET & TYPOGRAPHY OVERRIDES
+   ========================================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+th,td{
+    font-family: 'Inter', sans-serif;
+}
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.hero-section {
+    position: relative;
+    background-image: url('../images/3d-scan-to-parametric-cad-modeling/hero-bg.png');
+    background-size: cover;
+    background-position: center 5rem;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.hero-content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-title span {
+    color: #ff931e;
+}
+
+.hero-subtitle1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.hero-buttons {
+    gap: 14px;
+}
+
+.hero-btn {
+    background: linear-gradient(135deg, #ffb347 0%, #ff931e 100%);
+    color: #fff;
+    border: none;
+    padding: 13px 12px;
+    border-radius: 8px;
+    font-size: 15px !important;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 147, 30, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 147, 30, 0.4);
+}
+
+/* Responsive - Hero Section */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    .hero-subtitle1 {
+        font-size: 22px;
+    }
+    .hero-subtitle2 {
+        font-size: 18px;
+    }
+    .hero-text {
+        font-size: 16px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 0;
+        margin-top: -70px;
+        background-position: center;
+    }
+}
+
+/* =========================================================
+   WHAT IS SECTION
+   ========================================================= */
+.what-is-section {
+    background-color: #f6f6fa;
+    padding: 60px 0 30px 0;
+}
+
+.what-is-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #333;
+}
+
+.what-is-title span {
+    color: #ff931e;
+}
+
+/* Process Flow Left Column */
+.process-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.process-step {
+    text-align: center;
+    flex: 1;
+}
+
+.process-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 15px;
+    min-height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.process-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 50px 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.process-arrow {
+    background-color: #ff931e;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0 -12px;
+    z-index: 2;
+    flex-shrink: 0;
+    transform: translateY(25px); /* Push down to align with cards instead of titles */
+}
+
+/* Middle Column */
+.middle-text {
+    font-size: 19px;
+    color: #000;
+    line-height: 1.5;
+}
+
+.features-box {
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: transparent;
+}
+
+.features-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+.custom-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-check-list li {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.custom-check-list li .check-icon {
+    color: #009045;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+/* Right Column */
+.suitable-for-card {
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: transparent;
+}
+
+.suitable-title {
+    color: #ff931e;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.suitable-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.suitable-list li {
+    list-style-type: disc;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Responsive - What Is Section */
+@media (max-width: 991px) {
+    .what-is-title {
+        font-size: 32px;
+    }
+    .process-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .process-step {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .process-title {
+        min-height: auto;
+    }
+    .process-card {
+        padding: 20px;
+    }
+    .process-arrow {
+        transform: rotate(90deg);
+        margin: 10px auto;
+    }
+    .features-box {
+        margin-top: 30px;
+    }
+    .suitable-for-card {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .what-is-title {
+        font-size: 28px;
+    }
+    .middle-text {
+        font-size: 16px;
+    }
+    .features-box .col-6 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .suitable-title {
+        font-size: 22px;
+    }
+    .suitable-list li {
+        font-size: 16px;
+    }
+}
+
+/* =========================================================
+   HOW PROCESS SECTION
+   ========================================================= */
+.how-process-section {
+    background-color: #f6f6fa;
+    padding: 30px 0;
+}
+
+.how-process-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.how-process-title span {
+    color: #ff931e;
+}
+
+.how-process-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    padding-top: 25px; /* Room for floating numbers */
+    padding-bottom: 20px;
+}
+
+/* Optional custom scrollbar for horizontal scrolling */
+.how-process-container::-webkit-scrollbar {
+    height: 8px;
+}
+.how-process-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.how-process-step {
+    position: relative;
+    flex: 1;
+    min-width: 0; /* Allows it to shrink and fit 7 cards */
+}
+
+.how-step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.how-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 15px 20px 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.how-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-card img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    margin-top: auto;
+}
+
+.how-process-arrow {
+    background-color: #ff931e;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* Responsive - How Process Section */
+@media (max-width: 1199px) {
+    .how-process-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .how-process-step {
+        flex: 0 0 auto;
+        width: 180px;
+    }
+}
+
+@media (max-width: 991px) {
+    .how-process-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-process-title {
+        font-size: 28px;
+    }
+    .how-process-step {
+        width: 160px;
+    }
+    .how-card {
+        padding: 30px 10px 15px 10px;
+    }
+    .how-card-title {
+        font-size: 14px;
+        min-height: 40px;
+    }
+}
+/* =========================================================
+   STL VS PARAMETRIC CAD SECTION
+   ========================================================= */
+.stl-vs-cad-section {
+    background-color: #f6f6fa;
+    padding: 30px 0;
+}
+
+.stl-vs-cad-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+}
+
+.stl-vs-cad-title span {
+    color: #ff931e;
+}
+
+.stl-cad-table-container {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.stl-cad-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.stl-cad-table thead th {
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 50%;
+}
+
+.stl-header {
+    background-color: #d71c21;
+}
+
+.cad-header {
+    background-color: #13782d;
+}
+
+.stl-cad-table tbody td {
+    padding: 16px 20px;
+    font-size: 18px;
+    color: #000;
+    vertical-align: middle;
+    border: 1px solid #d9d9d9;
+}
+
+.stl-cad-table tbody tr.image-row td {
+    padding: 30px 10px;
+}
+
+.stl-cad-table tbody td img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+.icon-x {
+    color: #d71c21;
+    font-weight: bold;
+    margin-right: 6px;
+    font-size: 20px;
+}
+
+.icon-check {
+    color: #13782d;
+    font-weight: bold;
+    margin-right: 6px;
+    font-size: 20px;
+}
+
+/* Responsive - STL vs CAD Section */
+@media (max-width: 991px) {
+    .stl-vs-cad-title {
+        font-size: 32px;
+    }
+    .stl-cad-table thead th {
+        font-size: 18px;
+        padding: 12px;
+    }
+    .stl-cad-table tbody td {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .stl-cad-table tbody td img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stl-vs-cad-title {
+        font-size: 28px;
+    }
+    .stl-cad-table thead th {
+        font-size: 16px;
+    }
+    .stl-cad-table tbody td {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    .icon-x, .icon-check {
+        font-size: 16px;
+        margin-right: 4px;
+    }
+}
+
+/* =========================================================
+   A QUOTE SECTION
+   ========================================================= */
+.a-quote-section {
+    background-color: #f6f6fa;
+    padding: 30px 0;
+}
+
+.quote-container {
+    background-image: url('../images/3d-scan-to-parametric-cad-modeling/quote-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.quote-icon-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.quote-icon-circle img {
+    width: 60px;
+    height: auto;
+}
+
+.quote-text-wrapper p {
+    color: #fff;
+    font-size: 30px !important;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.quote-text-wrapper p:first-child {
+    margin-bottom: 15px;
+}
+
+/* Responsive - Quote Section */
+@media (max-width: 991px) {
+    .quote-container {
+        padding: 40px;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .quote-icon-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .quote-icon-circle img {
+        width: 50px;
+    }
+    .quote-text-wrapper p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote-container {
+        padding: 30px 20px;
+        border-radius: 8px;
+    }
+    .quote-icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .quote-icon-circle img {
+        width: 40px;
+    }
+    .quote-text-wrapper p {
+        font-size: 18px;
+    }
+}
+
+/* =========================================================
+   TYPICAL APPLICATIONS SECTION
+   ========================================================= */
+.typical-applications-section {
+    background-color: #f6f6fa;
+    padding: 30px 0;
+}
+
+.typical-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #333;
+}
+
+.typical-title span {
+    color: #ff931e;
+}
+
+.typical-card {
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.typical-img-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typical-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.typical-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Responsive - Typical Applications Section */
+@media (max-width: 1199px) {
+    .typical-card-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .typical-title {
+        font-size: 32px;
+    }
+    .typical-img-wrapper {
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+}
+
+@media (max-width: 768px) {
+    .typical-title {
+        font-size: 28px;
+    }
+}
+
+/* =========================================================
+   SOFTWARE & SCANNERS SECTION
+   ========================================================= */
+.software-scanners-section {
+    background-color: #f6f6fa;
+    padding: 30px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+}
+
+.section-title span {
+    color: #ff931e;
+}
+
+.software-name {
+    font-size: 34px;
+    font-weight: 700;
+    color: #333;
+}
+
+.software-logo-img {
+    max-width: 50px;
+    height: auto;
+}
+
+.software-desc {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.platforms-wrapper .col-4 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Scanner Cards */
+.scanner-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.scanner-img-box {
+    background-color: #ffebd5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.scanner-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.scanner-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.scanner-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.scanner-text {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.scanner-btn {
+    background: linear-gradient(135deg, #ffb347 0%, #ff931e 100%);
+    color: #fff !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 14px;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.scanner-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 147, 30, 0.3);
+}
+
+/* Responsive - Software & Scanners Section */
+@media (max-width: 991px) {
+    .software-name {
+        font-size: 28px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .software-name {
+        font-size: 24px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .scanner-img-box {
+        height: 150px;
+    }
+}
+
+/* =========================================================
+   OPEX & CAPEX SECTION
+   ========================================================= */
+.opex-capex-section {
+    background-color: #f6f6fa;
+    padding: 30px 0;
+}
+
+.service-card {
+    border-radius: 16px;
+    padding: 50px;
+    color: #fff;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.opex-card {
+    background-image: url('../images/3d-scan-to-parametric-cad-modeling/opex.png');
+}
+
+.capex-card {
+    background-image: url('../images/3d-scan-to-parametric-cad-modeling/capex.png');
+}
+
+.service-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.service-title span {
+    color: #ff931e;
+}
+
+.service-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+.service-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.service-list li i {
+    color: #1dd754;
+    font-size: 18px;
+    margin-right: 12px;
+    text-shadow: none;
+}
+
+/* Responsive - Opex & Capex Section */
+@media (max-width: 991px) {
+    .service-card {
+        padding: 40px 30px;
+    }
+    .service-title {
+        font-size: 28px;
+    }
+    .service-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 30px 20px;
+    }
+    .service-title {
+        font-size: 24px;
+    }
+    .service-text {
+        font-size: 15px;
+    }
+    .service-list li {
+        font-size: 15px;
+    }
+}

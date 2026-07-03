@@ -1,0 +1,122 @@
+<?php
+session_start();
+ini_set('upload_max_filesize', '40000M');
+ini_set('post_max_size', '40000M');
+ini_set('max_input_time', 300000);
+ini_set('max_execution_time', '-1');
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+/*Email Template Render*/
+function render_email($email, $data) {
+    ob_start();
+    include "email_template_reverse_engineering_cbe.phtml";
+    return ob_get_contents();
+}
+
+if($_POST)
+{
+	$data['name'] = isset($_POST['name']) ? $_POST['name']:'';
+	$data['email'] = isset($_POST['email']) ? $_POST['email']:'';
+	$data['companyname'] = isset($_POST['companyname']) ? $_POST['companyname']:'';
+	$data['contactnumber'] = isset($_POST['contactnumber']) ? $_POST['contactnumber']:'';
+    $data['companyaddress'] = isset($_POST['companyaddress']) ? $_POST['companyaddress']:'';
+    $data['home'] =  $_POST["homeavailable"] == "Yes" ? 'Yes': 'No';
+    $data['gstnumber'] = isset($_POST['gstnumber']) ? $_POST['gstnumber']:'';
+    $data['demo'] =  $_POST["needdemo"];
+    $data['modellingTech'] =  $_POST["modellingTech"];
+    $data['ComponentSize'] =  $_POST["ComponentSize"];
+    $data['accuracyExpectation'] =  $_POST["accuracyExpectation"];
+    // $data['quote'] =  $_POST["needquote"] == "Yes" ? 'Yes': 'No';
+    // $data['geomagicsoftware'] =  $_POST["geomagic"] == "geomagicdesignx" ? 'geomagicdesignx': 'geomagiccontrolx';
+    $data['upload_link'] = '';
+    
+	/*Upload Function*/
+	if(isset($_FILES['uploadscan']) && $_FILES['uploadscan']['size'] > 0)
+	{
+
+	  $uploadfile_name=$_FILES["uploadscan"]["name"];
+
+	  $filename   = uniqid() . "-" . time();
+
+	  $extension  = pathinfo( $_FILES["uploadscan"]["name"], PATHINFO_EXTENSION );
+
+	  $filename = $filename.".".$extension;
+
+	  $folder="uploads";
+
+  		if (!is_dir($folder)) {
+    		mkdir($folder, 0777, true);
+		}
+
+	  move_uploaded_file($_FILES["uploadscan"]["tmp_name"], $folder."/".$filename);
+
+	  $data['upload_link'] = "https://precise3dm.com"."/".$folder."/".$filename;
+	}
+	
+	$body = render_email('email', $data);
+
+	$subject = "You have a message from your client";
+
+	$to = "service@precise3dm.com";
+    //$to = "prasannakanthan@gmail.com";
+	$from = "precise3dmdre@gmail.com";
+
+	//PHPMailer Object
+	$mail = new PHPMailer\PHPMailer\PHPMailer(); //Argument true in constructor enables exceptions
+
+	 // $mail->SMTPDebug = 3;  
+	$mail->SMTPDebug = false;  
+	//Set PHPMailer to use SMTP.
+	$mail->isSMTP();            
+	//Set SMTP host name                          
+	$mail->Host = "smtp.gmail.com";
+	//Set this to true if SMTP host requires authentication to send email
+	$mail->SMTPAuth = true;                          
+	//Provide username and password     
+	$mail->Username = "precise3dmdre@gmail.com";                 
+	$mail->Password = "nctdxqoxvqhflyaj";                           
+	//If SMTP requires TLS encryption then set it
+	$mail->SMTPSecure = "ssl";                           
+	//Set TCP port to connect to
+	$mail->Port = 465; 
+
+	//From email address and name
+	$mail->From = $from;
+	$mail->FromName = "Customer Submitted a form from Geomagic Design X";
+
+	//To address and name
+	//$mail->addAddress("limtion.digital@gmail.com", "Limtion Site");
+	$mail->addAddress($to); //Recipient name is optional
+
+	//Address to which recipient will reply
+	// $mail->addReplyTo("aaranrims@yourdomain.com", "Reply");
+
+	//CC and BCC
+	//$mail->addCC("aaranrims@gmail.com");
+	//$mail->addBCC("bcc@example.com");
+
+	//Send HTML or Plain Text email
+	$mail->isHTML(true);
+
+	$mail->Subject = $subject;
+	$mail->Body = $body;
+
+
+try {
+    $mail->send();
+     echo "sent";
+     $_SESSION['status'] = "success";
+} catch (Exception $e) {
+    print_r(error_get_last());
+	    echo "Error: Message not accepted";
+	    $_SESSION['status'] = "failure";
+}
+
+}
+ //header("Location: https://www.precise3dm.com/reverse-engineering-geomagic-design-x.php#geoform");
+header("Location: ". $_SERVER['HTTP_REFERER']);
+exit;
+?>

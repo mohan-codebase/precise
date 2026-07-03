@@ -1,0 +1,379 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero{
+  background-image: url('../images/handled-laser-3d-scanner/hero-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  margin: 30px;
+  margin-top: 80px;
+  border-radius: 30px;
+  padding: 70px 20px;
+}
+.call{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.call-icon{
+  background-color: #FF8D1E;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.call-text h5{
+  color: #fff !important;
+  font-weight: 800;
+}
+.call-text p{
+  color: #fff;
+}
+.call-text p span{
+  color: #FF8D1E;
+}
+.hero-row{
+  margin: 80px 0;
+}
+.hero-row ul li{
+  color: #fff;
+  font-size: 20px !important;
+  list-style: disc;
+  margin-top: 8px;
+  margin-left:30px;
+}
+.hero h1{
+  color: #fff;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+.hero .text{
+  margin-top: -6px !important;
+  font-size: 20px !important;
+  color: #fff;
+}
+@media screen and (max-width:900px){
+  .hero .text{
+    padding: 0 0px;
+  }
+}
+.card-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+    .hero-row{
+          margin: 40px 0 !important;
+  }
+.card-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 300px;
+  min-width: 280px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-img{
+  text-align: center;
+  background: #fdf6f6;
+  padding: 10px;
+  border-radius: 10px;
+}
+.mail{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+}
+.mail-icon{
+  background-color: #FF8D1E;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.mail-text h5{
+  color: #fff !important;
+  font-weight: 800;
+}
+.mail-text p{
+  color: #fff;
+}
+.mail-text p span{
+  color: #FF8D1E;
+}
+.overview h2{
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+}
+.overview p{
+  font-size: 20px !important;
+  color: #000;
+  margin-top: 20px;
+}
+.banner2{
+  background-image: url('../images/laser-tracker-3d-scanner/banner2.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 70px 40px;
+}
+.banner2 h2{
+  color: #fff;
+  font-weight:600;
+  font-size: 50px;
+}
+.banner2 p{
+  color: #fff;
+  font-size: 20px !important;
+  font-weight: normal !important;
+  padding: 10px 50px;
+}
+.banner2 .text-head{
+  font-weight: 700;
+  font-size: 22px !important;
+}
+.how h2{
+  color: #000;
+  font-weight: 700;
+  font-size:50px;
+  margin-top: 70px;
+}
+.how .text-head{
+  color: #000;
+  font-weight: 500;
+  font-size: 22px !important;
+}
+.how-card{
+  border: 1px solid #fde1e1;
+  padding: 20px;
+  border-radius: 20px;
+  min-height: 560px;
+  -webkit-box-shadow: 0px 0px 62px 8px #FFF2E4;
+  -moz-box-shadow: 0px 0px 62px 8px #FFF2E4;
+  box-shadow: 0px 0px 62px 8px #FFF2E4;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.how-card-img{
+  text-align: center;
+  background-color: #FFF2E4;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+.how-card-text h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.how-card-text p{
+  font-size: 20px !important;
+  color: #000;
+}
+.why h2{
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+}
+.why h2 span{
+  color: #FF8D1E;
+}
+.why .text{
+  font-size: 24px !important;
+  color: #000;
+  font-weight: 500;
+}
+@media screen and (max-width:600px){
+  .why .text{
+    font-size: 18px !important;
+  }
+}
+.why-box2{
+  border: 1px solid #fde1e1;
+  padding: 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 62px 8px rgba(253,225,225,1);
+  -moz-box-shadow: 0px 0px 62px 8px rgba(253,225,225,1);
+  box-shadow: 0px 0px 62px 8px rgba(253,225,225,1);
+  margin-top: 20px;
+  min-height: 320px
+}
+.why-text h4{
+  font-size: 30px;
+  font-weight: 600;
+}
+.why-text p{
+  font-size: 20px !important;
+  color: #000;
+  margin-top: 20px;
+}
+.why-icon2{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.why-icon2 h4{
+  font-weight: 600;
+}
+.banners-section .head{
+  font-size: 60px !important;
+  color: #000;
+  font-weight: 700;
+}
+.banners-section p.text{
+  font-size: 20px !important;
+  color: #000 !important;
+}
+.banner-box{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 40px;
+  padding-top:230px;
+  border-radius: 40px;
+}
+.banner-box h2{
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+}
+.banner-box h2 span{
+  color: #FF8D1E;
+}
+.banner-box p{
+  color: #fff;
+  font-size: 20px !important;
+  width: 70%;
+  margin-top: 20px;
+}
+.banner3{
+  background-image: url("../images/laser-tracker-3d-scanner/banner3.png");
+}
+.banner4{
+  background-image: url("../images/laser-tracker-3d-scanner/banner4.png");
+}
+.banner5{
+  background-image: url("../images/laser-tracker-3d-scanner/banner5.png");
+}
+.banner6{
+  background-image: url("../images/laser-tracker-3d-scanner/banner6.png");
+}
+.banner7{
+  background-image: url("../images/laser-tracker-3d-scanner/banner7.png");
+}
+.blog-section h2{
+  color: #000;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.blog p{
+  margin-top: 10px;
+  color: #000;
+  font-size: 20px !important;
+}
+
+@media screen and (max-width:900px){
+  .hero{
+    min-height: 100%;
+    margin: 10px;
+    margin-top:90px;
+    padding: 50px 20px;
+    background-position: center center;
+  }
+  
+
+  
+  .hero h1{
+    font-size: 2.5rem;
+  }
+  .hero .text{
+    display: none !important;
+  }
+  .card-box{
+    margin-top: 30px;
+  }
+  .overview{
+    padding-left:5px;
+  }
+  .overview h2{
+    font-size: 30px !important;
+  }
+  .overview p{
+    font-size: 18px !important;
+  }
+  .banner2{
+    background-position: center center;
+    border-radius: 10px;
+  }
+  .how h2 {
+    font-size: 30px;
+  }
+  .how .text-head {
+    font-size: 18px !important;
+  }
+  .how-card-text h3 {
+    font-size:22px !important;
+  }
+  .how-card-text p {
+    font-size:18px !important;
+  }
+  .how-card-img img{
+    width:100%;
+  }
+  .banner2 h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 10px;
+  }
+  .banner2 p{
+    font-size: 18px !important;
+    padding: 0 10px;
+  }
+  .banner3 p{
+    font-size: 18px !important;
+  }
+  .why h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .why-box2{
+    margin-top: 30px;
+  }
+  .banner-box{
+    border-radius: 10px;
+  }
+  .banner-box p{
+    width:100%;
+  }
+  .banner-box h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .banners-section .head{
+    font-size: 30px !important;
+    color: #000;
+    font-weight: 700;
+  }
+  .card-row{
+      flex-wrap:wrap;
+  }
+}

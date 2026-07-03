@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><h3>Contact Information</h3></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><?= $data['nameche'];?></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><?= $data['emailche'];?></td>
+		</tr>
+		<tr>
+			<td>Contact Number:</td>
+			<td><?= $data['contactnumberche'];?></td>
+		</tr>
+		<tr>
+			<td>Company Name:</td>
+			<td><?= $data['companyche'];?></td>
+		</tr>
+		<tr>
+			<td>Pickup Address:</td>
+			<td><?= $data['pickup'];?></td>
+		</tr>
+		<tr>
+			<td>Component Size:</td>
+			<td><?= $data['component'];?></td>
+		</tr>
+		<tr>
+			<td>Accuracy:</td>
+			<td><?= $data['accuracy'];?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Scanning Technique</h3></td>
+		</tr>
+		<tr>
+			<td>GOM 3D SCANNER (WHITE LIGHT / BLUE LIGHT):</td>
+			<td><?=$data['gomscan'];?></td>
+		</tr>
+		<tr>
+			<td>FREESCAN:</td>
+			<td><?=$data['freescan'];?></td>
+		</tr>
+		<tr>
+			<td>EINSCAN:</td>
+			<td><?=$data['einscan'];?></td>
+		</tr>
+		<tr>
+			<td>LONG RANGE 3D SCANNING:</td>
+			<td><?=$data['longrange3d'];?></td>
+		</tr>
+		<tr>
+			<td>FARO ARM 3D SCANNER:</td>
+			<td><?=$data['faroarm3d'];?></td>
+		</tr>
+		<tr>
+			<td>I AM NOT SURE:</td>
+			<td><?=$data['notsure'];?></td>
+		</tr>
+		<tr>
+			<td>onsite_date:</td>
+			<td><?=$data['onsite_date'];?></td>
+		</tr>
+		<tr>
+			<td>Download File link</td>
+			<td><?= $data['upload_link'];?></td>
+		</tr>
+	</table>
+
+</body>
+</html>

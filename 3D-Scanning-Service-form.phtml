@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<table>
+		<tr>
+			<td colspan="2">
+				<h3>Personal Details</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>Full Name:</td>
+			<td>
+				<?= $data['name']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td>
+				<?= $data['email']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Phone Number:</td>
+			<td>
+				<?= $data['phone']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Company Name:</td>
+			<td>
+				<?= $data['company']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td>
+				<?= $data['address']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>State:</td>
+			<td>
+				<?= $data['state1']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>City:</td>
+			<td>
+				<?= $data['city1']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Country:</td>
+			<td>
+				<?= $data['country1']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<h3>Types of 3D Scanner:</h3>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h5>(Let us know if you have any specific scanner type in mind ) </h5>
+			</td>
+		</tr>
+		<tr>
+			<!-- form 2 -->
+		<tr>
+			<td colspan="2">
+				<h3>Accuracy Requirements</h3>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h4>(Please specify the level of accuracy you require from the 3D
+					scanning process ) </h4>
+			</td>
+		</tr>
+		<tr>
+			<td> 10 to 20 micron (.01 mm to .02 mm) :</td>
+			<td>
+				<?= $data['checkbox1']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				20 to 50 micron
+				(.02 mm to .05 mm):</td>
+			<td>
+				<?= $data['checkbox2']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				50 to 100 micron
+				(.05 mm to .1 mm):</td>
+			<td>
+				<?= $data['checkbox3']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Above 100 microns (>.1 mm):</td>
+			<td>
+				<?= $data['checkbox4']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>My expected accuracy is more than 1mm:</td>
+			<td>
+				<?= $data['checkbox5']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				I'm not sure:
+			</td>
+			<td>
+				<?= $data['checkbox6']; ?>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h3>Specific Accuracy Requirement :</h3>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>“Mention below if there is any specific Accuracy requirement”:</td>
+			<td>
+				<?= $data['checkbox7']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Component Name/Description:</td>
+			<td>
+				<?= $data['checkbox8']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Component Size [Specify the dimensions of the component (e.g., Length x Width x Height)]:</td>
+			<td>
+				<?= $data['checkbox9']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Project Picture:</td>
+			<td>
+				<?= $data['upload_link']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<h3>Types of 3D Scanner:</h3>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Optical 3D Scanning (Structured light):</td>
+			<td>
+				<?= $data['Structuredlight']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Industrial Handheld 3D Scanner (Metrology Grade):</td>
+			<td>
+				<?= $data['MetrologyGrade']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Colour Handheld 3D Scanner:</td>
+			<td>
+				<?= $data['10to50Micron']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Robot Mounted 3D scanner (Automated):</td>
+			<td>
+				<?= $data['50to100Micron']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Handheld 3D Scanning With Photogrammetry:</td>
+			<td>
+				<?= $data['100-micron']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Closed frame Desktop 3D scanner:</td>
+			<td>
+				<?= $data['Myaccuracy']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Laser Arm-Based 3D Scanning:</td>
+			<td>
+				<?= $data['Imnot']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Long Range 3D Scanning(Lidar) :</td>
+			<td>
+				<?= $data['SpecificAccuracy'] ?>
+			</td>
+		</tr>
+		<tr>
+			<td>I am not sure, Need Consultation:</td>
+			<td>
+				<?= $data['ComponentName'] ?>
+			</td>
+		</tr>
+
+
+
+		<tr>
+			<td colspan="2">
+				<h3>Application purpose:</h3>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h5>(Please select below post 3D Scan Application ):</h5>
+			</td>
+		</tr>
+		<tr>
+			<td>Onsite at My Location (We bring the 3D Scanner to your location):</td>
+			<td>
+				<?= $data['Engineering']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>3Walk-in at Precise3DM Office (You bring the component to our location):</td>
+			<td>
+				<?= $data['Inspection']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Component Pickup Service (We pick the component at your location):</td>
+			<td>
+				<?= $data['Scanning']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Ship it to Precise3DM (You courier the parts to our nearby scanning location):</td>
+			<td>
+				<?= $data['ComponentPickup1']; ?>
+			</td>
+		</tr>
+
+		<!-- 5 -->
+
+		<tr>
+			<td>3D Reverse Engineering:</td>
+			<td>
+				<?= $data['Reverse']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				3D Inspection:</td>
+			<td>
+				<?= $data['Inspection1']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td> Just need 3D Scan alone:</td>
+			<td>
+				<?= $data['Just']; ?>
+			</td>
+		</tr>
+
+		<!-- 6 -->
+
+		<tr>
+			<td colspan="2">
+				<h3>3D Reverse Engineering</h3>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<h2>3D Scan to CAD Design Approach</h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Design Intent:</td>
+			<td>
+				<?= $data['Intent']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>As-built:</td>
+			<td>
+				<?= $data['built']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Hybrid Modelling:</td>
+			<td>
+				<?= $data['Hybrid']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Nurbs Modeling:</td>
+			<td>
+				<?= $data['Nurbs']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Class A Surface:</td>
+			<td>
+				<?= $data['Class']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Not Sure (need consultation):</td>
+			<td>
+				<?= $data['consultation']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<h2>Output Format Required</h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td>.IGES, .STEP, .SAT, .PS:</td>
+			<td>
+				<?= $data['IGES']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<h2>CAD software Output</h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td>CATIA:</td>
+			<td>
+				<?= $data['CATIA']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>UG:</td>
+			<td>
+				<?= $data['UG']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Creo:</td>
+			<td>
+				<?= $data['Creo']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Autodesk Inventor:</td>
+			<td>
+				<?= $data['Autodesk']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Solidworks:</td>
+			<td>
+				<?= $data['Solidworks']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Others:</td>
+			<td>
+				<?= $data['others']; ?>
+			</td>
+		</tr>
+
+		<!-- 7 -->
+		<tr>
+			<td colspan="2">
+				<h2>3D Inspection</h2>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h2>Do you have a 3D CAD Model?</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>Yes:</td>
+			<td>
+				<?= $data['Modelyes']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>No:</td>
+			<td>
+				<?= $data['Modelno']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<h2>Alignment:</h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Best Fit:</td>
+			<td>
+				<?= $data['Best']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Feature-based:</td>
+			<td>
+				<?= $data['Feature-based']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>RPS:</td>
+			<td>
+				<?= $data['RPS']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Not Sure:</td>
+			<td>
+				<?= $data['Not-Sure']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Specific alignment:</td>
+			<td>
+				<?= $data['Specific-alignment']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Specific Inspection Criteria or Tolerances:</td>
+			<td>
+				<?= $data['Tolerances']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Please provide any additional details or special instructions for the inspection process:</td>
+			<td>
+				<?= $data['additional-details']; ?>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2">
+				<h2>3D Inspection Type:</h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td>2D Compare ( 2D Cross Section Comparison):</td>
+			<td>
+				<?= $data['2D-Compare']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>3D Compare:</td>
+			<td>
+				<?= $data['3D-Compare']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Sheet metal / Boundary Comparison:</td>
+			<td>
+				<?= $data['Sheet-metal']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Virtual edge comparison & measurment:</td>
+			<td>
+				<?= $data['Virtual']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Profile projection comparison:</td>
+			<td>
+				<?= $data['projection']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				3D/2D Curve Deviation:</td>
+			<td>
+				<?= $data['Curve']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>Airfoil Related analysis (Airfoil & Twist):</td>
+			<td>
+				<?= $data['Airfoil']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Others (Please specify):</td>
+			<td>
+				<?= $data['Others']; ?>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2">
+				<h2>Output Format Required</h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				.PPT (PowerPoint):</td>
+			<td>
+				<?= $data['PowerPoint']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>.PDF:</td>
+			<td>
+				<?= $data['.PDF']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			.3D PDF:</td>
+			<td>
+				<?= $data['.3D PDF']; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>.XLSX (Excel):</td>
+			<td>
+				<?= $data['XLSX']; ?>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Others (Please specify):</td>
+			<td>
+				<?= $data['Others1']; ?>
+			</td>
+		</tr>
+
+
+	</table>
+
+</body>
+
+</html>

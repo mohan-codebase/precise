@@ -1,0 +1,1212 @@
+/* =========================================================
+   3D PRINTING SERVICE REQUEST CSS
+   ========================================================= */
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6,p,td,th,span,b,strong,label,small,a,button{
+    font-family: 'Inter', sans-serif !important;
+}
+.print-service-section {
+    background-color: #f6f6fa;
+    padding: 80px 0 100px 0;
+    min-height: 100vh;
+    margin-top: 120px;
+}
+
+/* Left Side Styling */
+.left-print-header {
+    margin-bottom: 25px;
+}
+
+.left-print-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.left-print-subtitle {
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.6;
+    margin-bottom: 45px;
+    max-width: 90%;
+}
+
+.left-print-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-print-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #111;
+    transition: transform 0.2s ease;
+}
+
+.left-print-list li:hover {
+    transform: translateX(5px);
+}
+
+.print-check-icon {
+    color: #00ba00;
+    font-size: 1.7rem;
+    margin-right: 18px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 186, 0, 0.2));
+}
+
+/* Right Side Form Card */
+.print-form-card {
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.08);
+    padding: 55px 65px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.step-progress-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.print-form-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.print-form-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Custom Floating / Notched Input Group */
+.custom-input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.custom-floating-label {
+    position: absolute;
+    top: -10px;
+    left: 18px;
+    background: #fff;
+    padding: 0 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111;
+    z-index: 5;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.custom-floating-label span {
+    color: #e53935;
+    margin-left: 2px;
+}
+
+.custom-print-input {
+    width: 100%;
+    height: 58px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.05rem;
+    color: #333;
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.custom-print-input:focus {
+    border-color: #ff931e;
+    box-shadow: 0 0 0 3px rgba(255, 147, 30, 0.15);
+    outline: none;
+}
+
+.custom-print-input::placeholder {
+    color: #999;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Input Icons */
+.input-icon-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1.2rem;
+    pointer-events: none;
+    z-index: 3;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.input-icon-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1.2rem;
+    z-index: 3;
+    pointer-events: none;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.custom-print-input-icon {
+    padding-right: 50px;
+}
+
+/* Mobile Phone Container */
+.mobile-phone-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    height: 58px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mobile-phone-container:focus-within {
+    border-color: #ff931e;
+    box-shadow: 0 0 0 3px rgba(255, 147, 30, 0.15);
+}
+
+.country-select-wrapper {
+    position: relative;
+    height: 100%;
+    border-right: 1px solid #dcdcdc;
+    padding-left: 20px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fcfcfc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 6px;
+}
+
+.country-code-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.mobile-phone-input {
+    border: none;
+    height: 100%;
+    padding: 15px 50px 15px 20px;
+    font-size: 1.05rem;
+    color: #333;
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.mobile-phone-input::placeholder {
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Select Dropdowns */
+.custom-print-select {
+    width: 100%;
+    height: 58px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px 45px 15px 50px;
+    font-size: 1.05rem;
+    color: #333;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.custom-print-select-no-left {
+    padding-left: 20px;
+}
+
+.custom-print-select:focus {
+    border-color: #ff931e;
+    box-shadow: 0 0 0 3px rgba(255, 147, 30, 0.15);
+    outline: none;
+}
+
+.select-arrow-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Submit Button */
+.btn-print-continue {
+    background: linear-gradient(180deg, #ffaa49 0%, #ff8200 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 58px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 130, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-print-continue:hover:not(:disabled) {
+    background: linear-gradient(180deg, #ffb562 0%, #f07a00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 130, 0, 0.35);
+}
+
+.btn-print-continue:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(255, 130, 0, 0.2);
+}
+
+.btn-print-continue:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .print-service-section {
+        padding: 50px 0;
+    }
+
+    .left-print-title {
+        font-size: 2.5rem;
+    }
+
+    .left-print-subtitle {
+        font-size: 1.15rem;
+        margin-bottom: 35px;
+        max-width: 100%;
+    }
+
+    .print-form-card {
+        padding: 40px 30px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .print-service-section {
+        margin-top: 0;
+    }
+}
+
+/* =========================================================
+   STEP 2 FORM STYLING
+   ========================================================= */
+
+/* Step 2 Upload Box */
+.upload-dotted-box {
+    background-color: #fffbf6;
+    border: 2px dotted #ff931e;
+    border-radius: 20px;
+    padding: 50px 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.upload-dotted-box:hover {
+    background-color: #fff7ec;
+    border-style: dashed;
+}
+
+.upload-icon {
+    font-size: 3.5rem;
+    color: #ff931e;
+    margin-bottom: 20px;
+}
+
+.upload-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.upload-subtitle {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Step 2 Design Requirement Cards */
+.design-req-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.design-req-card {
+    border: 2px solid #d2d5da;
+    border-radius: 16px;
+    padding: 30px 25px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-req-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.design-req-card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.design-req-card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* Active / Hover Card State */
+.design-req-card:hover,
+.design-req-card.active {
+    border-color: #ff931e;
+    box-shadow: 0 8px 30px rgba(255, 147, 30, 0.12);
+}
+
+.design-req-card.active .design-req-icon,
+.design-req-card:hover .design-req-icon {
+    filter: invert(61%) sepia(87%) saturate(1478%) hue-rotate(348deg) brightness(101%) contrast(104%);
+}
+
+.design-req-card.active .design-req-card-title,
+.design-req-card:hover .design-req-card-title {
+    color: #ff931e;
+}
+
+/* File Preview Item */
+.file-preview-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.btn-close-custom {
+    background: transparent;
+    border: none;
+    color: #999;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: color 0.2s ease;
+}
+
+.btn-close-custom:hover {
+    color: #e53935;
+}
+
+/* Step Navigation Buttons */
+.btn-print-back {
+    background: transparent;
+    color: #4c4c4c;
+    border: 2px solid #4c4c4c;
+    border-radius: 10px;
+    height: 58px;
+    padding: 0 45px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-print-back:hover {
+    background: #4c4c4c;
+    color: #fff;
+}
+
+.btn-print-continue-next {
+    background: #ff931e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 58px;
+    padding: 0 55px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 147, 30, 0.25);
+}
+
+.btn-print-continue-next:hover:not(:disabled) {
+    background: #f08210;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 147, 30, 0.35);
+}
+
+/* =========================================================
+   STEP 3 FORM STYLING
+   ========================================================= */
+
+/* Part Application 12 Cards */
+.part-app-card {
+    border: 1px solid #e3e5e8;
+    border-radius: 12px;
+    padding: 22px 18px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.part-app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.part-app-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: invert(38%) sepia(0%) saturate(0%) hue-rotate(185deg) brightness(97%) contrast(89%); /* #636363 */
+}
+
+.card-custom-checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.card-custom-checkbox i {
+    color: transparent;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.part-app-card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #636363;
+    margin-bottom: 0;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+/* Active State for Part Application Card */
+.part-app-card.active {
+    border-color: #ff931e;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.1);
+}
+
+.part-app-card.active .part-app-icon {
+    filter: invert(61%) sepia(87%) saturate(1478%) hue-rotate(348deg) brightness(101%) contrast(104%); /* #ff931e */
+}
+
+.part-app-card.active .part-app-card-title {
+    color: #ff931e;
+}
+
+.part-app-card.active .card-custom-checkbox {
+    background-color: #ff931e;
+}
+
+.part-app-card.active .card-custom-checkbox i {
+    color: #fff;
+}
+
+/* Approximate Part Size Cards */
+.part-size-card {
+    border: 2px solid #d2d5da;
+    border-radius: 14px;
+    padding: 25px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.part-size-icon {
+    font-size: 1.5rem;
+    color: #ff931e;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.part-size-card.active .part-size-icon {
+    display: block;
+}
+
+.part-size-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #636363;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.part-size-text {
+    font-size: 1rem;
+    color: #636363;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.part-size-card.active {
+    border-color: #ff931e;
+    box-shadow: 0 4px 20px rgba(255, 147, 30, 0.12);
+}
+
+.part-size-card.active .part-size-title {
+    color: #ff931e;
+}
+
+/* Quantity Required Cards */
+.qty-req-card {
+    border: 2px solid #d2d5da;
+    border-radius: 12px;
+    padding: 18px 10px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #636363;
+}
+
+.qty-req-card.active {
+    border-color: #ff931e;
+    color: #ff931e;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.12);
+}
+
+/* Need Assembly Custom Radio */
+.custom-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.custom-radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.custom-radio-input {
+    display: none;
+}
+
+.custom-radio-circle {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #777;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.custom-radio-inner {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.custom-radio-input:checked + .custom-radio-circle {
+    border-color: #ff931e;
+    border-width: 7px;
+}
+
+.custom-radio-input:checked + .custom-radio-circle .custom-radio-inner {
+    background-color: #fff;
+}
+
+/* =========================================================
+   STEP 4 FORM STYLING
+   ========================================================= */
+
+/* Operating Temperature Cards */
+.temp-req-card {
+    border: 1px solid #e3e5e8;
+    border-radius: 12px;
+    padding: 22px 18px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #636363;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 1.3;
+}
+
+.temp-req-card.active {
+    border-color: #ff931e;
+    color: #ff931e;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.15);
+}
+
+/* Existing Material Dropdown/Input */
+.existing-material-select {
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    border: 1px solid #d2d5da;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #4c4c4c;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    margin-bottom: 30px;
+}
+
+.existing-material-select:focus {
+    border-color: #ff931e;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 147, 30, 0.15);
+}
+
+/* =========================================================
+   STEP 5 FORM STYLING
+   ========================================================= */
+
+/* Timeline & Budget Cards */
+.commercial-req-card {
+    border: 1px solid #e3e5e8;
+    border-radius: 12px;
+    padding: 20px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #636363;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 1.3;
+}
+
+.commercial-req-card.active {
+    border-color: #ff931e;
+    color: #ff931e;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.15);
+}
+
+/* Custom Textarea */
+.custom-textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 18px 20px;
+    border: 1px solid #d2d5da;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #111;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.custom-textarea:focus {
+    border-color: #ff931e;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 147, 30, 0.15);
+}
+
+/* Disabled button state */
+.btn-print-continue-next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* =========================================================
+   STEP 6 FORM STYLING
+   ========================================================= */
+
+/* Manufacturing Capability Cards */
+.tech-capability-card {
+    border: 1px solid #4c4c4c;
+    border-radius: 12px;
+    padding: 20px 15px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    min-height: 180px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tech-capability-card.active {
+    border-color: #ff931e;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.15);
+}
+
+.tech-capability-card.active .tech-card-title {
+    color: #ff931e;
+}
+
+.tech-card-img-placeholder {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+.tech-card-img-wrapper {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.tech-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #373737;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.tech-card-subtext {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #6c727f;
+    margin-bottom: 0;
+}
+
+/* Notice Container */
+.notice-info-box {
+    background-color: #fff2e3;
+    border-radius: 12px;
+    padding: 24px 30px;
+    color: #ff931e;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+/* =========================================================
+   STEP 7 FORM STYLING (Review & Submit)
+   ========================================================= */
+
+/* Summary Container */
+.summary-container {
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 25px 30px;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.summary-row:first-child {
+    padding-top: 0;
+}
+
+.summary-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #373737;
+}
+
+.summary-edit-link {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ff931e;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.summary-edit-link:hover {
+    color: #e07c14;
+    text-decoration: underline;
+}
+
+/* What Happens Next Container */
+.happens-next-container {
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 35px 25px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.happens-next-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.happens-next-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #ffefde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(255, 147, 30, 0.08);
+}
+
+.happens-next-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.happens-next-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #373737;
+    line-height: 1.35;
+    margin-bottom: 0;
+}
+
+/* Step 7 Confirmation Checkbox */
+.confirmation-box-wrapper {
+    background-color: #fffbf6;
+    border: 1px solid #ff931e;
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(255, 147, 30, 0.08);
+}
+
+.confirmation-checkbox {
+    width: 24px;
+    height: 24px;
+    accent-color: #ff931e;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.confirmation-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #373737;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* =========================================================
+   STEP 8 FORM STYLING (Thank You Page)
+   ========================================================= */
+
+/* Concentric Circles */
+.concentric-outer {
+    width: 160px;
+    height: 160px;
+    background-color: #e6f6ea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+}
+
+.concentric-middle {
+    width: 120px;
+    height: 120px;
+    background-color: #8ad49f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.concentric-inner {
+    width: 85px;
+    height: 85px;
+    background-color: #00a22e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.thank-you-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.thank-you-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.thank-you-desc {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.thank-you-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff931e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Checklist */
+.thank-you-checklist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.checklist-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #111;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.checklist-icon {
+    width: 26px;
+    height: 26px;
+    background-color: #00a22e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+/* Contact Info Box */
+.thank-you-contact-box {
+    background-color: #fff1e2;
+    border-radius: 16px;
+    padding: 35px 30px;
+    margin-bottom: 45px;
+}
+
+.contact-part {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 10px 5px;
+}
+
+.contact-icon-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #ff931e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.contact-info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.contact-link {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ff931e;
+    text-decoration: underline;
+}
+
+/* Back to Home Button */
+.btn-back-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid #4c4c4c;
+    border-radius: 12px;
+    padding: 15px 45px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #4c4c4c;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-back-home:hover {
+    background-color: #4c4c4c;
+    color: #fff;
+}

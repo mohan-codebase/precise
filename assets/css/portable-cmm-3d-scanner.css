@@ -1,0 +1,331 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero{
+  background-image: url('../images/portable-cmm-3d-scanner/hero-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: 100px;
+  padding: 70px 20px;
+}
+.call{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.call-icon{
+  background-color: #FF8D1E;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.call-text h5{
+  color: #fff !important;
+  font-weight: 800;
+}
+.call-text p{
+  color: #fff;
+}
+.call-text p span{
+  color: #FF8D1E;
+}
+.hero h1{
+  color: #FF8D1E;
+  font-weight: 600;
+  font-size: 80px;
+  margin-top: 30px;
+}
+.hero .head-text{
+  color:#fff;
+  font-size: 26px !important;
+  font-weight: 400;
+  padding-left: 90px;
+  position: relative;
+}
+.hero .head-text::before{
+  content: "";
+  width: 80px;
+  height: 8px;
+  background-color: #FF8D1E;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+@media screen and (max-width:900px){
+  .hero .text{
+    padding: 0 0px;
+  }
+  .hero{
+      margin-top:-10px;
+      min-height:auto;
+  }
+  .call{
+      justify-content:start;
+  }
+}
+.mail{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+.mail-icon{
+  background-color: #FF8D1E;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.mail-text h5{
+  color: #fff !important;
+  font-weight: 800;
+}
+.mail-text p{
+  color: #fff;
+}
+.mail-text p span{
+  color: #FF8D1E;
+}
+.overview-banner{
+  background-image: url('../images/handled-laser-3d-scanner/banner2.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 80px;
+}
+.overview-banner h2{
+  color: #fff;
+  font-weight:600;
+  font-size: 50px;
+}
+.overview-banner p{
+  color: #fff;
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+.overview-banner h3{
+  color: #fff;
+  margin-top:30px;
+}
+.overview-banner .buttons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top:10px;
+}
+.key h2{
+  font-size: 50px;
+  color: #000;
+  font-weight: 700;
+  margin: 40px 0;
+}
+.key .point{
+  display: flex;
+  gap: 20px;
+}
+.point p{
+  color: #000;
+  font-size: 20px !important;
+}
+.key-img img{
+  width: 100%;
+}
+.head-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #FFF6EE;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+.how-head h2{
+  font-size: 30px !important;
+}
+.how-head h2 span{
+  color: #FF8D1E;
+}
+.tab-container{
+  background-color: #FFF6EE;
+  padding: 80px;
+}
+.content a img{
+  width: 300px;
+}
+.quote-p{
+  width: 75%;
+}
+
+/* ---Accordion Button--- */
+
+.acc-section{
+  background: url(../images/portable-cmm-3d-scanner/Layer_1\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 40px 0;
+}
+.accordion-item{
+  border: none !important;
+  box-shadow: none !important;
+  margin-bottom: 10px !important;
+  border-radius: 2rem !important;
+  box-shadow: 0px 0px 30px 5px #87878733 !important;
+}
+.accordion-header{
+  background-color: none !important;
+  margin-bottom: 0 !important;
+}
+.accordion-button{
+  width: 100%;
+  box-shadow: none !important;
+  color: #000 !important;
+  background-color: #fff;
+  border-radius: 2rem 2rem 0 0 !important;
+  border: none !important;
+  outline: none !important;
+  text-align: left;
+  margin-bottom: 0 !important; 
+  border-left: 10px solid #FF8D1E !important;
+}
+.accordion-button.collapsed{
+  border-radius: 2rem !important;
+  border: none !important;
+}
+.accordion-button h5{
+  font-size: 22px !important;
+  font-weight: 500;
+  padding-left: 30px;
+  position: relative;
+}
+.accordion-button::after{
+  content: "";
+  display: none !important;
+}
+.accordion-button h5::before{
+  content:"+";
+  font-size: 30px !important;
+  color: #FF8D1E;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  display: none;
+}
+.accordion-body{
+  padding: 20px;
+  font-size: 22px !important;
+  background-color: #fff;
+  margin-bottom:20px;
+  border-radius: 0 0 2rem 2rem !important;
+  border-left: 10px solid #FF8D1E !important;
+}
+.accordion-body h5{
+  font-size: 20px !important;
+  font-weight: 400;
+  padding-left: 30px;
+  position: relative;
+  color: #464545;
+}
+.accordion-body h5::before{
+  content:"-";
+  font-size: 40px !important;
+  color: #FF8D1E;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  width: 50px;
+  display: none;
+}
+.accordion-body p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  padding-left: 30px;
+}
+.acc-section h2{
+  font-weight: 700;
+  font-size: 50px !important;
+}
+.acc-section h2 span{
+  color: #FF8D1E;
+  font-weight: 700;
+}
+.accordion-collapse.show .accordion-body h5::before{
+  display: block;
+}
+.accordion-button{
+}
+.accordion-button.collapsed h5::before{
+  display: block;
+}
+
+@media screen and (max-width:900px){
+  .hero{
+    background-position: center;
+    border-radius: 0 0 10px 10px;
+    padding: 80px 10px;
+  }
+  .hero h1{
+    font-size:30px !important;
+  }
+  .hero .head-text{
+    font-size: 20px !important;
+    padding-left: 0;
+  }
+  .hero .head-text::before{
+    display: none;
+  }
+  .overview-banner{
+    background-position: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  .overview-banner .buttons{
+    flex-wrap: wrap;
+  }
+  .how-head{
+    width: 100%;
+  }
+  .how-head h2{
+    font-size: 20px !important;
+  }
+  .tab-container{
+    padding: 30px;
+  }
+  .quote-p{
+    width: 100%;
+  }  
+  .content a{
+    margin-top: 30px;
+  }
+  .content a img{
+    width: 100%;
+  }
+  .list-secc {
+    padding: 20px 0px 100px !important;
+  }
+  .acc-section h2{
+    font-weight: 600;
+    font-size: 30px !important;
+  }
+  .accordion-button h5{
+    font-size: 18px !important;
+  }
+  .accordion-body h5{
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,621 @@
+/* head section */
+
+.automotive-landing-btn {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.automotive-landing-btn:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.automotive-head h6 {
+    font-size: 13px;
+    padding-top: 24px;
+}
+
+.automotive-head a {
+    margin-top: 18px;
+}
+
+.automotive-dropdown-head button {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+}
+
+.automotive-dropdown-head button:active {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+    background-color: #ff931e !important;
+    box-shadow: none !important;
+}
+
+.automotive-dropdown-head button:focus {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+    background-color: #ff931e !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.automotive-dropdown-menu a {
+    color: #ff931e;
+}
+
+.automotive-dropdown-menu a:hover {
+    color: #fff;
+    background-color: #ff931e;
+}
+
+.automotive-ov-butto {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 235px;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.automotive-ov-cont p {
+    font-size: 17px;
+}
+
+.automotive-ov-cont h3 {
+    font-size: 22px;
+}
+
+
+/* head section ends */
+
+div.automotive-yellow-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.automotive-card h4 {
+    font-size: 20px;
+}
+
+.automotive-card p {
+    color: white;
+}
+
+.automotive-card-main .card {
+    height: auto !important;
+}
+
+.automotive-card-main .card-footer {
+    height: 10rem;
+}
+
+.automotive-faq {
+    background-color: #242424 !important;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.automotive-faq h4 {
+    padding-bottom: 30px;
+}
+
+.why-choose h4 {
+    margin-bottom: 40px;
+}
+
+.automotive-demo-video h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+
+/* service page css starts */
+
+.benchmarkservice-top-design {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+.overv-padding .btn a {
+    color: #fff;
+}
+
+.overv-padding .btn:hover a {
+    color: #FFA73B;
+}
+
+section#teardown-bench-banner {
+    background-image: url(../images/Teardown/BANNER.png);
+    background-position:  center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section#digital-bench-banner {
+    background-image: url(../images/Digital-BenchMarking/BANNER.png);
+    background-position:  center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section#electrical-bench-banner {
+    background-image: url(../images/cover/Bannnerimages/Elctricalbenchmarking.jpg);
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#electronic-bench-banner {
+    background-image: url(../images/cover/Bannnerimages/Elctricalbenchmarking.jpg);
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#valueEng-bench-banner {
+    background-image: url(../images/cover/Bannnerimages/Valueengineeringbanner.jpg);
+     background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#valueAnalysis-bench-banner {
+     background-image: url(../images/cover/Bannnerimages/Valueengineeringbanner.jpg);
+     background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#biw-bench-banner {
+    background-image: url(../images/cover/Biwbanner.jpg);
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#automatate-landing-3D-banner {
+    background-image: url(../images/cover/Automotivebanner.jpg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#automatate-teardown-3D-banner {
+    background-image: url(../images/cover/Group100.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:-51px;
+}
+@media only screen and (max-width: 452px) {
+    section#automatate-teardown-3D-banner{
+        background-position-x:870px;
+    }
+ 
+
+ }
+ section#automatate-digital-3D-banner {
+    background-image: url(../images/cover/Group103.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:-51px;
+}
+section#automatate-occupant-3D-banner {
+    background-image: url(../images/cover/Group102.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:-51px;
+}
+section#automatate-cad-3D-banner {
+    background-image: url(../images/cover/Group96.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:-1px;
+}
+section#automatate-eee-3D-banner {
+    background-image: url(../images/cover/Group98.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:-44px;
+    background-position-x:48px;
+}
+section#automatate-digins-3D-banner {
+    background-image: url(../images/cover/Group97.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:-18px;
+    background-position-x:101px;
+}
+section#automatate-material-3D-banner {
+    background-image: url(../images/cover/Group101.png);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:14px;
+}
+
+section#materialpad {
+    background-image: url(../images/cover/pointimage.jpg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:14px;
+}
+section#materialprint {
+    background-image: url(../images/cover/group104.jpg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position-y:14px;
+}
+section#automatate-landing-3D-banner .heading,
+section#teardown-bench-banner .heading,
+section#digital-bench-banner .heading,
+section#electrical-bench-banner .heading,
+section#electronic-bench-banner .heading,
+section#valueEng-bench-banner .heading,
+section#valueAnalysis-bench-banner .heading,
+section#biw-bench-banner .heading {
+    padding: 30px 30px 0px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 165px;
+}
+
+section#teardown-bench-banner h2.text-white,
+section#digital-bench-banner h2.text-white,
+section#electrical-bench-banner h2.text-white,
+section#electronic-bench-banner h2.text-white,
+section#valueEng-bench-banner h2.text-white,
+section#valueAnalysis-bench-banner h2.text-white,
+section#biw-bench-banner h2.text-white {
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.teardown-overview-container h4 {
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    bottom: -1px;
+}
+
+.teardown-overview-container p {
+    font-size: 17px;
+}
+
+.teardown-overview-container button {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.teardown-overview-container button:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+section#overview-section {
+    background-color: #001619 !important;
+    padding-top: 0px !important;
+    padding-top: 15px !important;
+}
+
+.tear-button-one {
+    display: inline-block;
+}
+
+.overview-cont-tear p {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.ov-top-line {
+    color: black;
+    border-bottom: 1px solid;
+    display: none;
+}
+
+.overv-padding {
+    padding-top: 30px;
+}
+
+.teardown-kf {
+    background-color: #003037;
+    padding: 30px 0px;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.tear-kf-list li {
+    color: white;
+    font-family: 'firasan-extrathin';
+}
+
+.tear-kf-list {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.tear-kf-img img {
+    height: 180px;
+}
+
+#whyChoose {
+    color: #fff !important;
+}
+
+.tear-kf-img {}
+
+.no-left-padding {
+    padding-left: 0px;
+}
+
+.tear-features {
+    padding: 38px 0px;
+    padding-top: 0px;
+}
+
+.tear-features h1 {
+    font-size: 25px;
+    padding-bottom: 16px;
+}
+
+section#deliver-content {
+    background-color: #1a1a1a;
+    padding: 50px 0px;
+}
+
+#deliver-content p {
+    font-size: 18px;
+}
+
+.deliver-buttons button {
+    background-color: #ff931e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.deliver-buttons button:hover {
+    background-color: #fff;
+    color: #ff931e;
+}
+
+.deliver-buttons h2 {
+    padding: 25px 0px;
+}
+
+.electrical-bench-h {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.electrical-lists li {
+    color: white;
+    font-family: 'firasan-extrathin';
+}
+
+.software-headhide-modal3 button{
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+
+/*
+Dropdown css
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #ff931e;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #ff931e;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ff931e !important;
+}
+
+.automotive-dropdown-head button {
+    margin-top: 30px;
+    border: 1px solid#ff931e !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF931E;
+}
+
+.dropdown-content a {
+    color: #fff;
+    /* padding: 7px 16px 10px; */
+    text-decoration: none;
+    display: block;
+    margin-top: 0px;
+    padding: 7px;
+    background: #FF931E;
+    padding-top: 9px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-family: 'firasan-normal';
+    text-align: left;
+    padding-left: 19px;
+}
+
+.dropbtn {
+    padding: 5px 19px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 120px;
+    height: 30px;
+}
+
+
+.automotive-card-main .card {
+    background: #fff !important;
+}
+.biw-scan img {
+    margin: 5px 0px 10px 0px !important;
+}
+
+.val-eng-btn:hover{
+    color: #FF931E !important;
+}
+
+.dropdown:hover, .dropbtn:hover{
+    color: #fff !important;
+}
+
+@media only screen and (min-width:300px) and (max-width:1100px){
+   section#automatate-landing-3D-banner .heading{
+            height: 523px !important;
+    }
+    
+    section#automatate-landing-3D-banner ,
+    section#teardown-bench-banner ,
+    section#digital-bench-banner ,
+    section#electrical-bench-banner ,
+    section#electronic-bench-banner ,
+    section#valueEng-bench-banner ,
+    section#valueAnalysis-bench-banner ,
+    section#biw-bench-banner  {
+        padding-top: 0px !important;
+    }
+}
+
+
+@media only screen and (min-width:200px) and (max-width:500px){
+   .software-headhide-modal2{
+       display :none;
+   }
+   .teardown-overview-container h4{
+       font-size: 20px !important;
+   }
+   .teardown-overview-container button{
+       font-size: 14px;
+    margin-left: 10px;
+   }
+   .tear-features h1 {
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.electrical-lists{
+    padding-left: 25px;
+    padding-top:20px;
+}
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1100px){
+.software-mobile {
+    padding-top: 131px !important;
+    margin-bottom: 25px;
+}
+.overv-padding {
+    padding-top: 120px;
+}
+}
+
+

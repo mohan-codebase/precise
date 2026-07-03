@@ -1,0 +1,1248 @@
+/* =========================================================
+   Geomagic Control X Page Redesign – Stylesheet
+   ========================================================= */
+
+/* ---------- Design Tokens ---------- */
+:root {
+    --orange-primary:   #FE8D1D;
+    --orange-light:     #FF9B05;
+    --orange-dark:      #e67d14;
+    --white:            #ffffff;
+    --text-muted:       #e0e0e0;
+    --font-main:        "Inter", "firasan-normal", sans-serif;
+}
+
+body{
+    background: var(--white);
+}
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.controlx-hero-section {
+    position: relative;
+    background-image: url('../images/geomagic_control_x/hero-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Spacing to clear fixed header/navbar elements (~100px-140px) */
+    padding-top: 140px;
+    padding-bottom: 90px;
+    color: var(--white);
+    overflow: hidden;
+}
+
+/* Smooth gradient overlay to ensure readable text and premium fade */
+.controlx-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.4) 60%,
+        rgba(0, 0, 0, 0.25) 100%
+    );
+    z-index: 1;
+}
+
+/* White gradient fade at the bottom to transition to page content */
+.controlx-hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(
+        to top,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.1) 60%,
+        transparent 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+.controlx-hero-section .container {
+    position: relative;
+    z-index: 3;
+}
+
+/* ── Badge & Icon ── */
+.controlx-hero-badge-wrap {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.controlx-hero-badge-icon {
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.controlx-hero-badge-text {
+    font-family: var(--font-main);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: var(--orange-primary);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* ── Typography ── */
+.controlx-hero-title {
+    font-family: var(--font-main);
+    font-size: clamp(34px, 4.2vw, 54px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--orange-primary);
+    margin: 0 0 10px;
+    letter-spacing: -0.5px;
+}
+
+.controlx-hero-subtitle {
+    font-family: var(--font-main);
+    font-size: clamp(18px, 2.2vw, 28px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--white);
+    margin: 0 0 20px;
+}
+
+.controlx-hero-description {
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0 0 28px;
+    max-width: 620px;
+}
+
+/* ── Bullet Points ── */
+.controlx-hero-features {
+    margin-bottom: 35px;
+}
+
+.controlx-feature-item {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.controlx-feature-item svg {
+    flex-shrink: 0;
+}
+
+/* ── CTA Buttons ── */
+.controlx-hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-controlx-orange {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border-radius: 8px; /* Modern UI shape */
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    letter-spacing: 0.3px;
+    text-decoration: none !important;
+    transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
+    cursor: pointer;
+    border: 1px solid var(--orange-primary);
+    white-space: nowrap;
+    background: linear-gradient(135deg, var(--orange-light) 0%, var(--orange-primary) 100%);
+    color: var(--white) !important;
+    box-shadow: 0 4px 16px rgba(254, 141, 29, 0.35);
+}
+
+.btn-controlx-orange:hover {
+    background: linear-gradient(135deg, var(--orange-primary) 0%, var(--orange-dark) 100%);
+    border-color: var(--orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(254, 141, 29, 0.5);
+    color: var(--white) !important;
+}
+
+/* ── Image Float & Drop Shadow ── */
+.controlx-hero-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.controlx-hero-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+    animation: floatAnim 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-12px);
+    }
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ── Large Screen Breakpoint ── */
+@media (max-width: 1199px) {
+    .controlx-hero-section {
+        padding-top: 130px;
+        padding-bottom: 70px;
+    }
+}
+
+/* ── Tablet Breakpoint ── */
+@media (max-width: 991px) {
+    .controlx-hero-section {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        text-align: left;
+    }
+    .controlx-hero-image-wrap {
+        margin-top: 45px;
+    }
+    .controlx-hero-title {
+        font-size: 38px;
+    }
+    .controlx-hero-subtitle {
+        font-size: 22px;
+    }
+}
+
+/* ── Mobile Breakpoint ── */
+@media (max-width: 767px) {
+    .controlx-hero-section {
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+    .controlx-hero-title {
+        font-size: 32px;
+    }
+    .controlx-hero-subtitle {
+        font-size: 20px;
+    }
+    .controlx-hero-description {
+        font-size: 14.5px;
+    }
+    .controlx-hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .btn-controlx-orange {
+        width: 100%;
+    }
+}
+
+/* ── Small Mobile Breakpoint ── */
+@media (max-width: 480px) {
+    .controlx-hero-badge-text {
+        font-size: 10px;
+    }
+    .controlx-hero-title {
+        font-size: 28px;
+    }
+    .controlx-hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+/* =========================================================
+   3D INSPECTION WORKFLOW SECTION
+   ========================================================= */
+.controlx-workflow-section {
+    background-color: #f9fafc;
+    padding: 90px 0;
+    position: relative;
+}
+
+.controlx-workflow-title {
+    font-family: var(--font-main);
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+.controlx-workflow-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.controlx-workflow-card-wrapper {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    flex: 1;
+    min-width: 0; /* allows flex items to shrink below minimum content size */
+}
+
+.controlx-workflow-card {
+    background-color: var(--white);
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 35px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+}
+
+.controlx-workflow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    border-color: var(--orange-primary);
+}
+
+/* ── Badge ── */
+.controlx-step-number {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--orange-primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 15px;
+    border: 3px solid var(--white);
+    box-shadow: 0 3px 8px rgba(254, 141, 29, 0.35);
+    z-index: 5;
+}
+
+/* ── Typography & List ── */
+.controlx-card-title {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.35;
+    margin: 10px 0 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.controlx-card-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+    width: 100%;
+    flex: 1; /* Pushes image to bottom of card */
+}
+
+.controlx-card-bullets li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-family: var(--font-main);
+    font-size: 12.5px;
+    color: #4a5568;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.controlx-card-bullets li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── Workflow Image Wrapper ── */
+.controlx-card-img-wrap {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlx-card-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.controlx-workflow-card:hover .controlx-card-img-wrap img {
+    transform: scale(1.04);
+}
+
+/* ── Step Arrow ── */
+.controlx-step-arrow {
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlx-step-arrow svg {
+    filter: drop-shadow(0 2px 5px rgba(40, 167, 69, 0.3));
+}
+
+/* =========================================================
+   WORKFLOW RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ── Scroll on Tablet & Mobile (≤ 1199px) ── */
+@media (max-width: 1199px) {
+    .controlx-workflow-container {
+        overflow-x: auto;
+        padding-bottom: 25px;
+        padding-top: 15px;
+        gap: 20px;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .controlx-workflow-card-wrapper {
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+
+    .controlx-step-arrow {
+        display: none; /* Hide connecting arrows in scroll view */
+    }
+}
+
+/* ── Mobile Padding ── */
+@media (max-width: 767px) {
+    .controlx-workflow-section {
+        padding: 60px 0;
+    }
+}
+
+/* =========================================================
+   BUNDLE PRODUCTS SECTION
+   ========================================================= */
+.controlx-bundle-section {
+    background-color: var(--white);
+    padding: 90px 0;
+    position: relative;
+}
+
+.controlx-bundle-title {
+    font-family: var(--font-main);
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0 0 15px;
+    line-height: 1.25;
+}
+
+.controlx-bundle-subtitle {
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: #4a5568;
+    font-weight: 500;
+    margin: 0;
+}
+
+.controlx-bundle-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.controlx-bundle-card {
+    background-color: var(--white);
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+}
+
+.controlx-bundle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    border-color: var(--orange-primary);
+}
+
+/* ── Image Wrapper ── */
+.controlx-bundle-img-wrap {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.controlx-bundle-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.controlx-bundle-card:hover .controlx-bundle-img-wrap img {
+    transform: scale(1.04);
+}
+
+/* ── Title & Description ── */
+.controlx-bundle-card-title {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--orange-primary);
+    line-height: 1.35;
+    margin: 0 0 8px;
+    width: 100%;
+}
+
+.controlx-bundle-desc {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    color: #4a5568;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0 0 18px;
+}
+
+/* ── Bullets ── */
+.controlx-bundle-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    width: 100%;
+    flex: 1; /* Pushes button to bottom of card */
+}
+
+.controlx-bundle-bullets li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-family: var(--font-main);
+    font-size: 13px;
+    color: #2d3748;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.controlx-bundle-bullets li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── Outline Button ── */
+.btn-bundle-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    text-decoration: none !important;
+    transition: all 0.22s ease;
+    border: 1.5px solid var(--orange-primary);
+    background: transparent;
+    color: var(--orange-primary) !important;
+}
+
+.btn-bundle-outline:hover {
+    background: var(--orange-primary);
+    color: var(--white) !important;
+    box-shadow: 0 4px 12px rgba(254, 141, 29, 0.3);
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   BUNDLE RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ── Scroll on Tablet & Mobile (≤ 1199px) ── */
+@media (max-width: 1199px) {
+    .controlx-bundle-container {
+        overflow-x: auto;
+        padding-bottom: 25px;
+        padding-top: 15px;
+        gap: 20px;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .controlx-bundle-card {
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+}
+
+/* ── Mobile Padding ── */
+@media (max-width: 767px) {
+    .controlx-bundle-section {
+        padding: 60px 0;
+    }
+}
+
+/* =========================================================
+   KEY FEATURES SECTION
+   ========================================================= */
+.controlx-features-section {
+    background-color: #f9fafc;
+    padding: 90px 0;
+    position: relative;
+}
+
+.controlx-features-section-title {
+    font-family: var(--font-main);
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    color: #FF9B05;
+    letter-spacing: -0.3px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.controlx-feature-card {
+    background-color: var(--white);
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+}
+
+.controlx-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    border-color: var(--orange-primary);
+}
+
+.controlx-feature-card-img-wrap {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fafc;
+}
+
+.controlx-feature-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.controlx-feature-card:hover .controlx-feature-card-img-wrap img {
+    transform: scale(1.04);
+}
+
+.controlx-feature-card-title {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin: 0 0 12px;
+}
+
+.controlx-feature-card-desc {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =========================================================
+   HIGHLIGHTS DEVIATION BANNER
+   ========================================================= */
+.controlx-deviation-banner {
+    background-color: #111111;
+    border: 1.5px solid #2d3748;
+    border-radius: 16px;
+    padding: 35px 30px;
+    width: 100%;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.controlx-deviation-banner:hover {
+    border-color: var(--orange-primary);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.controlx-deviation-banner-title {
+    font-family: var(--font-main);
+    font-size: clamp(20px, 2.5vw, 26px);
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--white);
+    margin: 0 0 20px;
+}
+
+.controlx-deviation-banner-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.controlx-deviation-banner-bullets li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    color: var(--text-muted);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.controlx-deviation-banner-bullets li svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.controlx-deviation-banner-img-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.controlx-deviation-banner-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 290px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.controlx-deviation-banner:hover .controlx-deviation-banner-img-wrap img {
+    transform: scale(1.03);
+}
+
+.controlx-deviation-right-title {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--orange-primary);
+    margin: 15px 0 8px;
+}
+
+.controlx-deviation-right-desc {
+    font-family: var(--font-main);
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0 0 18px;
+}
+
+.btn-banner-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    text-decoration: none !important;
+    transition: all 0.22s ease;
+    border: 1.5px solid var(--orange-primary);
+    background: transparent;
+    color: var(--orange-primary) !important;
+}
+
+.btn-banner-outline:hover {
+    background: var(--orange-primary);
+    color: var(--white) !important;
+    box-shadow: 0 4px 12px rgba(254, 141, 29, 0.3);
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   KEY FEATURES RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 991px) {
+    .controlx-features-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .controlx-deviation-banner {
+        padding: 30px 20px;
+    }
+    .controlx-deviation-banner-bullets {
+        margin-bottom: 20px;
+    }
+    .controlx-deviation-right-title {
+        margin-top: 25px;
+    }
+    .btn-banner-outline {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   INDUSTRIES WE SERVE SECTION
+   ========================================================= */
+.controlx-industries-section {
+    background-color: var(--white);
+    padding: 90px 0;
+    position: relative;
+}
+
+.controlx-industries-title {
+    font-family: var(--font-main);
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+.controlx-industry-card {
+    background-color: var(--white);
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+    margin-bottom: 20px;
+}
+
+.controlx-industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    border-color: var(--orange-primary);
+}
+
+.controlx-industry-card-img-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.controlx-industry-card-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.controlx-industry-card:hover .controlx-industry-card-img-wrap img {
+    transform: scale(1.04);
+}
+
+.controlx-industry-card-title {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--orange-primary);
+    margin: 0;
+    text-align: center;
+}
+
+/* =========================================================
+   INDUSTRIES RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 991px) {
+    .controlx-industries-section {
+        padding: 60px 0;
+    }
+}
+
+/* =========================================================
+   WHY PRECISE3DM SECTION
+   ========================================================= */
+.controlx-why-section {
+    background-color: #f9fafc;
+    padding: 90px 0;
+    position: relative;
+}
+
+.controlx-why-title {
+    font-family: var(--font-main);
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0 0 10px;
+}
+
+.controlx-why-subtitle {
+    font-family: var(--font-main);
+    font-size: clamp(14px, 1.8vw, 17px);
+    color: #4a5568;
+    font-weight: 500;
+    margin: 0;
+}
+
+.controlx-why-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.controlx-why-icon-wrap {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--orange-light) 0%, var(--orange-primary) 100%);
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(254, 141, 29, 0.25);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controlx-why-icon-wrap img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.controlx-why-item:hover .controlx-why-icon-wrap {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--orange-primary) 0%, var(--orange-dark) 100%);
+    box-shadow: 0 6px 16px rgba(254, 141, 29, 0.4);
+}
+
+.controlx-why-item:hover .controlx-why-icon-wrap img {
+    transform: scale(1.08);
+}
+
+.controlx-why-content-wrap {
+    flex: 1;
+}
+
+.controlx-why-item-title {
+    font-family: var(--font-main);
+    font-size: 18px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin: 0 0 8px;
+    transition: color 0.2s ease;
+}
+
+.controlx-why-item:hover .controlx-why-item-title {
+    color: var(--orange-primary);
+}
+
+.controlx-why-item-desc {
+    font-family: var(--font-main);
+    font-size: 14.5px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =========================================================
+   WHY RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 991px) {
+    .controlx-why-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .controlx-why-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .controlx-why-icon-wrap {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* =========================================================
+   FOUNDER MESSAGE SECTION
+   ========================================================= */
+.controlx-founder-section {
+    background-color: var(--white);
+    padding: 120px 0 90px;
+    position: relative;
+}
+
+.controlx-founder-card {
+    position: relative;
+    background-image: url('../images/geomagic_control_x/singaraj-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 55px 60px;
+    color: var(--white);
+    overflow: visible;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.controlx-founder-quote {
+    font-family: var(--font-main);
+    font-size: clamp(15px, 1.8vw, 17px);
+    line-height: 1.75;
+    color: #f3f4f6;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.controlx-founder-name {
+    font-family: var(--font-main);
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--orange-primary);
+    margin: 0 0 4px 0;
+}
+
+.controlx-founder-title {
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* Absolute Portrait Image for Desktop viewports */
+.controlx-founder-img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    height: 145%;
+    width: auto;
+    object-fit: contain;
+    z-index: 10;
+    pointer-events: none;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.controlx-founder-img-mobile {
+    max-height: 300px;
+    width: auto;
+    border-radius: 12px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+/* =========================================================
+   FOUNDER MESSAGE RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 991px) {
+    .controlx-founder-section {
+        padding: 90px 0 60px;
+    }
+    .controlx-founder-card {
+        padding: 45px 40px;
+    }
+    .controlx-founder-img {
+        height: 130%;
+        right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .controlx-founder-section {
+        padding: 60px 0;
+    }
+    .controlx-founder-card {
+        padding: 35px 25px;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+    .controlx-founder-quote {
+        font-size: 14.5px;
+        line-height: 1.6;
+        text-align: center;
+    }
+    .controlx-founder-name {
+        font-size: 17px;
+        text-align: center;
+    }
+    .controlx-founder-title {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   FAQ SECTION
+   ========================================================= */
+.controlx-faq-section {
+    background-color: #f9fafc;
+    padding: 90px 0;
+    position: relative;
+}
+
+.controlx-faq-section-title {
+    font-family: var(--font-main);
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+.controlx-faq-container {
+    margin-top: 40px;
+}
+
+.controlx-faq-item {
+    background-color: var(--white);
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+    transition: border-left 0.2s ease, box-shadow 0.22s ease;
+}
+
+.controlx-faq-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.controlx-faq-item[open] {
+    border-left: 5px solid var(--orange-primary);
+}
+
+/* Question style */
+.controlx-faq-item summary {
+    list-style: none;
+    padding: 22px 24px 22px 52px;
+    font-family: var(--font-main);
+    font-size: clamp(14.5px, 1.8vw, 16px);
+    font-weight: 700;
+    color: #2d3748;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    outline: none;
+    transition: color 0.2s ease;
+}
+
+.controlx-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.controlx-faq-item summary:hover {
+    color: var(--orange-primary);
+}
+
+/* Custom + / − Icon */
+.controlx-faq-item summary::before {
+    content: "+";
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--orange-primary);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.controlx-faq-item[open] summary::before {
+    content: "−";
+}
+
+/* Answer block */
+.controlx-faq-answer {
+    padding: 0 24px 22px 52px;
+    font-family: var(--font-main);
+    font-size: 14.5px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   FAQ RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 991px) {
+    .controlx-faq-section {
+        padding: 60px 0;
+    }
+    .controlx-faq-item summary {
+        padding: 18px 20px 18px 46px;
+    }
+    .controlx-faq-item summary::before {
+        left: 20px;
+    }
+    .controlx-faq-answer {
+        padding: 0 20px 18px 46px;
+        font-size: 14px;
+    }
+}
+.text-orange{
+    color: #FE8D1D;
+}

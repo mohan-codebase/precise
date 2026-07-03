@@ -1,0 +1,188 @@
+.coverpage{
+    background-color: #212121;
+}
+
+.topsecsticky{
+    border-bottom: 2px solid;color: #FFF2D4;
+    border-top: 2px solid;color: #FFF2D4;    background-color: #212121;
+
+}
+.appnewone{
+    position: relative;bottom: 50px;
+    
+
+}
+.keyappone{
+    width: 100%;
+    height:300px;
+    background-color: #101010;
+    border-radius: 10px;
+    
+
+
+}
+.keyapponee{
+    width: 100%;
+    height:350px;
+    background-color: #101010;
+    border-radius: 10px;
+    
+
+
+}
+
+
+ul {
+    list-style: none;
+  }
+  #ulincludee  li{
+    color:#FFF2D4 ;
+    font-size: 17px;
+}
+
+  #ulincludee  ul li::before {
+    content: "\2022";
+    color: #FE8D1D;
+    font-weight: bold;
+    display: inline-block; 
+    width: 4px;
+   /* margin-left: -1em;*/
+}
+
+#ulinclude  li{
+    color:#FFF2D4 ;
+    font-size: 17px;
+}
+#opticalaccess li{
+    color:#FFF2D4 ;
+    font-size: 17px;
+}
+#opticalaccess ul li::before {
+    content: "\2022";
+    color: #FE8D1D;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+   /* margin-left: -1em;*/
+}
+
+  #opticalaccesser ul li::before {
+    content: "\2022";
+    color: #FE8D1D;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+   /* margin-left: -1em;*/
+  }
+  #opticalaccesser li{
+    color:#FFF2D4 ;
+    font-size: 17px;
+}
+.backfs h5.pre-colorfs::before {
+    content: "-";
+    margin-right: 20px;
+    font-size: 28px;
+}
+.visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+    display: block;
+    overflow: auto;
+    height: 350px;
+  }
+  
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Demonstrate a "mostly customized" scrollbar
+   * (won't be visible otherwise if width/height is specified) */
+  .mostly-customized-scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: 8px;
+    background-color: #aaa; /* or add it to the track */
+    border-radius: 10px;
+
+  }
+  
+  /* Add a thumb */
+  .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+      background: #fff;
+      border-radius: 10px;
+
+  }
+     
+
+
+  
+#ulinclude  ul li::before {
+    content: "\2022";
+    color: #FE8D1D;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+   /* margin-left: -1em;*/
+}
+  .ind-icon img{
+    padding-left: 50px;
+}
+@media only screen and (max-width: 450px) {
+    .ind-icon img{
+        padding-left: 130px;
+    }
+
+}
+
+  
+
+@media only screen and (min-width: 710px) {
+    .topsecsticky{
+        border-bottom: 2px solid;color: #FFF2D4; position: sticky !important;position: -webkit-sticky;top: 7.6rem;z-index:999;
+
+
+               border-top: 2px solid;color: #FFF2D4;    background-color: #212121;
+    }
+    .keybelowone{
+        position: relative;bottom: 154px;
+    }
+    .posstick1{
+        position: relative;left:-18px;
+    }
+    .posstick2{
+        position: relative;left:-42px;
+    }
+
+    .posstick3{
+        position: relative;left:-10px;
+    }
+
+    .posstick4{
+        position: relative;left:-15px;
+    }
+
+    .posstick5{
+        position: relative;left:-30px;
+    }
+
+    .posstick{
+        position: relative;left:30px;
+    }
+    .posstick7{
+        position: relative;left:173px;
+    }
+    .posstick8{
+        position: relative;left:220px;
+    }
+    .posstick9{
+        position: relative;left:193px;
+    }
+    .posstick10{
+        position: relative;left:145px;
+    }
+    .posstick11{
+        position: relative;left:104px;
+    }
+
+
+
+
+}
+

@@ -1,0 +1,13 @@
+section#scanner-landing{    
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+ section#scanner-landing .content {
+    padding: 10px;
+    background: rgba(0,0,0,0.4);
+    height:95px;
+}

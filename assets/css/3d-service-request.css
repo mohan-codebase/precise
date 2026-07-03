@@ -1,0 +1,506 @@
+/* =========================================================
+   3D SERVICE REQUEST CSS
+   ========================================================= */
+
+body ,h1,h2,h3,h4,h5,h6,p,span,label,button,b,strong,small{
+    font-family: 'Inter', sans-serif !important;
+}
+
+.service-request-section {
+    background-color: #f6f6fa;
+    padding: 80px 0;
+    min-height: 100vh;
+    margin-top: 120px;
+}
+
+.service-request-wrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Left Side Styling */
+.left-side {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+/* Optional overlay if needed, but the image seems dark enough */
+.left-side::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+}
+
+.left-content {
+    position: relative;
+    z-index: 2;
+    padding: 60px 50px;
+    height: 100%;
+}
+
+.left-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.left-text {
+    font-size: 2rem !important;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: #f0f0f0;
+}
+
+.left-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.left-features li img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.left-features li span {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Right Side Styling */
+.right-side {
+    background-color: #fff;
+}
+
+.right-content {
+    padding: 50px 60px;
+}
+
+/* Progress Header */
+.step-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.step-indicators {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffe9d4;
+    color: #ffc48b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.step.active {
+    background-color: #ff931e;
+    color: #fff;
+}
+
+.step-line {
+    height: 1px;
+    width: 30px;
+    border-bottom: 2px dashed #7f7f7f;
+    margin: 0 5px;
+}
+
+/* Form Title Area */
+.step-label {
+    color: #ff931e;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.form-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.form-mandatory-text {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-mandatory-text span {
+    color: #e53935;
+}
+
+/* Form Fields */
+.form-label {
+    font-weight: 400;
+    color: #111;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.form-label span {
+    color: #e53935;
+}
+
+.form-control, .form-select {
+    padding: 15px 20px !important;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ff931e;
+    box-shadow: 0 0 0 0.25rem rgba(255, 147, 30, 0.25);
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+/* Mobile Input Group */
+.mobile-input-group {
+    overflow: hidden;
+}
+
+.mobile-input-group .country-code-btn {
+    background-color: #f8f9fa;
+    border: none;
+    border-right: 1px solid #e0e0e0;
+    padding: 14px 20px;
+    font-weight: 600;
+    color: #333;
+    border-radius: 0;
+}
+
+.mobile-input-group .country-code-btn:focus {
+    box-shadow: none;
+}
+
+.mobile-input-group .form-control {
+    border: none;
+    border-radius: 0;
+}
+
+.mobile-input-group .form-control:focus {
+    box-shadow: none;
+}
+
+/* Checkbox */
+.custom-checkbox-wrapper .form-check-input {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.custom-checkbox-wrapper .form-check-input:checked {
+    background-color: #ff931e;
+    border-color: #ff931e;
+}
+
+.custom-checkbox-wrapper .form-check-label {
+    font-size: 1.1rem;
+    color: #000;
+    cursor: pointer;
+    font-weight: 200 !important;
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: #ff931e;
+    color: #fff;
+    border: none;
+    padding: 18px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #e57d15;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 147, 30, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .service-request-wrapper {
+        border-radius: 0;
+    }
+    
+    .left-content {
+        padding: 40px 30px;
+    }
+    
+    .right-content {
+        padding: 40px 30px;
+    }
+    
+    .progress-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-request-section {
+    margin: 0;
+}
+}
+
+/* Step 2 specific styles */
+.upload-area {
+    background-color: #fff5e9;
+    border: 2px dashed #ffce98;
+    border-radius: 12px;
+    padding: 50px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.upload-area:hover {
+    background-color: #ffe6cc;
+}
+
+.upload-area input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: #ff931e;
+    margin-bottom: 15px;
+}
+
+.upload-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.upload-text span {
+    color: #ff931e;
+    text-decoration: underline;
+}
+
+.option-box {
+    border: 1px solid #ff931f;
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-box .form-check-input {
+    width: 22px;
+    height: 22px;
+    margin-top: 0;
+    margin-right: 15px;
+    border: 2px solid #ff931f;
+}
+
+.option-box .form-check-input:checked {
+    background-color: #ff931e;
+    border-color: #ff931e;
+}
+
+.option-box .form-check-label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.info-box {
+    border: 1px solid #ff931e;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.info-box-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.info-box-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.info-box-list li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+.btn-back {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-back:hover {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+.btn-continue {
+    background-color: #ff931e;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-continue:hover {
+    background-color: #e57d15;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 147, 30, 0.3);
+}
+
+/* Step 3 Radio Cards */
+.goal-card, .cad-card, .accuracy-card, .location-card, .app-card, .yesno-card {
+    cursor: pointer;
+    display: block;
+}
+
+.card-content {
+    background-color: #fff;
+    border-color: #ddd !important;
+    transition: all 0.2s ease-in-out;
+    color: #555;
+}
+
+.goal-card:hover .card-content,
+.cad-card:hover .card-content,
+.accuracy-card:hover .card-content,
+.location-card:hover .card-content,
+.app-card:hover .card-content,
+.yesno-card:hover .card-content {
+    border-color: #ff931e !important;
+    box-shadow: 0 4px 12px rgba(255, 147, 30, 0.1);
+}
+
+.card-input:checked + .card-content {
+    border-color: #ff931e !important;
+    background-color: #fffaf0;
+    color: #ff931e;
+}
+
+.card-input:checked + .card-content .d-block {
+    color: #ff931e;
+}
+
+.radio-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: relative;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.card-input:checked + .card-content .radio-indicator {
+    border-color: #ff931e;
+    background-color: #ff931e;
+}
+
+.card-input:checked + .card-content .radio-indicator .check-icon {
+    display: block !important;
+}
+
+.custom-radio-row input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #ddd;
+    border-radius: 50% !important;
+    position: relative;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.custom-radio-row input[type="radio"]:checked {
+    border-color: #ff931e;
+    background-color: transparent;
+}
+
+.custom-radio-row input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff931e;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

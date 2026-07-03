@@ -1,0 +1,241 @@
+.logo-banner {
+    background-color: rgba(255, 250, 245, 1);
+    border: 1px solid rgba(255, 147, 30, 0.5);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.btn {
+    box-shadow: 5px 17px 15px 0px rgba(0, 0, 0, 0.08) !important;
+}
+
+.logo-banner h2 {
+    color: rgba(35, 64, 87, 1);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo-banner p {
+    color: rgba(255, 138, 0, 1);
+}
+
+.logo-banner img {
+    width: 10%;
+}
+
+.img-sec {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-2 h2 {
+    color: rgba(35, 64, 87, 1);
+    font-size: 30px;
+}
+
+.logo-2 p {
+    color: rgba(35, 64, 87, 1);
+}
+
+.card-title {
+    color: rgba(255, 147, 30, 1) !important;
+    font-weight: 600;
+}
+
+.card-footer {
+    background-color: transparent !important;
+    border: none;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.unness button {
+    width: 30%;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px 0px rgba(173, 173, 173, 0.1);
+}
+
+.card img {
+    padding: 15px;
+}
+
+.card button {
+    width: 100% !important;
+}
+
+.logo-2 .container {
+    background: rgba(255, 250, 245, 1);
+    border: 1px solid rgba(255, 147, 30, 0.25);
+    box-shadow: 30px 15px 20px 0px rgba(245, 150, 61, 0.1);
+    padding: 80px 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 30px;
+}
+
+.same-box h2 {
+    color: rgba(35, 64, 87, 1);
+    font-weight: 700;
+}
+
+.same-box p {
+    color: rgba(35, 64, 87, 1);
+}
+
+.same-box .container {
+    background: rgba(255, 250, 245, 1);
+    border: 1px solid rgba(255, 147, 30, 0.25);
+    padding: 80px 50px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+}
+
+.same-box img {
+    width: 60%;
+}
+
+.same-box button {
+    box-shadow: 5px 17px 15px 0px rgba(0, 0, 0, 0.08);
+    width: 25%;
+}
+
+.best-choice h2 {
+    color: rgba(35, 64, 87, 1);
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.best-choice h4 {
+    color: rgba(35, 64, 87, 1);
+    font-weight: 700;
+    padding: 8px 0px;
+}
+
+.best-choice p {
+    color: rgba(35, 64, 87, 1);
+}
+
+.best-choice-box {
+    text-align: center;
+    border: 1px solid rgba(255, 147, 30, 0.5);
+    border-radius: 25px;
+    padding: 20px 20px;
+    position: relative;
+    width: 35%;
+    background-color: rgba(255, 250, 245, 1);
+    margin-top: 90px;
+}
+
+.best-choice-box img {
+    margin-top: -70px;
+}
+
+.best-choice-main {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.blog h5 {
+    color: rgba(35, 64, 87, 1) !important;
+}
+
+.blog p {
+    color: rgba(35, 64, 87, 1);
+}
+
+@media(max-width:600px) {
+    .logo-2 .container img {
+        width: 100% !important;
+    }
+
+    .best-choice-main {
+        display: block !important;
+    }
+
+    .best-choice-box {
+        width: 100%;
+    }
+
+    .logo-2 .container {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+        padding: 40px 30px !important;
+    }
+
+    .email1 {
+        padding: 40px 0px !important;
+        align-items: center;
+    }
+
+    .logo-banner h2 {
+        font-size: 26px !important;
+    }
+
+    .logo-banner p br {
+        display: none !important;
+    }
+
+    .logo-banner p {
+        margin-bottom: 0px !important;
+    }
+
+    .email {
+        align-items: center !important;
+    }
+
+    .logo-banner img {
+        width: 15%;
+    }
+
+    .logo-2 h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .logo-2 p {
+        text-align: center;
+    }
+
+    .card-title {
+        text-align: center !important;
+    }
+
+    .same-box .container {
+        padding: 40px 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .same-box button {
+        width: 100% !important;
+    }
+
+    .best-choice h2 {
+        font-size: 26px;
+    }
+
+    .best-choice h2 br {
+        display: none !important;
+    }
+
+    .best-choice-box img {
+        width: 30%;
+    }
+
+    .unness button {
+        width: 90% !important;
+    }
+
+    .unness {
+        text-align: center !important;
+    }
+}

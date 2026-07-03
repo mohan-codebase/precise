@@ -1,0 +1,64 @@
+<footer class="main-footer">        
+        <div class="container">
+            <div class="footer-heading text-center text-white">
+                <h2>Do you have a special requirement?</h2>
+                <h3>Our team is ready to work with you</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-white text-left">Contact Us</h3>
+                    <div class="row">
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <p class="text-white">Name*</p>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <p class="text-white">Email*</p>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <input type="text" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <p class="text-white">Phone Number*</p>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <input type="number" class="form-control" id="phone" required>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <p class="text-white">Company Name*</p>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <input type="text" class="form-control" id="company-name">
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <p class="text-white">Message</p>
+                        </div>
+                        <div class="col-md-6 text-left my-2 rounded-0">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31107.24070332436!2d80.16963808840389!3d12.945910740846335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dcd414fd76f%3A0xbafc8737125db2ff!2sKovilambakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1611217098547!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="contact-details my-2">
+                        <h3 class="text-white text-left">Contact Number</h3>
+                        <p class="text-white text-left">Service +91 99403 52575 , Sales - +91 73959 72777</p>
+                        <h3 class="text-white text-left">Address</h3>
+                        <p class="text-white text-left">Raja Towers Kovilambakkam</p>
+                        <h3 class="text-white text-left">Sales</h3>
+                        <p class="text-white text-left">sales@precise3dm.com</p>
+                        <h3 class="text-white text-left">Support</h3>
+                        <p class="text-white text-left">support@precise3dm.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<!-- bootstrap links-->
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/slim.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+<!-- bootstrap links-->

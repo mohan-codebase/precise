@@ -1,0 +1,1536 @@
+/* =========================================================
+   Automotive Benchmarking Main Landing – Page Styles
+   ========================================================= */
+
+/* ---------- Design Tokens ---------- */
+:root {
+    --abm-orange: #f78c1e;
+    --abm-orange-dark: #e07c0e;
+    --abm-navy: #1a2b3c;
+    --abm-white: #ffffff;
+    --abm-font: "Inter", "firasan-normal", sans-serif;
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.abm-hero {
+    position: relative;
+    background-image: url("../images/automotive-benchmarking-main-landing/hero-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Account for fixed header (topbar ~42px + navbar ~58px) + breathing room */
+    padding-top: 130px;
+    overflow: visible;
+}
+
+/* Dark overlay for text readability */
+.abm-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Soft white gradient fade at the bottom */
+.abm-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 140px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.abm-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Contact Info Bar (top-right) ---------- */
+.abm-hero-topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.abm-contact-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.abm-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--abm-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 16px rgba(247, 140, 30, 0.5);
+}
+
+.abm-icon-circle img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.abm-contact-text h6 {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: var(--abm-font);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.abm-contact-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: var(--abm-font);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* ---------- Hero Content Row ---------- */
+.abm-hero-content-row {
+    align-items: flex-start;
+}
+
+/* Left column */
+.abm-hero-left {
+    padding-right: 20px;
+}
+
+/* Main H1 */
+.abm-hero-title {
+    font-size: clamp(30px, 4vw, 52px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin: 0 0 14px;
+    font-family: var(--abm-font);
+    letter-spacing: -0.5px;
+}
+
+/* Tagline / subtitle */
+.abm-hero-tagline {
+    font-size: 15px !important;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--abm-font);
+    margin: 0 0 18px;
+    line-height: 1.5;
+    max-width: 520px;
+}
+
+/* Description paragraph */
+.abm-hero-desc {
+    font-size: 15px !important;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+    margin: 0 0 28px;
+    font-family: var(--abm-font);
+    max-width: 540px;
+}
+
+/* ---------- Shared utility ---------- */
+.abm-orange {
+    color: var(--abm-orange);
+}
+
+.abm-pipe {
+    color: var(--abm-orange);
+    margin: 0 5px;
+}
+
+/* ---------- CTA Buttons ---------- */
+.abm-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.abm-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 28px;
+    border-radius: 7px;
+    font-size: 14.5px;
+    font-weight: 700;
+    font-family: var(--abm-font);
+    letter-spacing: 0.3px;
+    text-decoration: none !important;
+    transition:
+        background 0.22s ease,
+        transform 0.18s ease,
+        box-shadow 0.22s ease;
+    cursor: pointer;
+    border: 2px solid var(--abm-orange);
+    white-space: nowrap;
+}
+
+.abm-btn-primary {
+    background: var(--abm-orange);
+    color: #ffffff !important;
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.4);
+}
+
+.abm-btn-primary:hover {
+    background: var(--abm-orange-dark);
+    border-color: var(--abm-orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 24px rgba(247, 140, 30, 0.52);
+    color: #fff !important;
+}
+
+/* ---------- Hero Email Bar (standalone row between content and cards) ---------- */
+.abm-hero-email-bar {
+    padding: 13px 0 39px;
+}
+
+/* ---------- Email Block ---------- */
+.abm-email-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.abm-email-icon-circle {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--abm-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(247, 140, 30, 0.45);
+}
+
+.abm-email-icon-circle img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.abm-email-text h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--abm-orange);
+    font-family: var(--abm-font);
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+}
+
+.abm-email-text p {
+    margin: 0;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--abm-font);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.abm-email-text a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.abm-email-text a:hover {
+    color: var(--abm-orange) !important;
+}
+
+/* =========================================================
+   OVERLAPPING STATS CARDS
+   ========================================================= */
+.abm-stats-row {
+    position: relative;
+    z-index: 10;
+    row-gap: 20px;
+}
+
+/* ── Single Stat Card ── */
+.abm-stat-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow:
+        0 6px 28px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 22px 22px 22px 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    height: 100%;
+    min-height: 110px;
+    transition:
+        box-shadow 0.28s ease,
+        transform 0.22s ease;
+    overflow: visible;
+    /* Slight orange bottom accent on hover */
+    border-bottom: 3px solid transparent;
+}
+
+.abm-stat-card:hover {
+    box-shadow:
+        0 14px 44px rgba(247, 140, 30, 0.18),
+        0 4px 14px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    border-bottom-color: var(--abm-orange);
+}
+
+/* ── Card Image (left) ── */
+.abm-stat-img-wrap {
+    flex-shrink: 0;
+    width: 110px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.abm-stat-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* ── Card Text (right) ── */
+.abm-stat-body {
+    flex: 1;
+    min-width: 0;
+    padding-right: 38px; /* room for the arrow button */
+}
+
+.abm-stat-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: var(--abm-font);
+    line-height: 1.4;
+    margin: 0;
+    letter-spacing: 0.1px;
+}
+
+/* ── Arrow Button (bottom-right, absolute) ── */
+.abm-stat-arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--abm-orange);
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    font-size: 14px;
+    box-shadow: 0 4px 14px rgba(247, 140, 30, 0.45);
+    transition:
+        background 0.2s ease,
+        transform 0.18s ease,
+        box-shadow 0.2s ease;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.abm-stat-arrow:hover {
+    background: var(--abm-orange-dark);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(247, 140, 30, 0.6);
+    color: #fff !important;
+}
+
+/* =========================================================
+   RESPONSIVE OVERRIDES
+   ========================================================= */
+@media (max-width: 1199px) {
+    .abm-stat-img-wrap {
+        width: 90px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .abm-hero {
+        padding-top: 90px;
+        padding-bottom: 140px;
+    }
+
+    .abm-hero-title {
+        font-size: 32px;
+    }
+
+    .abm-hero-left {
+        padding-right: 0;
+    }
+
+    .abm-stats-row {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .abm-hero {
+        padding-top: 18px;
+        padding-bottom: 21px;
+    }
+
+    .abm-hero-topbar {
+        justify-content: flex-start;
+    }
+
+    .abm-hero-title {
+        font-size: 26px;
+    }
+
+    .abm-hero-tagline {
+        font-size: 14px;
+    }
+
+    .abm-hero-desc {
+        font-size: 14px;
+    }
+
+    .abm-stats-row {
+        margin-top: -16px;
+    }
+
+    .abm-stat-card {
+        min-height: 100px;
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .abm-stat-img-wrap {
+        width: 80px;
+        height: 64px;
+    }
+
+    .abm-stat-title {
+        font-size: 14px;
+    }
+
+    .abm-stat-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+        bottom: 12px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .abm-hero-title {
+        font-size: 23px;
+    }
+
+    .abm-btn {
+        padding: 11px 20px;
+        font-size: 13.5px;
+    }
+
+    .abm-stat-img-wrap {
+        width: 72px;
+        height: 58px;
+    }
+}
+
+/* =========================================================
+   5-CARD FEATURE STRIP SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.afs-strip {
+    background-color: #fff;
+    padding: 66px 0 44px;
+}
+
+/* ── Unified Pill Container ── */
+.afs-pill {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.07),
+        0 1px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/* ── Individual Feature Card ── */
+.afs-card {
+    flex: 1;
+    min-width: 0;
+    padding: 28px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.22s ease;
+}
+
+.afs-card:hover {
+    background: rgba(247, 140, 30, 0.04);
+}
+
+/* ── Card Header (icon + title side by side) ── */
+.afs-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* ── Icon ── */
+.afs-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* ── Title ── */
+.afs-title {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #1a1a2e;
+    font-family: var(--abm-font);
+    line-height: 1.35;
+    margin: 0;
+    letter-spacing: 0.1px;
+}
+
+/* ── Description ── */
+.afs-desc {
+    font-size: 13px !important;
+    color: #6b7280;
+    font-family: var(--abm-font);
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    /* indent to sit under title text, past the icon + gap */
+    padding-left: 56px;
+}
+
+/* =========================================================
+   RESPONSIVE – AFS STRIP
+   ========================================================= */
+
+@media (max-width: 1199px) {
+    .afs-card {
+        padding: 24px 16px 20px;
+    }
+
+    .afs-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .afs-title {
+        font-size: 13.5px;
+    }
+
+    .afs-desc {
+        padding-left: 50px;
+        font-size: 12.5px;
+    }
+}
+
+/* 2-column wrap on tablet – hide flex dividers, use border-bottom instead */
+@media (max-width: 991px) {
+    .afs-pill {
+        flex-wrap: wrap;
+        border-radius: 14px;
+    }
+
+    .afs-card {
+        flex: 0 0 50%;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 22px 20px 18px;
+    }
+
+    /* last two cards (4th + 5th in a 2-col grid) have no bottom border */
+    .afs-card:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+
+    .afs-divider {
+        display: none;
+    }
+
+    .afs-desc {
+        padding-left: 0;
+    }
+}
+
+/* Single-column stack on mobile */
+@media (max-width: 767px) {
+    .afs-strip {
+        padding: 28px 0 36px;
+    }
+
+    .afs-pill {
+        border-radius: 12px;
+    }
+
+    .afs-card {
+        flex: 0 0 100%;
+        padding: 18px 16px 16px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .afs-card:last-child {
+        border-bottom: none;
+    }
+
+    .afs-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .afs-title {
+        font-size: 14px;
+    }
+
+    .afs-desc {
+        font-size: 13px;
+        padding-left: 0;
+        margin-top: 4px;
+    }
+}
+
+/* =========================================================
+   UNDERSTANDING THE DIFFERENCE – SOLUTIONS SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.aus-section {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+/* ── Section Title ── */
+.aus-section-title {
+    text-align: center;
+    font-family: var(--abm-font);
+    font-size: clamp(22px, 3.5vw, 32px);
+    font-weight: 800;
+    color: #1a1a2e;
+    letter-spacing: -0.3px;
+    line-height: 1.25;
+    margin: 0 0 44px;
+}
+
+/* ── Card ── */
+.aus-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 28px 24px 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.25s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.aus-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+/* ── Card Header Row (badge + title side-by-side) ── */
+.aus-card-header-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+/* ── Number Badge ── */
+.aus-number-badge {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: var(--abm-orange);
+    border-radius: 9px;
+    color: #ffffff;
+    font-family: var(--abm-font);
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+/* ── Card Title (beside badge) ── */
+.aus-card-title {
+    font-family: var(--abm-font);
+    font-size: 17px;
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.3;
+    margin: 0;
+    padding-top: 2px; /* optical alignment with badge */
+}
+
+/* ── Subtitle (italic, gray, below header) ── */
+.aus-subtitle {
+    font-family: var(--abm-font);
+    font-size: 13px !important;
+    font-weight: 400;
+    color: #6b7280;
+    font-style: italic;
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+/* ── Image Wrapper ── */
+.aus-img-wrap {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 18px;
+    background: #f9fafb;
+}
+
+.aus-img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    padding: 10px;
+}
+
+/* ── Main Description ── */
+.aus-desc {
+    font-family: var(--abm-font);
+    font-size: 13.5px !important;
+    color: #374151;
+    line-height: 1.65;
+    margin: 0 0 16px;
+}
+
+/* ── "What You Get" Heading ── */
+.aus-wyg-heading {
+    font-family: var(--abm-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 8px;
+}
+
+/* ── Bullet List (standard dots) ── */
+.aus-bullet-list {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 0 0 18px;
+}
+
+.aus-bullet-list li {
+    font-family: var(--abm-font);
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.6;
+    padding: 2px 0;
+}
+
+/* ── Highlight Box ── */
+.aus-highlight-box {
+    background: #fff8f0;
+    border: 1.5px solid var(--abm-orange);
+    border-radius: 9px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+}
+
+.aus-highlight-title {
+    font-family: var(--abm-font);
+    font-size: 13px !important;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 6px;
+    line-height: 1.45;
+}
+
+.aus-highlight-title:only-child {
+    margin-bottom: 0;
+}
+
+.aus-highlight-text {
+    font-family: var(--abm-font);
+    font-size: 12.5px;
+    color: #374151;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ── Orange Tick List ── */
+.aus-tick-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aus-tick-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aus-tick-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.aus-tick-list span {
+    font-family: var(--abm-font);
+    font-size: 13.5px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+/* ── CTA Button (full-width, orange) ── */
+.aus-btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 13px 20px;
+    background: var(--abm-orange);
+    color: #ffffff !important;
+    font-family: var(--abm-font);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none !important;
+    letter-spacing: 0.2px;
+    transition:
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.18s ease;
+    box-shadow: 0 4px 16px rgba(247, 140, 30, 0.38);
+    margin-top: 8px;
+}
+
+.aus-btn-primary:hover {
+    background: var(--abm-orange-dark);
+    box-shadow: 0 7px 24px rgba(247, 140, 30, 0.52);
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+/* =========================================================
+   RESPONSIVE – AUS SECTION
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .aus-section {
+        padding: 48px 0 56px;
+    }
+
+    .aus-section-title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .aus-section {
+        padding: 40px 0 48px;
+    }
+
+    .aus-section-title {
+        font-size: 21px;
+        margin-bottom: 28px;
+    }
+
+    .aus-card {
+        padding: 22px 18px 20px;
+    }
+
+    .aus-card-title {
+        font-size: 15px;
+    }
+
+    .aus-img {
+        height: 160px;
+    }
+}
+
+/* =========================================================
+   WHY AUTOMOTIVE COMPANIES CHOOSE PRECISE3DM
+   ========================================================= */
+
+/* ── Section Wrapper (light gray so dark box "pops") ── */
+.awc-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+/* ── Dark rounded wrapper ── */
+.awc-wrapper {
+    background: #0d1117;
+    border-radius: 24px;
+    padding: 48px 40px 52px;
+}
+
+/* ── Section Title ── */
+.awc-section-title {
+    text-align: center;
+    font-family: var(--abm-font);
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.2px;
+    line-height: 1.25;
+    margin: 0 0 40px;
+}
+
+/* Orange brand name highlight */
+.awc-brand {
+    color: var(--abm-orange);
+}
+
+/* ── Individual Card ── */
+.awc-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Image Wrapper ── */
+.awc-img-wrap {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    /* subtle inner border so images sit cleanly on the dark bg */
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.awc-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ── Text Block ── */
+.awc-text {
+    text-align: left;
+}
+
+/* ── Card Title ── */
+.awc-card-title {
+    font-family: var(--abm-font);
+    font-size: 15.5px !important;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    letter-spacing: 0.05px;
+}
+
+/* ── Card Description ── */
+.awc-card-desc {
+    font-family: var(--abm-font);
+    font-size: 13.5px !important;
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVE – AWC SECTION
+   ========================================================= */
+
+@media (max-width: 1199px) {
+    .awc-wrapper {
+        padding: 40px 32px 44px;
+    }
+
+    .awc-img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .awc-section {
+        padding: 44px 0 52px;
+    }
+
+    .awc-wrapper {
+        padding: 36px 28px 40px;
+        border-radius: 18px;
+    }
+
+    .awc-section-title {
+        font-size: 22px;
+        margin-bottom: 32px;
+    }
+
+    .awc-img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .awc-section {
+        padding: 36px 0 44px;
+    }
+
+    .awc-wrapper {
+        padding: 28px 20px 32px;
+        border-radius: 14px;
+    }
+
+    .awc-section-title {
+        font-size: 19px;
+        margin-bottom: 24px;
+    }
+
+    .awc-img {
+        height: 200px;
+    }
+
+    .awc-card-title {
+        font-size: 15px;
+    }
+
+    .awc-card-desc {
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   BUILD BETTER VEHICLES – CTA SECTION
+   ========================================================= */
+
+/* ── Section Wrapper (full-width, bg image + overlay) ── */
+.abb-section {
+    position: relative;
+    background-image: url("../images/automotive-benchmarking-main-landing/build-better-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Dark overlay via ::before */
+.abb-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Keep container above the overlay */
+.abb-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Inner Content Box ── */
+.abb-inner {
+    padding: 72px 0 68px;
+    text-align: center;
+    max-width: 1018px;
+    margin: auto;
+}
+
+/* ── Title ── */
+.abb-title {
+    font-family: var(--abm-font);
+    font-size: clamp(22px, 3.5vw, 36px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin: 0 0 20px;
+}
+
+/* ── Description ── */
+.abb-desc {
+    font-family: var(--abm-font);
+    font-size: 15.5px !important;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+    margin: 30px auto;
+    max-width: 830px;
+}
+
+/* ── Button Group ── */
+.abb-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ── Shared Button Base ── */
+.abb-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-family: var(--abm-font);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition:
+        background 0.22s ease,
+        border-color 0.22s ease,
+        color 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.18s ease;
+}
+
+/* ── Primary Button (orange fill) ── */
+.abb-btn-primary {
+    background: var(--abm-orange);
+    color: #ffffff !important;
+    border: 2px solid var(--abm-orange);
+    box-shadow: 0 4px 18px rgba(247, 140, 30, 0.45);
+}
+
+.abb-btn-primary:hover {
+    background: var(--abm-orange-dark);
+    border-color: var(--abm-orange-dark);
+    box-shadow: 0 7px 26px rgba(247, 140, 30, 0.6);
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+/* ── Outline Buttons (white border, transparent bg) ── */
+.abb-btn-outline {
+    background: transparent;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.abb-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--abm-orange);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   RESPONSIVE – ABB SECTION
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .abb-inner {
+        padding: 56px 0 52px;
+    }
+
+    .abb-title {
+        font-size: 26px;
+    }
+
+    .abb-desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .abb-inner {
+        padding: 48px 0 44px;
+        text-align: left;
+    }
+
+    .abb-title {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .abb-desc {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    .abb-btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .abb-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 13.5px;
+        padding: 13px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .abb-title {
+        font-size: 20px;
+    }
+}
+
+/* =========================================================
+   FREQUENTLY ASKED QUESTIONS – SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.afaq-section {
+    background-color: #f0f2f5;
+    padding: 40px 0;
+}
+
+/* ── Section Title ── */
+.afaq-section-title {
+    text-align: center;
+    font-family: var(--abm-font);
+    font-size: clamp(22px, 3.5vw, 34px);
+    font-weight: 900;
+    color: #1a1a2e;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 44px;
+}
+
+/* ── Accordion Container: reset default borders ── */
+.afaq-accordion {
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-bg: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ── Each Accordion Item = independent pill card ── */
+.afaq-item {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 32px !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    /* Orange left accent – only visible when open */
+    border-left: 4px solid transparent !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Active/open item: orange left border + slightly deeper shadow */
+.afaq-item:has(.accordion-collapse.show) {
+    border-left-color: var(--abm-orange) !important;
+    box-shadow: 0 4px 22px rgba(247, 140, 30, 0.12);
+}
+
+/* Fallback for browsers without :has() – JS adds .afaq-open via custom script if needed.
+   The data-bs-toggle handles collapse natively via Bootstrap. */
+.afaq-item.afaq-open {
+    border-left-color: var(--abm-orange) !important;
+    box-shadow: 0 4px 22px rgba(247, 140, 30, 0.12);
+}
+
+/* ── Accordion Button ── */
+.afaq-btn {
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    font-family: var(--abm-font);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: none !important;
+    border-radius: 32px !important;
+    box-shadow: none !important;
+    text-align: left;
+}
+
+/* Remove Bootstrap's built-in right-side arrow entirely */
+.afaq-btn::after {
+    display: none !important;
+}
+
+/* No blue tint when open (Bootstrap default override) */
+.afaq-btn:not(.collapsed) {
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    box-shadow: none !important;
+}
+
+/* ── Icon Wrap (left-side ± toggle) ── */
+.afaq-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    color: var(--abm-orange);
+    font-size: 15px;
+    position: relative;
+}
+
+/* Show + when collapsed, hide – */
+.afaq-icon-plus  { display: block; }
+.afaq-icon-minus { display: none;  }
+
+/* Show – when open, hide + */
+.afaq-btn:not(.collapsed) .afaq-icon-plus  { display: none;  }
+.afaq-btn:not(.collapsed) .afaq-icon-minus { display: block; }
+
+/* ── Accordion Body (answer) ── */
+.afaq-body {
+    font-family: var(--abm-font);
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.7;
+    padding: 4px 22px 22px calc(22px + 14px + 22px);
+    /* indent to align under the question text, past icon + gap */
+    background: #ffffff;
+}
+
+/* Remove Bootstrap's built-in right-side arrow entirely */
+.afaq-btn::after {
+    display: none !important;
+}
+
+/* FIX 1: Kill the ugly Bootstrap focus outline completely */
+.afaq-btn:focus,
+.afaq-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    background: #ffffff !important;
+}
+
+/* ── Icon Wrap (left-side ± toggle) ── */
+.afaq-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    color: var(--abm-orange);
+    font-size: 15px;
+    position: relative;
+}
+
+/* FIX 2: Force FontAwesome to respect the toggle using !important */
+/* Show + when collapsed, hide – */
+.afaq-icon-plus  { display: inline-block !important; }
+.afaq-icon-minus { display: none !important; }
+
+/* Show – when open, hide + */
+.afaq-btn:not(.collapsed) .afaq-icon-plus  { display: none !important; }
+.afaq-btn:not(.collapsed) .afaq-icon-minus { display: inline-block !important; }
+/* =========================================================
+   RESPONSIVE – AFAQ SECTION
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .afaq-section {
+        padding: 52px 0 60px;
+    }
+
+    .afaq-section-title {
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+    .afaq-item {
+        border-radius: 20px !important;
+    }
+
+    .afaq-btn {
+        border-radius: 20px !important;
+        font-size: 14.5px;
+    }
+
+    .afaq-btn:not(.collapsed) {
+        border-radius: 20px 20px 0 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .afaq-section {
+        padding: 44px 0 52px;
+    }
+
+    .afaq-section-title {
+        font-size: 22px;
+        letter-spacing: 0.8px;
+        margin-bottom: 28px;
+    }
+
+    .afaq-item {
+        border-radius: 16px !important;
+    }
+
+    .afaq-btn {
+        border-radius: 16px !important;
+        font-size: 14px;
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .afaq-btn:not(.collapsed) {
+        border-radius: 16px 16px 0 0 !important;
+    }
+
+    .afaq-body {
+        padding: 4px 18px 18px calc(18px + 12px + 22px);
+        font-size: 13.5px;
+    }
+
+    .afaq-accordion {
+        gap: 10px;
+    }
+}
+
+/* =========================================================
+   INDUSTRIES WE SUPPORT – SECTION
+   ========================================================= */
+
+/* ── Section Wrapper ── */
+.ais-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+/* ── Section Title ── */
+.ais-section-title {
+    text-align: center;
+    font-family: var(--abm-font);
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 800;
+    color: #1a1a2e;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    margin: 0 0 40px;
+}
+
+/* ── Card ── */
+.ais-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.24s ease, box-shadow 0.24s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.ais-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.11);
+}
+
+/* ── Image Wrapper ── */
+.ais-img-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ── Image ── */
+.ais-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.35s ease;
+}
+
+.ais-card:hover .ais-img {
+    transform: scale(1.04);
+}
+
+/* ── Card Body ── */
+.ais-card-body {
+    padding: 27px 3px 14px;
+    text-align: left;
+}
+
+/* ── Card Title ── */
+.ais-card-title {
+    font-family: var(--abm-font);
+    font-size: 15.5px;
+    font-weight: 700;
+    color: #1a1a2e;
+    line-height: 1.35;
+    margin: 0;
+    letter-spacing: 0.05px;
+}
+
+/* =========================================================
+   RESPONSIVE – AIS SECTION
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .ais-section {
+        padding: 52px 0 60px;
+    }
+
+    .ais-section-title {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ais-section {
+        padding: 44px 0 52px;
+    }
+
+    .ais-section-title {
+        font-size: 22px;
+        margin-bottom: 26px;
+    }
+
+    .ais-card-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .ais-section-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,152 @@
+.blog-head h5 {
+    border-bottom: 2px solid #8c8c8c;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.blog-head button {
+    font-size: 14px;
+    padding: 3px 20px;
+    border-radius: 0;
+}
+
+.blogcont-one h6 {
+    color: #8c8c8c;
+    padding-top: 20px;
+}
+
+.blogcont-one h5 {
+    color: black;
+    font-size: 16px;
+}
+
+.blogcont-one p {
+    font-size: 14px;
+}
+
+.like-share i {
+    color: red;
+}
+
+.like-share span {
+    color: #ff8d1e;
+    margin-left: 10px;
+}
+
+.blog-contright p {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.blog-contright h5 {
+    font-size: 14px;
+}
+.blog-contright h5 a{
+    font-size: 14px !important;
+}
+
+.blog-contright h6 {
+    color: #8c8c8c;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'firasan-normal';
+}
+
+.blog-contright a {
+    font-size: 12px;
+}
+
+.blog-ul {
+    padding-left: 30px;
+}
+
+.blog-ul li {
+    line-height: 40px;
+}
+
+.blog-ul li i {
+    padding: 0 10px;
+}
+
+.blog-ul li a {
+    font-size: 15px;
+}
+
+
+/* strawberry page css{} */
+
+.strawbery-para {
+    padding-top: 15px;
+    font-size: 17px !important;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    line-height: 3px !important;
+}
+
+.berrycont-one h6 {
+    font-family: "firasan-normal";
+    color: #8c8c8c;
+}
+
+.berrycont-one h5 {
+    font-family: 'firasan-normal';
+    color: black;
+    margin-bottom: 15px;
+}
+
+.berrycont-one p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.berrycont-one p a,
+.strawberry-ul li a {
+    color: #f7941d;
+    font-family: 'firasan-extrathin';
+}
+
+.strawberry-ul {
+    padding-left: 15px;
+}
+
+.strawberry-ul li {
+    list-style-type: decimal;
+    line-height: 35px;
+    font-family: 'firasan-extrathin';
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.straw-ul li a {
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.straw-ul li a i {
+    float: right;
+}
+
+.straw-ul li {
+    margin: 15px 0;
+}
+
+.blog-author {
+    font-family: 'firasan-normal';
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+.soft-hd {
+    font-size: 16px;
+    font-family: 'firasan-normal';
+    padding: 7px 0;
+}
+.blog-img-btm{
+    height: 222px;
+    width: 100%;
+    
+}

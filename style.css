@@ -1,0 +1,850 @@
+/* section1 styles */
+
+.bg-1 {
+    background-color: #ff8d1e;
+    width: 100%;
+}
+
+.bg-color-update {
+    background-color: #ff8d1e;
+}
+
+.sectioning {
+    margin-top: 70px;
+}
+
+.inside {
+    margin-right: 0px;
+}
+
+.main {
+    margin: 0px;
+}
+
+.part-2 {
+    margin-bottom: 20px;
+    padding-left: 80px !important;
+    padding-right: 0;
+}
+
+.more {
+    font-size: 21px !important;
+    color: #fff;
+    font-family: 'firasan-normal';
+    text-transform: none !important;
+}
+
+.part-2 h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+}
+
+.part-2 h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'firasan-normal';
+}
+
+.part-2 p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'firasan-extrathin';
+}
+
+.part-2 ul {
+    font-size: 19px;
+}
+
+.part-2 li {
+    font-size: 16px;
+    list-style-type: none;
+    color: #fff;
+    font-family: 'firasan-extrathin';
+    line-height: 38px;
+}
+
+.part-2 li i {
+    padding-right: 20px;
+}
+
+.part-2 button {
+    border: none;
+    text-transform: uppercase;
+    margin: 8px 7px 30px 7px;
+    color: #ff8d1e;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'firasan-normal';
+    font-weight: 600;
+    padding: 7px 18px;
+}
+
+.part-2 button:focus {
+    outline: none;
+}
+
+.aligning {
+    display: flex;
+}
+
+.aligning span {
+    color: #fff;
+}
+
+.aligning img {
+    height: 140px;
+}
+
+.img-1,
+.img-2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+/* dre starts from here 8 may 12 am */
+
+.bg-2 p {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    font-family: 'firasan-extrathin';
+    font-weight: 600;
+    line-height: 28px;
+}
+
+
+/* section2 styles */
+
+.second h3 {
+    color: #fff;
+    position: relative;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 35px;
+    padding-top: 15px;
+}
+
+.second h3::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 3.3);
+    width: 28px;
+    height: 6px;
+    padding-right: 0px;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-right: 15px;
+    left: -49px;
+    top: 9px;
+}
+
+.reverse ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.reverse ul li {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    font-family: 'firasan-extrathin';
+    font-weight: 600;
+}
+
+.reverse ul li img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.experience {
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.experience1 {
+    border-bottom: 3px solid #fff;
+}
+
+.experience1 h3 {
+    color: #fff;
+    font-size: 38px;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.experience1 p {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.experience2 {
+    border-right: 3px solid #fff;
+}
+
+.experience2 h3 {
+    color: #fff;
+    font-size: 38px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.experience3 h3 {
+    color: #fff;
+    font-size: 38px;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.experience3 p {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.experience2 p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.experience h3 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.experience p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.firsting {
+    margin-bottom: 50px;
+}
+
+
+/*tabs and pills css? */
+
+.types-of-modelsh3 h3 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'firasan-normal';
+}
+
+.types-of-modelsh3 {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.my-tabsandpills-list {
+    display: block;
+    border: 0;
+    background: #fff;
+}
+
+.my-tabsandpills-list li a {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-bottom: 15px;
+    color: #091947;
+    font-size: 18px;
+}
+
+.my-tabsandpills-list li a i {
+    color: #ff8d1e;
+    float: right;
+    padding-top: 4px;
+}
+
+.my-tabsandpills-list .nav-link.active {
+    background-color: #ff8d1e;
+    color: white;
+    border: 0;
+}
+
+.my-tabsandpills-list .nav-link.active i {
+    color: white;
+}
+
+.tabpill-content-bg {
+    background-color: #fff;
+    padding: 15px 10px;
+}
+
+.pill-content-1 {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.pill-content-2 p {
+    font-size: 12px;
+    line-height: 23px;
+    color: #444445;
+}
+.pill-content-2 ul li{
+    font-family:'firasan-extrathin';
+    font-size: 12px;
+    line-height: 23px;
+    color: #444445;
+}
+
+.pill-content-2 {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.dre-service-ico i {
+    color: #fff;
+    font-size: 60px;
+    padding: 30px 0px;
+}
+
+
+/* section5 styles */
+
+.step {
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 13px
+}
+
+.second span {
+    font-size: 30px;
+    color: #fff;
+}
+
+.files {
+    margin-left: 17px;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.files h4 {
+    font-size: 15px;
+}
+
+.files p {
+    font-size: 13px;
+}
+
+.number1 {
+    font-size: 30px !important;
+}
+
+.second1 h3 {
+    color: #fff;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.model {
+    background-color: #fff;
+    padding: 15px;
+}
+
+#open,
+#open1,
+#open2,
+#open3,
+#open4 {
+    color: #ff8d1e;
+    padding-right: 6px;
+}
+
+.part-1 {
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.flow {
+    margin-bottom: 50px;
+}
+
+#all,
+#all1,
+#all2,
+#all3,
+#all4 {
+    color: #000;
+}
+.digibusi-bg-row{
+    background-color:#191919;
+    padding:50px 75px;
+    margin-bottom:50px;
+}
+
+.business h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.background-section {
+    background-color: #212529;
+    padding: 25px 56px;
+    margin-bottom: 30px;
+}
+
+.reverse h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.addi {
+    border-radius: 0px;
+    border: 1px solid #000;
+    background: #000;
+    height: 22rem;
+}
+
+.addi img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.digi-reve-cardtopbg {
+    background-color: #101010;
+}
+
+.bod {
+    background: #000;
+    color: #fff;
+}
+
+.bod h4 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.third {
+    margin-bottom: 20px;
+}
+
+.bod p {
+    color: #777;
+    font-size: 14px;
+}
+
+.addi div {
+    text-align: center;
+    height: 175px;
+}
+
+.buttonall {
+    text-align: center;
+}
+
+.buttonall button {
+    border: none;
+    background-color: #ff8d1e;
+    padding: 6px 30px;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.appli h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.heavy {
+    padding: 15px;
+    color: #fff;
+}
+
+.heavy li {
+    padding-left: 30px;
+    font-family: 'firasan-extrathin';
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.bg-3 {
+    background-color: #000;
+}
+
+.question {
+    color: #000;
+    padding: 30px 67px;
+}
+
+#faq-sec {
+    background-color: black;
+}
+
+.model1 {
+    background-color: black;
+}
+
+.card-accordian-edit {
+    border: 0px !important;
+}
+
+#alling,
+#alling1,
+#alling2,
+#alling3 {
+    color: #ff8d1e;
+}
+
+.dropo1 {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.part-21 {
+    color: #000;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.asked {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.second2 h3 {
+    color: #fff;
+    position: relative;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.testimony-above-line {
+    border-top: 2px solid #FFF;
+    padding-top: 15px;
+    margin-top: 38px;
+}
+
+.second2 h3::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 3.3);
+    width: 30px;
+    height: 7px;
+    padding-right: 0px;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-right: 15px;
+    left: -49px;
+}
+
+.amet p {
+    color: #fff;
+    font-family: 'firasan-extrathin';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.amet p i:first-child {
+    position: relative;
+}
+
+.amet p i:last-child {
+    float: right;
+}
+
+.amet q::before {
+    font-size: 50px;
+}
+
+.amet span {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'firasan-extrathin';
+}
+
+.amet .desi {
+    font-size: 14px;
+    position: relative;
+    top: 6px;
+}
+
+.amet .bqname {
+    padding-top: 15px;
+    position: relative;
+    top: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .question {
+        padding: 30px 0;
+    }
+}
+
+
+/* new footer{start} */
+
+.overall {
+    padding: 30px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.links h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.links h3::after {
+    content: "";
+    position: absolute;
+    background-color: #ff8d1e;
+    top: 41px;
+    left: 0px;
+    right: 10px;
+    bottom: 0px;
+    width: 112px;
+    height: 4px;
+}
+
+.links ul {
+    padding: 10px;
+    color: #fff;
+    margin-left: 6px;
+}
+
+.links ul li {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.links1 ul {
+    padding: 10px;
+    padding-left: 0;
+    color: #fff;
+    list-style-type: none;
+}
+
+.links1 h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.links1 h3::after {
+    content: "";
+    position: absolute;
+    background-color: #ff8d1e;
+    top: 41px;
+    left: 0px;
+    right: 10px;
+    bottom: 0px;
+    width: 112px;
+    height: 4px;
+}
+
+.links1 ul li {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.links1 ul li i {
+    margin-right: 20px;
+}
+
+.service {
+    margin-left: 35px;
+    letter-spacing: 1px;
+}
+
+.links2 h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0;
+    margin-left: 10px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.links2 h3::after {
+    content: "";
+    position: absolute;
+    background-color: #ff8d1e;
+    top: 41px;
+    left: 0px;
+    right: 10px;
+    bottom: 0px;
+    width: 112px;
+    height: 4px;
+}
+
+.links2 ul {
+    padding: 10px;
+    padding-left: 0;
+    color: #fff;
+    list-style-type: none;
+}
+
+.links2 ul li {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 14px;
+    letter-spacing: 1px;
+}
+
+.links2 ul img {
+    margin-bottom: 10px;
+}
+
+.links2 ul li i {
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.links2 li p {
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.links ul a:hover {
+    text-decoration: none;
+}
+
+.social-icon1 {
+    display: flex;
+}
+
+.social-icon1 li a i {
+    margin-left: 0px;
+}
+
+.links2 button {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ff8d1e;
+    padding: 6px 8px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.links2 button:focus {
+    outline: none;
+}
+
+.final p {
+    color: #777;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.final span {
+    margin-left: 15px;
+}
+
+@media only screen and (max-width:610px) and (min-width:575px) {
+    .links2 ul li {
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-left: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width:1008px) and (min-width:992px) {
+    .experience1 h3 {
+        color: #fff;
+        font-size: 38px;
+        margin-top: 20px;
+        margin-left: 45px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+}
+
+/*latest media queries*/
+@media screen and (max-width:992px){
+    .part-2{
+        padding:0px !important;
+    }
+}
+@media screen and (max-width:767px){
+    .tab-content{
+        margin-top:20px;
+    }
+}
+@media screen and (max-width:576px){
+    .sectioning{
+        margin-top:120px;
+    }
+    .part-2{
+        padding:0px !important;
+    }
+    .bg-2{
+        padding-left:0;
+    }
+    .bg-2 p {
+        margin-left:-15px;
+}
+.types-of-modelsh3 h3{
+    padding-left:15px;
+}
+.second{
+    margin-left:15px;
+}
+.digibusi-bg-row {
+    padding:50px 0;
+}
+.addi img{
+    width:130px;
+    height:120px;
+}
+.pill-content-2{
+    padding-left:0px;
+    padding-top:10px;
+}
+}

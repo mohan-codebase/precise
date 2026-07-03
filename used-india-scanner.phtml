@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><h3>Personal Details</h3></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><?= $data['name'];?></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><?= $data['email'];?></td>
+		</tr>
+		<tr>
+			<td>Phone Number:</td>
+			<td><?= $data['number'];?></td>
+		</tr>
+		<tr>
+			<td>Company Name:</td>
+			<td><?= $data['company'];?></td>
+		</tr>
+		<tr>
+			<td>Brand:</td>
+			<td><?= $data['brand'];?></td>
+		</tr>
+		<tr>
+			<td>Model:</td>
+			<td><?= $data['model'];?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Condition</h3></td>
+		<tr>
+			<td>New:</td>
+			<td><?= $data['new'];?></td>
+		</tr>
+		<tr>
+			<td>Like New:</td>
+			<td><?= $data['likenew'];?></td>
+		</tr>
+		<tr>
+			<td>Good: </td>
+			<td><?= $data['good'];?></td>
+		</tr>
+		<tr>
+			<td>Fair: </td>
+			<td><?= $data['fair'];?></td>
+		</tr>
+		<tr>
+			<td>Poor: </td>
+			<td><?= $data['poor'];?></td>
+		</tr>
+		<tr>
+			<td>Age of Scanner: </td>
+			<td><?= $data['age'];?></td>
+		</tr>
+		<tr>
+			<td>Reason for Selling: </td>
+			<td><?= $data['reason'];?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Form3</h3></td>
+
+		</tr>
+
+    	<tr>
+			<td>
+			Accuracy:</td>
+			<td><?= $data['accuracy'];?></td>
+		</tr>
+		<tr>
+			<td>Resolution:</td>
+			<td><?=$data['resolution'];?></td>
+		</tr>
+		<tr>
+			<td>Scanning Technology:</td>
+			<td><?=$data['technology'];?></td>
+		</tr>
+		<tr>
+			<td>
+			Maximum Scanning Area:</td>
+			<td><?=$data['maximum'];?></td>
+		</tr>
+		<tr>
+			<td>Scanning Software Included:</td>
+			<td><?=$data['software'];?></td>
+		</tr>
+        <tr>
+			<td>Accessories Included:</td>
+			<td><?=$data['accessories']?></td>
+		</tr>
+		<tr>
+			<td>Upload Image:</td>
+			<td><?=$data['upload_image']?></td>
+		</tr>
+		<tr>
+			<td>Asking Price (in INR):</td>
+			<td><?=$data['price']?></td>
+		</tr>
+		<tr>
+		<td colspan="2"><h4>Negotiable?:</h4></td>
+		</tr>
+        <tr>
+			<td>Yes:</td>
+			<td><?=$data['form5yes'];?></td>
+		</tr>
+		<tr>
+			<td>
+			Like New:</td>
+			<td><?=$data['form5like'];?></td>
+		</tr>
+		<tr>
+			<td>
+			Description of the Scanner:</td>
+			<td><?=$data['Description'];?></td>
+		</tr>
+		<tr>
+			<td>
+			Terms of Sale:</td>
+			<td><?= $data['Terms'];?></td>
+		</tr>
+		<tr>
+			<td>Upload Image:</td>
+			<td><?= $data['upload_link'];?></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><h3>Form 7</h3></td>
+		</tr>
+
+		<tr>
+			<td>I agree with the terms and condition: </td>
+			<td><?= $data['bot-box'];?></td>
+		</tr>
+       
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><h3>Contact Information</h3></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><?= $data['nameche'];?></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><?= $data['emailche'];?></td>
+		</tr>
+		<tr>
+			<td>Contact Number:</td>
+			<td><?= $data['contactnumberche'];?></td>
+		</tr>
+		<tr>
+			<td>Company Name:</td>
+			<td><?= $data['companyche'];?></td>
+		</tr>
+		<tr>
+			<td>GST Number:</td>
+			<td><?= $data['gstche'];?></td>
+		</tr>
+		<tr>
+			<td>Download File link</td>
+			<td><?= $data['upload_link'];?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Select accuracy</h3></td>
+		</tr>
+		<tr>
+			<td>1 mm to 100 mm:</td>
+			<td><?=$data['accuracy_check1'];?></td>
+		</tr>
+		<tr>
+			<td>100 mm to 500 mm:</td>
+			<td><?=$data['accuracy_check2'];?></td>
+		</tr>
+		<tr>
+			<td>500 mm to 1000 mm:</td>
+			<td><?=$data['accuracy_check3'];?></td>
+		</tr>
+		<tr>
+			<td>1000 mm to 5000 mm:</td>
+			<td><?=$data['accuracy_check4'];?></td>
+		</tr>
+			<tr>
+			<td>Large objects and environment such as factories, Ships, Aircrafts</td>
+			<td><?=$data['accuracy_check5'];?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Scanning Technique</h3></td>
+		</tr>
+		<tr>
+			<td>GOM OPTICAL 3D SCANNING:</td>
+			<td><?=$data['scan_check1']?></td>
+		</tr>
+		<tr>
+			<td>HANDHELD METROLOGY 3D SCANNING:</td>
+			<td><?=$data['scan_check2']?></td>
+		</tr>
+		<tr>
+			<td>MULTIFUNCTIONAL 3D SCANNING:</td>
+			<td><?=$data['scan_check3']?></td>
+		</tr>
+		<tr>
+			<td>LONG RANGE 3D SCANNING:</td>
+			<td><?=$data['scan_check4']?></td>
+		</tr>
+		<tr>
+			<td>ARM BASED 3D SCANNING:</td>
+			<td><?=$data['scan_check5']?></td>
+		</tr>
+		<tr>
+			<td>I AM NOT SURE WHAT 3D SCANNER SUITS MY REQUIREMENT :</td>
+			<td><?=$data['scan_check6']?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h3>Service assistance</h3></td>
+		</tr>
+		<tr>
+			<td>I'LL COURIER THE PART TO YOUR ADDRESS:</td>
+			<td><?=$data['service_check1'];?></td>
+		</tr>
+		<tr>
+			<td>BRING SCANNERS AND 3D SCAN AT MY PLACE:</td>
+			<td><?=$data['service_check2'];?></td>
+		</tr>
+		<tr>
+			<td>I'LL BRING THE PART TO YOUR PLACE:</td>
+			<td><?=$data['service_check3'];?></td>
+		</tr>
+		<tr>
+			<td>ARRANGE A PART PICK UP SERVICE:</td>
+			<td><?=$data['service_check4'];?></td>
+		</tr>
+		<tr>
+			<td>OTHERS:</td>
+			<td><?=$data['service_check5'];?></td>
+		</tr>
+	</table>
+
+</body>
+</html>

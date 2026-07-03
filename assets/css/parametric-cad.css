@@ -1,0 +1,902 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    letter-spacing: 0.6px;
+}
+
+p {
+    color: #ff931e;
+    font-size: 14px;
+}
+
+
+/* common css */
+
+section#aboutus-banner {
+    background-image: url(../images/Scanto_parametric_CAD/Cover-pic-application-page.jpg);
+    /*background-image: url(../images/Scanto_parametric_CAD/Cover-pic-application-page.jpg;*/
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section#aboutus-banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#nurb-banner {
+    background-image: url(../images/scan-to-nurb/Scan-To-Nurbs-Modelling.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+/*Inspection styles*/
+section#predictive-failure-analysis {
+    background-image: url(../images/predictive-failure-analysis/Predictive\ Failure\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#tyre-flatten-analysis {
+    background-image: url(../images/tyre-flatten-analysis/Tyre\ Flatern\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#tank-vessel-inspection {
+    background-image: url(../images/tank-vessel-inspection/Tank\ And\ Vessel\ Inspection.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#beam-analysis {
+    background-image: url(../images/beam-analysis/Beam\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#first-article-inspection {
+    background-image: url(../images/first-article-inspection/First\ Article\ Inspection.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#d-scan-to-2d-drawing-inspection {
+    background-image: url(../images/d-scan-to-2d-drawing-inspection/3D\ Scan\ To\ 2D\ Drawing\ Inspection.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#trend-analysis {
+    background-image: url(../images/trend-analysis/Trend\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#crash-analysis {
+    background-image: url(../images/crash-analysis/Crash\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#dent-corrosion-analysis {
+    background-image: url(../images/dent-corrosion-analysis/Dent\ &\ Corrosion\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#deformation-analysis {
+    background-image: url(../images/deformation-analysis/Deformation\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#airfoil-measurement {
+    background-image: url(../images/airfoil-measurement/Airfoil\ Measurements.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#airfoil-twist-analysis {
+    background-image: url(../images/airfoil-twist-analysis/Airfoil\ twist\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#boundary-comparison {
+    background-image: url(../images/boundary-comparison/Boundary\ Comparison.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#virtual-edge-analysis {
+    background-image: url(../images/virtual-edge-analysis/Virutual\ Edge\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital-damage-assessment {
+    background-image: url(../images/digital-damage-assessment/Digital\ Damage\ Assesment.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#wall-thickness-analysis {
+    background-image: url(../images/wall-thickness-analysis/Wall\ Thickness\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#automation-inspection {
+    background-image: url(../images/automation-inspection/Automation\ Inspection.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#pmi-based-inspection {
+    background-image: url(../images/pmi-based-inspection/PMI\ based\ Inspection.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital-gap-and-flush-measurement {
+    background-image: url(../images/digital-gap-and-flush-measurement/Digital\ Gap\ and\ Flush\ Measurement.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital-measurement-extraction-of-shape {
+    background-image: url(../images/digital-measurement-extraction-of-shape/Digital\ Measurement\ Extraction\ of\ Digitized\ Shape.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital-gdt-analysis {
+    background-image: url(../images/digital-gd&t-analysis/Digital\ GD&T\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital-volume-analysis {
+    background-image: url(../images/digital-volume-analysis/Digital\ Volume\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#part-to-part-comparison {
+    background-image: url(../images/part-to-part-comparison/Part\ to\ Part\ Comparison.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#d-dimensional-analysis {
+    background-image: url(../images/3d-dimensional-analysis/3D\ Dimensional\ Analysis.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital-alignment {
+    background-image: url(../images/digital-alignment/Digital\ Alignment.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#d-3d-curvature-comparison {
+    background-image: url(../images/2d-3d-curvature-comparison/2D\ 3D\ Curvature\ Comparison.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#cad-to-cad-comparison {
+    background-image: url(../images/cad-to-cad-comparison/CAD\ to\ CAD\ Comparison.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#scan-to-cad-comparison {
+    background-image: url(../images/scan-to-cad-comparison/Scan\ To\ CAD\ Comparison.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+/*Inspection styles ends here*/
+section#nurb-banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#hybrid_model_banner {
+    background-image: url(../images/hybrid-modelling/Hybrid-Modelling.jpg);
+    /*background-image: url(../images/Scanto_parametric_CAD/Cover-pic-application-page.jpg;*/
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+
+section#hybrid_model_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*Inspection styles*/
+section#predictive-failure-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#tyre-flatten-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#tank-vessel-inspection .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#beam-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#first-article-inspection .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#d-scan-to-2d-drawing-inspection .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#trend-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#virtual-edge-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#crash-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#dent-corrosion-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#deformation-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#airfoil-measurement .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#airfoil-twist-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#boundary-comparison .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#digital-damage-assessment .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#wall-thickness-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#automation-inspection .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#pmi-based-inspection .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(180, 30, 30, 0.5);
+}
+section#digital-gap-and-flush-measurement .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#digital-measurement-extraction-of-shape .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#digital-gdt-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#digital-volume-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#part-to-part-comparison .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#d-dimensional-analysis .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#digital-alignment .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#d-3d-curvature-comparison .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#cad-to-cad-comparison .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#scan-to-cad-comparison .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*Inspection styles ends here*/
+section#design_modification_banner {
+    background-image: url(../images/design-modification/Design-Modification.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#design_modification_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#neutral_editable_banner {
+    background-image: url(../images/neutral-cad-model/Neutral-CAD-to-Editable-CAD.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#neutral_editable_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#organic_shape_banner {
+    background-image: url(../images/organic-shape-cad/Organic-shape-feature-based-cad-reconstruction.JPG);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#organic_shape_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#digital_sculpting_banner {
+    background-image: url(../images/digital-sculpting/Digital-Sculpting-From-Digitized-Shape.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital_sculpting_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#product_development_banner {
+    background-image: url(../images/product-development/Product-Development-From-Existing-Scan.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#product_development_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#cad_design_concept_banner {
+    background-image: url(../images/cad-concept/CAD-design-from-Concept-Images.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#cad_design_concept_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#ct_scan_cad_banner {
+    background-image: url(../images/ct-scan-cad/CT-Scan-to-CAD-Modelling.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#ct_scan_cad_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#engineering_drawing_banner {
+    background-image: url(../images/engg-drawing/Engineering-Drawing-to-3D-Conversion.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#engineering_drawing_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#animatinon_content_banner {
+    background-image: url(../images/animation-content/Animation-3D-content.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#animatinon_content_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#mesh_modelling_banner {
+    background-image: url(../images/mesh-modelling/Mesh-Modelling.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#mesh_modelling_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#extract_curve_banner {
+    background-image: url(../images/extract-surface/Extract-Surface-Curvature.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#extract_curve_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#blue_print_cad_construction {
+    background-image: url(../images/blueprint-cad/Blue-Print-To-CAD-Construction.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#blue_print_cad_construction .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#vechicle_exhaust_pipe {
+    background-image: url(../images/vechicle-exhaust/Vehicle-Exhaust-pipe-Modelling.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#vechicle_exhaust_pipe .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#digital_vechicle_banner {
+    background-image: url(../images/digital-vechicle/Digital-Vehicle-Developement.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#digital_vechicle_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#vechicle_interior_banner {
+    background-image: url(../images/vehicle-interior/Vehicle-Interior-Design.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#vechicle_interior_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#tyre_collision_banner {
+    background-image: url(../images/tyre-design/Tyre-Design-for-Collision-check.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#tyre_collision_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#car_skin_banner {
+    background-image: url(../images/car-skin/Car-Skin-3D-Extraction.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#car_skin_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#handgrip_banner {
+    background-image: url(../images/handgrip-model/Hand-Grip-3D-design.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#handgrip_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#scan_alignment_banner {
+    background-image: url(../images/scan-alignments-cad/Digital-Alignment-DX.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#scan_alignment_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section#scan_parametric_cad_banner {
+    background-image: url(../images/scan-to-cad-comparison/Scan_To_Parametric_cover.jpg);
+    background-position: top center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+section#scan_parametric_cad_banner .heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.aboutus-herohead h3 {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'firasan-normal';
+    padding: 20px 0;
+    padding-left: 15px;
+}
+
+.aboutus-sec2 {
+    background-color: #001116;
+    padding: 12px 0px;
+}
+
+#aboutus-bg {
+    background-image: url(../images/3d-scanner-bg-4.svg);
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.cad-left-pills {
+    padding-right: 70px;
+}
+
+.cad-left-pills ul li {
+    margin: 10px 0;
+    width:295px;
+}
+
+.cad-left-pills ul li a {
+    color: #fff;
+    background-color: #ff931e;
+    border-color: 0;
+    border-radius: 0 !important;
+    font-size: 17px;
+}
+
+.cad-left-pills .nav {
+    display: block;
+}
+
+#myTabContent {
+    padding-left: 30px;
+}
+
+.blog-cont p {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+}
+
+.blog-cont a {
+    color: #ff931e;
+    font-family: "firasan-normal";
+    font-size: 18px;
+}
+
+.blog-cont a:hover {
+    color: #fff;
+}
+
+.blog-cont h5 {
+    padding-top: 15px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-family: 'firasan-normal';
+}
+
+.rel-blog {
+    font-family: 'firasan-normal';
+}
+
+
+/* overview css */
+
+.overview-cont {
+    background-color: #212121;
+    padding: 30px 25px;
+    line-height: 27px;
+}
+
+.overview-cont p {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* workflow content{} */
+
+.wf-cadcont {
+    background-color: #fff;
+    height: 16rem;
+}
+
+.wf-cadcont p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.wf-cadcont span {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 2px 8px;
+    font-size: 14px;
+    color: #ff931e;
+    border-color: #ff931e;
+}
+
+.padd-cadwf {
+    padding: 0 3px;
+}
+
+.chennai-car-item {
+    padding: 0 3px;
+}
+
+.wf-rowcad {
+    padding: 0 15px;
+}
+
+.wf-phase {
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.owl-carousel .owl-item img {
+    filter: none;
+}
+
+.chennai-carousel-box .owl-dot {
+    display: none !important;
+}
+
+
+/* whats next css */
+
+.whatnext-cont img {
+    width: 50px;
+}
+
+.whatnext-cont {
+    margin-bottom: 30px;
+}
+
+.whatnext-cont a {
+    display: inline-block;
+    padding-left: 20px;
+    color:#fff;
+    text-decoration:underline;
+}
+.whatnext-cont a:hover {
+    color:#ff931e;
+}
+.cad-input-fields {
+    padding:10px 15px;
+    margin-bottom:0;
+}
+
+.cad-input-fields input{
+    margin-bottom:15px;
+}
+.cad-input-fields input::placeholder{
+    font-size:12px;
+    font-family:"firasan-normal";
+}
+
+
+/* industrywe serve css{} */
+
+.indus-bg {
+    background-color: #000000;
+    padding: 30px 25px;
+}
+
+@media screen and (max-width:768px){
+    .need-to-fixtop{
+        position:static !important;
+    }
+}
+#cadindustry .name {
+    font-size: 13px;
+    color: #f69322 !important;
+}
+
+.owl-prev-set button.owl-prev {
+    background: #f69322 !important;
+    left: -2px !important;
+    width: 25px !important;
+    height: 68px !important;
+}
+
+.owl-prev-set button.owl-next {
+    background: #f69322 !important;
+    right: -2px !important;
+    width: 25px !important;
+    height: 68px !important;
+}

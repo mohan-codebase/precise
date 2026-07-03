@@ -1,0 +1,1413 @@
+/* common css  */
+
+
+.btn:focus {
+    box-shadow: none;
+}
+img{
+width: auto;
+}
+
+/* hero section css{/} */
+
+section#chennai-service-heroimg {
+    width: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y:hidden;
+}
+
+.chennai-heroimg-overlay {
+    position: relative;
+}
+
+.chennai-heroimg-overlay::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1252px;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.hero-content-phone {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+.hero-content-phone h2 {
+    font-size: 26px;
+    margin-bottom: 0;
+    font-family: 'firasan-normal';
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content-phone h2 i {
+    font-size: 22px;
+    padding-right: 16px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content-phone p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-head-center {
+    color: #fff;
+    padding-top: 100px;
+}
+
+.hero-head-center h1 {
+    font-size: 30px;
+}
+
+.hero-head-center h4 {
+    font-size: 18px;
+    font-family: 'firasan-normal';
+    padding-top: 15px;
+}
+
+.chennai-hero-btns a {
+    width: 218px;
+    background-color: #ff8d1e;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 16px;
+    font-family: 'firasan-normal';
+}
+.OPTICAL-3D-SCANNING-HEAD{
+        margin-top: 40px;
+        padding-bottom: 40px;
+}
+
+.OPTICAL-3D-SCANNING h1{
+    color: #FF8D1E;
+    margin: 20px 0 10px 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.051px; /* 78% */
+}
+.OPTICAL-3D-SCANNING {
+    line-height: 35px;
+    text-align: justify;
+}
+.OPTICAL-3D-SCANNING1{
+    text-align: center;
+}
+/* .HANDHELD-METROLOGY{
+    margin-top: 40px;
+} */
+.HANDHELD-METROLOGY h1{
+    color: #FF8D1E;
+    margin: 20px 0 10px 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.051px; /* 78% */
+}
+.HANDHELD-METROLOGY {
+    line-height: 35px;
+    text-align: justify;
+}
+.Handheld-Colour h1{
+    color: #FF8D1E;
+    margin: 20px 0 10px 0;
+    font-size: 29.091px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.051px; /* 78% */
+}
+.Handheld-Colour{
+    line-height: 3;
+    text-align: justify;
+}
+
+
+.LONG-RANGE h1{
+    color: #FF8D1E;
+    margin: 20px 0 10px 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.051px; /* 78% */
+}
+.LONG-RANGE{
+    line-height: 35px;
+    text-align: justify;
+}
+.LASER-ARM h1{
+    color: #FF8D1E;
+    margin: 20px 0 10px 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.051px; /* 78% */
+}
+.LASER-ARM{
+    line-height: 35px;
+    text-align: justify;
+}
+.SERVICE-WORKFLOW{
+    background-color: #FF8D1E;
+    text-align: center;
+}
+.WORKFLOW1{
+    background-color: #FF8D1E;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.SERVICE-WORKFLOW h1{
+margin: auto;
+color: #FFF;
+font-size: 26px;
+font-style: normal;
+padding: 60px 0 20px 0;
+font-weight: 500;
+line-height: 30.917px; /* 75% */
+}
+.WORKFLOW1 h1{
+    margin: auto;
+    color: #FFF;
+    font-size: 26px;
+    font-style: normal;
+    padding: 60px 0 60px 0;
+    font-weight: 500;
+    line-height: 30.917px; /* 75% */
+    }
+
+
+.SERVICE-WORKFLOW p{
+    color: #FFF;
+text-align: center;
+font-size: 16.489px;
+font-style: normal;
+font-weight: 700;
+padding-bottom: 20px;
+line-height: 24.733px; /* 150% */
+}
+.WORKFLOW2 p{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 20px;
+    line-height: 24.733px;
+}
+.WORKFLOW{
+    padding-bottom: 40px;
+}
+.leftcont{
+    color: #FF8D1E !important;
+}
+.location-leftcont a{
+    padding: 10px 30px;
+    background-color: #ff8d1e;
+    color: white;
+    border-radius: 10px;
+}
+.location-leftcont a:hover{
+    background-color: #000;
+    color: white;
+    margin-top: 10px;
+}
+.call-us{
+    background-color: white !important;
+    color: #ff8d1e !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.chennai-hero-btns {
+    padding-top: 140px;
+    padding-bottom: 25px;
+}
+
+
+/* below hero section icons */
+
+.herobelow-iconspace {
+    margin-top: 30px;
+}
+
+.hero-below-icons img {
+    width: 80px;
+}
+
+.hero-below-icons h6 {
+    color: #002f3f;
+    font-size: 19px;
+    padding: 20px 0;
+    font-family: "firasan-normal";
+}
+
+
+/* end to end chennai section css start */
+
+#end_end_chennaisec {
+    background-color: #fafafa;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.end-end-heads h4 {
+    font-size: 23px;
+    color: #000;
+}
+
+.end-end-heads h6 {
+    font-size: 19px;
+    color: #000;
+    font-family: 'firasan-normal';
+    font-weight: lighter;
+}
+
+.end-endchennai-cont img {
+    width: 130px;
+}
+
+.end-endchennai-cont a {
+    color: #002f3f;
+    font-size: 19px;
+    display: block;
+}
+
+.end-endchennai-cont a:hover {
+    color: #002f3f;
+    text-decoration: none;
+}
+.WHY-PRECISE3DM-img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 45px;
+}
+
+.other-3d-chennaihead {
+    font-size: 26px;
+    color: #FF8D1E;
+}
+
+.other-service-chennai {
+    position: relative;
+}
+
+.other-service-chennai img:first-child {
+    position: absolute;
+    left: 0;
+    top: -90px;
+    width: 25%;
+}
+
+.other-service-chennai .right-shape-tria {
+    position: absolute;
+    right: 0;
+    top: -90px;
+    width: 25%;
+    transform: scaleX(-1);
+}
+
+.end-endchennai-cont2 img {
+    width: 130px;
+}
+
+.end-endchennai-cont2 h4 {
+    color: #002f3f;
+    font-size: 18px;
+    display: block;
+    padding-bottom: 10px;
+}
+.Colour h1{
+    color: #FF8D1E;
+    margin: 20px 0 10px 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.051px;
+}
+.Colour {
+    line-height: 35px;
+    text-align: justify;
+}
+
+.end-endchennai-cont2 a {
+    background-color: rgb(255, 141, 30);
+    color: #fff;
+    font-family: 'firasan-extrathin';
+    font-size: 16px;
+    padding: 4px 50px;
+    border-radius: 3px;
+    font-weight: bold;
+    box-shadow: rgba(255, 141, 30, 0.3) 0px 20px 25px -5px, rgba(255, 141, 30, 0.3) 0px 10px 10px -5px;
+}
+
+.end-endchennai-cont2 a:hover {
+    background-color: #fff;
+    color: #ff8d1e;
+}
+
+
+/* end to end service content css{} */
+
+#chennai_optical3d {
+    background-image: url("../images/chennai_service_img/end_to_end/Optical_3d_scanning_Gom_3Dscanning_Service_in_Chennai.png");
+    height: auto;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.end-end-overlay {
+    position: relative;
+}
+
+.end-end-overlay::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.end-content-phone {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.end-content-phone h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-family: 'firasan-normal';
+    text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
+}
+
+.end-content-phone h2 i {
+    font-size: 18px;
+    padding-right: 16px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 30%);
+}
+
+.end-content-phone p {
+    font-size: 15px;
+    margin-bottom: 6px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 30%);
+}
+
+.end-chennai-conthead {
+    color: #fff;
+    font-size: 26px;
+}
+
+.end-endchennai-ul li {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'firasan-extrathin';
+    font-weight: bolder;
+    line-height: 38px;
+    padding-left: 40px;
+    list-style-type:disc !important;
+}
+
+.end-endchennai-ul {
+    margin-bottom: 0;
+    padding-left: 50px;
+    margin-top: -15px;
+}
+
+.end-contche-links {
+    text-align: center;
+}
+
+.end-contche-links a {
+    background-color: #fff;
+    color: #ff8d1e;
+    font-family: 'firasan-normal';
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: rgb(255 141 30 / 20%) 0px 20px 25px -5px, rgb(255 141 30 / 20%) 0px 10px 10px -5px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 25px;
+}
+
+.end-service-checontents {
+    align-items: flex-end;
+}
+
+
+/* handheld metrology */
+
+#chennai_handheld {
+    background-image: url("../images/chennai_service_img/end_to_end/Handheld_Metrology_3DScanning_freescan.png");
+    height: auto;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.end-end-overlay-yellow {
+    position: relative;
+}
+
+.end-end-overlay-yellow::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 145, 0, 0.8)
+}
+
+
+/* chennai_multifunctional? */
+
+#chennai_multifunctional {
+    background-image: url("../images/chennai_service_img/end_to_end/Long-range_3Dscanning_faro_laser3D_scanning_service_in_Chennai.png");
+    height: auto;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+/* chennai_longrange */
+
+#chennai_longrange {
+    background-image: url("../images/chennai_service_img/end_to_end/Long-range_3Dscanning_faro_laser3D_scanning_service_in_Chennai.png");
+    height: auto;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+/* chennai_laserarm */
+
+#chennai_laserarm {
+    background-image: url("../images/chennai_service_img/end_to_end/Laser_Arm_3dscanning_FARO_Arm3Dscanning_service_in_Chennai.png");
+    height: auto;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+/* component pickup service css */
+
+#pickup_section {
+    padding: 60px 0;
+    position: relative;
+}
+
+#pickup_section::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 358px;
+    background-color: #f5f5f5;
+}
+
+.pickup-side-shape {
+    position: absolute;
+    transform: scaleY(-1);
+    top: 0;
+}
+
+.component-pickup-col {
+    padding: 0 40px;
+}
+
+.component-pickup-contleft {
+    background-color: #fff;
+    padding: 25px 40px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 8px;
+}
+
+.component-pickup-contleft h4 {
+    color: #000;
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.component-pickup-contleft p {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.truck-logo {
+    position: relative;
+}
+
+.truck-logo img {
+    width: 100%;
+}
+
+
+/* pick-up service css{} */
+
+#pickup-service-wf {
+    background-color: #ff8d1e;
+    padding: 30px 0;
+}
+
+.pickup-service-workflow img {
+    width: 120px;
+}
+
+.comp-pickup-head {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 60px;
+    font-family: 'firasan-normal';
+}
+
+.pickup-service-workflow p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+/* onsite 3d chennai css */
+
+#onsite_chennai_section {
+    padding: 40px 0;
+}
+
+.onsite-chennai-cont {
+    padding: 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.onsite-chennai-cont h6 {
+    color: #FF8D1E;
+font-size: 26px;
+font-style: normal;
+text-align: left;
+font-weight: 700;
+line-height: 49.655px; /* 60% */
+}
+.locations-Precise3DM-New-Delhi h1{
+    color: #FF8D1E;
+    font-size: 20.546px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: 29.586px; /* 144% */
+}
+.locations-Precise3DM-New-Delhi {
+    text-align: center;
+    padding-top: 30px;
+}
+.locations-Precise3DM-New-Delhi1 ul{
+display: flex;
+flex-wrap: wrap;
+}
+.locations-Precise3DM-New-Delhi img{
+    margin: 10px;
+}
+
+
+.onsite-chennai-cont p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
+/* location css{} */
+
+.location-leftcont h2 {
+    padding-bottom: 15px;
+}
+
+.location-leftcont p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.precise-chennai-map {
+    height: 440px;
+}
+
+
+/* other- reverse engg */
+
+#chennai_reverseengg {
+    background-image: url("../images/chennai_service_img/Other_sevices/Reverse_engineering_service_inChennai.png");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+.other-service-links a {
+    background-color: #fff;
+    color: #ff8d1e;
+    font-family: 'firasan-normal';
+    font-size: 14px;
+    width: 170px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: rgb(255 141 30 / 20%) 0px 20px 25px -5px, rgb(255 141 30 / 20%) 0px 10px 10px -5px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 25px;
+}
+
+.other-service-links a i {
+    padding-left: 5px;
+}
+
+.other-service-links {
+    display: grid;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+/* inspection service engg */
+
+#chennai_inspection_service {
+    background-image: url("../images/chennai_service_img/Other_sevices/3DInspection_service_Chennai.png");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+
+/* portable cmm inspection */
+
+#chennai_portable_cmm {
+    background-image: url("../images/chennai_service_img/Other_sevices/Laser_Arm_3dscanning_FARO_Arm3Dscanning_service_in_Chennai.png");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+
+/* chennai_automotive_benchmark */
+
+#chennai_automotive_benchmark {
+    background-image: url("../images/chennai_service_img/Other_sevices/Automotive_benchmarking_servicein_Chennai.png");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+
+/* precise-area-chennai */
+
+.precisareahead h4 {
+    color: #000;
+    font-size: 24px;
+    text-align: left;
+}
+
+.precise-area-chennai {
+    margin-top: 30px;
+}
+
+.precise-area-chennai ul li {
+    list-style-type: none !important;
+    font-size: 17px;
+    line-height: 44px;
+    font-family: 'firasan-normal';
+    font-weight: lighter;
+}
+
+
+/* why precise section css */
+
+#why_precise_chennai {
+    background-color: #fafafa;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.whyprecise-cont {
+    padding: 15px 50px;
+}
+
+.whyprecise-cont img {
+    width: 80px;
+}
+
+.whyprecise-cont h6 {
+    color: #002f3f;
+    font-size: 19px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-family: "firasan-normal";
+}
+
+.whyprecise-cont p {
+    color: #000000;
+    font-size: 15px;
+    padding-bottom: 15px;
+    font-family: "firasan-extrathin";
+    font-weight: bold;
+}
+
+.authorized-partner-chennai img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.auth-center-img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.chennai-authpadd {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chennai-author-head {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 0;
+    color: #000;
+}
+
+
+/* visit our section */
+
+#chennai_visit-our {
+    background-image: url("../images/chennai_service_img/Other_sevices/");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+.visit-our-ul {
+    margin-left: 40px;
+}
+
+.visit-our-ul li {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'firasan-extrathin';
+    font-weight: bolder;
+    line-height: 38px;
+    list-style-type:disc;
+}
+
+.visit-our-ul li::marker {
+    padding-top: 10px !important;
+}
+
+
+/* frequently asked questions */
+
+.faq-chennai-head h2 {
+    color: #002f3f;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.chennai_page_collapse .btn-link {
+    color: #000;
+    font-family: 'firasan-extrathin';
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: left;
+}
+
+.chennai_page_collapse .btn-link:hover {
+    text-decoration: none;
+}
+
+.chennai_page_collapse .btn-link i {
+    color: #ff8d1e;
+    padding-right: 15px;
+}
+
+.chennai_page_collapse {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.faq-chennai-head .card-header {
+    background-color: transparent;
+    border: 0;
+    padding: 8px;
+}
+
+.faq-chennai-head .card-body {
+    padding: 8px 15px;
+}
+
+.faq-chennai-head .card {
+    border: 0;
+}
+
+.faq-chennai-head p {
+    color: #6f6f6f;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+.faq-chennai-head ul {
+    padding-left: 55px;
+}
+
+.faq-chennai-head ul li {
+    color: #6f6f6f;
+    font-size: 15px;
+    font-family: 'firasan-extrathin';
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+/* testimonials css{} */
+
+.testimonial_chennai {
+    width: 100%;
+    background-color: #ff8d1e;
+    padding: 30px 0;
+}
+
+.chennai-testimonial-head {
+    font-family: 'firasan-normal';
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+}
+
+.chennai-car-item {
+    position: relative;
+    padding: 40px 70px;
+    left: 22px;
+}
+
+.chennai-car-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Onsite-New-Delhi{
+    text-align: center;
+}
+
+.chennai-car-content p {
+    color: #aeaeae;
+    font-size: 15px;
+    height: 150px;
+    font-style: italic;
+}
+
+.chennai-car-content h6 {
+    color: #353333;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.chennai-car-item::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    border-right: 60px solid white;
+    border-top: 0px solid transparent;
+    border-bottom: 40px solid transparent
+}
+
+.chennai-car-item img {
+    position: absolute;
+    width: 70px !important;
+    left: -2%;
+    filter: grayscale(0) !important;
+    top: 12%;
+}
+
+.chennai-car-content i {
+    color: #6bc1ff;
+}
+
+.chennai-carosel-col {
+    overflow: hidden;
+}
+/*chennai sevice form css*/
+.chennai-contact-form{
+    background-color: #FFF;
+    margin-top: 40px;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    position: relative;
+    z-index: 1;
+}
+.che-checkbox{
+    background-color: #FFF;
+    margin-top: 40px;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    position: relative;
+    z-index: 1;
+    height:auto;
+}
+.chennai-contact-form h3{
+    color:#000;
+    text-align:center;
+    font-size:20px;
+    padding-bottom:10px;
+    text-transform:capitalize;
+}
+.chennai-contact-form input{
+    margin-top: 20px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0;
+}
+.chennai-contact-form input:focus{
+    box-shadow:none;
+}
+.chennai-contact-form input::placeholder{
+    font-family:"firasan-extrathin";
+    font-weight:bold;
+    font-size:14px;
+}
+.chennai-contact-form-btn button{
+    border: none;
+    text-transform: uppercase;
+    background-color: #ff8d1e;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family:"firasan-normal";
+    padding: 7px 21px;
+    width: 50%;
+    margin:auto;
+    border-radius: 5px;
+    font-size: 14px;
+    display:block;
+    box-shadow: rgb(255 141 30 / 30%) 0px 20px 25px -5px, rgb(255 141 30 / 30%) 0px 10px 10px -5px;
+}
+.chennai-contact-form input+label{
+    display:none !important;
+}
+.che-accuracy button{
+    border: none;
+    text-transform: uppercase;
+    background-color: #ff8d1e;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family:"firasan-normal";
+    padding: 5px 15px;
+    width: 45%;
+    margin:auto;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: rgb(255 141 30 / 30%) 0px 20px 25px -5px, rgb(255 141 30 / 30%) 0px 10px 10px -5px;
+}
+.che-checkbox h3{
+    color:#000;
+    text-align:center;
+    font-size:20px;
+    padding-bottom:10px;
+    text-transform:capitalize;
+}
+.che-checkbox  input{
+    margin-top: 20px;
+}
+.che-checkbox label{
+    padding-left:15px;
+    font-size:15px;
+    
+}
+.che-checkbox input[type="checkbox"]{
+    position: relative;
+    left: -12px;
+    top: 1px;
+}
+.che-checkcont{
+    background-color:#fff;
+   padding: 15px 10px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+.che-checkcont p{
+    margin-bottom:0;
+    color:#000;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/*free component form css{}*/
+.free-component{
+    background-color: #FFF;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    position: relative;
+    z-index: 1;
+}
+.free-component h3{
+    color:#000;
+    text-align:center;
+    font-size:20px;
+    padding-bottom:10px;
+    text-transform:capitalize;
+}
+.free-component input{
+    margin-top: 28px;
+    /*height:50px;*/
+    padding-bottom:0;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0;
+}
+.free-component input:focus{
+    box-shadow:none;
+    padding-bottom:0 !important;
+}
+.free-component input::placeholder{
+    font-family:"firasan-extrathin";
+    font-weight:bold;
+    font-size:14px;
+}
+#che_component,
+#che_accuracy{
+    margin-top:12px;
+}
+#che_component1::placeholder,
+#che_accuracy1::placeholder{
+    font-family:"firasan-extrathin";
+    font-weight:bold;
+    font-size:11px;
+}
+.free-component input+label{
+    display:none !important;
+}
+.free-component button{
+    border: none;
+    text-transform: uppercase;
+    background-color: #ff8d1e;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family:"firasan-normal";
+    padding: 5px 15px;
+    width: 45%;
+    margin:auto;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: rgb(255 141 30 / 30%) 0px 20px 25px -5px, rgb(255 141 30 / 30%) 0px 10px 10px -5px;
+}
+.free-component  input{
+    margin-top: 20px;
+}
+.free-component label{
+    padding-left:15px;
+    font-size:14px;
+    
+}
+.free-component input[type="checkbox"]{
+    position: relative;
+    left: -12px;
+    top: 1px;
+    
+}
+.che-fcont{
+    background-color:#fff;
+    padding: 15px 10px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    width:336px;
+}
+.che-fcont p{
+    margin-bottom: 0;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    cursor: pointer;
+}
+.check-input input[type='checkbox']{
+    height:auto;
+}
+.check-input{
+    padding: 30px 15px;
+}
+.free-component span{
+    font-family:"firasan-extrathin";
+    font-weight:bold;
+    font-size:14px;
+    color:#6c757d;
+    position:relative;
+    top: 27px;
+    left: 10px;
+}
+#exampleFormControlSelect1{
+    /*height:30px;*/
+    /*margin-top: 10px;*/
+    padding-bottom:0;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0;
+    font-size:12px;
+}
+#exampleFormControlSelect1:focus{
+    box-shadow:none;
+    padding-bottom:0 !important;
+}
+#exampleFormControlSelect1 option{
+    font-size:14px;
+}
+#select_label{
+    font-family:"firasan-extrathin";
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom: 0;
+    padding-top: 20px;
+     color:#6c757d;
+}
+.custom-file-upload{
+    border: none;
+    text-transform: uppercase;
+    /*margin: 18px 17px 30px 17px;*/
+    background-color: #ff8d1e;
+    margin: 20px auto;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Firasan-normal';
+   padding: 30px 16px;
+    width: 66%;
+    text-align:left;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor:pointer;
+    padding-left: 18px;
+    
+}
+.custom-file-upload i{
+    position: relative;
+    left: 45px;
+    top: 10px;
+    font-size: 20px;
+}
+.custom-file-upload p{
+    font-family:"firasan-extrathin" ;
+    font-weight:lighter;
+    font-size:12px;
+    margin-bottom:0;
+}
+.upload-btn input{
+    position:absolute;
+    visibility:hidden;
+}
+.upload-btn{
+    margin-bottom:0;
+}
+.status-div{
+    background-color: #FFF;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    position: relative;
+    height:23rem;
+}
+.status-div button {
+    border: none;
+    text-transform: uppercase;
+    background-color: #ff8d1e;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: "firasan-normal";
+    padding: 7px 21px;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    box-shadow: rgb(255 141 30 / 30%) 0px 20px 25px -5px, rgb(255 141 30 / 30%) 0px 10px 10px -5px;
+}
+.adj{
+        position:relative;
+        left:12px;
+    }
+/* media queries css starts here{} */
+
+@media screen and (max-width:1200px) {
+    .other-service-chennai .right-shape-tria {
+        display: none;
+    }
+    .other-service-chennai img:first-child {
+        display: none;
+    }
+    .end-content-phone {
+        margin: 30px 0;
+    }
+    .end-chennai-conthead.pb-4 {
+        padding-bottom: 0 !important;
+    }
+    .end-end-overlay-yellow::before {
+        height: 570px;
+    }
+    .end-end-overlay::before {
+        height: 570px;
+    }
+    .end-service-checontents {
+        align-items: flex-start;
+    }
+    .end-contche-links {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .end-end-overlay-yellow::before {
+        height: 570px;
+    }
+    .end-endchennai-ul {
+        padding-left: 20px;
+    }
+    .end-endchennai-ul li {
+        padding-left: 15px;
+    }
+    .end-end-overlay-yellow::before {
+        height: 725px;
+    }
+    .end-end-overlay::before {
+        height: 725px;
+    }
+    .hero-head-center {
+    padding-top: 25px;
+    }
+    .chennai-hero-btns {
+    padding-top: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .end-contche-links {
+        display: flex;
+        justify-content: center;
+    }
+    .end-contche-links a {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .end-end-overlay-yellow::before {
+        height: 768px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .end-endchennai-cont a {
+        margin-bottom: 30px;
+    }
+    .end-endchennai-cont2 {
+        margin-bottom: 30px;
+    }
+    .chennai-hero-btns a{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .OPTICAL-3D-SCANNING h1{
+        text-align: center;
+    }
+    .end-end-overlay-yellow::before {
+        height: 810px;
+    }
+    .SERVICE-WORKFLOW h1{
+        font-size: 25px;
+    }
+    .OPTICAL-3D-SCANNING h1{
+        font-size: 30px;
+        margin-top: -35px;
+    }
+    .HANDHELD-METROLOGY h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .Handheld-Colour h1{
+        text-align: center;
+        margin-top: -38px;
+    }
+    .LONG-RANGE h1{
+        text-align: center;
+    }
+    .onsite-chennai-cont{
+        text-align: center;
+        padding: 0;
+    }
+    .about{
+        padding: 0 !important;
+    }
+    .faq-chennai-head h2{
+        text-align: center;
+    }
+    .LASER-ARM h1 {
+        margin-top: -40px;
+    }
+    .onsite-chennai-cont h6{
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .end-end-overlay-yellow::before {
+        height: 910px;
+    }
+    .end-end-overlay::before {
+        height: 910px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .end-contche-links a {
+        font-size: 12px;
+    }
+}
