@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
          <h4>Please feel free to get in touch with us through the following channels:</h4>
          <div class="social-media pt-5  pb-4">
-            <a href="https://www.whatsapp.com/catalog/919940045720/?app_absent=0"><img class="whatsup"
+            <a href="https://www.whatsapp.com/catalog/919840478347/?app_absent=0"><img class="whatsup"
                   src="assets/images/thanking-img/what'sup.png" alt=""></a>
             <a href="https://us02web.zoom.us/j/5903189768?pwd=T3VucDArMUY1NGxNRU1NMnJMYnVuQT09#success"><img
                   class="zoom" src="assets/images/thanking-img/zoom.png" alt=""></a>
