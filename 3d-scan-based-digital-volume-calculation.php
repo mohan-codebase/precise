@@ -483,28 +483,28 @@ ini_set('max_execution_time', '-1');
                 <div class="col-lg-3 col-md-4 col-sm-6 py-3">
                     <div class="dvc-industry-card">
                         <img src="assets/images/digital-volume-calculation/industries-1.png" alt="Tire Inspection" class="img-fluid w-100 dvc-industry-img">
-                        <h4 class="dvc-industry-name">Tire Inspection</h4>
+                        <h4 class="dvc-industry-name"> Medical Stent</h4>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 py-3">
                     <div class="dvc-industry-card">
                         <img src="assets/images/digital-volume-calculation/industries-2.png" alt="Casting Part Inspection" class="img-fluid w-100 dvc-industry-img">
-                        <h4 class="dvc-industry-name">Casting Part Inspection</h4>
+                        <h4 class="dvc-industry-name">Automotive Bracket</h4>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 py-3">
                     <div class="dvc-industry-card">
                         <img src="assets/images/digital-volume-calculation/industries-3.png" alt="Plastic Part Inspection" class="img-fluid w-100 dvc-industry-img">
-                        <h4 class="dvc-industry-name">Plastic Part Inspection</h4>
+                        <h4 class="dvc-industry-name">Tire Inspection</h4>
                     </div>
                 </div>
                 <!-- Card 4 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 py-3">
                     <div class="dvc-industry-card">
                         <img src="assets/images/digital-volume-calculation/industries-4.png" alt="Metal Part Inspection" class="img-fluid w-100 dvc-industry-img">
-                        <h4 class="dvc-industry-name">Metal Part Inspection</h4>
+                        <h4 class="dvc-industry-name">Casting Part Inspection</h4>
                     </div>
                 </div>
                 <!-- Card 5 -->

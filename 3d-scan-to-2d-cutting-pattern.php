@@ -47,8 +47,8 @@ $meta_description = "Convert Complex 3D Shapes into Accurate 2D Manufacturing Pa
                 </div>
 
                 <div class="hero-cta-buttons">
-                    <a href="#" class="btn-live-demo">Schedule Live Demo</a>
-                    <a href="#" class="btn-live-demo btn-req-quote">Get Quote</a>
+                    <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-live-demo">Schedule Live Demo</a>
+                    <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-live-demo btn-req-quote">Get Quote</a>
                 </div>
 
                 <div class="hero-contact-email">
@@ -716,10 +716,8 @@ $meta_description = "Convert Complex 3D Shapes into Accurate 2D Manufacturing Pa
 
                 <!-- Right Buttons Column -->
                 <div class="p2d-cta-right">
-                    <a href="#" class="btn-solid-orange">Upload Scan Data</a>
                     <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-outline-orange">Schedule Live Demo</a>
-                    <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-solid-orange">Request Technical Consultation</a>
-                    <a href="https://us02web.zoom.us/j/5903189768?pwd=T3VucDArMUY1NGxNRU1NMnJMYnVuQT09" class="btn-outline-orange">Speak to a Pattern Development Expert Today</a>
+                    <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-solid-orange">Get a Quote</a>
                 </div>
 
             </div>
