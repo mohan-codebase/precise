@@ -1,0 +1,1340 @@
+/* Hero Section Styles */
+.ats-hero-section {
+    position: relative;
+    background: linear-gradient(170deg, #090a0f 0%, #1e2432 40%, #dee3e8 85%, #f1f4f6 100%);
+    padding: 60px 40px;
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.background-grid {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+        linear-gradient(to right, rgba(93, 142, 237, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(93, 142, 237, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 1;
+}
+
+.ats-hero-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+/* Left Info */
+.ats-hero-left {
+    flex: 1 1 50%;
+    max-width: 55%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ats-hero-left h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.text-orange {
+    color: #ff9100;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.hero-top-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-desc {
+    font-size: 17px;
+    color: #cfd4db;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+.hero-desc p{
+    color: #f8f8f8 ;
+}
+
+.hero-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.btn-ats-orange {
+    background: linear-gradient(90deg, #ffb861, #f57e10);
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(245, 126, 16, 0.4);
+}
+
+.btn-ats-orange:hover {
+    background: linear-gradient(90deg, #f57e10, #ffb861);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(245, 126, 16, 0.5);
+}
+
+/* Features Icons */
+.hero-features-icons {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.ats-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 120px;
+}
+
+.ats-feature-icon-wrapper {
+    background: linear-gradient(180deg, #ffffff 0%, #fff7ef 100%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0px 5px 12px rgba(245, 126, 16, 0.2);
+}
+
+.ats-feature img {
+    max-width: 34px;
+    max-height: 34px;
+}
+
+.ats-feature span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1e29; /* Dark color since this section might fall on the light gray part of gradient */
+    line-height: 1.3;
+}
+
+
+/* Right Info */
+.ats-hero-right {
+    flex: 1 1 42%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center; 
+}
+
+.top-call-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-self: flex-end; 
+    margin-bottom: 20px;
+}
+
+.bottom-email-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-self: flex-start; 
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.call-icon, .email-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffb861, #f57e10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(245, 126, 16, 0.4);
+}
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-label { 
+    font-size: 14px;
+    color: #ffffff; 
+    font-weight: 700; 
+}
+
+.email-label { 
+    font-size: 14px;
+    color: #1a1e29; 
+    font-weight: 800; 
+}
+
+.contact-links-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.contact-links-group .call-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-links-group .call-link:hover {
+    color: #ffb861;
+}
+
+.contact-links-group .email-link {
+    color: #1a1e29;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-links-group .email-link:hover {
+    color: #f57e10;
+}
+
+.divider {
+    color: #ffffff;
+}
+
+.ats-hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ats-hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0px 15px 25px rgba(0,0,0,0.3));
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .ats-hero-left h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ats-hero-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ats-hero-left, .ats-hero-right {
+        max-width: 100%;
+        width: 100%;
+    }
+    .ats-hero-left {
+        margin-bottom: 40px;
+        align-items: flex-start;
+        text-align: left;
+        padding-right: 0;
+    }
+    .hero-features-icons {
+        justify-content: flex-start;
+    }
+
+    .top-call-contact {
+        align-self: flex-start;
+        order: 1;
+    }
+    .bottom-email-contact {
+        align-self: flex-start;
+        margin-left: 0;
+        margin-bottom: 20px;
+        order: 2;
+    }
+    .email-label, .contact-links-group .email-link {
+        color: #ffffff;
+    }
+    .ats-hero-image {
+        order: 3;
+    }
+    .ats-feature span {
+        color: #1a1e29; 
+    }
+}
+
+@media (max-width: 768px) {
+    .ats-hero-left h1 {
+        font-size: 36px;
+    }
+    .hero-features-icons {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    .hero-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .btn-ats-orange {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-links-group {
+        justify-content: flex-start;
+    }
+    .ats-hero-section{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ats-hero-section {
+        padding: 40px 20px;
+    }
+    .ats-hero-left h1 {
+        font-size: 32px;
+    }
+    .top-call-contact, .bottom-email-contact {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+/* Why Airfoil Twist Analysis Section */
+.ats-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wata-section {
+    padding: 60px 0;
+}
+
+.wata-main-box {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    padding: 50px 40px;
+}
+
+.wata-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111a2f;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.wata-content-layout {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.wata-left-image {
+    flex: 1 1 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.wata-left-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.wata-right-grid {
+    flex: 1 1 35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+    column-gap: 20px;
+}
+
+.wata-feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wata-icon-circle {
+    background: #ffffff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 145, 0, 0.15);
+    border: 1px solid #fff5ea;
+}
+
+.wata-icon-circle img {
+    max-width: 38px;
+    max-height: 38px;
+}
+
+.wata-feature-card span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 1.3;
+}
+
+/* Responsive updates for WATA section */
+@media (max-width: 1024px) {
+    .wata-content-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .wata-left-image {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .wata-right-grid {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .wata-main-box {
+        padding: 40px 20px;
+    }
+    .wata-title {
+        font-size: 28px;
+    }
+    .wata-right-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .wata-title {
+        font-size: 24px;
+    }
+}
+
+/* Airfoil Twist Analysis Workflow Section */
+.ataw-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.ataw-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111a2f;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.ataw-workflow-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.ataw-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+}
+
+.ataw-card {
+    background-color: #f4f5f8;
+    border-radius: 12px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    box-shadow: none;
+    flex: none;
+}
+
+.ataw-step-num {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ataw-card-img {
+    margin-bottom: 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ataw-card-img img {
+    max-width: 100%;
+    max-height: 110px;
+    object-fit: contain;
+}
+
+.ataw-card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111a2f;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.ataw-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fce8db;
+    color: #9ea3ab;
+    font-size: 18px;
+    flex-shrink: 0;
+    font-weight: 900;
+}
+
+.ataw-mobile-arrow {
+    display: none;
+}
+
+/* Responsive updates for ATAW section */
+@media (max-width: 1200px) {
+    /* Slightly compact gap and items on large tablets */
+    .ataw-row {
+        gap: 10px;
+    }
+    .ataw-card {
+        width: 170px;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ataw-workflow-layout {
+        gap: 20px;
+    }
+    .ataw-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ataw-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ataw-arrow, .ataw-mobile-arrow {
+        transform: rotate(90deg);
+        display: flex !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ataw-title {
+        font-size: 28px;
+    }
+}
+
+/* Airfoil 3D Analysis Workflow Section */
+.a3daw-section {
+    background-color: #f7f9fb;
+    padding: 60px 0;
+}
+
+.a3daw-main-box {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    padding: 50px 30px;
+}
+
+.a3daw-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+}
+
+.a3daw-card-compact {
+    width: auto;
+    flex: 1;
+    width: 100%;;
+    padding: 25px 10px;
+}
+
+.a3daw-card-compact .ataw-card-img {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.a3daw-card-compact .ataw-card-img img {
+    max-height: 95px;
+}
+
+.a3daw-card-compact .ataw-card-title {
+    font-size: 14px;
+}
+
+/* Responsive updates for A3DAW */
+@media (max-width: 1200px) {
+    .a3daw-row {
+        flex-wrap: wrap;
+    }
+    .a3daw-main-box {
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .a3daw-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* What can be measured in Airfoil Analyze Section */
+.maa-section {
+    background-color: #f7f9fb;
+    padding: 60px 0;
+}
+
+.maa-layout {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.maa-left {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.maa-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111a2f;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.maa-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.maa-right {
+    flex: 1 1 65%;
+    display: flex;
+    align-items: center;
+}
+
+.maa-grid {
+    display: grid;
+    grid-template-columns: 55px 1fr 55px 1fr;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    width: 100%;
+}
+
+.maa-badge-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 10px;
+}
+
+.maa-text-box {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 12px 15px;
+}
+
+/* Row 1, Row 3 background (all 4 cells: badge, text, badge, text) */
+.maa-grid > div:nth-child(8n+1),
+.maa-grid > div:nth-child(8n+2),
+.maa-grid > div:nth-child(8n+3),
+.maa-grid > div:nth-child(8n+4) {
+    background-color: #f7f9fb;
+}
+
+/* Row 2, Row 4 background (all 4 cells: badge, text, badge, text) */
+.maa-grid > div:nth-child(8n+5),
+.maa-grid > div:nth-child(8n+6),
+.maa-grid > div:nth-child(8n+7),
+.maa-grid > div:nth-child(8n+8) {
+    background-color: #ffffff;
+}
+
+.maa-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #9ea3ab;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.maa-text-box p {
+    margin: 0;
+    font-size: 13px !important;
+    color: #333333;
+    line-height: 1.4;
+}
+
+.maa-text-box p .text-blue {
+    color: #1a9ad9;
+    font-weight: 600;
+}
+
+/* Responsive updates for MAA */
+@media (max-width: 1200px) {
+    .maa-layout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .maa-grid {
+        grid-template-columns: 55px 1fr;
+    }
+}
+
+/* Common Engineering Challenges Solved Section */
+.cecs-section {
+    background-color: #f7f9fc;
+    padding: 70px 0;
+}
+
+.cecs-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.cecs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.cecs-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cecs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.cecs-card img {
+    margin-bottom: 20px;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cecs-card span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #444444;
+    line-height: 1.3;
+}
+
+/* Responsive updates for CECS */
+@media (max-width: 1024px) {
+    .cecs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .cecs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cecs-title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 480px) {
+    .cecs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 3D Scanner Technology used for Airfoil Section */
+.scan-tech-section {
+    background-color: #f7f9fb;
+    padding: 70px 0;
+}
+
+.scan-tech-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.scan-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.scan-tech-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    border: 1px solid #e9ecef;
+}
+
+.scan-tech-img-box {
+    background-color: #fcf1e5;
+    padding: 30px 20px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scan-tech-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.scan-tech-info {
+    padding: 25px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.scan-tech-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: #111a2f;
+    margin-bottom: 20px;
+}
+
+.scan-tech-list {
+    list-style: none !important;
+    padding-left: 0;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.scan-tech-list li {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 15px;
+}
+
+.scan-tech-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #888888;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.btn-request-demo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(180deg, #ffaf48 0%, #fa8608 100%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-request-demo:hover {
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(250, 134, 8, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Responsive updates for Scan Tech Section */
+@media (max-width: 1200px) {
+    .scan-tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .scan-tech-grid {
+        grid-template-columns: 1fr;
+    }
+    .scan-tech-title {
+        font-size: 28px;
+    }
+}
+
+/* Engineering Software Section */
+.ef-section {
+    background-color: #f6f8fb;
+    padding: 70px 0;
+}
+
+.ef-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.ef-main-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.04);
+}
+
+.ef-row {
+    display: flex;
+}
+
+.ef-col {
+    flex: 1;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ef-col:not(:last-child) {
+    border-right: 1px solid #eeeeee;
+}
+
+.ef-img-box {
+    margin-bottom: 25px;
+}
+
+.ef-img-box img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.ef-logo-box {
+    margin-bottom: 25px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ef-logo-box img {
+    max-width: 95%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ef-list {
+    list-style: none !important;
+    padding-left: 0;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.ef-list li {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 15px;
+}
+
+.ef-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #888888;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.ef-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ef-btn:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ef-btn-green {
+    background-color: #0b8043;
+}
+.ef-btn-green:hover {
+    background-color: #0a733c;
+}
+
+.ef-btn-black {
+    background-color: #000000;
+}
+.ef-btn-black:hover {
+    background-color: #222222;
+}
+
+.ef-btn-brown {
+    background-color: #3b3130;
+}
+.ef-btn-brown:hover {
+    background-color: #2e2625;
+}
+
+/* Responsive updates for EF */
+@media (max-width: 1024px) {
+    .ef-row {
+        flex-direction: column;
+    }
+    .ef-col:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+}
+@media (max-width: 768px) {
+    .ef-title {
+        font-size: 28px;
+    }
+}
+
+/* Deliverables Section */
+.deliv-section {
+    background-color: #f7f9fc;
+    padding: 70px 0;
+}
+
+.deliv-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #212529;
+    margin-bottom: 50px;
+}
+
+.deliv-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.deliv-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deliv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.deliv-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #111a2f;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.deliv-card img {
+    max-width: 100%;
+    width: 70%;
+    flex-grow: 1;
+    object-fit: contain;
+}
+
+/* Responsive updates for Deliverables */
+@media (max-width: 1200px) {
+    .deliv-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .deliv-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .deliv-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* OPEX / CAPEX Section (Standardized UI) */
+.opex-capex-section {
+    padding: 70px 0;
+    background-color: #f7f9fb;
+}
+.oc-layout {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+.oc-box {
+    flex: 1;
+    border-radius: 12px;
+    padding: 35px 35px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom background adjustments based off reference */
+.oc-blue-bg { background-color: #0b111e; }
+.oc-green-bg { background-color: #101c17; }
+
+.oc-header h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.oc-header p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #e0e4ec;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.oc-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex: 1;
+}
+.oc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+    width: 250px;
+}
+.oc-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #e8eaeb;
+}
+.oc-list li i {
+    margin-top: 3px;
+    font-size: 16px;
+    min-width: 16px;
+}
+.oc-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.oc-image img {
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.oc-blue-bg .oc-image img {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.oc-green-bg {
+    position: relative;
+    overflow: hidden;
+}
+.oc-green-bg .oc-body,
+.oc-green-bg .oc-header {
+    position: relative;
+    z-index: 2;
+}
+.oc-green-bg .oc-image {
+    position: absolute;
+    bottom: -80px;
+    right: -35px;
+    display: block;
+    z-index: 1;
+}
+.oc-green-bg .oc-image img {
+    max-width: none;
+    max-height: 310px; /* Made larger based on the new image */
+    border-radius: 0;
+}
+.oc-green-bg .btn-oc-full {
+    position: relative;
+    z-index: 3;
+}
+.btn-oc-full {
+    display: block;
+    width: 100%;
+    background: linear-gradient(180deg, #ffb353 0%, #fc920f 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 12px rgba(252, 146, 15, 0.2);
+    transition: all 0.3s ease;
+}
+.btn-oc-full:hover {
+    background: linear-gradient(180deg, #fc920f 0%, #eb8405 100%);
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(252, 146, 15, 0.4);
+}
+
+@media (max-width: 1100px) {
+    .oc-body { flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px;}
+    .oc-image { justify-content: center; width: 100%; margin-top: 15px;}
+    
+    .oc-green-bg .oc-image {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 25px;
+        align-self: center;
+        margin-bottom: -40px; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .oc-green-bg .oc-image img {
+        max-width: 100%;
+        max-height: 240px; 
+    }
+}
+@media (max-width: 768px) {
+    .oc-layout { flex-direction: column; }
+    .oc-box { padding: 25px 20px; }
+    .oc-body { align-items: flex-start; }
+    .oc-list { width: 100%; }
+    
+    .oc-green-bg .oc-image {
+        margin-bottom: -20px;
+        align-self: center;
+        justify-content: center;
+    }
+    .opex-capex-section{
+        padding: 40px 0 !important;
+    }
+}

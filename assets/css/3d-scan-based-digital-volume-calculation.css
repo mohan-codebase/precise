@@ -1,0 +1,842 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Base Styles */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.dvc-container {
+    padding: 0 5%;
+}
+.dvc-text-orange {
+    color: #ff8d1e;
+}
+.z-index-1 {
+    z-index: 1;
+}
+
+/* ================== Hero Section Starts ================== */
+.dvc-hero-section {
+    background: linear-gradient(180deg, #000000 0%, #000000 65%, #f6f6fa 100%);
+    padding: 40px 0 60px 0;
+    position: relative;
+    min-height: 800px;
+    margin-top: 120px;
+}
+@media (max-width: 768px) {
+    .dvc-hero-section {
+        margin-top: 0;
+    }
+}
+
+.dvc-hero-bg {
+    position: absolute;
+    top: 50px;
+    right: 2%;
+    bottom: 50px;
+    left: 55%;
+    background-image: url("../images/digital-volume-calculation/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    pointer-events: none;
+}
+@media (max-width: 991px) {
+    .dvc-hero-bg {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-position: center bottom;
+        background-size: cover;
+        opacity: 0.3; /* make text readable on mobile if overlapping */
+    }
+}
+
+/* Top Phone */
+.dvc-top-phone-icon {
+    width: 50px;
+    height: auto;
+}
+.dvc-top-phone-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+.dvc-top-phone-numbers {
+    font-weight: 700;
+    font-size: 0.94rem;
+}
+.dvc-top-phone-numbers a {
+    color: #fff;
+    text-decoration: none;
+}
+.dvc-top-phone-numbers a:hover {
+    color: #ff931e;
+}
+
+/* Hero Typography */
+.dvc-hero-title-part1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.125rem;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+.dvc-hero-title-part2 {
+    font-weight: 700;
+    font-size: 3.44rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+@media (max-width: 991px) {
+    .dvc-hero-title-part2 {
+        font-size: 2.5rem;
+    }
+}
+.dvc-hero-subtitle {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+.dvc-hero-text p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Features */
+.dvc-feature-item {
+    text-align: center;
+}
+.dvc-feature-item img {
+    height: 70px;
+    width: auto;
+    margin-bottom: 15px;
+}
+.dvc-feature-item p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+/* Buttons */
+.dvc-hero-buttons {
+    gap: 13px;
+}
+@media (max-width: 991px) {
+    .dvc-hero-buttons {
+        justify-content: center;
+    }
+}
+
+.dvc-btn {
+    background-color: #ff931e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.56rem;
+    border-radius: 10px;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+}
+.dvc-btn:hover {
+    background-color: #e58219;
+    color: #fff;
+}
+
+/* Email Block */
+.dvc-email-block {
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 991px) {
+    .dvc-email-block {
+        justify-content: center;
+    }
+}
+
+.dvc-email-icon {
+    width: 60px;
+    height: auto;
+}
+.dvc-email-title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+.dvc-email-address {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.dvc-email-address a {
+    color: #000;
+    text-decoration: none;
+}
+.dvc-email-address a:hover {
+    color: #ff931e;
+}
+@media (max-width: 991px) {
+    .dvc-email-title,
+    .dvc-email-address a {
+        color: #fff; /* fallback to white on mobile if no gradient present behind it */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+}
+/* ================== Hero Section Ends ================== */
+
+/* ================== Measure Volume Section Starts ================== */
+.dvc-measure-section {
+    background-color: #f6f6fa;
+}
+
+.dvc-measure-title {
+    font-weight: 700;
+    font-size: 2.18rem;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .dvc-measure-title {
+        font-size: 1.8rem;
+    }
+}
+.dvc-measure-text-orange {
+    color: #ff8d1e;
+}
+.dvc-measure-text-dark {
+    color: #121212;
+}
+
+.dvc-measure-card {
+    background-color: #fff;
+    border: 0.5px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 25px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.dvc-measure-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.dvc-measure-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+/* ================== Measure Volume Section Ends ================== */
+
+/* ================== How It Works Section Starts ================== */
+.dvc-how-section {
+    background-color: #f6f6fa;
+}
+
+.dvc-how-left-box {
+    background-color: #fff;
+    border-radius: 16px;
+}
+.dvc-how-title {
+    color: #121212;
+    font-weight: 700;
+    font-size: 2.18rem;
+}
+.dvc-how-steps-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+.dvc-how-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.dvc-how-img-container {
+    background-color: #f6f6fa;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.dvc-how-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.dvc-how-number {
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f7941d;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.87rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+.dvc-how-arrow-wrapper {
+    position: absolute;
+    top: 20px; /* Same as margin-top of img container */
+    right: -10px; /* Half of the 20px gap */
+    width: 0;
+    padding-top: 50%; /* 50% of step width, finding exact vertical center of the image container */
+    z-index: 2;
+}
+.dvc-how-arrow {
+    position: absolute;
+    bottom: -19px; /* Half of 38px */
+    right: -19px; /* Half of 38px */
+    background-color: #f7941d;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dvc-how-step-title {
+    color: #3a3a3a;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.dvc-how-step-text {
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 991px) {
+    .dvc-how-steps-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .dvc-how-step {
+        width: 100%;
+        max-width: 300px;
+    }
+    .dvc-how-arrow-wrapper {
+        display: none;
+    }
+}
+
+.dvc-capabilities-box {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+.dvc-capabilities-title {
+    background-color: #f7941d;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.56rem;
+    text-align: center;
+    padding: 20px;
+    margin: 0; 
+}
+.dvc-capabilities-list {
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px; 
+}
+.dvc-capabilities-list li {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #3a3a3a;
+}
+.dvc-tick {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #16A34A;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+/* ================== How It Works Section Ends ================== */
+
+/* ================== Software Used Section Starts ================== */
+.dvc-software-section {
+    background-color: #f6f6fa;
+}
+.dvc-software-left-box {
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dvc-software-title {
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+.dvc-software-logos {
+    gap: 10px;
+}
+.dvc-software-logos img {
+    max-width: 30%;
+    object-fit: contain;
+}
+.dvc-software-list li {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+.dvc-software-list li:last-child {
+    margin-bottom: 0;
+}
+
+.dvc-cross-section-box {
+    background-color: #fff;
+    border-radius: 16px;
+}
+.dvc-cross-section-title {
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+.dvc-cross-section-box img {
+    max-height: 355px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+}
+/* ================== Software Used Section Ends ================== */
+
+/* ================== Scanners & Why Section Starts ================== */
+.dvc-scanners-section {
+    background-color: #f6f6fa;
+}
+.dvc-scanners-left-box {
+    background-color: #fff;
+    border-radius: 16px;
+}
+.dvc-scanners-title {
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+.dvc-scanners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.dvc-scanner-item {
+    flex: 1 1 18%; /* Roughly 5 items per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 130px;
+}
+.dvc-scanner-img-container {
+    border: 1px solid #F7941D80;
+    background: linear-gradient(180deg, #ffffff 0%, #FEF1E3 100%);
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.dvc-scanner-img-container img {
+    flex-grow: 1;
+    max-width: 100%;
+    max-height: 75%; /* Limit height to make room for text */
+    object-fit: contain;
+}
+.dvc-scanner-name {
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+.dvc-scanner-btn {
+    display: block;
+    background-color: #FF931E;
+    color: #fff;
+    font-weight: 600;
+    font-size: clamp(1.56rem, 1.2vw, 1.56rem);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.dvc-scanner-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dvc-why-box {
+    background-color: #fff;
+    border-radius: 16px;
+}
+.dvc-why-title {
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+.dvc-why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.dvc-why-list li {
+    display: flex;
+    align-items: center;
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+    .dvc-scanner-item {
+        flex: 1 1 45%;
+    }
+}
+@media (max-width: 575px) {
+    .dvc-scanner-item {
+        flex: 1 1 100%;
+    }
+}
+/* ================== Scanners & Why Section Ends ================== */
+
+/* ================== OPEX & CAPEX Section Starts ================== */
+.dvc-opex-capex-section {
+    background-color: #f6f6fa;
+}
+.dvc-opex-card {
+    background-color: #04112A;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.dvc-capex-card {
+    background-color: #06221A;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dvc-opex-title,
+.dvc-capex-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.187rem;
+}
+.dvc-opex-subtitle,
+.dvc-capex-subtitle {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.dvc-opex-list li,
+.dvc-capex-list li {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+.dvc-opex-list li i,
+.dvc-capex-list li i {
+    color: #10b981;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+.dvc-opex-btn,
+.dvc-capex-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #ff931e, #f97316);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 18px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.dvc-opex-btn:hover,
+.dvc-capex-btn:hover {
+    transform: translateY(-2px);
+    color: #fff;
+}
+.dvc-card-bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+    max-width: 50%;
+    object-fit: contain;
+}
+.dvc-opex-img {
+    bottom: 130px;
+    right: 15px;
+    max-width: 45%;
+}
+@media (max-width: 991px) {
+    .dvc-opex-content,
+    .dvc-capex-content {
+        width: 100% !important;
+    }
+    .dvc-card-bg-img {
+        opacity: 0.2;
+        max-width: 80%;
+    }
+}
+/* ================== OPEX & CAPEX Section Ends ================== */
+
+/* ================== Industries Section Starts ================== */
+.dvc-industries-section {
+    background-color: #f6f6fa;
+}
+.dvc-industries-title {
+    font-weight: 700;
+    font-size: 2.187rem;
+}
+.dvc-industries-title .text-dark-blue {
+    color: #0F172A;
+}
+.dvc-industries-title .text-orange {
+    color: #F7941D;
+}
+.dvc-industry-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for white cards on light grey bg */
+}
+.dvc-industry-img {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+.dvc-industry-name {
+    color: #040D29;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 20px 15px;
+    margin: 0;
+    line-height: 1.3;
+}
+/* ================== Industries Section Ends ================== */
+
+/* ================== Contact Section Starts ================== */
+.dvc-contact-section {
+    background: url("../images/digital-volume-calculation/contact-bg.png") center/cover no-repeat;
+    background-color: #04112A;
+    color: #fff;
+    position: relative;
+}
+.dvc-contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(4, 17, 42, 0.4);
+    z-index: 1;
+}
+.dvc-contact-section .container {
+    position: relative;
+    z-index: 2;
+}
+.dvc-contact-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+.dvc-contact-subtitle {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dvc-contact-btns{
+    gap: 15px;
+}
+
+.dvc-contact-btn {
+    background-color: #FF931E;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.562rem;
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+.dvc-contact-btn:hover {
+    background-color: #e58219;
+    color: #fff;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .dvc-contact-title {
+        font-size: 2rem;
+    }
+    .dvc-contact-subtitle {
+        font-size: 1.2rem;
+    }
+    .dvc-contact-btn {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+}
+/* ================== Contact Section Ends ================== */
+
+/* ================== FAQ Section Starts ================== */
+.dvc-faq-section {
+    background-color: #f6f6fa;
+    padding: 60px 0;
+}
+.dvc-faq-title {
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.dvc-faq-accordion .accordion-item.dvc-faq-item {
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.dvc-faq-accordion .accordion-item.dvc-faq-item:has(.accordion-button:not(.collapsed)) {
+    border-left: 9px solid #FF8D1E !important;
+    border-radius: 10px;
+}
+.dvc-faq-accordion .accordion-button.dvc-faq-button {
+    background-color: transparent;
+    color: #000;
+    font-weight: 400;
+    font-size: 1rem;
+    box-shadow: none;
+    border: none;
+    padding: 20px 30px 20px 60px;
+    position: relative;
+    border-radius: 50px !important;
+}
+.dvc-faq-accordion .accordion-button.dvc-faq-button:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.dvc-faq-accordion .accordion-button.dvc-faq-button::after {
+    display: none;
+}
+.dvc-faq-accordion .accordion-button.dvc-faq-button::before {
+    content: '+';
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff931e;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+}
+.dvc-faq-accordion .accordion-button.dvc-faq-button:not(.collapsed)::before {
+    content: '\2212';
+}
+.dvc-faq-accordion .accordion-button.dvc-faq-button:not(.collapsed) {
+    border-radius: 10px 10px 0 0 !important;
+}
+.dvc-faq-accordion .accordion-body.dvc-faq-body {
+    color: #6B6B6B;
+    font-weight: 400;
+    font-size: 0.937rem;
+    padding: 0 30px 25px 60px;
+    border-top: none;
+}
+@media (max-width: 768px) {
+    .dvc-faq-title {
+        font-size: 2rem;
+    }
+}
+/* ================== FAQ Section Ends ================== */
