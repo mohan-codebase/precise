@@ -1,0 +1,582 @@
+/* ================== General Styles ================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f6f6fa;
+    color: #1A1B23;
+}
+
+.text-orange {
+    color: #ff931e;
+}
+.text-white {
+    color: #fff;
+}
+
+/* ================== Hero Section Starts ================== */
+.smsb-hero-section {
+    background-color: #08182F;
+    margin-top: 120px;
+    background-image: url("../images/sheet-metal-springback/hero-bg.png");
+    background-size: 43% auto;
+    background-position: 99% 70%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px 0;
+}
+
+/* Ensure content stays above the bg */
+.smsb-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 0;
+}
+
+.smsb-hero-contact {
+    position: absolute;
+    top: 35px;
+    right: 5%;
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.smsb-hero-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.smsb-hero-contact-text h4 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.smsb-hero-contact-text p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.smsb-hero-contact img {
+    max-width: 45px;
+}
+
+.smsb-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.smsb-hero-subtitle {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.smsb-hero-text {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.smsb-hero-btns{
+    gap: 13px;
+}
+
+.smsb-btn-primary {
+    background-color: #ff931e;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.56rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff931e;
+}
+.smsb-btn-primary:hover {
+    background-color: #e68019;
+    color: #fff;
+    border-color: #e68019;
+}
+
+.smsb-btn-outline {
+    background-color: transparent;
+    color: #ff931e;
+    border-radius: 10px;
+    border: 1px solid #ff931e;
+    font-size: 1.562rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smsb-btn-outline:hover {
+    background-color: rgba(255, 147, 30, 0.1);
+    color: #ff931e;
+}
+
+.smsb-btn-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 992px) {
+    .smsb-hero-section {
+        background-image: none;
+        padding-top: 150px;
+    }
+    
+    .smsb-hero-contact {
+        top: 20px;
+        right: 5%;
+        left: 5%;
+        align-items: flex-start;
+    }
+
+    .smsb-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .smsb-hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .smsb-hero-text {
+        font-size: 1.1rem;
+    }
+    
+    .smsb-btn-primary, .smsb-btn-outline {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .smsb-hero-section {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .smsb-hero-contact {
+        position: relative;
+        top: 1;
+        left: 1;
+    }
+}
+
+/* ================== What is Sheet Metal Springback Section ================== */
+.smsb-what-is-section {
+    background-color: #f6f6fa;
+    padding: 40px 0;
+}
+
+.smsb-what-is-title {
+    color: #1E1E1E;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.smsb-what-is-content {
+    background-color: #f7ede4;
+    border-left: 4px solid #ff931e;
+    border-radius: 0 8px 8px 0;
+    padding: 30px 40px;
+}
+
+.smsb-what-is-content p {
+    color: #1e1e1e;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .smsb-what-is-title {
+        font-size: 2rem;
+    }
+    .smsb-what-is-content p {
+        font-size: 1.25rem;
+    }
+}
+
+/* ================== Workflow Section ================== */
+.smsb-workflow-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.smsb-workflow-item {
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.smsb-workflow-icon-box {
+    background-color: #fff5e9;
+    border: 1px solid #ff931e;
+    border-radius: 16px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+.smsb-workflow-icon-box img {
+    max-width: 180px;
+}
+
+.smsb-workflow-arrow {
+    position: absolute;
+    top: 100px;
+    right: -28px; /* Adjust based on col padding to place between cols */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ff931e;
+    z-index: 2;
+}
+
+.smsb-workflow-title {
+    color: #ff931e;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.smsb-workflow-text {
+    color: #1E1E1E;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* ================== Why Analyze Section ================== */
+.smsb-why-section {
+    background-color: #f6f6fa;
+    padding: 40px 0;
+}
+
+.smsb-why-title {
+    color: #1e1e1e;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.smsb-why-card {
+    background-color: #fff;
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.smsb-why-card-icon {
+    max-width: 60px;
+    margin-bottom: 20px;
+}
+
+.smsb-why-card-title {
+    color: #ff931e;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.smsb-why-card-text {
+    color: #1e1e1e;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .smsb-why-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* ================== How It Works Section ================== */
+.smsb-how-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.smsb-how-title {
+    color: #1e1e1e;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.smsb-how-card {
+    border: 4px solid #ffecd5;
+    border-radius: 12px;
+    padding: 50px 20px 30px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.smsb-how-card-number {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #ff931e;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.smsb-how-card-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    margin-bottom: 25px;
+}
+
+.smsb-how-card-img-box img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.smsb-how-card-title {
+    color: #ff931e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.smsb-how-card-text {
+    color: #4B5563;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .smsb-how-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* ================== Typical Springback Section ================== */
+.smsb-typical-section {
+    background-color: #f6f6fa;
+    padding: 40px 0;
+}
+
+.smsb-typical-title {
+    color: #1e1e1e;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.smsb-typical-left {
+    background-color: #fff;
+    border: 1px solid #f7ede4;
+    border-radius: 4.53px;
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smsb-typical-left img {
+    max-width: 100%;
+    border-radius: 4.53px;
+}
+
+.smsb-typical-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    justify-content: center;
+}
+
+.smsb-typical-middle-item {
+    background-color: #fff;
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.smsb-typical-middle-item svg {
+    color: #ff931e;
+    min-width: 24px;
+}
+
+.smsb-typical-middle-text {
+    color: #1E1E1E;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.smsb-typical-right {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+}
+
+.smsb-typical-right-title {
+    color: #FF931E;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.smsb-typical-right-list li {
+    list-style-type: disc;
+    color: #ff931e;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+.smsb-typical-right-list li span {
+    color: #1E1E1E;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* ================== Contact Section ================== */
+.smsb-contact-section {
+    background-color: #f7ede4;
+    padding: 40px 0;
+}
+
+.smsb-contact-title {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.smsb-contact-text {
+    color: #1e1e1e;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.smsb-contact-info-wrapper {
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.smsb-contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.smsb-contact-info-icon {
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+}
+
+.smsb-contact-info-text h4 {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.smsb-contact-info-text p, .smsb-contact-info-text a {
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.smsb-contact-right-wrapper {
+    gap: 20px;
+    align-items: stretch;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.smsb-btn-contact-primary {
+    background-color: #ff931e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.56rem;
+    border-radius: 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.smsb-btn-contact-primary:hover {
+    color: #fff;
+}
+
+.smsb-btn-contact-outline {
+    background-color: transparent;
+    border: 1px solid #ff931e;
+    color: #ff931e;
+    font-weight: 600;
+    font-size: 1.56rem;
+    border-radius: 10px;
+    padding: 15px 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.smsb-btn-contact-outline:hover {
+    color: #ff931e;
+}
+
+.smsb-btn-contact-outline img {
+    max-height: 30px;
+}
+
+@media (max-width: 992px) {
+    .smsb-contact-right {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+}

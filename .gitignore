@@ -1,3 +1,8 @@
 blog-zip.zip
 blogs/wp-content/debug.log
 debug.log
+
+node_modules/
+package.json
+pnpm-lock.yaml
+*.py
