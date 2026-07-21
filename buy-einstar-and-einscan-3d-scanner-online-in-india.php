@@ -359,13 +359,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                         <!-- Middle Column: Product Details -->
                         <div class="col-lg-5 mb-4 mb-lg-0">
                             <div class="product-details">
-                                <p class="step-title">01: Select Your Scanner</p>
+                                <p class="step-title">Select Your Scanner</p>
                                 <select class="form-select scanner-select mb-4" id="scannerSelect">
                                     <option value="einstar-2">Einstar 2</option>
                                     <option value="einstar-vega">Einstar Vega</option>
                                     <option value="einstar-rock-it">Einstar Rock It</option>
                                     <option value="einscan-rigil-lite">EinScan Rigil Lite</option>
-                                    <option value="einscan-rigil">EinScan Rigil</option>
                                 </select>
 
                                 <h2 class="product-name" id="productName">Einstar 2</h2>
@@ -615,9 +614,138 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                                     <td>Laser +Infrared Light</td>
                                     <td>Laser +Infrared Light</td>
                                 </tr>
+                                <!-- Extra Content Rows -->
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Resolution</td>
+                                    <td>0.05~10 mm (Laser HD), 0.2~10 mm (IR Mode)</td>
+                                    <td>In HD Mode: 0.05 mm to 3 mm point distance; in Fast Mode: 0.5 to 10 mm</td>
+                                    <td>0.05~10 mm (Laser HD), 0.2~10 mm (IR Mode)</td>
+                                    <td>0.05~10 mm (Laser HD), 0.2~10 mm (IR Mode)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Speed</td>
+                                    <td>Laser HD (25,00,000 point/s), IR Mode (14,40,000)</td>
+                                    <td>Frame rate: ~15 fps in HD mode; ~20 fps in Fast mode</td>
+                                    <td>Laser HD (28,00,000 point/s), IR Mode (48,00,000)</td>
+                                    <td>Laser HD (29,40,000 point/s), IR Mode (16,000,000)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Light Source</td>
+                                    <td>17+17 crossed laser lines,7 blue laser parallel lines(Laser HD), IR VCSEL(IR Rapid)</td>
+                                    <td>Infrared MEMS + VCSEL (two IR modes)</td>
+                                    <td>19+19 crossed laser lines, 7 blue laser parallel lines(Laser HD), IR VCSEL(IR Rapid)</td>
+                                    <td>17+17 crossed laser lines, 7 blue laser parallel lines(Laser HD), IR VCSEL(IR Rapid)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Work Mode</td>
+                                    <td>PC-Wired</td>
+                                    <td>Wireless Standalone</td>
+                                    <td>PC- Wireless / PC-Wired</td>
+                                    <td>Wireless Standalone/ PC- Wireless / PC-Wired</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Working distance</td>
+                                    <td>400 mm</td>
+                                    <td>HD mode: 100~350 mm,Fast mode: 270~1500 mm</td>
+                                    <td>100 ~ 600 mm(Laser HD), 160 ~ 1400 mm(IR Rapid)</td>
+                                    <td>170 ~ 550 mm(Laser HD), 160 ~ 1500 mm(IR Rapid)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Alignment Mode</td>
+                                    <td>Feature Alignment/Hybrid Alignment/ Texture Alignment/ Global Markers</td>
+                                    <td>Global Markers / Markers / Features</td>
+                                    <td>Global Markers / Markers / Features / Hybrid Alignment(Laser HD),<br>Global Markers / Markers / Features / Texture / Hybrid Alignment(IR Rapid)</td>
+                                    <td>Global Markers / Markers / Features / Hybrid Alignment(Laser HD),<br>Global Markers / Markers / Features / Texture / Hybrid Alignment(IR Rapid)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Device architecture</td>
+                                    <td>Infrared VCSEL Structured Light(wired mode)</td>
+                                    <td>Infrared (MEMS + VCSEL) based, fully wireless mode built in, with optional PC support (but many tasks done on device)</td>
+                                    <td>Hybrid (blue laser + IR) + optional PC connection (wired or wireless)</td>
+                                    <td>Hybrid (blue laser + IR) + optional PC connection (wired or wireless)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Output formats</td>
+                                    <td>OBJ, STL, PLY, P3, 3MF</td>
+                                    <td>STL, OBJ, PLY</td>
+                                    <td>STL, OBJ, PLY, 3MF, ASC</td>
+                                    <td>STL, OBJ, PLY, 3MF, ASC</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Operation Condition</td>
+                                    <td>Temperature -0 ~ 40C</td>
+                                    <td>Temperature -10 ~ 40C</td>
+                                    <td>Temperature -10 ~ 40C</td>
+                                    <td>Temperature -10 ~ 40C</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Net Weight</td>
+                                    <td>500g</td>
+                                    <td>535 g (regular version)Built-in</td>
+                                    <td>425g (Batteries included)</td>
+                                    <td>870 g (batteries included)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Interface / connectivity</td>
+                                    <td>USB-C, wired mode</td>
+                                    <td>USB-C, Wi-Fi 6, wireless mode built in</td>
+                                    <td>USB-C, Wi-Fi (wireless PC mode)</td>
+                                    <td>USB-C, Wi-Fi (wireless PC mode)</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Cameras / texture</td>
+                                    <td>2 MP color camera for textures</td>
+                                    <td>48 MP color camera for textures</td>
+                                    <td>5 MP full Color texture camera</td>
+                                    <td>5 MP full Color texture camera; separate 3D cameras</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Hardware / onboard compute</td>
+                                    <td>-</td>
+                                    <td>Also has onboard compute: 8-core CPU, 32 GB RAM, 32 GB eMMC + 512 GB SSD</td>
+                                    <td>-</td>
+                                    <td>CPU: 8-core, 2.4GHz; RAM: 24GB LPDDR5; Storage: 64GB eMMC + 512GB SSD; 6.4-inch 2K AMOLED Touchscreen</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Outdoor / sunlight use</td>
+                                    <td>Below 110,000 Lux (Laser Mode), Below 70,000 Lux(IR Mode)</td>
+                                    <td>Also claims ability to scan outdoors, handle dark surfaces; somewhat less proven in practice.</td>
+                                    <td>Below 110,000 Lux (Laser Mode), Below 70,000 Lux(IR Mode)</td>
+                                    <td>Supports scanning even outdoors / in sunlight, claims robust against ambient light, reflective/dark</td>
+                                </tr>
+                                <tr class="extra-content-row" style="display: none;">
+                                    <td class="feature-label">Recommended Configuration</td>
+                                    <td>Win10/11, 64 bit; Graphics card: NVIDIA RTX3060; Video memory: 8GB; Processor: I7- 13700H; Memory: 64GB</td>
+                                    <td>Win10/11, 64 bit; Graphics card: NVIDIA RTX3060; Video memory: 8GB; Processor: I7- 13700H; Memory: 64GB</td>
+                                    <td>Win10/11, 64 bit; Graphics card: NVIDIA RTX3060; Video memory: 8GB; Processor: I7- 13700H; Memory: 64GB</td>
+                                    <td>Win10/11, 64 bit; Graphics card: NVIDIA RTX3060; Video memory: 8GB; Processor: I7- 13700H; Memory: 64GB</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <div class="text-center mt-4">
+                        <button id="knowMoreBtn" class="px-4 py-2" style="border-radius: 5px; font-weight: 600; color: #fff; background-color: #f89b2b; border: none; transition: background 0.3s;" onclick="toggleExtraContent()">Know More <i class="fa-solid fa-chevron-down ms-2"></i></button>
+                    </div>
+                    <script>
+                        function toggleExtraContent() {
+                            const rows = document.querySelectorAll('.extra-content-row');
+                            const btn = document.getElementById('knowMoreBtn');
+                            let isHidden = true;
+                            if (rows.length > 0) {
+                                isHidden = rows[0].style.display === 'none';
+                            }
+                            
+                            rows.forEach(row => {
+                                row.style.display = isHidden ? 'table-row' : 'none';
+                            });
+                            
+                            if (isHidden) {
+                                btn.innerHTML = 'Show Less <i class="fa-solid fa-chevron-up ms-2"></i>';
+                            } else {
+                                btn.innerHTML = 'Know More <i class="fa-solid fa-chevron-down ms-2"></i>';
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </section>
@@ -1006,6 +1134,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 if (checkoutSubtitle) {
                     checkoutSubtitle.innerText = pkg === 'training' ? 'SCANNER + TRAINING' : 'SCANNER ONLY';
                 }
+
+                // Update EMI Button
+                const emiBtn = document.getElementById('emiButton');
+                if (emiBtn) {
+                    const emiAmount = Math.round(total / 12);
+                    emiBtn.innerHTML = 'EMI Starting from<br>' + formatINR(emiAmount) + ' / month';
+                }
             }
 
             // Listen for package changes
@@ -1149,6 +1284,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             document.querySelectorAll('.btn-add-to-cart').forEach(btn => {
                 btn.addEventListener('click', handleAddToCart);
             });
+
+            // Initialize prices on load
+            updateTotalPrice();
         </script>
 </body>
 
