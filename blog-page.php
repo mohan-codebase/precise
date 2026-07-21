@@ -84,8 +84,6 @@
                 <!-- Row 1: Featured + Regular -->
                 <!-- New 2026 Technical Blogs -->
                 
-                
-
                 <article class="blog-card featured" id="blog-card-precise3dm-services">
                     <div class="card-img-wrap">
                         <img src="assets/images/blog52/hero-bg.png" alt="Why Precise3DM for 3D Scanning Services in India?">
@@ -96,6 +94,31 @@
                         <h3 class="card-title">Why Precise3DM for 3D Scanning Services in India?</h3>
                         <p class="card-excerpt">Discover why Precise3DM is the preferred choice for 3D scanning services in India. High accuracy up to 0.02 mm, wide range of 3D scanners, and fast turnaround.</p>
                         <a href="why-precise3dm-for-3d-scanning-services-in-india.php" class="card-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card" id="blog-card-freescan-omni-vs-nova">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/freescan-omni-vs-freescan-trak-nova/hero-left.png" alt="FreeScan Omni Vs FreeScan Trak Nova">
+                        <span class="card-category">Comparison</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> July 21, 2026</span>
+                        <h3 class="card-title">FreeScan Omni Vs FreeScan Trak Nova</h3>
+                        <p class="card-excerpt">A comprehensive comparison between the FreeScan Omni and FreeScan Trak Nova. Discover which metrology-grade 3D scanner is right for your workflow.</p>
+                        <a href="freescan-omni-vs-freescan-trak-nova.php" class="card-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" id="blog-card-freescan-omni-vs-combo">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/blog-26-freescan-omni-vs-freescan-combo/hero1.png" alt="FreeScan Omni vs FreeScan Combo">
+                        <span class="card-category">Comparison</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date"><i class="fa-regular fa-calendar"></i> July 21, 2026</span>
+                        <h3 class="card-title">FreeScan Omni vs FreeScan Combo</h3>
+                        <p class="card-excerpt">Compare FreeScan Omni and FreeScan Combo 3D scanners to find the best fit for your business.</p>
+                        <a href="freescan-omni-vs-freescan-combo.php" class="card-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
                 <article class="blog-card" id="blog-card-3d-scanning-deliverables">

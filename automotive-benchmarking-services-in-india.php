@@ -142,12 +142,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="abm-hero-left">
 
                         <h1 class="abm-hero-title">
-                            From Physical Vehicles to<br>
-                            <span class="abm-orange">Engineering Intelligence</span>
+                            EV &amp; Automotive Benchmarking <span class="abm-orange">Solutions for Smarter Engineering Decisions</span>
+                            
                         </h1>
 
                         <p class="abm-hero-tagline">
-                            EV &amp; Automotive Benchmarking Solutions for Smarter Engineering Decisions
+                            From Physical Vehicles to Engineering Intelligence
                         </p>
 
                         <p class="abm-hero-desc">

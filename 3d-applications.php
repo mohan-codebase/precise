@@ -260,7 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="iqes-grid">
                     <?php
                     $iqes_cards = [
-                        ["title" => "Scan to 3D Surface<br>Comparison", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card1-img.png", "link" => "#"],
+                        ["title" => "Scan to 3D Surface<br>Comparison", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card1-img.png", "link" => "3d-surface-comparision.php"],
                         ["title" => "2D Curvature Analysis &<br>Comparison", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card2-img.png", "link" => "2d-surface-curvature-analysis-and-comparison.php"],
                         ["title" => "Scan-to-Scan Inspection", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card3-img.png", "link" => "scan-to-scan-inspection.php"],
                         ["title" => "Sheet Metal Spring-<br>back Study", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card4-img.png", "link" => "#"],
