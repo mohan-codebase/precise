@@ -103,8 +103,8 @@ ini_set('max_execution_time', '-1');
                         </p>
 
                         <div class="smsb-hero-btns d-flex flex-wrap gap-4">
-                            <a href="contact-us.php" class="smsb-btn-primary">Request Technical Consultation</a>
-                            <a href="contact-us.php" class="smsb-btn-outline">
+                            <a href="Book-demo-get-quote-for-3D-scanner.php" class="smsb-btn-primary">Request Technical Consultation</a>
+                            <a href="#" class="smsb-btn-outline">
                                 <img src="assets/images/sheet-metal-springback/upload-icon.png" alt="Upload" class="smsb-btn-icon me-2"> Upload CAD Model
                             </a>
                         </div>
@@ -447,8 +447,8 @@ ini_set('max_execution_time', '-1');
 
                 <!-- Right Content -->
                 <div class="col-lg-3 col-md-12 d-flex flex-column justify-content-center smsb-contact-right-wrapper py-2">
-                    <a href="contact-us.php" class="smsb-btn-contact-primary">Request Consultation</a>
-                    <a href="contact-us.php" class="smsb-btn-contact-outline">
+                    <a href="Book-demo-get-quote-for-3D-scanner.php" class="smsb-btn-contact-primary">Request Consultation</a>
+                    <a href="#" class="smsb-btn-contact-outline">
                         <img src="assets/images/sheet-metal-springback/upload-icon.png" alt="Upload Icon">
                         Upload CAD Model
                     </a>
