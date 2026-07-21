@@ -25,13 +25,20 @@
     <meta property="og:image" content="https://www.precise3dm.com/assets/images/about-logo.png" />
     <meta property="og:description" content="PRECISE3DM Provides all types of 3D inspection & Reverse engineering service done using specific 3D softwares" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-01.png">
+     
     <!--bootstrap css-->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <!-- custom css-->
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <!--custom css-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/optical-blue-light.css">
-    <link rel="stylesheet" href="assets/css/scanner-styles.css">
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-01.png">
+    
+    <!-- page specific css -->
+    <link rel="stylesheet" href="assets/css/3datpriei.css?v=1.0">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96527116-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -83,31 +90,96 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FX95R9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <!-- header start -->
     <?php include('includes/header.php'); ?>
-    <!-- header end -->
+    <!-- header End -->
 
-    <!-- section start-->
-    <section id="application-landing-banner" class="pt-4">
-        <div class="container">
-            <div class="row h-300">
-            </div>
-        </div>
-        <div class="container-fluid heading m-320">
-            <div class="row ">
-                <div class="col-md-12 text-md-left text-center px-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h2 class="title text-white">Applications</h2>
-                              
+    <!-- hero section -->
+    <section class="atpriei-hero-section">
+        <div class="atpriei-container">
+            <div class="atpriei-hero-layout">
+                <!-- Left Info -->
+                <div class="atpriei-hero-left">
+                    <h1 class="hero-title">
+                        <span class="text-orange highlight-underline">3D Application</span><br>
+                        Transform Physical Reality Into<br>
+                        <span class="text-orange">Engineering Intelligence</span>
+                    </h1>
+                    
+                    <p class="hero-desc">From first article inspection to complete reverse<br>engineering, discover how industrial 3D scanning<br>powers quality, manufacturing, product development,<br>and digital transformation.</p>
+
+                    <div class="hero-cta-buttons">
+                        <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-atpriei-orange">Book a Live Demo</a>
+                        <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-atpriei-orange">Request Quote</a>
+                    </div>
+
+                    <!-- Email Contact at bottom left -->
+                    <div class="bottom-email-contact">
+                        <div class="contact-icon email-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-info email-info">
+                            <span class="contact-label">Email Us</span>
+                            <div class="contact-links-group">
+                                <a href="mailto:sm@precise3dm.com" class="contact-link">sm@precise3dm.com</a>
+                                <span class="divider">|</span>
+                                <a href="mailto:service@precise3dm.com" class="contact-link">service@precise3dm.com</a>
                             </div>
-                            <div class="col-md-4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Info -->
+                <div class="atpriei-hero-right">
+                    <!-- Telephone Contact at top right -->
+                    <div class="top-call-contact">
+                        <div class="contact-icon call-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-info call-info">
+                            <span class="contact-label">Call us now</span>
+                            <div class="contact-links-group">
+                                <a href="tel:+919840478347" class="contact-link">+91 98404 78347</a> 
+                                <span class="divider">|</span> 
+                                <a href="tel:+919025700192" class="contact-link">+91 90257 00192</a>
+                                <span class="divider">|</span> 
+                                <a href="tel:+919940352575" class="contact-link">+91 99403 52575</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workflows Graphic -->
+                    <div class="atpriei-workflow-grid">
+                        <div class="workflow-row">
+                            <div class="workflow-item">
+                                <div class="workflow-img"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3datpriei-hero-right-img1.png" alt="Physical Part"></div>
+                                <div class="workflow-label">Physical Part</div>
+                            </div>
+                            <div class="workflow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                            <div class="workflow-item">
+                                <div class="workflow-img"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3datpriei-hero-right-img2.png" alt="3D Scan"></div>
+                                <div class="workflow-label">3D Scan</div>
+                            </div>
+                            <div class="workflow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                            <div class="workflow-item bg-white-box">
+                                <div class="workflow-img"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3datpriei-hero-right-img3.png" alt="Inspection"></div>
+                                <div class="workflow-label">Inspection</div>
+                            </div>
+                        </div>
+                        <div class="workflow-row">
+                            <div class="workflow-item">
+                                <div class="workflow-img"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3datpriei-hero-right-img4.png" alt="Damaged Part"></div>
+                                <div class="workflow-label">Damaged Part</div>
+                            </div>
+                            <div class="workflow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                            <div class="workflow-item">
+                                <div class="workflow-img"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3datpriei-hero-right-img5.png" alt="3D Scan"></div>
+                                <div class="workflow-label">3D Scan</div>
+                            </div>
+                            <div class="workflow-arrow"><i class="fa-solid fa-angles-right"></i></div>
+                            <div class="workflow-item">
+                                <div class="workflow-img"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3datpriei-hero-right-img6.png" alt="Inspection"></div>
+                                <div class="workflow-label">Inspection</div>
                             </div>
                         </div>
                     </div>
@@ -115,229 +187,400 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </section>
-    <!-- section end-->
-    <style>
-.application-landing-buttons .pre-btn{
-    height:90px;
-}    </style>
-      <!-- Key feature section starts-->
-    <section id="machine-spec" class="section-padding">
-        <div class="container">
 
-            <div id="features">
-                <section class="section-padding einscan-kf-prohd-height application-landing-buttons">
-                    <div class="container">
-                       <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/scan-to-cad-comparison.php" target=_blank>Scan to CAD Comparison</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/cad-to-cad-comparison.php" target=_blank>CAD to CAD comparison</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/2d-3d-curvature-comparison.php" target=_blank>2D /3D Curvature comparison</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/digital-alignment.php" target=_blank>Digital alignment</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/3d-dimensional-analysis.php" target=_blank>3D dimensional analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/part-to-part-comparison.php" target=_blank> Part to part comparison</a>
-                                </div>
-                            </div>
-                             <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/digital-volume-analysis.php" target=_blank>Digital volume analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/digital-gd&t-analysis.php" target=_blank> Digital GD&T Analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/digital-measurement-extraction-of-shape.php" target=_blank> Digital measurement extraction of digitized shape </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/digital-gap-and-flush-measurement.php" target=_blank>Digital gap and flush measurement</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/pmi-based-inspection.php" target=_blank>PMI Based inspection</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/automation-inspection.php" target=_blank>Automation inspection</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/wall-thickness-analysis.php" target=_blank>Wall thickness analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/virtual-edge-analysis.php" target=_blank>Virtual Edge analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/digital-damage-assessment.php" target=_blank>Digital damage assessment</a>
-                                </div>
-                            </div>
-                             <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/boundary-comparison.php" target=_blank> Boundary comparison</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/airfoil-twist-analysis.php" target=_blank>Airfoil Twist analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/airfoil-measurement.php" target=_blank>Airfoil measurements </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/deformation-analysis.php" target=_blank>Deformation analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/dent-corrosion-analysis.php" target=_blank>Dent & Corrosion Analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/crash-analysis.php" target=_blank>Crash Analysis</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/trend-analysis.php" target=_blank>Trend Analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/3d-scan-to-2d-drawing-inspection.php" target=_blank>3D scan to 2D Drawing inspection </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/first-article-inspection.php" target=_blank>First Article Inspection </a>
-                                </div>
-                            </div>
-                             <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/beam-analysis.php" target=_blank>Beam Analysis </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/tank-vessel-inspection.php" target=_blank>Tank & Vessel Inspection </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/tyre-flatten-analysis.php" target=_blank> Tyre Flatten analysis  </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/predictive-failure-analysis.php" target=_blank>Predictive failure analysis</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/3d-scan-parametric-cad.php" target=_blank>3D Scan to Parametric CAD</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/scan-to-nurbs-modelling.php" target=_blank>Scan to Nurbs modelling</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/3d-scan-to-hybrid-modelling.php" target=_blank>3D Scan to Hybrid modelling</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/organic-shapes-based-cad-reconstruction.php" target=_blank>Organic shapes feature based cad reconstruction</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/digital-sculpting-from-digitized-shape.php" target=_blank>Digital sculpting from digitized shape</a>
-                                </div>
-                            </div>
-                             <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/design-modification-from-3d-scan.php" target=_blank>Design modification from 3D Scan</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/netural-cad-to-editable-cad.php" target=_blank>Neutral cad to editable cad</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/automotive-benchmarking-services-in-india.php" target=_blank>Automotive digital transformation</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/digital-vehicle-development.php" target=_blank>Digital vehicle development</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/product-development-from-existing-scan.php" target=_blank>Product development from existing scan</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/cad-design-from-concept-images.php" target=_blank>CAD design from concept images</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/animation-3d-content.php" target=_blank>Animation 3D content </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://precise3dm.com/3d-scan-alignment-for-cad-cam-cae.php" target=_blank>3D Scan alignments for CAD / CAM /CAE</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/mesh-modelling.php" target=_blank>Mesh modelling</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="http://precise3dm.com/extract-surface-curvature.php" target=_blank>Extract surface curvature</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/blue-print-to-cad-construction.php" target=_blank>Blue print to CAD construction</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/vehicle-exhaust-pipe-modelling.php" target=_blank>Vehicle exhaust pipe modelling</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/ct-scan-to-cad-modelling.php" target=_blank>CT Scan to CAD modelling</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/engineering-drawing-to-3d-conversion.php" target=_blank>Engineering Drawing to 3D conversion</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/vehicle-interior-design.php" target=_blank>Vehicle Interior Design </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/tyre-design-for-collision-check.php" target=_blank>Tyre Design for collision check </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2 disabled" href="https://www.precise3dm.com/car-skin-3d-extraction.php" target=_blank>Car Skin 3D extarction</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a class="btn pre-btn my-2" href="https://www.precise3dm.com/handgrip-3d-design.php" target=_blank>Hand grip 3d Design </a>
-                                </div>
-                            </div>
-                            </div>
+    <!-- Ecosystem Section -->
+    <section class="atpriei-ecosystem-section">
+        <div class="atpriei-container">
+            <div class="ecosystem-card">
+                <div class="ecosystem-header">
+                    <h2 class="ecosystem-main-title">The Industrial 3D Scan Ecosystem</h2>
+                    <p class="ecosystem-subtitle">Every application. Every workflow. One powerful ecosystem<br>built around 3D scan data</p>
+                </div>
 
-                            </div>
+                <div class="ecosystem-layout">
+                    <!-- Left List -->
+                    <div class="ecosystem-col eco-left">
+                        <h3 class="eco-col-title">Quality & Inspection</h3>
+                        <ul class="eco-list eco-list-left">
+                            <li>Scan to CAD Surface Comparison</li>
+                            <li>2D Curvature Analysis & Comparison</li>
+                            <li>Scan-to-Scan Inspection</li>
+                            <li>Sheet Metal Spring-back Study</li>
+                            <li>Airfoil Twist Study</li>
+                            <li>Digital Volume Creation</li>
+                            <li>Trend Analysis</li>
+                            <li>Wear & Tear Analysis</li>
+                            <li>Wall Thickness Analysis</li>
+                            <li>2D Drawing-Based 3D Inspection</li>
+                            <li>PMI Inspection (Product<br>Manufacturing Information)</li>
+                            <li>Gap and Flush Measurement</li>
+                            <li>Small Batch Inspection</li>
+                            <li>First Article Inspection</li>
+                        </ul>
+                    </div>
+
+                    <!-- Center Graphic -->
+                    <div class="ecosystem-col eco-col-center">
+                        <div class="eco-center-box">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/ti3dse-img.png" alt="Industrial 3D Scan Ecosystem">
                         </div>
                     </div>
 
-                </section>
+                    <!-- Right List -->
+                    <div class="ecosystem-col eco-right">
+                        <h3 class="eco-col-title">Reverse Engineering<br>& Design</h3>
+                        <ul class="eco-list eco-list-right">
+                            <li>3D Scan to Mesh</li>
+                            <li>3D Scan to Parametric CAD</li>
+                            <li>3D Scan to NURBS</li>
+                            <li>New Product Development from Scan<br>Data</li>
+                            <li>3D Scan to Hybrid Modelling</li>
+                            <li>3D Scan to Flat 2D Pattern</li>
+                            <li>CT Scan to 3D Modeling</li>
+                            <li>3D Scan-Based Design Optimization</li>
+                            <li>Mean Geometry Reverse Engineering</li>
+                            <li>3D Scan to BIW</li>
+                            <li>3D Scan Organic Modeling</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Key feature section end-->
 
- 
+    <!-- IQES Section -->
+    <section class="iqes-section section-padding">
+        <div class="atpriei-container">
+            <div class="ecosystem-card">
+                <div class="iqes-header">
+                    <h2 class="iqes-main-title">Inspection & Quality Engineering Solutions</h2>
+                    <p class="iqes-subtitle">Ensure dimensional accuracy, manufacturing compliance, and process<br>optimization using metrology-grade 3D scanning technologies.</p>
+                </div>
+                
+                <div class="iqes-grid">
+                    <?php
+                    $iqes_cards = [
+                        ["title" => "Scan to 3D Surface<br>Comparison", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card1-img.png", "link" => "#"],
+                        ["title" => "2D Curvature Analysis &<br>Comparison", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card2-img.png", "link" => "2d-surface-curvature-analysis-and-comparison.php"],
+                        ["title" => "Scan-to-Scan Inspection", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card3-img.png", "link" => "scan-to-scan-inspection.php"],
+                        ["title" => "Sheet Metal Spring-<br>back Study", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card4-img.png", "link" => "#"],
+                        ["title" => "Airfoil Twist Study", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card5-img.png", "link" => "airfoil-2d-and-3d-twist-study-analysis.php"],
+                        ["title" => "Digital Volume Creation", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card6-img.png", "link" => "3d-scan-based-digital-volume-calculation.php"],
+                        ["title" => "Trend Analysis", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card7-img.png", "link" => "trend-analysis.php"],
+                        ["title" => "Wear & Tear Analysis", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card8-img.png", "link" => "#"],
+                        ["title" => "Wall Thickness Analysis", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card9-img.png", "link" => "wall-thickness-analysis.php"],
+                        ["title" => "2D Drawing-Based 3D<br>Inspection", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card10-img.png", "link" => "#"],
+                        ["title" => "PMI Inspection (Product<br>Manufacturing Information)", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card11-img.png", "link" => "scan-based-pmi-inspection.php"],
+                        ["title" => "Gap and Flush<br>Measurement", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card12-img.png", "link" => "automotive-gap-flush-measurement.php"],
+                        ["title" => "Small Batch Inspection", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card13-img.png" , "link" => "#"],
+                        ["title" => "First Article Inspection", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/iqes-card14-img.png", "link" => "#"],
+                    ];
 
-    <hr class="separator">
+                    foreach ($iqes_cards as $card) {
+                        echo '<div class="iqes-card">';
+                        echo '<h3 class="iqes-card-title">' . $card["title"] . '</h3>';
+                        echo '<div class="iqes-card-img-wrap"><img src="' . $card["img"] . '" alt="' . strip_tags($card["title"]) . '"></div>';
+                        echo '<a href="' . $card["link"] . '" class="btn-iqes-explore">Explore &nbsp;<i class="fa-solid fa-arrow-right"></i></a>';
+                        echo '</div>';
+                    }
+                    ?>
+                    
+                    <div class="iqes-know-more-wrap">
+                        <a href="3d-inspection-service.php" class="btn-iqes-orange">Know More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REDPD Section -->
+    <section class="redpd-section section-padding">
+        <div class="atpriei-container">
+            <div class="ecosystem-card">
+                <div class="redpd-header">
+                    <h2 class="redpd-main-title">3D Reverse Engineering & Digital Product Development</h2>
+                    <p class="redpd-subtitle">Convert physical products into editable engineering intelligence for redesign,<br>manufacturing, optimization, and innovation.</p>
+                </div>
+                
+                <div class="redpd-grid">
+                    <?php
+                    $redpd_cards = [
+                        ["title" => "3D Scan to Mesh", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card1-img.png" , "link" => "3d-scan-processing-&-mesh-creation-software.php"],
+                        ["title" => "3D Scan to Parametric CAD", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card2-img.png", "link" => "3d-scan-to-parametric-cad-modeling.php"],
+                        ["title" => "3D Scan to NURBS", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card3-img.png", "link" => "difference-between-nurbs-surface-and-parametric-cad-modeling-in-3d-reverse-engineering.php"],
+                        ["title" => "New Product Development<br>from Scan Data", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card4-img.png", "link" => "#"],
+                        ["title" => "3D Scan to Hybrid<br>Modelling", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card5-img.png", "link" => "#"],
+                        ["title" => "3D Scan to Flat 2D Pattern", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card6-img.png", "link" => "#"],
+                        ["title" => "CT Scan to 3D Modeling", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card7-img.png", "link" => "#"],
+                        ["title" => "3D Scan-Based Design<br>Optimization", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card8-img.png", "link" => "#"],
+                        ["title" => "Mean Geometry Reverse<br>Engineering", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card9-img.png", "link" => "#"],
+                        ["title" => "3D Scan to BIW", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card10-img.png", "link" => "#"],
+                        ["title" => "3D Scan Organic<br>Modeling", "img" => "assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/3dredpd-card11-img.png", "link" => "#"],
+                    ];
+
+                    foreach ($redpd_cards as $card) {
+                        echo '<div class="redpd-card">';
+                        echo '<h3 class="redpd-card-title">' . $card["title"] . '</h3>';
+                        echo '<div class="redpd-card-img-wrap"><img src="' . $card["img"] . '" alt="' . strip_tags($card["title"]) . '"></div>';
+                        echo '<a href="' . $card["link"] . '" class="btn-redpd-explore">Explore &nbsp;<i class="fa-solid fa-arrow-right"></i></a>';
+                        echo '</div>';
+                    }
+                    ?>
+                    
+                    <div class="redpd-know-more-wrap">
+                        <a href="3d-Reverse-Engineering-Services-in-india.php" class="btn-redpd-orange">Know More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OALCTG Section -->
+    <section class="oalctg-section section-padding">
+        <div class="atpriei-container">
+            <div class="ecosystem-card oalctg-card">
+                <div class="oalctg-content">
+                    <h2 class="oalctg-main-title">Our Application Library Continues To Grow</h2>
+                    <p class="oalctg-subtitle">New industrial applications are continuously being developed and added across<br>multiple engineering domains.</p>
+                    
+                    <div class="oalctg-icons-row">
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon1.png" alt="Quality Engineering">
+                            <span>Quality<br>Engineering</span>
+                        </div>
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon2.png" alt="Manufacturing">
+                            <span>Manufacturing</span>
+                        </div>
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon3.png" alt="Product Development">
+                            <span>Product<br>Development</span>
+                        </div>
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon4.png" alt="Automotive Benchmarking">
+                            <span>Automotive<br>Benchmarking</span>
+                        </div>
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon5.png" alt="Digital Twin Creation">
+                            <span>Digital Twin<br>Creation</span>
+                        </div>
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon6.png" alt="Medical Engineering">
+                            <span>Medical<br>Engineering</span>
+                        </div>
+                        <div class="oalctg-icon-item">
+                            <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/oalctg-icon7.png" alt="Design Optimization">
+                            <span>Design<br>Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Bottom-Right Badge -->
+                <div class="oalctg-floating-badge">
+                    <span class="badge-small-text">Limitless applications</span>
+                    <span class="badge-large-text">Limitless Possibilities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPEX OPEX Section -->
+    <section class="capex-opex-section section-padding">
+        <div class="atpriei-container">
+            <div class="ecosystem-card">
+                <div class="co-wrapper">
+                    <h2 class="capex-opex-main-title">Buy Equipment Or Outsource The Project</h2>
+                    
+                    <div class="capex-opex-layout">
+                    <!-- CAPEX Column -->
+                    <div class="co-column capex-col">
+                        <div class="co-header">
+                            <h3 class="co-title">CAPEX</h3>
+                            <p class="co-subtitle">Buy Industrial Solutions</p>
+                        </div>
+                        
+                        <div class="co-grid">
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon1.png" alt="Industrial 3D Scanners"><span>Industrial 3D<br>Scanners</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon2.png" alt="Inspection Software"><span>Inspection<br>Software</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon3.png" alt="Reverse Engineering Software"><span>Reverse<br>Engineering<br>Software</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon4.png" alt="Training"><span>Training</span></div>
+                            
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon5.png" alt="Installation"><span>Installation</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon6.png" alt="AMC"><span>AMC</span></div>
+                            
+                            <!-- Explicitly placed image spanning two columns -->
+                            <div class="co-img-wrap" style="grid-column: 3 / 5; grid-row: 2 / 4;">
+                                <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-img.png" alt="Capex Solutions Image">
+                            </div>
+                            
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/capex-icon7.png" alt="Demo Programs"><span>Demo Programs</span></div>
+                        </div>
+                        
+                        <a href="opex-vs-capex-3dscanning.php" class="btn-co-explore">Explore Solutions &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- VS Divider -->
+                    <div class="vs-divider">
+                        <svg class="vs-svg" width="60" height="100%" preserveAspectRatio="none">
+                            <line x1="50" y1="0" x2="10" y2="100%" stroke="#F89C1E" stroke-width="1" />
+                        </svg>
+                        <div class="vs-circle">VS</div>
+                    </div>
+
+                    <!-- OPEX Column -->
+                    <div class="co-column opex-col">
+                        <div class="co-header">
+                            <h3 class="co-title">OPEX</h3>
+                            <p class="co-subtitle">Engineering Services</p>
+                        </div>
+                        
+                        <div class="co-grid">
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon1.png" alt="Onsite Scanning"><span>Onsite<br>Scanning</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon2.png" alt="Scan-to-CAD Services"><span>Scan-to-CAD<br>Services</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon3.png" alt="Reverse Engineering"><span>Reverse<br>Engineering</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon4.png" alt="3D Scanner Rental Services"><span>3D Scanner Rental<br>Services</span></div>
+                            
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon5.png" alt="Automotive Benchmarking"><span>Automotive<br>Benchmarking</span></div>
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon6.png" alt="3D Inspection Services"><span>3D Inspection<br>Services</span></div>
+                            
+                            <!-- Explicitly placed image spanning two columns -->
+                            <div class="co-img-wrap" style="grid-column: 3 / 5; grid-row: 2 / 4;">
+                                <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-img.png" alt="Opex Solutions Image">
+                            </div>
+                            
+                            <div class="co-icon-item"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/opex-icon7.png" alt="Subscription Models"><span>Subscription Models</span></div>
+                        </div>
+                        
+                        <a href="opex-vs-capex-3dscanning.php" class="btn-co-explore">Explore Solutions &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Scanner Application & Proven Applications Section -->
+    <section class="bboy-paai-section section-padding">
+        <div class="atpriei-container">
+            <div class="bboy-paai-layout">
+                
+                <!-- LEFT CARD: BBOY -->
+                <div class="ecosystem-card bboy-card">
+                    <div class="bboy-hero-block" style="background-image: url('assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/bboy3dsa-bg-img.png');">
+                        <div class="bboy-hero-content">
+                            <h2>By Based on your<br>3D Scanner<br>Application</h2>
+                            <a href="3d-scanners-by-application.php" class="btn-bboy-know-more">Know More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="bboy-card-list">
+                        <!-- Subcard 1 -->
+                        <div class="bboy-subcard">
+                            <div class="bboy-subcard-content">
+                                <h3>FreeScan Omni Series</h3>
+                                <p>World's First Standalone Inspection-Ready Metrology 3D Scanner</p>
+                                <div><a href="freescan-omni.php" class="btn-bboy-know-more-small">Know More &nbsp;<i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                            <div class="bboy-subcard-img">
+                                <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/bboy3dsa-img1.png" alt="FreeScan Omni Series">
+                            </div>
+                        </div>
+                        
+                        <!-- Subcard 2 -->
+                        <div class="bboy-subcard">
+                            <div class="bboy-subcard-content">
+                                <h3>Industrial 3D Inspection Software Solutions</h3>
+                                <p>Choose the right inspection software for your application.</p>
+                                <div><a href="3d-inspection-software-in-india.php" class="btn-bboy-know-more-small">Know More &nbsp;<i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                            <div class="bboy-subcard-img">
+                                <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/bboy3dsa-img2.png" alt="Inspection Software">
+                            </div>
+                        </div>
+                        
+                        <!-- Subcard 3 -->
+                        <div class="bboy-subcard">
+                            <div class="bboy-subcard-content">
+                                <h3>Top 3 Reverse Engineering Software Solutions</h3>
+                                <p>We Recommend from Hexagon Geomagic</p>
+                                <div><a href="top-3-reverse-engineering-software-solutions-hexagon-geomagic.php" class="btn-bboy-know-more-small">Know More &nbsp;<i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                            <div class="bboy-subcard-img">
+                                <img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/bboy3dsa-img3.png" alt="Reverse Engineering Software">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bboy-action-buttons">
+                        <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-co-explore">Book Live Demo &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-co-explore">Request Quotation &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- RIGHT CARD: PAAI -->
+                <div class="ecosystem-card paai-card">
+                    <div class="paai-wrapper">
+                        <h2 class="paai-main-title">Proven Applications Across<br>Industries</h2>
+                        
+                        <div class="paai-grid">
+                            <?php
+                            $paai_cards = [
+                                ["title" => "Automotive", "img" => "paai-img1.png"],
+                                ["title" => "Aerospace", "img" => "paai-img2.png"],
+                                ["title" => "Rail", "img" => "paai-img3.png"],
+                                ["title" => "Wind Energy", "img" => "paai-img4.png"],
+                                ["title" => "Heavy Engineering", "img" => "paai-img5.png"],
+                                ["title" => "Forging Validation", "img" => "paai-img6.png"],
+                                ["title" => "Defence", "img" => "paai-img7.png"],
+                                ["title" => "Heavy Fabrication", "img" => "paai-img8.png"],
+                                ["title" => "Casting Inspection", "img" => "paai-img9.png"],
+                                ["title" => "Tool & Die", "img" => "paai-img10.png"]
+                            ];
+
+                            foreach ($paai_cards as $card) {
+                                echo '<div class="paai-item">';
+                                echo '<div class="paai-img-wrap"><img src="assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/' . $card["img"] . '" alt="' . $card["title"] . '"></div>';
+                                echo '<span>' . $card["title"] . '</span>';
+                                echo '</div>';
+                            }
+                            ?>
+                        </div>
+                        
+                        <div class="paai-footer-block">
+                            <p class="paai-bottom-text">Click any industry to explore applications, technologies,<br>and success stories.</p>
+                            <a href="#" class="btn-co-explore">View All Industries &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="atpriei-cta-section section-padding">
+        <div class="atpriei-container">
+            <div class="cta-banner-card" style="background-image: url('assets/images/3d-application-transform-hysical-reality-into-engineering-lntelligence/cta-bg-img.png');">
+                <div class="cta-banner-content">
+                    <h2>Have A Problem To Solve?</h2>
+                    <p>We will recommend the right scanner, software, or engineering service.</p>
+                    
+                    <div class="cta-btn-group">
+                        <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-cta-orange">Book Live Demo</a>
+                        <a href="https://us02web.zoom.us/j/5903189768?pwd=T3VucDArMUY1NGxNRU1NMnJMYnVuQT09" class="btn-cta-outline">Talk To 3D Experts</a>
+                        <a href="Book-demo-get-quote-for-3D-scanner.php" class="btn-cta-outline">Get A Quotation 3D Scanners</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
     <?php include('includes/footer.php'); ?>
-
-    <!-- bootstrap links-->
-    <!-- <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/js/slim.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="assets/js/tabs.js"></script> -->
-    <!-- bootstrap links-->
-    <script src="assets/js/counter.js"></script>
+    <!-- footer end -->
+    
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
